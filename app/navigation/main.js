@@ -15,11 +15,15 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Home from "@screens/Home";
  
 import ProductDetailsList from "@screens/ProductDetailsList";
+import News from "@screens/News";
+
 
 import ChangeLanguage from "@screens/ChangeLanguage";
 
 import Setting from "@screens/Setting";
 import ThemeSetting from "@screens/ThemeSetting";
+import NewsDetails from "@screens/NewsDetails";
+
 
 import { Image } from "@components";
 
@@ -75,7 +79,7 @@ const EBottomTabNavigator = (props) => {
       }}
     >
       <BottomTab.Screen
-        name="EHome"
+        name="Home"
         component={Home}
         options={{
           title: t(""),
@@ -86,8 +90,8 @@ const EBottomTabNavigator = (props) => {
       />
 
       <BottomTab.Screen
-        name="EProduct"
-        component={Home}
+        name="News"
+        component={News}
         options={{
           title: t(""),
           tabBarIcon: ({ color }) => {
@@ -97,7 +101,7 @@ const EBottomTabNavigator = (props) => {
       />
 
       <BottomTab.Screen
-        name="News"
+        name="Shop"
         component={Home}
         options={{
           title: t(""),
@@ -131,7 +135,7 @@ const Main = (props) => {
     >
       <MainStack.Screen name="ECommerceMenu" component={EBottomTabNavigator} />
       <MainStack.Screen name="ProductDetailsList" component={ProductDetailsList} />
-
+      <MainStack.Screen name="NewsDetails" component={NewsDetails} />
       
 
       <MainStack.Screen name="ChangeLanguage" component={ChangeLanguage} />
