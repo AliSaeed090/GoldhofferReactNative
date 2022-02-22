@@ -2,6 +2,7 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
  
+import {  View,Text } from "react-native";
 
 
 
@@ -15,6 +16,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Home from "@screens/Home";
  
 import ProductDetailsList from "@screens/ProductDetailsList";
+import ProductDeatilInfo from "@screens/ProductDeatilInfo"
 import News from "@screens/News";
 
 
@@ -23,6 +25,9 @@ import ChangeLanguage from "@screens/ChangeLanguage";
 import Setting from "@screens/Setting";
 import ThemeSetting from "@screens/ThemeSetting";
 import NewsDetails from "@screens/NewsDetails";
+import ContactOverView from "@screens/ContactOverView";
+import ProductDeatilVideo from "@screens/ProductDeatilVideo";
+
 
 
 import { Image } from "@components";
@@ -42,7 +47,13 @@ import { useTranslation } from "react-i18next";
 
 
 
-
+const Shop =()=>{
+  return(
+    <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
+      <Text>Shop</Text>
+    </View>
+  )
+}
 
 
 
@@ -102,7 +113,7 @@ const EBottomTabNavigator = (props) => {
 
       <BottomTab.Screen
         name="Shop"
-        component={Home}
+        component={Shop}
         options={{
           title: t(""),
           tabBarIcon: ({ color }) => {
@@ -113,8 +124,8 @@ const EBottomTabNavigator = (props) => {
 
 
       <BottomTab.Screen
-        name="Profile"
-        component={Setting}
+        name="ContactOverView"
+        component={ContactOverView}
         options={{
           title: t(""),
           tabBarIcon: ({ color }) => {
@@ -135,6 +146,9 @@ const Main = (props) => {
     >
       <MainStack.Screen name="ECommerceMenu" component={EBottomTabNavigator} />
       <MainStack.Screen name="ProductDetailsList" component={ProductDetailsList} />
+      <MainStack.Screen name="ProductDeatilInfo" component={ProductDeatilInfo} />
+      <MainStack.Screen name="ProductDeatilVideo" component={ProductDeatilVideo} />
+      
       <MainStack.Screen name="NewsDetails" component={NewsDetails} />
       
 

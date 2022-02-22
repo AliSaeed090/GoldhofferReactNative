@@ -11,7 +11,55 @@ const Home = (props) => {
   const { t } = useTranslation();
   const { colors } = useTheme();
   const [isTransportActive, setTransPortActive] = useState(null)
+  const [listTransport, setListTransport] = useState([
+    {
+      image: Images.banner1, text: 'TRAILSTAR'
+    },
 
+    {
+      image: Images.banner2, text: 'SATTELANHÄNGER'
+    },
+    {
+      image: Images.banner3, text: 'SCHWERLASTMODULE'
+    },
+    {
+      image: Images.banner4, text: 'SPEZIALANWENDUNGEN'
+    },
+    {
+      image: Images.banner5, text: 'SOFORT VERFÜGBAR'
+    }
+    ,
+    {
+      image: Images.banner1, text: 'PARTNER'
+    }
+
+
+  ])
+
+  const [listAirport, setListAirport] = useState([
+    {
+      image: Images.banner9, text: 'FRACHT-/PUSHBACKSCHLEPPER'
+    },
+
+    {
+      image: Images.banner8, text: 'KONVENTIONELLE SCHLEPPER'
+    },
+    {
+      image: Images.banner7, text: 'STANGENLOSE SCHLEPPER'
+    },
+    {
+      image: Images.banner4, text: 'FLUGZEUGBERGESYSTEME'
+    },
+    {
+      image: Images.banner6, text: 'SOFORT VERFÜGBAR'
+    }
+    ,
+    {
+      image: Images.banner1, text: 'PARTNER'
+    }
+
+
+  ])
   return (
     <SafeAreaView style={BaseStyle.safeAreaView} edges={['right', 'top', 'left']}>
       <ImageBackground
@@ -39,7 +87,7 @@ const Home = (props) => {
 
             {isTransportActive === true &&
               <View style={{ width: '100%', height: 100, justifyContent: 'flex-end', }}>
-                <TouchableOpacity onPress={()=>navigation.navigate("ProductDetailsList")} style={{ flexDirection: "row", width: '100%', alignItems: 'center' }}>
+                <TouchableOpacity onPress={()=>navigation.navigate("ProductDetailsList", {list:listTransport})} style={{ flexDirection: "row", width: '100%', alignItems: 'center' }}>
                 <View style={{ width: "60%",  }}>
                     <Text headline bold whiteColor>
                       PRODUKT DETAILS
@@ -78,7 +126,7 @@ const Home = (props) => {
             </Text>
             {isTransportActive === false &&
               <View style={{ width: '100%', height: 100, justifyContent: 'flex-end', }}>
-              <TouchableOpacity style={{ flexDirection: "row", width: '100%', alignItems: 'center' }}>
+              <TouchableOpacity  onPress={()=>navigation.navigate("ProductDetailsList", {list:listAirport})}  style={{ flexDirection: "row", width: '100%', alignItems: 'center' }}>
                 <View style={{ width: "60%",  }}>
                     <Text headline bold whiteColor>
                       PRODUKT DETAILS

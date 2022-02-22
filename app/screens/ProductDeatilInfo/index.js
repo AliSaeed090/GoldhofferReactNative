@@ -2,7 +2,7 @@ import { SafeAreaView, Image, Text, Header, Icon, TextInput } from "@components"
 import { BaseStyle, useTheme, Images, BaseColor } from "@config";
 // Load sample data
 import styles from './styles'
-import React, { useState, useMemo,useEffect } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { FlatList, View, TouchableOpacity, RefreshControl } from "react-native";
 import { useTranslation } from "react-i18next";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
@@ -48,20 +48,23 @@ function renderFooter() {
 
 export default function ProductDetailsList(props) {
   const { navigation } = props;
+  
+  const { params } = props.route
   const { t } = useTranslation();
   const { colors } = useTheme();
-  const { params } = props.route
   const [isTransportActive, setTransPortActive] = useState(null)
   const [list, setList] = useState([
     
+    
 
   ])
-  useEffect(() => {
- 
-    setList(params.list)
-}, [params])
-  const [searchArr, setsearchArr] = useState(["s", "2", "s", "2", "s", "2", "s", "2", "s", "2"])
 
+
+  const [searchArr, setsearchArr] = useState(["s", "2", "s", "2", "s", "2", "s", "2", "s", "2"])
+  useEffect(()=>{
+console.log({params:params.item})
+setList([params.item])
+  },[params])
 
   const [search, setsearch] = useState("");
   const filter = (text) => {
@@ -73,9 +76,7 @@ export default function ProductDetailsList(props) {
     }
   };
 
- 
-
-
+  // const memoizedValue = useMemo(() => RenderList2, [list]);
   const RenderItem = useMemo((item) => RenderList2, [list]);
   return (
     <SafeAreaView style={BaseStyle.safeAreaView} edges={['right', 'top', 'left']}>
@@ -105,19 +106,7 @@ export default function ProductDetailsList(props) {
         }}
 
       />
-      <View style={{ paddingHorizontal: 0, paddingVertical: 15 }}>
-        <TextInput
-          style={{ width: '90%', alignSelf: 'center', borderRadius: 50, padding: 10 }}
-          onChangeText={filter}
-          placeholder={t("Search")}
-          value={search}
-          icon={
-            <TouchableOpacity onPress={() => setsearch("")}>
-              <Icon name="search" size={16} color={BaseColor.grayColor} />
-            </TouchableOpacity>
-          }
-        />
-      </View>
+     
 
       <FlatList
         refreshControl={
@@ -131,10 +120,10 @@ export default function ProductDetailsList(props) {
         data={search.length > 0 ? searchArr : list}
         keyExtractor={(item, index) => Math.random().toString()}
 
-        ListFooterComponent={renderFooter}
+        // ListFooterComponent={renderFooter}
         renderItem={({ item }) => <RenderItem item={item} />}
-      
       />
+      {renderFooter()}
     </SafeAreaView>
   );
 };
