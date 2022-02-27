@@ -8,87 +8,73 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* GoldhofferTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* GoldhofferTests.m */; };
+		014BA6EEC0AD4DF4B9EF9DFF /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC0382B366B34F28BCFCFAE1 /* Raleway-ExtraBoldItalic.ttf */; };
+		06B68419A9AE488E97F4858A /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2115559A59FF40D183BC95FF /* Raleway-SemiBoldItalic.ttf */; };
+		0B8B8221A9A64262A1D0B3FC /* Raleway-ExtraBoldItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF4AB8EC6849B4A9962B78 /* Raleway-ExtraBoldItalic copy.ttf */; };
+		134B965633DE4AA582634301 /* Raleway-SemiBold copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD4F2F0C5A1242C7B784C5FD /* Raleway-SemiBold copy.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		295BB246C18B44BB8C9A7657 /* Merriweather-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFED8D495E21483BB33849D6 /* Merriweather-Black.ttf */; };
-		DD384CC451924BC7B9B03358 /* Merriweather-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD21999DE4E0402EA97059B2 /* Merriweather-BlackItalic.ttf */; };
-		E62FB2CC5A864B65AE2AD89B /* Merriweather-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF16152B04634FB49E28921C /* Merriweather-Bold.ttf */; };
-		33DC6536A3B3456D8C0987F4 /* Merriweather-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1961360E2E444B9B61380D6 /* Merriweather-BoldItalic.ttf */; };
-		E5F239B32B284570862BE71F /* Merriweather-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCFAE28EE10F40639CDBD671 /* Merriweather-Italic.ttf */; };
-		77DC7099053248C38784F7AF /* Merriweather-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F734872C83B4CD8B67A086C /* Merriweather-Light.ttf */; };
-		B024BAEF2E23432486BC2666 /* Merriweather-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D6CA59C80D44FFD85E67E31 /* Merriweather-LightItalic.ttf */; };
-		5D0AAFAEDA354974AA44513D /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A047B7B838DF414FB4B25E52 /* Merriweather-Regular.ttf */; };
-		74AF8C541BE043BCA8411309 /* ProximaNova-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6FC0D6D64B24D1F970F46EF /* ProximaNova-Black.otf */; };
-		DA3F8995DAAF4210B2ED5404 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 096E52ED536D4EA6B610AA4D /* ProximaNova-Bold.otf */; };
-		86ED81E5ED73408697B521C9 /* ProximaNova-Extrabld.otf in Resources */ = {isa = PBXBuildFile; fileRef = 73E27CF90CD64C46980603AC /* ProximaNova-Extrabld.otf */; };
-		AAECB91180044276ADC2E86E /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13414ECC62A646FA960804BA /* ProximaNova-Regular.otf */; };
-		7566248A8E0448D387389F99 /* ProximaNovaT-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96008FBF346444929FE63F72 /* ProximaNovaT-Thin.otf */; };
-		FD4763ED1EA0428283EA1951 /* Raleway-Black copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A25DBB032B794FF2A71170B5 /* Raleway-Black copy.ttf */; };
-		F27826A39AE9445987784B35 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 716101C4AEC34EEE8851C840 /* Raleway-Black.ttf */; };
-		7E5C7A11DB8849D5B5374F59 /* Raleway-BlackItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D751CAFA5C0A4E3EBD29BBF0 /* Raleway-BlackItalic copy.ttf */; };
-		449A17E252BB4D04B06FA780 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CCDD40119ED44208D399468 /* Raleway-BlackItalic.ttf */; };
-		957CB9EB2B0349C0B0BBCB79 /* Raleway-Bold copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4AE01A562AD43C4856F88CA /* Raleway-Bold copy.ttf */; };
-		D1E7213EC98A4E20A1B22E1B /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF47BCEC4229401882564D0A /* Raleway-Bold.ttf */; };
-		CEAF100B6B3B46A0A7487818 /* Raleway-BoldItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B303A302100D407A9FC118C8 /* Raleway-BoldItalic copy.ttf */; };
-		74EA33F899BE456F90F33859 /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8E51B8203DF42989B12A7FA /* Raleway-BoldItalic.ttf */; };
-		D4CCD3FEEE934C169F8819A1 /* Raleway-ExtraBold copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D174218D157D4145B273B6FD /* Raleway-ExtraBold copy.ttf */; };
-		4A80091F992F44C98237D5B7 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 228687D4A42B4E428C9E79DE /* Raleway-ExtraBold.ttf */; };
-		0B8B8221A9A64262A1D0B3FC /* Raleway-ExtraBoldItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DFF4AB8EC6849B4A9962B78 /* Raleway-ExtraBoldItalic copy.ttf */; };
-		014BA6EEC0AD4DF4B9EF9DFF /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC0382B366B34F28BCFCFAE1 /* Raleway-ExtraBoldItalic.ttf */; };
-		AE80305324244EBB8CF8208D /* Raleway-ExtraLight copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B23A92E4F82D42AE8054A46B /* Raleway-ExtraLight copy.ttf */; };
-		1A4B896FB8F845B2938A1760 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EE204A591C145FB96304ABB /* Raleway-ExtraLight.ttf */; };
-		35D86E218FB94B3C9C8FBA11 /* Raleway-ExtraLightItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01D6B29629DD4CC6A6BFA594 /* Raleway-ExtraLightItalic copy.ttf */; };
-		8AE44DCDD75443319983C621 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39A7AFADFB60437CA4F7ADFE /* Raleway-ExtraLightItalic.ttf */; };
-		66F8F53960774B76A819108A /* Raleway-Italic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 264C50D9A56D4E74BFDB6C63 /* Raleway-Italic copy.ttf */; };
-		4FA23CDD2AFB455B8C1C93F9 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F625583812B4566BC94F23C /* Raleway-Italic.ttf */; };
-		6C2A7C5C2BC54B66826205E5 /* Raleway-Light copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9825B9D7A4004C75921B0E21 /* Raleway-Light copy.ttf */; };
-		697A7EF6FD5846558FF639C7 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EC7AFC9E6954D68A6E5924D /* Raleway-Light.ttf */; };
-		BA1B1440F0CA423C810EF2C5 /* Raleway-LightItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE373185AF83494C91852E9D /* Raleway-LightItalic copy.ttf */; };
-		A3D80EFDCB784F0DA8FD92B7 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 395231026B6B4497AEA872C9 /* Raleway-LightItalic.ttf */; };
-		6181025D91AF4356BD096AF2 /* Raleway-Medium copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8C0F0407515410B9E476003 /* Raleway-Medium copy.ttf */; };
-		22DCF8BDAF3245FDB8B7E31E /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4685BCBA51C64234AD5E2564 /* Raleway-Medium.ttf */; };
-		EBB2F63E1C464F6B84FDF3E4 /* Raleway-MediumItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F1F4E12E99C43B2BD5B1FBB /* Raleway-MediumItalic copy.ttf */; };
-		8D243E07DD114A11BDD5DAA9 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCAF2530522472CBC1A8302 /* Raleway-MediumItalic.ttf */; };
-		6DDA3A1670374F95BF828C1B /* Raleway-Regular copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD202E0025574450BFBDC542 /* Raleway-Regular copy.ttf */; };
-		88FB50193493430892BC7B2E /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C776D41CBCD45B5B3E0D222 /* Raleway-Regular.ttf */; };
-		134B965633DE4AA582634301 /* Raleway-SemiBold copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD4F2F0C5A1242C7B784C5FD /* Raleway-SemiBold copy.ttf */; };
-		3F2D678DC025441BBB9E7CD6 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9141F9255084A0397622F0B /* Raleway-SemiBold.ttf */; };
-		18988A514C5841DE967499D8 /* Raleway-SemiBoldItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 556919C4A1AC4C498E69E136 /* Raleway-SemiBoldItalic copy.ttf */; };
-		06B68419A9AE488E97F4858A /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2115559A59FF40D183BC95FF /* Raleway-SemiBoldItalic.ttf */; };
-		BFDDC1163B0C423D94A6251A /* Raleway-Thin copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B25128B3DDD4ED19B44E516 /* Raleway-Thin copy.ttf */; };
-		1CF4C6081A2F4B4BA00E344A /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B88366F9F96437683F413F0 /* Raleway-Thin.ttf */; };
-		33A7EFEC669545F89E92924F /* Raleway-ThinItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D26E2CFCB641AE9D3DD42E /* Raleway-ThinItalic copy.ttf */; };
-		D326F96FA6684CD99AC34A63 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA7A55C2A4A04CCA80C527FD /* Raleway-ThinItalic.ttf */; };
-		473B641457D4400BB4976689 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B5B35F7474746E58BB4B54C /* Roboto-Black.ttf */; };
-		406AD9DBBA624A86B9752A4A /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F23B5513972471BB84CAC91 /* Roboto-BlackItalic.ttf */; };
-		E2E884C63815443598CE51F6 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 926AE8FCE3464536934DB0B7 /* Roboto-Bold.ttf */; };
-		90C7F3EA9C2046F1809B45E1 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65ED9A53FDE747D2986B941B /* Roboto-BoldItalic.ttf */; };
-		65B5B1FAE2704DD784ED7F59 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 987337BAB59C47829A3C9647 /* Roboto-Italic.ttf */; };
-		E9837D831A4842A2AF249E40 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39A5E98E01B8416ABE73E7C7 /* Roboto-Light.ttf */; };
-		7B93764149484F9DB2407B49 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D7D9CFB13FE4F48A6E6E578 /* Roboto-LightItalic.ttf */; };
-		ECE8BCCEDF5E4896AD62CF14 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE36749EE3AA48DCB36A63D8 /* Roboto-Medium.ttf */; };
-		F8B38F50C0354DC2AB4839CC /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7CE15B8383E47509FE79C1D /* Roboto-MediumItalic.ttf */; };
-		A53E869B96C24CE992203E7D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A2EA76E957D439FAADAF383 /* Roboto-Regular.ttf */; };
-		5486703398DE4B709DB033DB /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7515FBA112DF4B10877C95DB /* Roboto-Thin.ttf */; };
 		14689143497E4451A71FBB94 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A77D557DC34420CBED8A894 /* Roboto-ThinItalic.ttf */; };
-		F63E783F8F094AE2A413E2E6 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D36CCF297A0843B4A08C8B11 /* AntDesign.ttf */; };
-		85FE2028D4BA4FB3B072E06E /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8FD46D1FB5514DD88C66045C /* Entypo.ttf */; };
-		B1772FB69D5643248B1A03CC /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7EE1895B8AB46D08AFE4955 /* EvilIcons.ttf */; };
-		5C622F3272114EA78FC770EC /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E86DEEF4BBC445A8A45D3E06 /* Feather.ttf */; };
-		0F5C694BE6D543EC8AE413FD /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 207DC4E29111491B89CE2D19 /* FontAwesome.ttf */; };
-		700EDA38B6FB43CD8E51EB87 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FA5F43C185D4F879152056B /* FontAwesome5_Brands.ttf */; };
-		E8A2A134B9554E8293DC05FC /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 183E7C068F0840FAB97208BF /* FontAwesome5_Regular.ttf */; };
-		8BF1BD31EB564399AB9122C8 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B5B542A943E429F9B9FD7D2 /* FontAwesome5_Solid.ttf */; };
-		EBA03027DBA64C79BF602D7C /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51BC1D3F6EE941F6BBB656C8 /* Fontisto.ttf */; };
-		6398B98C1A2B46948DD28DC1 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA5D1C6E777F4B5DBF3A1486 /* Foundation.ttf */; };
-		DC84E220D61243B69B063A16 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AA54A89DDBC4DFAA12B6426 /* Ionicons.ttf */; };
-		887F1F6A1B1A4027A65B5013 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE52CC00667A4F7DA710FDC5 /* MaterialCommunityIcons.ttf */; };
-		C1BA85E855304F8B994EEF80 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05D946BEC0504927AA916F31 /* MaterialIcons.ttf */; };
-		DF3894C7E44E412F8A9EB3B4 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E89F847BE42A480B915C34A5 /* Octicons.ttf */; };
-		782C9489E6E340198F6FC406 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA2CD381206A4303A174DB12 /* SimpleLineIcons.ttf */; };
-		1E190E708B19449EAEFF84AC /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC5EF49C5CC44C339E86FE62 /* Zocial.ttf */; };
+		18988A514C5841DE967499D8 /* Raleway-SemiBoldItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 556919C4A1AC4C498E69E136 /* Raleway-SemiBoldItalic copy.ttf */; };
+		1A4B896FB8F845B2938A1760 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EE204A591C145FB96304ABB /* Raleway-ExtraLight.ttf */; };
+		1CF4C6081A2F4B4BA00E344A /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B88366F9F96437683F413F0 /* Raleway-Thin.ttf */; };
+		1EAFE3BD3D2307A71943D881 /* libPods-Goldhoffer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0551A1951B2FF97BC08C8B56 /* libPods-Goldhoffer.a */; };
+		22DCF8BDAF3245FDB8B7E31E /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4685BCBA51C64234AD5E2564 /* Raleway-Medium.ttf */; };
+		295BB246C18B44BB8C9A7657 /* Merriweather-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFED8D495E21483BB33849D6 /* Merriweather-Black.ttf */; };
+		33A7EFEC669545F89E92924F /* Raleway-ThinItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D26E2CFCB641AE9D3DD42E /* Raleway-ThinItalic copy.ttf */; };
+		33DC6536A3B3456D8C0987F4 /* Merriweather-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1961360E2E444B9B61380D6 /* Merriweather-BoldItalic.ttf */; };
+		35D86E218FB94B3C9C8FBA11 /* Raleway-ExtraLightItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01D6B29629DD4CC6A6BFA594 /* Raleway-ExtraLightItalic copy.ttf */; };
+		3F2D678DC025441BBB9E7CD6 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9141F9255084A0397622F0B /* Raleway-SemiBold.ttf */; };
+		406AD9DBBA624A86B9752A4A /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F23B5513972471BB84CAC91 /* Roboto-BlackItalic.ttf */; };
+		449A17E252BB4D04B06FA780 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CCDD40119ED44208D399468 /* Raleway-BlackItalic.ttf */; };
+		473B641457D4400BB4976689 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B5B35F7474746E58BB4B54C /* Roboto-Black.ttf */; };
+		4A80091F992F44C98237D5B7 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 228687D4A42B4E428C9E79DE /* Raleway-ExtraBold.ttf */; };
+		4FA23CDD2AFB455B8C1C93F9 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F625583812B4566BC94F23C /* Raleway-Italic.ttf */; };
+		5486703398DE4B709DB033DB /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7515FBA112DF4B10877C95DB /* Roboto-Thin.ttf */; };
+		5D0AAFAEDA354974AA44513D /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A047B7B838DF414FB4B25E52 /* Merriweather-Regular.ttf */; };
+		6181025D91AF4356BD096AF2 /* Raleway-Medium copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8C0F0407515410B9E476003 /* Raleway-Medium copy.ttf */; };
+		65B5B1FAE2704DD784ED7F59 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 987337BAB59C47829A3C9647 /* Roboto-Italic.ttf */; };
+		66F8F53960774B76A819108A /* Raleway-Italic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 264C50D9A56D4E74BFDB6C63 /* Raleway-Italic copy.ttf */; };
+		697A7EF6FD5846558FF639C7 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EC7AFC9E6954D68A6E5924D /* Raleway-Light.ttf */; };
+		6C2A7C5C2BC54B66826205E5 /* Raleway-Light copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9825B9D7A4004C75921B0E21 /* Raleway-Light copy.ttf */; };
+		6DDA3A1670374F95BF828C1B /* Raleway-Regular copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD202E0025574450BFBDC542 /* Raleway-Regular copy.ttf */; };
+		74AF8C541BE043BCA8411309 /* ProximaNova-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6FC0D6D64B24D1F970F46EF /* ProximaNova-Black.otf */; };
+		74EA33F899BE456F90F33859 /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8E51B8203DF42989B12A7FA /* Raleway-BoldItalic.ttf */; };
+		7566248A8E0448D387389F99 /* ProximaNovaT-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96008FBF346444929FE63F72 /* ProximaNovaT-Thin.otf */; };
+		77DC7099053248C38784F7AF /* Merriweather-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F734872C83B4CD8B67A086C /* Merriweather-Light.ttf */; };
+		7B93764149484F9DB2407B49 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D7D9CFB13FE4F48A6E6E578 /* Roboto-LightItalic.ttf */; };
+		7E5C7A11DB8849D5B5374F59 /* Raleway-BlackItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D751CAFA5C0A4E3EBD29BBF0 /* Raleway-BlackItalic copy.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		86ED81E5ED73408697B521C9 /* ProximaNova-Extrabld.otf in Resources */ = {isa = PBXBuildFile; fileRef = 73E27CF90CD64C46980603AC /* ProximaNova-Extrabld.otf */; };
+		88FB50193493430892BC7B2E /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C776D41CBCD45B5B3E0D222 /* Raleway-Regular.ttf */; };
+		8AE44DCDD75443319983C621 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39A7AFADFB60437CA4F7ADFE /* Raleway-ExtraLightItalic.ttf */; };
+		8D243E07DD114A11BDD5DAA9 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCAF2530522472CBC1A8302 /* Raleway-MediumItalic.ttf */; };
+		90708546E3429F412B9D96FD /* libPods-Goldhoffer-GoldhofferTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D00B6EEF778F79BB757CC1D0 /* libPods-Goldhoffer-GoldhofferTests.a */; };
+		90C7F3EA9C2046F1809B45E1 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65ED9A53FDE747D2986B941B /* Roboto-BoldItalic.ttf */; };
+		957CB9EB2B0349C0B0BBCB79 /* Raleway-Bold copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4AE01A562AD43C4856F88CA /* Raleway-Bold copy.ttf */; };
+		A3D80EFDCB784F0DA8FD92B7 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 395231026B6B4497AEA872C9 /* Raleway-LightItalic.ttf */; };
+		A53E869B96C24CE992203E7D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A2EA76E957D439FAADAF383 /* Roboto-Regular.ttf */; };
+		AAECB91180044276ADC2E86E /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13414ECC62A646FA960804BA /* ProximaNova-Regular.otf */; };
+		AE80305324244EBB8CF8208D /* Raleway-ExtraLight copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B23A92E4F82D42AE8054A46B /* Raleway-ExtraLight copy.ttf */; };
+		B024BAEF2E23432486BC2666 /* Merriweather-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D6CA59C80D44FFD85E67E31 /* Merriweather-LightItalic.ttf */; };
+		BA1B1440F0CA423C810EF2C5 /* Raleway-LightItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE373185AF83494C91852E9D /* Raleway-LightItalic copy.ttf */; };
+		BFDDC1163B0C423D94A6251A /* Raleway-Thin copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B25128B3DDD4ED19B44E516 /* Raleway-Thin copy.ttf */; };
+		CEAF100B6B3B46A0A7487818 /* Raleway-BoldItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B303A302100D407A9FC118C8 /* Raleway-BoldItalic copy.ttf */; };
+		D1E7213EC98A4E20A1B22E1B /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF47BCEC4229401882564D0A /* Raleway-Bold.ttf */; };
+		D326F96FA6684CD99AC34A63 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA7A55C2A4A04CCA80C527FD /* Raleway-ThinItalic.ttf */; };
+		D4CCD3FEEE934C169F8819A1 /* Raleway-ExtraBold copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D174218D157D4145B273B6FD /* Raleway-ExtraBold copy.ttf */; };
+		DA3F8995DAAF4210B2ED5404 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 096E52ED536D4EA6B610AA4D /* ProximaNova-Bold.otf */; };
+		DD384CC451924BC7B9B03358 /* Merriweather-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD21999DE4E0402EA97059B2 /* Merriweather-BlackItalic.ttf */; };
+		E2E884C63815443598CE51F6 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 926AE8FCE3464536934DB0B7 /* Roboto-Bold.ttf */; };
+		E5F239B32B284570862BE71F /* Merriweather-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCFAE28EE10F40639CDBD671 /* Merriweather-Italic.ttf */; };
+		E62FB2CC5A864B65AE2AD89B /* Merriweather-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF16152B04634FB49E28921C /* Merriweather-Bold.ttf */; };
+		E9837D831A4842A2AF249E40 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39A5E98E01B8416ABE73E7C7 /* Roboto-Light.ttf */; };
+		EBB2F63E1C464F6B84FDF3E4 /* Raleway-MediumItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F1F4E12E99C43B2BD5B1FBB /* Raleway-MediumItalic copy.ttf */; };
+		ECE8BCCEDF5E4896AD62CF14 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE36749EE3AA48DCB36A63D8 /* Roboto-Medium.ttf */; };
+		F27826A39AE9445987784B35 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 716101C4AEC34EEE8851C840 /* Raleway-Black.ttf */; };
+		F8B38F50C0354DC2AB4839CC /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7CE15B8383E47509FE79C1D /* Roboto-MediumItalic.ttf */; };
+		FD4763ED1EA0428283EA1951 /* Raleway-Black copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A25DBB032B794FF2A71170B5 /* Raleway-Black copy.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,91 +91,97 @@
 		00E356EE1AD99517003FC87E /* GoldhofferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoldhofferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* GoldhofferTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoldhofferTests.m; sourceTree = "<group>"; };
+		01D6B29629DD4CC6A6BFA594 /* Raleway-ExtraLightItalic copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraLightItalic copy.ttf"; path = "../app/assets/fonts/Raleway-ExtraLightItalic copy.ttf"; sourceTree = "<group>"; };
+		0551A1951B2FF97BC08C8B56 /* libPods-Goldhoffer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Goldhoffer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05D946BEC0504927AA916F31 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		096E52ED536D4EA6B610AA4D /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNova-Bold.otf"; path = "../app/assets/fonts/ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		0C776D41CBCD45B5B3E0D222 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Regular.ttf"; path = "../app/assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		13414ECC62A646FA960804BA /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNova-Regular.otf"; path = "../app/assets/fonts/ProximaNova-Regular.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Goldhoffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goldhoffer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Goldhoffer/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Goldhoffer/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Goldhoffer/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Goldhoffer/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Goldhoffer/main.m; sourceTree = "<group>"; };
+		183E7C068F0840FAB97208BF /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		1B9311DD5E02507BDEBF110E /* Pods-Goldhoffer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goldhoffer.debug.xcconfig"; path = "Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer.debug.xcconfig"; sourceTree = "<group>"; };
+		207DC4E29111491B89CE2D19 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		2115559A59FF40D183BC95FF /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBoldItalic.ttf"; path = "../app/assets/fonts/Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		228687D4A42B4E428C9E79DE /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBold.ttf"; path = "../app/assets/fonts/Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		264C50D9A56D4E74BFDB6C63 /* Raleway-Italic copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Italic copy.ttf"; path = "../app/assets/fonts/Raleway-Italic copy.ttf"; sourceTree = "<group>"; };
+		2A2EA76E957D439FAADAF383 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../app/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		2B5B35F7474746E58BB4B54C /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../app/assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
+		2F23B5513972471BB84CAC91 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../app/assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		2F734872C83B4CD8B67A086C /* Merriweather-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Merriweather-Light.ttf"; path = "../app/assets/fonts/Merriweather-Light.ttf"; sourceTree = "<group>"; };
+		395231026B6B4497AEA872C9 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-LightItalic.ttf"; path = "../app/assets/fonts/Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		39A5E98E01B8416ABE73E7C7 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../app/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		39A7AFADFB60437CA4F7ADFE /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraLightItalic.ttf"; path = "../app/assets/fonts/Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		3B88366F9F96437683F413F0 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Thin.ttf"; path = "../app/assets/fonts/Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		3EE204A591C145FB96304ABB /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraLight.ttf"; path = "../app/assets/fonts/Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		4685BCBA51C64234AD5E2564 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Medium.ttf"; path = "../app/assets/fonts/Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		4F1F4E12E99C43B2BD5B1FBB /* Raleway-MediumItalic copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-MediumItalic copy.ttf"; path = "../app/assets/fonts/Raleway-MediumItalic copy.ttf"; sourceTree = "<group>"; };
+		51BC1D3F6EE941F6BBB656C8 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		556919C4A1AC4C498E69E136 /* Raleway-SemiBoldItalic copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBoldItalic copy.ttf"; path = "../app/assets/fonts/Raleway-SemiBoldItalic copy.ttf"; sourceTree = "<group>"; };
+		5AA54A89DDBC4DFAA12B6426 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		5D5EE71A961FE01512FF4CD4 /* Pods-Goldhoffer-GoldhofferTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goldhoffer-GoldhofferTests.release.xcconfig"; path = "Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D6CA59C80D44FFD85E67E31 /* Merriweather-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Merriweather-LightItalic.ttf"; path = "../app/assets/fonts/Merriweather-LightItalic.ttf"; sourceTree = "<group>"; };
+		65ED9A53FDE747D2986B941B /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../app/assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		6681079A686AC771F77316AD /* Pods-Goldhoffer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goldhoffer.release.xcconfig"; path = "Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer.release.xcconfig"; sourceTree = "<group>"; };
+		6CCDD40119ED44208D399468 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-BlackItalic.ttf"; path = "../app/assets/fonts/Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		6D7D9CFB13FE4F48A6E6E578 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-LightItalic.ttf"; path = "../app/assets/fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		6EC7AFC9E6954D68A6E5924D /* Raleway-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Light.ttf"; path = "../app/assets/fonts/Raleway-Light.ttf"; sourceTree = "<group>"; };
+		6FA5F43C185D4F879152056B /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		716101C4AEC34EEE8851C840 /* Raleway-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Black.ttf"; path = "../app/assets/fonts/Raleway-Black.ttf"; sourceTree = "<group>"; };
+		73E27CF90CD64C46980603AC /* ProximaNova-Extrabld.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNova-Extrabld.otf"; path = "../app/assets/fonts/ProximaNova-Extrabld.otf"; sourceTree = "<group>"; };
+		7515FBA112DF4B10877C95DB /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../app/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		7B5B542A943E429F9B9FD7D2 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Goldhoffer/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D10EB0E9761FE623BAD40FA /* Pods-Goldhoffer-GoldhofferTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goldhoffer-GoldhofferTests.debug.xcconfig"; path = "Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F625583812B4566BC94F23C /* Raleway-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Italic.ttf"; path = "../app/assets/fonts/Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		8FD46D1FB5514DD88C66045C /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		926AE8FCE3464536934DB0B7 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../app/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		96008FBF346444929FE63F72 /* ProximaNovaT-Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNovaT-Thin.otf"; path = "../app/assets/fonts/ProximaNovaT-Thin.otf"; sourceTree = "<group>"; };
+		9825B9D7A4004C75921B0E21 /* Raleway-Light copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Light copy.ttf"; path = "../app/assets/fonts/Raleway-Light copy.ttf"; sourceTree = "<group>"; };
+		987337BAB59C47829A3C9647 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../app/assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		9A77D557DC34420CBED8A894 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-ThinItalic.ttf"; path = "../app/assets/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		9B25128B3DDD4ED19B44E516 /* Raleway-Thin copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Thin copy.ttf"; path = "../app/assets/fonts/Raleway-Thin copy.ttf"; sourceTree = "<group>"; };
+		9DFF4AB8EC6849B4A9962B78 /* Raleway-ExtraBoldItalic copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBoldItalic copy.ttf"; path = "../app/assets/fonts/Raleway-ExtraBoldItalic copy.ttf"; sourceTree = "<group>"; };
+		A047B7B838DF414FB4B25E52 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Merriweather-Regular.ttf"; path = "../app/assets/fonts/Merriweather-Regular.ttf"; sourceTree = "<group>"; };
+		A25DBB032B794FF2A71170B5 /* Raleway-Black copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Black copy.ttf"; path = "../app/assets/fonts/Raleway-Black copy.ttf"; sourceTree = "<group>"; };
+		A8C0F0407515410B9E476003 /* Raleway-Medium copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Medium copy.ttf"; path = "../app/assets/fonts/Raleway-Medium copy.ttf"; sourceTree = "<group>"; };
+		AD202E0025574450BFBDC542 /* Raleway-Regular copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Regular copy.ttf"; path = "../app/assets/fonts/Raleway-Regular copy.ttf"; sourceTree = "<group>"; };
+		AD4F2F0C5A1242C7B784C5FD /* Raleway-SemiBold copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBold copy.ttf"; path = "../app/assets/fonts/Raleway-SemiBold copy.ttf"; sourceTree = "<group>"; };
+		AE373185AF83494C91852E9D /* Raleway-LightItalic copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-LightItalic copy.ttf"; path = "../app/assets/fonts/Raleway-LightItalic copy.ttf"; sourceTree = "<group>"; };
+		B23A92E4F82D42AE8054A46B /* Raleway-ExtraLight copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraLight copy.ttf"; path = "../app/assets/fonts/Raleway-ExtraLight copy.ttf"; sourceTree = "<group>"; };
+		B303A302100D407A9FC118C8 /* Raleway-BoldItalic copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-BoldItalic copy.ttf"; path = "../app/assets/fonts/Raleway-BoldItalic copy.ttf"; sourceTree = "<group>"; };
+		B6FC0D6D64B24D1F970F46EF /* ProximaNova-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNova-Black.otf"; path = "../app/assets/fonts/ProximaNova-Black.otf"; sourceTree = "<group>"; };
+		BC0382B366B34F28BCFCFAE1 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBoldItalic.ttf"; path = "../app/assets/fonts/Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		BD21999DE4E0402EA97059B2 /* Merriweather-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Merriweather-BlackItalic.ttf"; path = "../app/assets/fonts/Merriweather-BlackItalic.ttf"; sourceTree = "<group>"; };
+		BE52CC00667A4F7DA710FDC5 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		C7EE1895B8AB46D08AFE4955 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		CA5D1C6E777F4B5DBF3A1486 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		CCCAF2530522472CBC1A8302 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-MediumItalic.ttf"; path = "../app/assets/fonts/Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		CCFAE28EE10F40639CDBD671 /* Merriweather-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Merriweather-Italic.ttf"; path = "../app/assets/fonts/Merriweather-Italic.ttf"; sourceTree = "<group>"; };
+		CE36749EE3AA48DCB36A63D8 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../app/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		CFED8D495E21483BB33849D6 /* Merriweather-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Merriweather-Black.ttf"; path = "../app/assets/fonts/Merriweather-Black.ttf"; sourceTree = "<group>"; };
+		D00B6EEF778F79BB757CC1D0 /* libPods-Goldhoffer-GoldhofferTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Goldhoffer-GoldhofferTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D174218D157D4145B273B6FD /* Raleway-ExtraBold copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBold copy.ttf"; path = "../app/assets/fonts/Raleway-ExtraBold copy.ttf"; sourceTree = "<group>"; };
+		D36CCF297A0843B4A08C8B11 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		D4AE01A562AD43C4856F88CA /* Raleway-Bold copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Bold copy.ttf"; path = "../app/assets/fonts/Raleway-Bold copy.ttf"; sourceTree = "<group>"; };
+		D751CAFA5C0A4E3EBD29BBF0 /* Raleway-BlackItalic copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-BlackItalic copy.ttf"; path = "../app/assets/fonts/Raleway-BlackItalic copy.ttf"; sourceTree = "<group>"; };
+		DF16152B04634FB49E28921C /* Merriweather-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Merriweather-Bold.ttf"; path = "../app/assets/fonts/Merriweather-Bold.ttf"; sourceTree = "<group>"; };
+		DF47BCEC4229401882564D0A /* Raleway-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Bold.ttf"; path = "../app/assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		E7CE15B8383E47509FE79C1D /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../app/assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E86DEEF4BBC445A8A45D3E06 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		E89F847BE42A480B915C34A5 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		EC5EF49C5CC44C339E86FE62 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		CFED8D495E21483BB33849D6 /* Merriweather-Black.ttf */ = {isa = PBXFileReference; name = "Merriweather-Black.ttf"; path = "../app/assets/fonts/Merriweather-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BD21999DE4E0402EA97059B2 /* Merriweather-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Merriweather-BlackItalic.ttf"; path = "../app/assets/fonts/Merriweather-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		DF16152B04634FB49E28921C /* Merriweather-Bold.ttf */ = {isa = PBXFileReference; name = "Merriweather-Bold.ttf"; path = "../app/assets/fonts/Merriweather-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F1961360E2E444B9B61380D6 /* Merriweather-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Merriweather-BoldItalic.ttf"; path = "../app/assets/fonts/Merriweather-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		CCFAE28EE10F40639CDBD671 /* Merriweather-Italic.ttf */ = {isa = PBXFileReference; name = "Merriweather-Italic.ttf"; path = "../app/assets/fonts/Merriweather-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2F734872C83B4CD8B67A086C /* Merriweather-Light.ttf */ = {isa = PBXFileReference; name = "Merriweather-Light.ttf"; path = "../app/assets/fonts/Merriweather-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5D6CA59C80D44FFD85E67E31 /* Merriweather-LightItalic.ttf */ = {isa = PBXFileReference; name = "Merriweather-LightItalic.ttf"; path = "../app/assets/fonts/Merriweather-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A047B7B838DF414FB4B25E52 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; name = "Merriweather-Regular.ttf"; path = "../app/assets/fonts/Merriweather-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B6FC0D6D64B24D1F970F46EF /* ProximaNova-Black.otf */ = {isa = PBXFileReference; name = "ProximaNova-Black.otf"; path = "../app/assets/fonts/ProximaNova-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		096E52ED536D4EA6B610AA4D /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; name = "ProximaNova-Bold.otf"; path = "../app/assets/fonts/ProximaNova-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		73E27CF90CD64C46980603AC /* ProximaNova-Extrabld.otf */ = {isa = PBXFileReference; name = "ProximaNova-Extrabld.otf"; path = "../app/assets/fonts/ProximaNova-Extrabld.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		13414ECC62A646FA960804BA /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; name = "ProximaNova-Regular.otf"; path = "../app/assets/fonts/ProximaNova-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		96008FBF346444929FE63F72 /* ProximaNovaT-Thin.otf */ = {isa = PBXFileReference; name = "ProximaNovaT-Thin.otf"; path = "../app/assets/fonts/ProximaNovaT-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A25DBB032B794FF2A71170B5 /* Raleway-Black copy.ttf */ = {isa = PBXFileReference; name = "Raleway-Black copy.ttf"; path = "../app/assets/fonts/Raleway-Black copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		716101C4AEC34EEE8851C840 /* Raleway-Black.ttf */ = {isa = PBXFileReference; name = "Raleway-Black.ttf"; path = "../app/assets/fonts/Raleway-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D751CAFA5C0A4E3EBD29BBF0 /* Raleway-BlackItalic copy.ttf */ = {isa = PBXFileReference; name = "Raleway-BlackItalic copy.ttf"; path = "../app/assets/fonts/Raleway-BlackItalic copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6CCDD40119ED44208D399468 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Raleway-BlackItalic.ttf"; path = "../app/assets/fonts/Raleway-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D4AE01A562AD43C4856F88CA /* Raleway-Bold copy.ttf */ = {isa = PBXFileReference; name = "Raleway-Bold copy.ttf"; path = "../app/assets/fonts/Raleway-Bold copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		DF47BCEC4229401882564D0A /* Raleway-Bold.ttf */ = {isa = PBXFileReference; name = "Raleway-Bold.ttf"; path = "../app/assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B303A302100D407A9FC118C8 /* Raleway-BoldItalic copy.ttf */ = {isa = PBXFileReference; name = "Raleway-BoldItalic copy.ttf"; path = "../app/assets/fonts/Raleway-BoldItalic copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F8E51B8203DF42989B12A7FA /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Raleway-BoldItalic.ttf"; path = "../app/assets/fonts/Raleway-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D174218D157D4145B273B6FD /* Raleway-ExtraBold copy.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraBold copy.ttf"; path = "../app/assets/fonts/Raleway-ExtraBold copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		228687D4A42B4E428C9E79DE /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraBold.ttf"; path = "../app/assets/fonts/Raleway-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9DFF4AB8EC6849B4A9962B78 /* Raleway-ExtraBoldItalic copy.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraBoldItalic copy.ttf"; path = "../app/assets/fonts/Raleway-ExtraBoldItalic copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BC0382B366B34F28BCFCFAE1 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraBoldItalic.ttf"; path = "../app/assets/fonts/Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B23A92E4F82D42AE8054A46B /* Raleway-ExtraLight copy.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraLight copy.ttf"; path = "../app/assets/fonts/Raleway-ExtraLight copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3EE204A591C145FB96304ABB /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraLight.ttf"; path = "../app/assets/fonts/Raleway-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		01D6B29629DD4CC6A6BFA594 /* Raleway-ExtraLightItalic copy.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraLightItalic copy.ttf"; path = "../app/assets/fonts/Raleway-ExtraLightItalic copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		39A7AFADFB60437CA4F7ADFE /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraLightItalic.ttf"; path = "../app/assets/fonts/Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		264C50D9A56D4E74BFDB6C63 /* Raleway-Italic copy.ttf */ = {isa = PBXFileReference; name = "Raleway-Italic copy.ttf"; path = "../app/assets/fonts/Raleway-Italic copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8F625583812B4566BC94F23C /* Raleway-Italic.ttf */ = {isa = PBXFileReference; name = "Raleway-Italic.ttf"; path = "../app/assets/fonts/Raleway-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9825B9D7A4004C75921B0E21 /* Raleway-Light copy.ttf */ = {isa = PBXFileReference; name = "Raleway-Light copy.ttf"; path = "../app/assets/fonts/Raleway-Light copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6EC7AFC9E6954D68A6E5924D /* Raleway-Light.ttf */ = {isa = PBXFileReference; name = "Raleway-Light.ttf"; path = "../app/assets/fonts/Raleway-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AE373185AF83494C91852E9D /* Raleway-LightItalic copy.ttf */ = {isa = PBXFileReference; name = "Raleway-LightItalic copy.ttf"; path = "../app/assets/fonts/Raleway-LightItalic copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		395231026B6B4497AEA872C9 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; name = "Raleway-LightItalic.ttf"; path = "../app/assets/fonts/Raleway-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A8C0F0407515410B9E476003 /* Raleway-Medium copy.ttf */ = {isa = PBXFileReference; name = "Raleway-Medium copy.ttf"; path = "../app/assets/fonts/Raleway-Medium copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4685BCBA51C64234AD5E2564 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; name = "Raleway-Medium.ttf"; path = "../app/assets/fonts/Raleway-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4F1F4E12E99C43B2BD5B1FBB /* Raleway-MediumItalic copy.ttf */ = {isa = PBXFileReference; name = "Raleway-MediumItalic copy.ttf"; path = "../app/assets/fonts/Raleway-MediumItalic copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		CCCAF2530522472CBC1A8302 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Raleway-MediumItalic.ttf"; path = "../app/assets/fonts/Raleway-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AD202E0025574450BFBDC542 /* Raleway-Regular copy.ttf */ = {isa = PBXFileReference; name = "Raleway-Regular copy.ttf"; path = "../app/assets/fonts/Raleway-Regular copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0C776D41CBCD45B5B3E0D222 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; name = "Raleway-Regular.ttf"; path = "../app/assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AD4F2F0C5A1242C7B784C5FD /* Raleway-SemiBold copy.ttf */ = {isa = PBXFileReference; name = "Raleway-SemiBold copy.ttf"; path = "../app/assets/fonts/Raleway-SemiBold copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F9141F9255084A0397622F0B /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; name = "Raleway-SemiBold.ttf"; path = "../app/assets/fonts/Raleway-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		556919C4A1AC4C498E69E136 /* Raleway-SemiBoldItalic copy.ttf */ = {isa = PBXFileReference; name = "Raleway-SemiBoldItalic copy.ttf"; path = "../app/assets/fonts/Raleway-SemiBoldItalic copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2115559A59FF40D183BC95FF /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Raleway-SemiBoldItalic.ttf"; path = "../app/assets/fonts/Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9B25128B3DDD4ED19B44E516 /* Raleway-Thin copy.ttf */ = {isa = PBXFileReference; name = "Raleway-Thin copy.ttf"; path = "../app/assets/fonts/Raleway-Thin copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3B88366F9F96437683F413F0 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; name = "Raleway-Thin.ttf"; path = "../app/assets/fonts/Raleway-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F7D26E2CFCB641AE9D3DD42E /* Raleway-ThinItalic copy.ttf */ = {isa = PBXFileReference; name = "Raleway-ThinItalic copy.ttf"; path = "../app/assets/fonts/Raleway-ThinItalic copy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FA7A55C2A4A04CCA80C527FD /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Raleway-ThinItalic.ttf"; path = "../app/assets/fonts/Raleway-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2B5B35F7474746E58BB4B54C /* Roboto-Black.ttf */ = {isa = PBXFileReference; name = "Roboto-Black.ttf"; path = "../app/assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2F23B5513972471BB84CAC91 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-BlackItalic.ttf"; path = "../app/assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		926AE8FCE3464536934DB0B7 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; name = "Roboto-Bold.ttf"; path = "../app/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		65ED9A53FDE747D2986B941B /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-BoldItalic.ttf"; path = "../app/assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		987337BAB59C47829A3C9647 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; name = "Roboto-Italic.ttf"; path = "../app/assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		39A5E98E01B8416ABE73E7C7 /* Roboto-Light.ttf */ = {isa = PBXFileReference; name = "Roboto-Light.ttf"; path = "../app/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6D7D9CFB13FE4F48A6E6E578 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-LightItalic.ttf"; path = "../app/assets/fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		CE36749EE3AA48DCB36A63D8 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; name = "Roboto-Medium.ttf"; path = "../app/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E7CE15B8383E47509FE79C1D /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-MediumItalic.ttf"; path = "../app/assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2A2EA76E957D439FAADAF383 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; name = "Roboto-Regular.ttf"; path = "../app/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7515FBA112DF4B10877C95DB /* Roboto-Thin.ttf */ = {isa = PBXFileReference; name = "Roboto-Thin.ttf"; path = "../app/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9A77D557DC34420CBED8A894 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-ThinItalic.ttf"; path = "../app/assets/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D36CCF297A0843B4A08C8B11 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8FD46D1FB5514DD88C66045C /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C7EE1895B8AB46D08AFE4955 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E86DEEF4BBC445A8A45D3E06 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		207DC4E29111491B89CE2D19 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6FA5F43C185D4F879152056B /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		183E7C068F0840FAB97208BF /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7B5B542A943E429F9B9FD7D2 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		51BC1D3F6EE941F6BBB656C8 /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		CA5D1C6E777F4B5DBF3A1486 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5AA54A89DDBC4DFAA12B6426 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BE52CC00667A4F7DA710FDC5 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		05D946BEC0504927AA916F31 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E89F847BE42A480B915C34A5 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FA2CD381206A4303A174DB12 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		EC5EF49C5CC44C339E86FE62 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F1961360E2E444B9B61380D6 /* Merriweather-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Merriweather-BoldItalic.ttf"; path = "../app/assets/fonts/Merriweather-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F7D26E2CFCB641AE9D3DD42E /* Raleway-ThinItalic copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ThinItalic copy.ttf"; path = "../app/assets/fonts/Raleway-ThinItalic copy.ttf"; sourceTree = "<group>"; };
+		F8E51B8203DF42989B12A7FA /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-BoldItalic.ttf"; path = "../app/assets/fonts/Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F9141F9255084A0397622F0B /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBold.ttf"; path = "../app/assets/fonts/Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		FA2CD381206A4303A174DB12 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		FA7A55C2A4A04CCA80C527FD /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ThinItalic.ttf"; path = "../app/assets/fonts/Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90708546E3429F412B9D96FD /* libPods-Goldhoffer-GoldhofferTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +197,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EAFE3BD3D2307A71943D881 /* libPods-Goldhoffer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,43 +238,14 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				0551A1951B2FF97BC08C8B56 /* libPods-Goldhoffer.a */,
+				D00B6EEF778F79BB757CC1D0 /* libPods-Goldhoffer-GoldhofferTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Libraries;
-			sourceTree = "<group>";
-		};
-		83CBB9F61A601CBA00E9B192 = {
-			isa = PBXGroup;
-			children = (
-				13B07FAE1A68108700A75B9A /* Goldhoffer */,
-				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* GoldhofferTests */,
-				83CBBA001A601CBA00E9B192 /* Products */,
-				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				70F1C7927491473995FEE409 /* Resources */,
-			);
-			indentWidth = 2;
-			sourceTree = "<group>";
-			tabWidth = 2;
-			usesTabs = 0;
-		};
-		83CBBA001A601CBA00E9B192 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				13B07F961A680F5B00A75B9A /* Goldhoffer.app */,
-				00E356EE1AD99517003FC87E /* GoldhofferTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		70F1C7927491473995FEE409 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				CFED8D495E21483BB33849D6 /* Merriweather-Black.ttf */,
 				BD21999DE4E0402EA97059B2 /* Merriweather-BlackItalic.ttf */,
@@ -362,7 +327,49 @@
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* Goldhoffer */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* GoldhofferTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				70F1C7927491473995FEE409 /* Resources */,
+				97B1A571460D07A9CE91A163 /* Pods */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* Goldhoffer.app */,
+				00E356EE1AD99517003FC87E /* GoldhofferTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97B1A571460D07A9CE91A163 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B9311DD5E02507BDEBF110E /* Pods-Goldhoffer.debug.xcconfig */,
+				6681079A686AC771F77316AD /* Pods-Goldhoffer.release.xcconfig */,
+				8D10EB0E9761FE623BAD40FA /* Pods-Goldhoffer-GoldhofferTests.debug.xcconfig */,
+				5D5EE71A961FE01512FF4CD4 /* Pods-Goldhoffer-GoldhofferTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -371,9 +378,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "GoldhofferTests" */;
 			buildPhases = (
+				ED0A2262360E4CE04341CE0A /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				5277CDB53172B8D8A47B470F /* [CP] Embed Pods Frameworks */,
+				7F99394C1287CDF0600D0E42 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -389,11 +399,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Goldhoffer" */;
 			buildPhases = (
+				9A64B0950954ECBF2CC50A31 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				14987E3E66F5FA1309A86237 /* [CP] Embed Pods Frameworks */,
+				125FC77122D1D4E50878B73C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -515,22 +528,6 @@
 				A53E869B96C24CE992203E7D /* Roboto-Regular.ttf in Resources */,
 				5486703398DE4B709DB033DB /* Roboto-Thin.ttf in Resources */,
 				14689143497E4451A71FBB94 /* Roboto-ThinItalic.ttf in Resources */,
-				F63E783F8F094AE2A413E2E6 /* AntDesign.ttf in Resources */,
-				85FE2028D4BA4FB3B072E06E /* Entypo.ttf in Resources */,
-				B1772FB69D5643248B1A03CC /* EvilIcons.ttf in Resources */,
-				5C622F3272114EA78FC770EC /* Feather.ttf in Resources */,
-				0F5C694BE6D543EC8AE413FD /* FontAwesome.ttf in Resources */,
-				700EDA38B6FB43CD8E51EB87 /* FontAwesome5_Brands.ttf in Resources */,
-				E8A2A134B9554E8293DC05FC /* FontAwesome5_Regular.ttf in Resources */,
-				8BF1BD31EB564399AB9122C8 /* FontAwesome5_Solid.ttf in Resources */,
-				EBA03027DBA64C79BF602D7C /* Fontisto.ttf in Resources */,
-				6398B98C1A2B46948DD28DC1 /* Foundation.ttf in Resources */,
-				DC84E220D61243B69B063A16 /* Ionicons.ttf in Resources */,
-				887F1F6A1B1A4027A65B5013 /* MaterialCommunityIcons.ttf in Resources */,
-				C1BA85E855304F8B994EEF80 /* MaterialIcons.ttf in Resources */,
-				DF3894C7E44E412F8A9EB3B4 /* Octicons.ttf in Resources */,
-				782C9489E6E340198F6FC406 /* SimpleLineIcons.ttf in Resources */,
-				1E190E708B19449EAEFF84AC /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +547,118 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		125FC77122D1D4E50878B73C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14987E3E66F5FA1309A86237 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5277CDB53172B8D8A47B470F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F99394C1287CDF0600D0E42 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A64B0950954ECBF2CC50A31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Goldhoffer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED0A2262360E4CE04341CE0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Goldhoffer-GoldhofferTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -603,6 +712,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D10EB0E9761FE623BAD40FA /* Pods-Goldhoffer-GoldhofferTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -629,6 +739,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D5EE71A961FE01512FF4CD4 /* Pods-Goldhoffer-GoldhofferTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -652,10 +763,12 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9311DD5E02507BDEBF110E /* Pods-Goldhoffer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 649RMX27J7;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Goldhoffer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -677,10 +790,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6681079A686AC771F77316AD /* Pods-Goldhoffer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 649RMX27J7;
 				INFOPLIST_FILE = Goldhoffer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -731,6 +846,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -795,6 +911,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

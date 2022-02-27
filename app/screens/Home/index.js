@@ -196,7 +196,7 @@ const Home = (props) => {
                   <FontAwesome5 name="angle-double-right" color={"white"} size={25} />
                 </TouchableOpacity>
 
-                <TouchableOpacity style={{ flexDirection: "row", width: '100%', alignItems: 'center', marginTop: 20 }}>
+                <TouchableOpacity onPress={() => navigation.navigate("ProductDetailsList", { list: listAirport })}  style={{ flexDirection: "row", width: '100%', alignItems: 'center', marginTop: 20 }}>
                   <View style={{ width: "60%", }}>
                     <Text headline bold whiteColor>
                       SERVICE & SUPPORT
