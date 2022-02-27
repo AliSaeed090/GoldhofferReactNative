@@ -12,9 +12,9 @@ export default function RenderList2({ item }) {
     const navigation = useNavigation()
 
     return (
-        <View style={{ width: '100%', height: 300, }}>
-            <Image source={item.image} style={styles.banner} resizeMode="cover" />
-            <TouchableOpacity  onPress={() => navigation.navigate("ProductDeatilVideo", { item })} style={{ width: '100%', position: 'absolute', bottom: 0, backgroundColor: 'black', flexDirection: 'row', padding: 12 }}>
+        <View style={{ width: '100%', height: 300,backgroundColor:'#D2D9DE' }}>
+            <Image source={item.image} style={styles.banner} resizeMode="contain" />
+            <TouchableOpacity  onPress={() => navigation.navigate("ProductDeatilVideo", { item:item.data })} style={{ width: '100%', position: 'absolute', bottom: 0, backgroundColor: 'black', flexDirection: 'row', padding: 12 }}>
                 <View style={{ width: "90%", }}>
                     <Text headline bold whiteColor>
                         {item.text}

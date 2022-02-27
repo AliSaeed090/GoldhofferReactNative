@@ -53,17 +53,29 @@ export default function ProductDetailsList(props) {
   const { t } = useTranslation();
   const { colors } = useTheme();
   const [isTransportActive, setTransPortActive] = useState(null)
-  const [list, setList] = useState([
-    
+  const [list, setList] = useState( []
+    // [
+    //   {
+    //     image: Images.banner10, text: 'TU I TU-L', data:{image:Images.banner11, text:'QUICKGUIDE ZUM TU I TU-L'}
+    //   },
+    //   {
+    //     image: Images.banner10, text: 'TN-L', data:{image:Images.banner12, text:'QUICKGUIDE ZUM TN-L'}
+    //   },
+  
+      
+     
+  
+    // ]
     
 
-  ])
+   )
 
 
   const [searchArr, setsearchArr] = useState(["s", "2", "s", "2", "s", "2", "s", "2", "s", "2"])
   useEffect(()=>{
-console.log({params:params.item})
-setList([params.item])
+    console.log({params:params.item})
+ 
+setList(params.item)
   },[params])
 
   const [search, setsearch] = useState("");

@@ -14,7 +14,7 @@ export default function RenderList2({item}) {
     return (
         <View style={{ width: '100%', height: 200, }}>
             <Image source={item.image} style={styles.banner} resizeMode="contain" />
-            <TouchableOpacity onPress={() => navigation.navigate("ProductDeatilInfo", { item })} style={{ width: '100%', position: 'absolute', bottom: 0, backgroundColor: 'black', flexDirection: 'row', padding: 12 }}>
+            <TouchableOpacity onPress={() => navigation.navigate("ProductDeatilInfo", { item: item.data})} style={{ width: '100%', position: 'absolute', bottom: 0, backgroundColor: 'black', flexDirection: 'row', padding: 12 }}>
                 <View style={{ width: "90%", }}>
                     <Text headline bold whiteColor>
                         {item.text}
