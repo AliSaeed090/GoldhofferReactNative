@@ -56,8 +56,8 @@ export default function ProductDetailsList(props) {
     const [isTransportActive, setTransPortActive] = useState(null)
     const [list, setList] = useState({
         image: '',
-        text: [], 
-        videoId:''
+        text: [],
+       
     })
 
 
@@ -74,14 +74,14 @@ export default function ProductDetailsList(props) {
         playerWidth: Dimensions.get('window').width,
     })
     useEffect(() => {
-        console.log({ params: params.item })
+        console.log({ xxx: params.item })
         setList(params.item)
-
       
+
     }, [params])
 
     useEffect(() => {
-       
+
         fetch(
             "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2C+id&playlistId=PLfvaFAgzJJDi_Ou0GOaiLftS7MK-hvMDv&key=AIzaSyCCuJKVuq5JX7bAzLERMJ0ctHRM_iuqFJA")
             .then((res) => res.json())
@@ -90,7 +90,7 @@ export default function ProductDetailsList(props) {
                 setVideosList(json.items)
             })
     }, [])
-    const [VideosList, setVideosList] = useState(  [] );
+    const [VideosList, setVideosList] = useState([]);
 
     const filter = (text) => {
         setsearch(text);
@@ -160,49 +160,49 @@ export default function ProductDetailsList(props) {
                     </Text>
                 </View>
                 <View style={{ width: '95%', alignSelf: 'center', marginTop: 10 }}>
-                    <View style={{ width: '100%' }}>
-                     
-                                <YouTube
-                                    // AIzaSyADirxd-_5JqMTKVqA-2ECnq1TfcxksH7I
+                    <View style={{ width: '100%', backgroundColor:'black',height: 200 }}>
 
-                                    // ref={youTubeRef}
-                                    // You must have an API Key for the player to load in Android
-                                    apiKey="AIzaSyCCuJKVuq5JX7bAzLERMJ0ctHRM_iuqFJA"
-                                    // Un-comment one of videoId / videoIds / playlist.
-                                    // You can also edit these props while Hot-Loading in development mode to see how
-                                    // it affects the loaded native module
-                                    videoId={list.videoId}
-                                    // videoIds={['uMK0prafzw0', 'qzYgSecGQww', 'XXlZfc1TrD0', 'czcjU1w-c6k']}
-                                    // playlistId="PLfvaFAgzJJDgBIpMqcqolowsZf9y5hmId"
-                                    play={state.isPlaying}
-                                    loop={state.isLooping}
-                                    fullscreen={state.fullscreen}
-                                    controls={1}
-                                    style={[
-                                        { height: 200 },
-                                        styles.player,
-                                    ]}
-                                    onError={e => {
-                                        setState({ error: e.error });
-                                    }}
-                                    onReady={e => {
-                                        setState({ isReady: true });
-                                    }}
-                                    onChangeState={e => {
-                                        setState({ status: e.state });
-                                    }}
-                                    onChangeQuality={e => {
-                                        setState({ quality: e.quality });
-                                    }}
-                                    onChangeFullscreen={e => {
-                                        setState({ fullscreen: e.isFullscreen });
-                                    }}
-                                    onProgress={e => {
-                                        setState({ currentTime: e.currentTime });
-                                    }}
-                                />
-                            
-                     
+                      {list.videoId &&  <YouTube
+                            // AIzaSyADirxd-_5JqMTKVqA-2ECnq1TfcxksH7I
+
+                            // ref={youTubeRef}
+                            // You must have an API Key for the player to load in Android
+                            apiKey="AIzaSyCCuJKVuq5JX7bAzLERMJ0ctHRM_iuqFJA"
+                            // Un-comment one of videoId / videoIds / playlist.
+                            // You can also edit these props while Hot-Loading in development mode to see how
+                            // it affects the loaded native module
+                            videoId={list.videoId}
+                            // videoIds={['uMK0prafzw0', 'qzYgSecGQww', 'XXlZfc1TrD0', 'czcjU1w-c6k']}
+                            // playlistId="PLfvaFAgzJJDgBIpMqcqolowsZf9y5hmId"
+                            play={state.isPlaying}
+                            loop={state.isLooping}
+                            fullscreen={state.fullscreen}
+                            controls={1}
+                            style={[
+                                { height: 200 },
+                                styles.player,
+                            ]}
+                            onError={e => {
+                                setState({ error: e.error });
+                            }}
+                            onReady={e => {
+                                setState({ isReady: true });
+                            }}
+                            onChangeState={e => {
+                                setState({ status: e.state });
+                            }}
+                            onChangeQuality={e => {
+                                setState({ quality: e.quality });
+                            }}
+                            onChangeFullscreen={e => {
+                                setState({ fullscreen: e.isFullscreen });
+                            }}
+                            onProgress={e => {
+                                setState({ currentTime: e.currentTime });
+                            }}
+                        />}
+
+
                     </View>
                 </View>
                 {renderFooter()}
@@ -212,4 +212,3 @@ export default function ProductDetailsList(props) {
 };
 
 
- 

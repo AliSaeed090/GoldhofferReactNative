@@ -8,15 +8,18 @@ import { View, TouchableOpacity, } from "react-native";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
 import { useNavigation } from '@react-navigation/native';
 
-export default function RenderList2({ item }) {
-    console.log({length:item.data.length})
-    const navigation = useNavigation()
-//  /
+export default function RenderList2({item}) {
 
+    
+    const navigation = useNavigation()
     return (
-        <View style={{ width: '100%', height: 300,backgroundColor:'#D2D9DE' }}>
+        <View style={{ width: '100%',  backgroundColor:'#D2D9DE' }}>
+            <View style={{height:200}}>
             <Image source={item.image} style={styles.banner} resizeMode="contain" />
-            <TouchableOpacity  onPress={ item.data.length >0?   () => navigation.navigate("ProductDeatilMoreInfo", { list: item.data}): () => navigation.navigate("ProductDeatilVideo", { item:item.data })} style={{ width: '100%', position: 'absolute', bottom: 0, backgroundColor: 'black', flexDirection: 'row', padding: 12 }}>
+
+            </View>
+            <TouchableOpacity onPress={ () => navigation.navigate( "ProductDeatilVideo", { item: item.data})}
+             style={{ width: '100%',height: 50,   backgroundColor: 'black', flexDirection: 'row', padding: 12 }}>
                 <View style={{ width: "90%", }}>
                     <Text headline bold whiteColor>
                         {item.text}

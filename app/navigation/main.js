@@ -16,6 +16,9 @@ import {  View,Text } from "react-native";
 import Home from "@screens/Home";
  
 import ProductDetailsList from "@screens/ProductDetailsList";
+import ProductDeatilMoreInfo from "@screens/ProductDeatilMoreInfo";
+
+
 import ProductDeatilInfo from "@screens/ProductDeatilInfo"
 import News from "@screens/News";
 
@@ -147,6 +150,8 @@ const Main = (props) => {
       <MainStack.Screen name="ECommerceMenu" component={EBottomTabNavigator} />
       <MainStack.Screen name="ProductDetailsList" component={ProductDetailsList} />
       <MainStack.Screen name="ProductDeatilInfo" component={ProductDeatilInfo} />
+
+      <MainStack.Screen name="ProductDeatilMoreInfo" component={ProductDeatilMoreInfo} />
       <MainStack.Screen name="ProductDeatilVideo" component={ProductDeatilVideo} />
       
       <MainStack.Screen name="NewsDetails" component={NewsDetails} />
