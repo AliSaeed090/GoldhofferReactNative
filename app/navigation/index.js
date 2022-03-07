@@ -7,7 +7,6 @@ import SelectFontOption from "@screens/SelectFontOption";
 import React, { useEffect } from "react";
 import { Platform, StatusBar } from "react-native"; 
 import { useDarkMode ,DarkModeProvider} from 'react-native-dynamic'
-import SplashScreen from "react-native-splash-screen";
 import Main from "./main";
 
 const RootStack = createStackNavigator();
@@ -22,7 +21,7 @@ const Navigator = (props) => {
 
   useEffect(() => {
     // Hide screen loading
-    SplashScreen.hide();
+    // SplashScreen.hide();
 
     // Config status bar
     if (Platform.OS == "android") {

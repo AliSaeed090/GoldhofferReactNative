@@ -3,31 +3,38 @@ import { BaseStyle, useTheme, Images, BaseColor } from "@config";
 // Load sample data
 import styles from './styles'
 import React, { useState, useMemo, useEffect, useRef } from "react";
-import { FlatList, View, TouchableOpacity, ScrollView, Dimensions, PixelRatio } from "react-native";
+import { FlatList, View, TouchableOpacity, ScrollView, Dimensions, Linking } from "react-native";
 import { useTranslation } from "react-i18next";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
 import YouTube from 'react-native-youtube';
 import Svg, { Rect } from 'react-native-svg';
 
 
-function renderFooter() {
-    const { colors } = useTheme();
-    return (
-        <View style={{ width: "95%", flexDirection: 'row', height: 100, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
-            <Image source={Images.man} style={styles.manImage} resizeMode="contain" />
-            <View style={{ width: '50%', alignItems: 'center', marginTop: 10 }}>
-                <Text style={{ marginTop: 10 }} headline bold blackColor>
-                    SALES TRANSPORT
-                </Text>
-                <View style={{ width: "95%", flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
-                    <FontAwesome5 name="mobile-alt" color="black" size={25} />
-                    <Text style={{ marginLeft: 10, fontSize: 18 }} blackColor>
-                        +49 8331 15-341
-                    </Text>
-                </View>
-            </View>
+import { useSelector } from "react-redux";
 
+function renderFooter() {
+  const contact = useSelector((state) => state.application.contact);
+  const { colors } = useTheme();
+  return (
+    <TouchableOpacity onPress={()=>Linking.openURL("https://www.goldhofer.com/en/contact")} style={{ width: "95%", flexDirection: 'row', height: 90, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
+     
+     <View style={{borderTopLeftRadius: 55, backgroundColor:'black', width:100, height:'100%', justifyContent:'center', alignItems:'center'}}>
+     <Image source={Images.G} style={styles.manImage} resizeMode="contain" />
+
+     </View>
+      <View style={{ width: '50%', alignItems: 'center', marginTop: 10 }}>
+        <Text style={{ marginTop: 10 }} headline bold blackColor>
+          {contact.name}
+        </Text>
+        <View style={{ width: "95%", flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
+         
+          <Text style={{ marginLeft: 10, fontSize: 18 }} blackColor>
+          {contact.number}
+          </Text>
         </View>
+      </View>
+
+    </TouchableOpacity>
 
         // <View style={{
         //   width: 300,
@@ -57,7 +64,7 @@ export default function ProductDetailsList(props) {
     const [list, setList] = useState({
         image: '',
         text: [],
-       
+
     })
 
 
@@ -66,7 +73,7 @@ export default function ProductDetailsList(props) {
         status: null,
         quality: null,
         error: null,
-        isPlaying: true,
+        isPlaying: false,
         isLooping: true,
         duration: 0,
         currentTime: 0,
@@ -76,7 +83,7 @@ export default function ProductDetailsList(props) {
     useEffect(() => {
         console.log({ xxx: params.item })
         setList(params.item)
-      
+
 
     }, [params])
 
@@ -160,9 +167,9 @@ export default function ProductDetailsList(props) {
                     </Text>
                 </View>
                 <View style={{ width: '95%', alignSelf: 'center', marginTop: 10 }}>
-                    <View style={{ width: '100%', backgroundColor:'black',height: 200 }}>
+                    <View style={{ width: '100%', backgroundColor: 'black', height: 200 }}>
 
-                      {list.videoId &&  <YouTube
+                        {list.videoId && <YouTube
                             // AIzaSyADirxd-_5JqMTKVqA-2ECnq1TfcxksH7I
 
                             // ref={youTubeRef}
@@ -182,24 +189,29 @@ export default function ProductDetailsList(props) {
                                 { height: 200 },
                                 styles.player,
                             ]}
-                            onError={e => {
-                                setState({ error: e.error });
-                            }}
-                            onReady={e => {
-                                setState({ isReady: true });
-                            }}
-                            onChangeState={e => {
-                                setState({ status: e.state });
-                            }}
-                            onChangeQuality={e => {
-                                setState({ quality: e.quality });
-                            }}
-                            onChangeFullscreen={e => {
-                                setState({ fullscreen: e.isFullscreen });
-                            }}
-                            onProgress={e => {
-                                setState({ currentTime: e.currentTime });
-                            }}
+                            // onError={e => {
+                            //     setState(prvState=>({...prvState, error: e.error}));
+                            // }}
+                            // onReady={e => {
+                            //     setState(prvState=>({...prvState, isReady: true}));
+                                 
+                            // }}
+                            // onChangeState={e => {
+                            //     setState(prvState=>({...prvState,status: e.state}));
+                                 
+                            // }}
+                            // onChangeQuality={e => {
+                            //     setState(prvState=>({...prvState,quality: e.quality }));
+                                 
+                            // }}
+                            // onChangeFullscreen={e => {
+                            //     setState(prvState=>({...prvState,fullscreen: e.isFullscreen }));
+                              
+                            // }}
+                            // onProgress={e => {
+                            //     setState(prvState=>({...prvState,currentTime: e.currentTime }));
+                               
+                            // }}
                         />}
 
 

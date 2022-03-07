@@ -1,8 +1,9 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
  
-import {  View,Text } from "react-native";
+import {  View,Text,Linking } from "react-native";
+import { useFocusEffect } from '@react-navigation/native';
 
 
 
@@ -50,7 +51,13 @@ import { useTranslation } from "react-i18next";
 
 
 
-const Shop =()=>{
+const Shop =(props)=>{
+  const { navigation } = props;
+  useFocusEffect(() => {
+    Linking.openURL("https://e-shop.goldhofer.com/index.php?lang=1&cl=account")
+    // 
+    navigation.goBack("Home")
+  }, [])
   return(
     <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
       <Text>Shop</Text>

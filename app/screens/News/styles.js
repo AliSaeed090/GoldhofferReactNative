@@ -12,8 +12,8 @@ banner:{
   height: "100%"
 },
 manImage:{
-  width: 150,
-  height: 150,
+  width: 20,
+  height: 20,
   marginTop:-20
 }
 });

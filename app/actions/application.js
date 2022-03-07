@@ -27,6 +27,15 @@ const changeLanguage = language => {
     language,
   };
 };
+const setContact = contact => {
+  return {
+    type: actionTypes.SET_CONTACT_DETAILS,
+    contact,
+  };
+};
+
+
+
 
 export const onChangeTheme = theme => dispatch => {
   dispatch(changeTheme(theme));
@@ -43,3 +52,11 @@ export const onChangeFont = font => dispatch => {
 export const onChangeLanguage = language => dispatch => {
   dispatch(changeLanguage(language));
 };
+
+
+
+export const onChangeContact = contact => dispatch => {
+  dispatch(setContact(contact));
+};
+
+ 

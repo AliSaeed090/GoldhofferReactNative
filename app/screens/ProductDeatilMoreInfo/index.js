@@ -3,30 +3,37 @@ import { BaseStyle, useTheme, Images, BaseColor } from "@config";
 // Load sample data
 import styles from './styles'
 import React, { useState, useMemo,useEffect } from "react";
-import { FlatList, View, TouchableOpacity, RefreshControl } from "react-native";
+import { FlatList, View, TouchableOpacity, RefreshControl,Linking } from "react-native";
 import { useTranslation } from "react-i18next";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
 import RenderList2 from "./RenderList2.js"
 import Svg, { Rect } from 'react-native-svg';
 
+import { useSelector } from "react-redux";
+
 function renderFooter() {
+  const contact = useSelector((state) => state.application.contact);
   const { colors } = useTheme();
   return (
-    <View style={{ width: "95%", flexDirection: 'row', height: 100, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
-      <Image source={Images.man} style={styles.manImage} resizeMode="contain" />
+    <TouchableOpacity onPress={()=>Linking.openURL("https://www.goldhofer.com/en/contact")} style={{ width: "95%", flexDirection: 'row', height: 90, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
+     
+     <View style={{borderTopLeftRadius: 55, backgroundColor:'black', width:100, height:'100%', justifyContent:'center', alignItems:'center'}}>
+     <Image source={Images.G} style={styles.manImage} resizeMode="contain" />
+
+     </View>
       <View style={{ width: '50%', alignItems: 'center', marginTop: 10 }}>
         <Text style={{ marginTop: 10 }} headline bold blackColor>
-          SALES TRANSPORT
+          {contact.name}
         </Text>
         <View style={{ width: "95%", flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
-          <FontAwesome5 name="mobile-alt" color="white" size={25} />
+         
           <Text style={{ marginLeft: 10, fontSize: 18 }} blackColor>
-            +49 8331 15-341
+          {contact.number}
           </Text>
         </View>
       </View>
 
-    </View>
+    </TouchableOpacity>
 
     // <View style={{
     //   width: 300,

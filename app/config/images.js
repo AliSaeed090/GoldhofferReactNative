@@ -7,6 +7,7 @@ export const Images = {
   logo: require("@assets/images/logo.png"),
   homeBackGround: require("@assets/images/homeBackGround.png"),
   bagTab: require("@assets/images/bagTab.png"),
+  G: require("@assets/images/G.png"),
   homeTab: require("@assets/images/homeTab.png"),
   chatTab: require("@assets/images/chatTab.png"),
   newsTab: require("@assets/images/newsTab.png"),

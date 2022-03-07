@@ -6,7 +6,13 @@ import React, { useState } from "react";
 import { ImageBackground, View, TouchableOpacity } from "react-native";
 import { useTranslation } from "react-i18next";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
+import {  useDispatch } from "react-redux";
+import { ApplicationActions } from "@actions";
+
+
 const Home = (props) => {
+  const dispatch = useDispatch();
+
   const { navigation } = props;
   const { t } = useTranslation();
   const { colors } = useTheme();
@@ -190,7 +196,7 @@ const Home = (props) => {
         }
       ]
     },
-    
+
     {
       image: Images.banner6, text: 'FLUGZEUGBERGESYSTEME', data: [{
         image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true,
@@ -198,10 +204,10 @@ const Home = (props) => {
       },
       {
         image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true,
-        data: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', ] }
+        data: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN',] }
       }]
     },
-  
+
     {
       image: Images.banner5, text: 'PARTNER', data: [{
         image: Images.banner13, text: 'F59', listAirport: true,
@@ -215,6 +221,46 @@ const Home = (props) => {
 
 
   ])
+
+
+  const navigateToTransportProducts = () => {
+    navigation.navigate("ProductDetailsList", { list: listTransport })
+    dispatch(ApplicationActions.onChangeContact({
+      name: 'SALES TRANSPORT',
+      number: '+49 8331 15-341'
+    }));
+
+  }
+  const navigateToTransportService = () => {
+
+    navigation.navigate("ProductDetailsList", { list: listTransport })
+    dispatch(ApplicationActions.onChangeContact({
+      name: 'SERVICE TRANSPORT',
+      number: '+49 8331 15-400'
+    }));
+
+  }
+
+  const navigateToAirPortProducts = () => {
+
+    navigation.navigate("ProductDetailsList", { list: listAirport, })
+    dispatch(ApplicationActions.onChangeContact({
+      name: 'SALES AIRPORT',
+      number: '+49 8331 15-343'
+    }));
+
+  }
+
+
+  const navigateToAirPortService = () => {
+
+    navigation.navigate("ProductDetailsList", { list: listAirport, })
+    dispatch(ApplicationActions.onChangeContact({
+      name: 'SERVICE AIRPORT',
+      number: '+49 8331 9629999'
+    }));
+
+  }
   return (
     <SafeAreaView style={BaseStyle.safeAreaView} edges={['right', 'top', 'left']}>
       <ImageBackground
@@ -242,7 +288,7 @@ const Home = (props) => {
 
             {isTransportActive === true &&
               <View style={{ width: '100%', height: 100, justifyContent: 'flex-end', }}>
-                <TouchableOpacity onPress={() => navigation.navigate("ProductDetailsList", { list: listTransport })} style={{ flexDirection: "row", width: '100%', alignItems: 'center' }}>
+                <TouchableOpacity onPress={() => navigateToTransportProducts()} style={{ flexDirection: "row", width: '100%', alignItems: 'center' }}>
                   <View style={{ width: "60%", }}>
                     <Text headline bold whiteColor>
                       PRODUKT DETAILS
@@ -252,7 +298,7 @@ const Home = (props) => {
                   <FontAwesome5 name="angle-double-right" color={"white"} size={25} />
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={() => navigation.navigate("ProductDetailsList", { list: listTransport })} style={{ flexDirection: "row", width: '100%', alignItems: 'center', marginTop: 20 }}>
+                <TouchableOpacity onPress={() => navigateToTransportService()} style={{ flexDirection: "row", width: '100%', alignItems: 'center', marginTop: 20 }}>
                   <View style={{ width: "60%", }}>
                     <Text headline bold whiteColor>
                       SERVICE & SUPPORT
@@ -281,7 +327,7 @@ const Home = (props) => {
             </Text>
             {isTransportActive === false &&
               <View style={{ width: '100%', height: 100, justifyContent: 'flex-end', }}>
-                <TouchableOpacity onPress={() => navigation.navigate("ProductDetailsList", { list: listAirport })} style={{ flexDirection: "row", width: '100%', alignItems: 'center' }}>
+                <TouchableOpacity onPress={() => navigateToAirPortProducts()} style={{ flexDirection: "row", width: '100%', alignItems: 'center' }}>
                   <View style={{ width: "60%", }}>
                     <Text headline bold whiteColor>
                       PRODUKT DETAILS
@@ -291,7 +337,7 @@ const Home = (props) => {
                   <FontAwesome5 name="angle-double-right" color={"white"} size={25} />
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={() => navigation.navigate("ProductDetailsList", { list: listAirport })} style={{ flexDirection: "row", width: '100%', alignItems: 'center', marginTop: 20 }}>
+                <TouchableOpacity onPress={() => navigateToAirPortService()} style={{ flexDirection: "row", width: '100%', alignItems: 'center', marginTop: 20 }}>
                   <View style={{ width: "60%", }}>
                     <Text headline bold whiteColor>
                       SERVICE & SUPPORT

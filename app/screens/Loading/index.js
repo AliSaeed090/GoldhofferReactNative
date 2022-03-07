@@ -8,6 +8,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import { useDispatch } from "react-redux";
 import * as RNLocalize from "react-native-localize";
+import SplashScreen from "react-native-splash-screen";
 
 const Loading = (props) => {
   const { navigation } = props;
@@ -15,6 +16,7 @@ const Loading = (props) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    SplashScreen.hide();
     const onProcess = async () => {
       // Get current language of device
       const locales = RNLocalize.getLocales();

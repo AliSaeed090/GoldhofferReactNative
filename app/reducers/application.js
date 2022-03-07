@@ -4,6 +4,9 @@ const initialState = {
   font: null,
   force_dark: null,
   language: null,
+  contact:{
+    name:'', number:''
+  },
   menu: "eCommerce",
 };
 
@@ -29,6 +32,11 @@ export default (state = initialState, action = {}) => {
         ...state,
         language: action.language,
       };
+      case actionTypes.SET_CONTACT_DETAILS:
+        return {
+          ...state,
+          contact: action.contact,
+        };
     case actionTypes.SET_MENU:
       return {
         ...state,
