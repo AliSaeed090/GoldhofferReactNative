@@ -67,14 +67,25 @@ export default function ProductDetailsList(props) {
  
     setList(params.list)
 }, [params])
-  const [searchArr, setsearchArr] = useState(["s", "2", "s", "2", "s", "2", "s", "2", "s", "2"])
+ 
 
+  const [searchArr, setsearchArr] = useState([]);
+  const searchFilterFunction = (text) => {
+ 
+    const newData = list.filter((items) => {
+      const itemData = `${items.text.toUpperCase()}`;
+      const textData = text.toUpperCase();
+
+      return itemData.indexOf(textData) > -1;
+    });
+    setsearchArr([...newData])
+  };
 
   const [search, setsearch] = useState("");
   const filter = (text) => {
     setsearch(text);
     if (text) {
-
+      searchFilterFunction(text)
     } else {
 
     }

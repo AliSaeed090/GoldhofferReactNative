@@ -166,7 +166,7 @@ export default function ProductDetailsList(props) {
                         VON A -Z
                     </Text>
                 </View>
-                <View style={{ width: '95%', alignSelf: 'center', marginTop: 10 }}>
+                <View style={{ width: '95%', alignSelf: 'center', marginTop: 10, height: 200 }}>
                     <View style={{ width: '100%', backgroundColor: 'black', height: 200 }}>
 
                         {list.videoId && <YouTube
