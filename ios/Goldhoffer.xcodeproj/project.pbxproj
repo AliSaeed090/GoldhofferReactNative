@@ -18,9 +18,10 @@
 		14689143497E4451A71FBB94 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A77D557DC34420CBED8A894 /* Roboto-ThinItalic.ttf */; };
 		18988A514C5841DE967499D8 /* Raleway-SemiBoldItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 556919C4A1AC4C498E69E136 /* Raleway-SemiBoldItalic copy.ttf */; };
 		1A4B896FB8F845B2938A1760 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EE204A591C145FB96304ABB /* Raleway-ExtraLight.ttf */; };
+		1C0DAD185475D5484B98247D /* libPods-Goldhoffer-GoldhofferTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE89C818747E2E86A938C1A7 /* libPods-Goldhoffer-GoldhofferTests.a */; };
 		1CF4C6081A2F4B4BA00E344A /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B88366F9F96437683F413F0 /* Raleway-Thin.ttf */; };
-		1EAFE3BD3D2307A71943D881 /* libPods-Goldhoffer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0551A1951B2FF97BC08C8B56 /* libPods-Goldhoffer.a */; };
 		22DCF8BDAF3245FDB8B7E31E /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4685BCBA51C64234AD5E2564 /* Raleway-Medium.ttf */; };
+		23D2FC5AB27607E8A88A10EF /* libPods-Goldhoffer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A13DAEB0A712C5F7858A52 /* libPods-Goldhoffer.a */; };
 		295BB246C18B44BB8C9A7657 /* Merriweather-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFED8D495E21483BB33849D6 /* Merriweather-Black.ttf */; };
 		33A7EFEC669545F89E92924F /* Raleway-ThinItalic copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D26E2CFCB641AE9D3DD42E /* Raleway-ThinItalic copy.ttf */; };
 		33DC6536A3B3456D8C0987F4 /* Merriweather-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1961360E2E444B9B61380D6 /* Merriweather-BoldItalic.ttf */; };
@@ -51,7 +52,6 @@
 		88FB50193493430892BC7B2E /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C776D41CBCD45B5B3E0D222 /* Raleway-Regular.ttf */; };
 		8AE44DCDD75443319983C621 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39A7AFADFB60437CA4F7ADFE /* Raleway-ExtraLightItalic.ttf */; };
 		8D243E07DD114A11BDD5DAA9 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCAF2530522472CBC1A8302 /* Raleway-MediumItalic.ttf */; };
-		90708546E3429F412B9D96FD /* libPods-Goldhoffer-GoldhofferTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D00B6EEF778F79BB757CC1D0 /* libPods-Goldhoffer-GoldhofferTests.a */; };
 		90C7F3EA9C2046F1809B45E1 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65ED9A53FDE747D2986B941B /* Roboto-BoldItalic.ttf */; };
 		957CB9EB2B0349C0B0BBCB79 /* Raleway-Bold copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4AE01A562AD43C4856F88CA /* Raleway-Bold copy.ttf */; };
 		A3D80EFDCB784F0DA8FD92B7 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 395231026B6B4497AEA872C9 /* Raleway-LightItalic.ttf */; };
@@ -93,10 +93,11 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* GoldhofferTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoldhofferTests.m; sourceTree = "<group>"; };
 		01D6B29629DD4CC6A6BFA594 /* Raleway-ExtraLightItalic copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraLightItalic copy.ttf"; path = "../app/assets/fonts/Raleway-ExtraLightItalic copy.ttf"; sourceTree = "<group>"; };
-		0551A1951B2FF97BC08C8B56 /* libPods-Goldhoffer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Goldhoffer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D946BEC0504927AA916F31 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		096E52ED536D4EA6B610AA4D /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNova-Bold.otf"; path = "../app/assets/fonts/ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		09A13DAEB0A712C5F7858A52 /* libPods-Goldhoffer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Goldhoffer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C776D41CBCD45B5B3E0D222 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Regular.ttf"; path = "../app/assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		127B56FFBD119B0894A01F55 /* Pods-GoldhofferTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldhofferTests.debug.xcconfig"; path = "Target Support Files/Pods-GoldhofferTests/Pods-GoldhofferTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13414ECC62A646FA960804BA /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNova-Regular.otf"; path = "../app/assets/fonts/ProximaNova-Regular.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Goldhoffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goldhoffer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Goldhoffer/AppDelegate.h; sourceTree = "<group>"; };
@@ -105,7 +106,6 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Goldhoffer/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Goldhoffer/main.m; sourceTree = "<group>"; };
 		183E7C068F0840FAB97208BF /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		1B9311DD5E02507BDEBF110E /* Pods-Goldhoffer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goldhoffer.debug.xcconfig"; path = "Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer.debug.xcconfig"; sourceTree = "<group>"; };
 		207DC4E29111491B89CE2D19 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		2115559A59FF40D183BC95FF /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBoldItalic.ttf"; path = "../app/assets/fonts/Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		228687D4A42B4E428C9E79DE /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBold.ttf"; path = "../app/assets/fonts/Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -125,10 +125,9 @@
 		556919C4A1AC4C498E69E136 /* Raleway-SemiBoldItalic copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBoldItalic copy.ttf"; path = "../app/assets/fonts/Raleway-SemiBoldItalic copy.ttf"; sourceTree = "<group>"; };
 		59E4363527D5F53900545606 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5AA54A89DDBC4DFAA12B6426 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		5D5EE71A961FE01512FF4CD4 /* Pods-Goldhoffer-GoldhofferTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goldhoffer-GoldhofferTests.release.xcconfig"; path = "Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests.release.xcconfig"; sourceTree = "<group>"; };
 		5D6CA59C80D44FFD85E67E31 /* Merriweather-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Merriweather-LightItalic.ttf"; path = "../app/assets/fonts/Merriweather-LightItalic.ttf"; sourceTree = "<group>"; };
 		65ED9A53FDE747D2986B941B /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../app/assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
-		6681079A686AC771F77316AD /* Pods-Goldhoffer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goldhoffer.release.xcconfig"; path = "Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer.release.xcconfig"; sourceTree = "<group>"; };
+		6ACAF41F4BA11CF2708E2517 /* Pods-Goldhoffer-GoldhofferTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goldhoffer-GoldhofferTests.release.xcconfig"; path = "Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests.release.xcconfig"; sourceTree = "<group>"; };
 		6CCDD40119ED44208D399468 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-BlackItalic.ttf"; path = "../app/assets/fonts/Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
 		6D7D9CFB13FE4F48A6E6E578 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-LightItalic.ttf"; path = "../app/assets/fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
 		6EC7AFC9E6954D68A6E5924D /* Raleway-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Light.ttf"; path = "../app/assets/fonts/Raleway-Light.ttf"; sourceTree = "<group>"; };
@@ -138,7 +137,7 @@
 		7515FBA112DF4B10877C95DB /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../app/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		7B5B542A943E429F9B9FD7D2 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Goldhoffer/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8D10EB0E9761FE623BAD40FA /* Pods-Goldhoffer-GoldhofferTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goldhoffer-GoldhofferTests.debug.xcconfig"; path = "Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E60006949F9596C60A2A28F /* Pods-Goldhoffer-GoldhofferTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goldhoffer-GoldhofferTests.debug.xcconfig"; path = "Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F625583812B4566BC94F23C /* Raleway-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Italic.ttf"; path = "../app/assets/fonts/Raleway-Italic.ttf"; sourceTree = "<group>"; };
 		8FD46D1FB5514DD88C66045C /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		926AE8FCE3464536934DB0B7 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../app/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
@@ -156,21 +155,24 @@
 		AE373185AF83494C91852E9D /* Raleway-LightItalic copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-LightItalic copy.ttf"; path = "../app/assets/fonts/Raleway-LightItalic copy.ttf"; sourceTree = "<group>"; };
 		B23A92E4F82D42AE8054A46B /* Raleway-ExtraLight copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraLight copy.ttf"; path = "../app/assets/fonts/Raleway-ExtraLight copy.ttf"; sourceTree = "<group>"; };
 		B303A302100D407A9FC118C8 /* Raleway-BoldItalic copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-BoldItalic copy.ttf"; path = "../app/assets/fonts/Raleway-BoldItalic copy.ttf"; sourceTree = "<group>"; };
+		B3D8F19798505579EC53EA7E /* Pods-Goldhoffer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goldhoffer.release.xcconfig"; path = "Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer.release.xcconfig"; sourceTree = "<group>"; };
+		B6B87EED069C13BC751F3C8E /* Pods-GoldhofferTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldhofferTests.release.xcconfig"; path = "Target Support Files/Pods-GoldhofferTests/Pods-GoldhofferTests.release.xcconfig"; sourceTree = "<group>"; };
 		B6FC0D6D64B24D1F970F46EF /* ProximaNova-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNova-Black.otf"; path = "../app/assets/fonts/ProximaNova-Black.otf"; sourceTree = "<group>"; };
 		BC0382B366B34F28BCFCFAE1 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBoldItalic.ttf"; path = "../app/assets/fonts/Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		BD21999DE4E0402EA97059B2 /* Merriweather-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Merriweather-BlackItalic.ttf"; path = "../app/assets/fonts/Merriweather-BlackItalic.ttf"; sourceTree = "<group>"; };
 		BE52CC00667A4F7DA710FDC5 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		C7EE1895B8AB46D08AFE4955 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		CA5D1C6E777F4B5DBF3A1486 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		CB21D50F33301F6A502F36FC /* Pods-Goldhoffer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goldhoffer.debug.xcconfig"; path = "Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer.debug.xcconfig"; sourceTree = "<group>"; };
 		CCCAF2530522472CBC1A8302 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-MediumItalic.ttf"; path = "../app/assets/fonts/Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
 		CCFAE28EE10F40639CDBD671 /* Merriweather-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Merriweather-Italic.ttf"; path = "../app/assets/fonts/Merriweather-Italic.ttf"; sourceTree = "<group>"; };
 		CE36749EE3AA48DCB36A63D8 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../app/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		CFED8D495E21483BB33849D6 /* Merriweather-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Merriweather-Black.ttf"; path = "../app/assets/fonts/Merriweather-Black.ttf"; sourceTree = "<group>"; };
-		D00B6EEF778F79BB757CC1D0 /* libPods-Goldhoffer-GoldhofferTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Goldhoffer-GoldhofferTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D174218D157D4145B273B6FD /* Raleway-ExtraBold copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBold copy.ttf"; path = "../app/assets/fonts/Raleway-ExtraBold copy.ttf"; sourceTree = "<group>"; };
 		D36CCF297A0843B4A08C8B11 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		D4AE01A562AD43C4856F88CA /* Raleway-Bold copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Bold copy.ttf"; path = "../app/assets/fonts/Raleway-Bold copy.ttf"; sourceTree = "<group>"; };
 		D751CAFA5C0A4E3EBD29BBF0 /* Raleway-BlackItalic copy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-BlackItalic copy.ttf"; path = "../app/assets/fonts/Raleway-BlackItalic copy.ttf"; sourceTree = "<group>"; };
+		DE89C818747E2E86A938C1A7 /* libPods-Goldhoffer-GoldhofferTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Goldhoffer-GoldhofferTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF16152B04634FB49E28921C /* Merriweather-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Merriweather-Bold.ttf"; path = "../app/assets/fonts/Merriweather-Bold.ttf"; sourceTree = "<group>"; };
 		DF47BCEC4229401882564D0A /* Raleway-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Bold.ttf"; path = "../app/assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		E7CE15B8383E47509FE79C1D /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../app/assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -191,7 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90708546E3429F412B9D96FD /* libPods-Goldhoffer-GoldhofferTests.a in Frameworks */,
+				1C0DAD185475D5484B98247D /* libPods-Goldhoffer-GoldhofferTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EAFE3BD3D2307A71943D881 /* libPods-Goldhoffer.a in Frameworks */,
+				23D2FC5AB27607E8A88A10EF /* libPods-Goldhoffer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				0551A1951B2FF97BC08C8B56 /* libPods-Goldhoffer.a */,
-				D00B6EEF778F79BB757CC1D0 /* libPods-Goldhoffer-GoldhofferTests.a */,
+				09A13DAEB0A712C5F7858A52 /* libPods-Goldhoffer.a */,
+				DE89C818747E2E86A938C1A7 /* libPods-Goldhoffer-GoldhofferTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -366,10 +368,12 @@
 		97B1A571460D07A9CE91A163 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1B9311DD5E02507BDEBF110E /* Pods-Goldhoffer.debug.xcconfig */,
-				6681079A686AC771F77316AD /* Pods-Goldhoffer.release.xcconfig */,
-				8D10EB0E9761FE623BAD40FA /* Pods-Goldhoffer-GoldhofferTests.debug.xcconfig */,
-				5D5EE71A961FE01512FF4CD4 /* Pods-Goldhoffer-GoldhofferTests.release.xcconfig */,
+				CB21D50F33301F6A502F36FC /* Pods-Goldhoffer.debug.xcconfig */,
+				B3D8F19798505579EC53EA7E /* Pods-Goldhoffer.release.xcconfig */,
+				127B56FFBD119B0894A01F55 /* Pods-GoldhofferTests.debug.xcconfig */,
+				B6B87EED069C13BC751F3C8E /* Pods-GoldhofferTests.release.xcconfig */,
+				8E60006949F9596C60A2A28F /* Pods-Goldhoffer-GoldhofferTests.debug.xcconfig */,
+				6ACAF41F4BA11CF2708E2517 /* Pods-Goldhoffer-GoldhofferTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -381,12 +385,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "GoldhofferTests" */;
 			buildPhases = (
-				ED0A2262360E4CE04341CE0A /* [CP] Check Pods Manifest.lock */,
+				70B8A5E4E38003716D12E15E /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				5277CDB53172B8D8A47B470F /* [CP] Embed Pods Frameworks */,
-				7F99394C1287CDF0600D0E42 /* [CP] Copy Pods Resources */,
+				A81414027607FD0B3014B1D9 /* [CP] Embed Pods Frameworks */,
+				A33D0312FA55BA0B69836D7E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -402,14 +406,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Goldhoffer" */;
 			buildPhases = (
-				9A64B0950954ECBF2CC50A31 /* [CP] Check Pods Manifest.lock */,
+				DDE81DCAEA60578E89873D7E /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				14987E3E66F5FA1309A86237 /* [CP] Embed Pods Frameworks */,
-				125FC77122D1D4E50878B73C /* [CP] Copy Pods Resources */,
+				6C3033E52C4EC279EDF971E4 /* [CP] Embed Pods Frameworks */,
+				D43B0CF6EF581D30515F27EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -552,24 +556,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		125FC77122D1D4E50878B73C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		14987E3E66F5FA1309A86237 /* [CP] Embed Pods Frameworks */ = {
+		6C3033E52C4EC279EDF971E4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -586,24 +573,29 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5277CDB53172B8D8A47B470F /* [CP] Embed Pods Frameworks */ = {
+		70B8A5E4E38003716D12E15E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Goldhoffer-GoldhofferTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7F99394C1287CDF0600D0E42 /* [CP] Copy Pods Resources */ = {
+		A33D0312FA55BA0B69836D7E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -620,7 +612,41 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9A64B0950954ECBF2CC50A31 /* [CP] Check Pods Manifest.lock */ = {
+		A81414027607FD0B3014B1D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer-GoldhofferTests/Pods-Goldhoffer-GoldhofferTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D43B0CF6EF581D30515F27EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goldhoffer/Pods-Goldhoffer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDE81DCAEA60578E89873D7E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -636,28 +662,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Goldhoffer-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ED0A2262360E4CE04341CE0A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Goldhoffer-GoldhofferTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -716,7 +720,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D10EB0E9761FE623BAD40FA /* Pods-Goldhoffer-GoldhofferTests.debug.xcconfig */;
+			baseConfigurationReference = 8E60006949F9596C60A2A28F /* Pods-Goldhoffer-GoldhofferTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -743,7 +747,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D5EE71A961FE01512FF4CD4 /* Pods-Goldhoffer-GoldhofferTests.release.xcconfig */;
+			baseConfigurationReference = 6ACAF41F4BA11CF2708E2517 /* Pods-Goldhoffer-GoldhofferTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -767,11 +771,11 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B9311DD5E02507BDEBF110E /* Pods-Goldhoffer.debug.xcconfig */;
+			baseConfigurationReference = CB21D50F33301F6A502F36FC /* Pods-Goldhoffer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 649RMX27J7;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Goldhoffer/Info.plist;
@@ -794,11 +798,11 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6681079A686AC771F77316AD /* Pods-Goldhoffer.release.xcconfig */;
+			baseConfigurationReference = B3D8F19798505579EC53EA7E /* Pods-Goldhoffer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 649RMX27J7;
 				INFOPLIST_FILE = Goldhoffer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
