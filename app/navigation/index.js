@@ -7,7 +7,7 @@ import SelectFontOption from "@screens/SelectFontOption";
 import React, { useEffect } from "react";
 import { Platform, StatusBar } from "react-native";
 import { useDarkMode, DarkModeProvider } from 'react-native-dynamic'
-import Main from "./main";
+import EBottomTabNavigator from "./main";
 
 import ProductDetailsList from "@screens/ProductDetailsList";
 import ProductDeatilMoreInfo from "@screens/ProductDeatilMoreInfo";
@@ -47,12 +47,12 @@ const Navigator = (props) => {
             component={Loading}
             options={{ gestureEnabled: false }}
           />
-          <RootStack.Screen name="Main" component={Main} />
-          <RootStack.Screen name="ProductDetailsList" component={ProductDetailsList} />
+          <RootStack.Screen name="Main" component={EBottomTabNavigator} />
+          {/* <RootStack.Screen name="ProductDetailsList" component={ProductDetailsList} />
           <RootStack.Screen name="ProductDeatilInfo" component={ProductDeatilInfo} />
 
           <RootStack.Screen name="ProductDeatilMoreInfo" component={ProductDeatilMoreInfo} />
-          <RootStack.Screen name="ProductDeatilVideo" component={ProductDeatilVideo} />
+          <RootStack.Screen name="ProductDeatilVideo" component={ProductDeatilVideo} /> */}
 
           <RootStack.Screen
             name="SelectDarkOption"

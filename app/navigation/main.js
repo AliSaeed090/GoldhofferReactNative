@@ -76,7 +76,7 @@ const TabBarIcon = (props) => {
       resizeMode='contain'
       source={props.src}
       tintColor={props.color}
-      style={{ height: 50, width: 50,  }}
+      style={{ height: 40, width: 40,  }}
     />
   );
 };
@@ -88,6 +88,7 @@ const EBottomTabNavigator = (props) => {
     <BottomTab.Navigator
       initialRouteName="Home"
       tabBarOptions={{
+      
         showIcon: true,
         showLabel: false,
         activeTintColor: "black",
@@ -101,7 +102,7 @@ const EBottomTabNavigator = (props) => {
     >
       <BottomTab.Screen
         name="Home"
-        component={Home}
+        component={Main}
         options={{
           title: t(""),
           tabBarIcon: ({ color }) => {
@@ -154,7 +155,7 @@ const Main = (props) => {
 
 
     >
-      <MainStack.Screen name="ECommerceMenu" component={EBottomTabNavigator} />
+      <MainStack.Screen name="ECommerceMenu" component={Home} />
       <MainStack.Screen name="ProductDetailsList" component={ProductDetailsList} />
       <MainStack.Screen name="ProductDeatilInfo" component={ProductDeatilInfo} />
 
@@ -177,4 +178,4 @@ const Main = (props) => {
   );
 };
 
-export default Main;
+export default EBottomTabNavigator;
