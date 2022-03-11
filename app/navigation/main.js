@@ -76,7 +76,7 @@ const TabBarIcon = (props) => {
       resizeMode='contain'
       source={props.src}
       tintColor={props.color}
-      style={{ height: 35, width: 35,  }}
+      style={{ height: 50, width: 50,  }}
     />
   );
 };

@@ -5,6 +5,7 @@ import { StyleSheet } from "react-native";
  */
 export const BaseStyle = StyleSheet.create({
     tabBar: {
+        borderWidth:0,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -14,7 +15,7 @@ export const BaseStyle = StyleSheet.create({
         shadowRadius: 6.27,
         elevation: 10,
         backgroundColor:'black',
-        height:"8%"
+        height:"10%"
     },
     bodyPaddingDefault: {
         paddingHorizontal: 20,

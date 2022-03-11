@@ -13,7 +13,7 @@ export default function RenderList2({item}) {
     
     const navigation = useNavigation()
     return (
-        <View style={{ width: '100%',  backgroundColor:'#D2D9DE' }}>
+        <TouchableOpacity onPress={ () => navigation.navigate( "ProductDeatilVideo", { item: item.data})} style={{ width: '100%',  backgroundColor:'#D2D9DE' }}>
             <View style={{height:200}}>
             <Image source={item.image} style={styles.banner} resizeMode="contain" />
 
@@ -29,6 +29,6 @@ export default function RenderList2({item}) {
                 <FontAwesome5 name="angle-double-right" color={"white"} size={25} />
             </TouchableOpacity>
 
-        </View>
+        </TouchableOpacity>
     )
 }

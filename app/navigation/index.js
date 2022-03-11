@@ -1,14 +1,19 @@
 import { useTheme } from "@config";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import Loading from "@screens/Loading"; 
+import Loading from "@screens/Loading";
 import SelectDarkOption from "@screens/SelectDarkOption";
 import SelectFontOption from "@screens/SelectFontOption";
 import React, { useEffect } from "react";
-import { Platform, StatusBar } from "react-native"; 
-import { useDarkMode ,DarkModeProvider} from 'react-native-dynamic'
+import { Platform, StatusBar } from "react-native";
+import { useDarkMode, DarkModeProvider } from 'react-native-dynamic'
 import Main from "./main";
 
+import ProductDetailsList from "@screens/ProductDetailsList";
+import ProductDeatilMoreInfo from "@screens/ProductDeatilMoreInfo";
+import ProductDeatilVideo from "@screens/ProductDeatilVideo";
+
+import ProductDeatilInfo from "@screens/ProductDeatilInfo"
 const RootStack = createStackNavigator();
 const Navigator = (props) => {
   const { theme, colors } = useTheme();
@@ -43,8 +48,12 @@ const Navigator = (props) => {
             options={{ gestureEnabled: false }}
           />
           <RootStack.Screen name="Main" component={Main} />
-          
-          
+          <RootStack.Screen name="ProductDetailsList" component={ProductDetailsList} />
+          <RootStack.Screen name="ProductDeatilInfo" component={ProductDeatilInfo} />
+
+          <RootStack.Screen name="ProductDeatilMoreInfo" component={ProductDeatilMoreInfo} />
+          <RootStack.Screen name="ProductDeatilVideo" component={ProductDeatilVideo} />
+
           <RootStack.Screen
             name="SelectDarkOption"
             component={SelectDarkOption}
@@ -67,9 +76,9 @@ const Navigator = (props) => {
               },
             }}
           />
-         
-        
-          
+
+
+
         </RootStack.Navigator>
       </NavigationContainer>
     </DarkModeProvider>
