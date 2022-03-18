@@ -8,7 +8,16 @@ import { FlatList, View, TouchableOpacity, ScrollView } from "react-native";
 import { useTranslation } from "react-i18next";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
 import { useNavigation } from '@react-navigation/native';
-
+const ArrowPng = () => {
+    return (
+      <Image source={Images.arrows} style={{ width: 20, height: 20 }} resizeMode="contain" />
+    );
+  }
+  const BackArrowPng = () => {
+    return (
+      <Image source={Images.backArrow} style={{ width: 20, height: 20 }} resizeMode="contain" />
+    );
+  }
 export default function NewsDetails(props) {
     const navigation = useNavigation()
     return (
@@ -18,8 +27,9 @@ export default function NewsDetails(props) {
                 title=""
                 renderLeft={() => {
                     return (
-                        <View style={{ flexDirection: 'row', width: 100 }}>
-                            <FontAwesome5 name="angle-double-left" color={"white"} size={25} />
+                        <View style={{ flexDirection: 'row', width: 100 , justifyContent:'center', alignItems:'center'}}>
+                            {/* <FontAwesome5 name="angle-double-left" color={"white"} size={25} /> */}
+                            <BackArrowPng/>
                             <Text style={{ marginLeft: 10 }} headline bold whiteColor>
                                 ZURÜCK
                             </Text>
@@ -77,7 +87,8 @@ export default function NewsDetails(props) {
                     <Text style={{ marginRight: 10 }} headline bold blackColor>
                     NÄCHSTE
                     </Text>
-                    <FontAwesome5 name="angle-double-right" color={"black"} size={25} />
+                    {/* <FontAwesome5 name="angle-double-right" color={"black"} size={25} /> */}
+                    <ArrowPng/>
 
                 </View>
             </ScrollView>

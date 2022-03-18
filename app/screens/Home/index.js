@@ -6,8 +6,15 @@ import React, { useState } from "react";
 import { ImageBackground, View, TouchableOpacity } from "react-native";
 import { useTranslation } from "react-i18next";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
-import {  useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { ApplicationActions } from "@actions";
+
+
+const ArrowPng = () => {
+  return (
+    <Image source={Images.arrows} style={{ width: 20, height: 20 }} resizeMode="contain" />
+  );
+}
 
 
 const Home = (props) => {
@@ -19,9 +26,9 @@ const Home = (props) => {
   const [isTransportActive, setTransPortActive] = useState(null)
   const [listTransport, setListTransport] = useState([
     {
-      image: Images.banner0, text: 'TRAILSTAR', data: [{
-        image: Images.banner10, text: 'TRAILSTAR', listTransport: true,
-        data: { image: Images.banner11, text: ['PRODUKT PROSPEKT »TRAILSTAR«'], videoId: "9RM0QLDti1A", }
+      image: undefined, text: 'TRAILSTAR', data: [{
+        image: undefined, text: 'TRAILSTAR', listTransport: true,
+        data: { image: undefined, text: ['PRODUKT PROSPEKT »TRAILSTAR«'], videoId: "9RM0QLDti1A", }
       },
       ]
     },
@@ -39,10 +46,10 @@ const Home = (props) => {
         {
           image: Images.banner18, text: 'SEMIAUFLIEGER',
           data: [
-            { image: Images.banner27, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'] } },
+            { image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'] } },
             { image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'] } },
             { image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'] } },
-            { image: Images.banner35, text: 'STZ-L | »MPA« MIT RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'] } }
+            { image: Images.banner27, text: 'STZ-L | »MPA« MIT RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'] } }
 
           ],
           listTransport: true,
@@ -51,10 +58,10 @@ const Home = (props) => {
         {
           image: Images.banner10, text: 'TIEFBETTAUFLIEGER',
           data: [
-            { image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'] } },
-            { image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT »MPA« V'] } },
-            { image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT STZ-VP (245)'] } },
-            { image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT STZ-VP (285)'] } }
+            { image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'] } },
+            { image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'] } },
+            { image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'] } },
+            { image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'] } }
 
           ],
           listTransport: true,
@@ -85,7 +92,7 @@ const Home = (props) => {
           image: Images.banner41, text: 'ANGETRIEBEN',
           data: [
             { image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'] } },
-            { image: Images.banner56, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'] } },
+            { image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'] } },
             { image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'] } },
             { image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'] } }
 
@@ -155,13 +162,13 @@ const Home = (props) => {
 
   const [listAirport, setListAirport] = useState([
     {
-      image: Images.banner9, text: 'FRACHT-/PUSHBACKSCHLEPPER', data: [{
-        image: Images.banner13, text: 'F59', listAirport: true,
-        data: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D", "SERVICE PROSPEKT"] }
+      image: Images.banner13, text: 'FRACHT-/PUSHBACKSCHLEPPER', data: [{
+        image: Images.banner9, text: '»SHERPA« D', listAirport: true,
+        data: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D", ] }
       },
       {
-        image: Images.banner15, text: 'STT', listAirport: true,
-        data: { image: Images.banner15, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT', 'SERVICE-PROSPEKT'] }
+        image: Images.banner15, text: '»SHERPA« E', listAirport: true,
+        data: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',  ] }
       }]
     },
 
@@ -169,7 +176,7 @@ const Home = (props) => {
       image: Images.banner8, text: 'KONVENTIONELLE SCHLEPPER',
       data: [{
         image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true,
-        data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['»BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE"] }
+        data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE"] }
       },
       {
         image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true,
@@ -294,8 +301,8 @@ const Home = (props) => {
                       PRODUKT DETAILS
                     </Text>
                   </View>
-
-                  <FontAwesome5 name="angle-double-right" color={"white"} size={25} />
+                  <ArrowPng />
+                  {/* <FontAwesome5 name="angle-double-right" color={"white"} size={25} /> */}
                 </TouchableOpacity>
 
                 <TouchableOpacity onPress={() => navigateToTransportService()} style={{ flexDirection: "row", width: '100%', alignItems: 'center', marginTop: 20 }}>
@@ -304,7 +311,8 @@ const Home = (props) => {
                       SERVICE & SUPPORT
                     </Text>
                   </View>
-                  <FontAwesome5 name="angle-double-right" color={"white"} size={25} />
+                  {/* <FontAwesome5 name="angle-double-right" color={"white"} size={25} /> */}
+                  <ArrowPng />
                 </TouchableOpacity>
               </View>
 
@@ -333,8 +341,8 @@ const Home = (props) => {
                       PRODUKT DETAILS
                     </Text>
                   </View>
-
-                  <FontAwesome5 name="angle-double-right" color={"white"} size={25} />
+                  <ArrowPng />
+                  {/* <FontAwesome5 name="angle-double-right" color={"white"} size={25} /> */}
                 </TouchableOpacity>
 
                 <TouchableOpacity onPress={() => navigateToAirPortService()} style={{ flexDirection: "row", width: '100%', alignItems: 'center', marginTop: 20 }}>
@@ -343,7 +351,8 @@ const Home = (props) => {
                       SERVICE & SUPPORT
                     </Text>
                   </View>
-                  <FontAwesome5 name="angle-double-right" color={"white"} size={25} />
+                  <ArrowPng />
+                  {/* <FontAwesome5 name="angle-double-right" color={"white"} size={25} /> */}
                 </TouchableOpacity>
               </View>
 

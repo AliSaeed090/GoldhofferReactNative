@@ -10,6 +10,12 @@ import RenderList2 from "./RenderList2"
 import Svg, { Rect } from 'react-native-svg';
 import { useSelector } from "react-redux";
 
+
+const BackArrowPng = () => {
+  return (
+    <Image source={Images.backArrow} style={{ width: 20, height: 20 }} resizeMode="contain" />
+  );
+}
 function renderFooter() {
   const contact = useSelector((state) => state.application.contact);
   const { colors } = useTheme();
@@ -103,8 +109,9 @@ setList(params.item)
         title=""
         renderLeft={() => {
           return (
-            <View style={{ flexDirection: 'row', width: 100 }}>
-              <FontAwesome5 name="angle-double-left" color={"white"} size={25} />
+            <View style={{ flexDirection: 'row', width: 100 , justifyContent:'center', alignItems:'center'}}>
+              {/* <FontAwesome5 name="angle-double-left" color={"white"} size={25} /> */}
+              <BackArrowPng/>
               <Text style={{ marginLeft: 10 }} headline bold whiteColor>
                 ZURÜCK
               </Text>

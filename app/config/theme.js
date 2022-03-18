@@ -14,7 +14,7 @@ export const BaseColor = {
   kashmir: "#5D6D7E",
   orangeColor: "#E5634D",
   blueColor: "#5DADE2",
-  pinkColor: "#A569BD",
+  pinkColor: "#000",
   greenColor: "#58D68D",
 };
 
@@ -56,7 +56,7 @@ export const ThemeSupport = [
     light: {
       dark: false,
       colors: {
-        primary: "#FF2D55",
+        primary: "#000",
         primaryDark: "#F90030",
         primaryLight: "#FF5E80",
         accent: "#4A90A4",
@@ -224,13 +224,13 @@ export const useTheme = () => {
   const theme = listTheme.length > 0 ? listTheme[0] : DefaultTheme;
 
   if (forceDark) {
-    return { theme: theme.dark, colors: theme.dark.colors };
+    return { theme: theme.light, colors: theme.light.colors };
   }
   if (forceDark == false) {
     return { theme: theme.light, colors: theme.light.colors };
   }
   return isDarkMode
-    ? { theme: theme.dark, colors: theme.dark.colors }
+    ?{ theme: theme.light, colors: theme.light.colors }
     : { theme: theme.light, colors: theme.light.colors };
 };
 

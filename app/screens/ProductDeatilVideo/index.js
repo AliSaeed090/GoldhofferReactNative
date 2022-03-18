@@ -11,7 +11,16 @@ import Svg, { Rect } from 'react-native-svg';
 
 
 import { useSelector } from "react-redux";
-
+const ArrowPng = () => {
+    return (
+      <Image source={Images.arrows} style={{ width: 30, height: 30 }} resizeMode="contain" />
+    );
+  }
+  const BackArrowPng = () => {
+    return (
+      <Image source={Images.backArrow} style={{ width: 20, height: 20 }} resizeMode="contain" />
+    );
+  }
 function renderFooter() {
   const contact = useSelector((state) => state.application.contact);
   const { colors } = useTheme();
@@ -115,8 +124,9 @@ export default function ProductDetailsList(props) {
                 title=""
                 renderLeft={() => {
                     return (
-                        <View style={{ flexDirection: 'row', width: 100 }}>
-                            <FontAwesome5 name="angle-double-left" color={"white"} size={25} />
+                        <View style={{ flexDirection: 'row', width: 100 , justifyContent:'center', alignItems:'center'}}>
+                            {/* <FontAwesome5 name="angle-double-left" color={"white"} size={25} /> */}
+                            <BackArrowPng/>
                             <Text style={{ marginLeft: 10 }} headline bold whiteColor>
                                 ZURÜCK
                             </Text>
@@ -138,21 +148,22 @@ export default function ProductDetailsList(props) {
             />
             <ScrollView>
 
-                <View style={{ width: '100%', height: 350 }}>
+                <View style={{ width: '100%', height: 350, backgroundColor:'#D2D9DE' }}>
                     <Image source={list.image} style={styles.banner} resizeMode="cover" />
 
                 </View>
                 <View style={{ width: '100%', marginTop: -2 }}>
                     {list.text.map((txt) => {
                         return (
-                            <View style={{ width: '100%', flexDirection: 'row' }}>
-                                <View style={{ width: "80%", backgroundColor: 'black', padding: 12, marginTop: 2 }}>
+                            <View style={{ width: '100%', flexDirection: 'row', backgroundColor: 'black', padding: 15,justifyContent: 'center', alignItems: 'center', marginTop:5 }}>
+                                <View style={{ width: "90%", marginTop: 2 }}>
                                     <Text headline bold whiteColor>
                                         {txt}
                                     </Text>
                                 </View>
-                                <View style={{ width: "20%", backgroundColor: 'white', padding: 12, marginTop: 2, justifyContent: 'center', alignItems: 'center' }}>
-                                    <FontAwesome5 name="angle-double-right" color={"black"} size={25} />
+                                <View style={{ width: "10%",  }}>
+                                    {/* <FontAwesome5 name="angle-double-right" color={"black"} size={25} /> */}
+                                    <ArrowPng/>
                                 </View>
                             </View>
                         )

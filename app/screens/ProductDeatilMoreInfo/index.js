@@ -52,7 +52,11 @@ function renderFooter() {
     // </View>
   )
 }
-
+const BackArrowPng = () => {
+  return (
+    <Image source={Images.backArrow} style={{ width: 20, height: 20 }} resizeMode="contain" />
+  );
+}
 export default function ProductDetailsList(props) {
   const { navigation } = props;
   const { t } = useTranslation();
@@ -91,8 +95,9 @@ export default function ProductDetailsList(props) {
         title=""
         renderLeft={() => {
           return (
-            <View style={{ flexDirection: 'row', width: 100 }}>
-              <FontAwesome5 name="angle-double-left" color={"white"} size={25} />
+            <View style={{ flexDirection: 'row', width: 100 , justifyContent:'center', alignItems:'center'}}>
+              {/* <FontAwesome5 name="angle-double-left" color={"white"} size={25} /> */}
+              <BackArrowPng/>
               <Text style={{ marginLeft: 10 }} headline bold whiteColor>
                 ZURÜCK
               </Text>

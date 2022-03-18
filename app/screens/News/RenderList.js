@@ -9,7 +9,12 @@ import { useTranslation } from "react-i18next";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
 import { useNavigation } from '@react-navigation/native';
 
-
+const ArrowPng = () => {
+    return (
+      <Image source={Images.arrows} style={{ width: 20, height: 20 }} resizeMode="contain" />
+    );
+  }
+  
 export default function RenderList(props) {
     const Navigation = useNavigation()
     return (
@@ -30,7 +35,8 @@ export default function RenderList(props) {
 
                 </View>
                 <TouchableOpacity style={{ width: '15%', padding: 12 }}>
-                    <FontAwesome5 onPress={() => Navigation.navigate("NewsDetails")} name="angle-double-right" color={"black"} size={45} />
+                    <ArrowPng/>
+                    {/* <FontAwesome5 onPress={() => Navigation.navigate("NewsDetails")} name="angle-double-right" color={"black"} size={45} /> */}
                 </TouchableOpacity>
             </View>
 

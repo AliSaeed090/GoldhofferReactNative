@@ -9,6 +9,24 @@ import { useTranslation } from "react-i18next";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
 import { useNavigation } from '@react-navigation/native';
 
+
+const ArrowPng = (props) => {
+    return (
+      <Image source={Images.arrows} style={{ width: 20, height: 20 }} resizeMode="contain" tintColor={props.tintColor} />
+    );
+  }
+  const BackArrowPng = () => {
+    return (
+      <Image source={Images.backArrow} style={{ width: 20, height: 20 }} resizeMode="contain" />
+    );
+  }
+  const DownArrowPng = () => {
+    return (
+      <Image source={Images.downArrow} style={{ width: 20, height: 20 }} resizeMode="contain" />
+    );
+  }
+
+  
 export default function ContactOverView(props) {
     const navigation = useNavigation()
     const [showBtn, setShowBtn] = useState(false)
@@ -39,8 +57,9 @@ const anglePress =()=>{
                 title=""
                 renderLeft={() => {
                     return (
-                        <View style={{ flexDirection: 'row', width: 100 }}>
-                            <FontAwesome5 name="angle-double-left" color={"white"} size={25} />
+                        <View style={{ flexDirection: 'row', width: 100 , justifyContent:'center', alignItems:'center'}}>
+                            {/* <FontAwesome5 name="angle-double-left" color={"white"} size={25} /> */}
+                            <BackArrowPng/>
                             <Text style={{ marginLeft: 10 }} headline bold whiteColor>
                                 ZURÜCK
                             </Text>
@@ -69,7 +88,15 @@ const anglePress =()=>{
                     </View>
                     <TouchableOpacity onPress={() => anglePress()} style={{ width: "10%", alignItems: 'flex-end', justifyContent: 'flex-end' }}>
 
-                        {showBtn ? <FontAwesome5 name="angle-double-down" color={"black"} size={25} /> : <FontAwesome5 name="angle-double-right" color={"black"} size={25} />}
+                        {showBtn ? 
+                        // <FontAwesome5 name="angle-double-down" color={"black"} size={25} /> 
+                        <DownArrowPng/>
+                        : 
+                        <ArrowPng tintColor="black"/>
+                        // <FontAwesome5 name="angle-double-right" color={"black"} size={25} />
+                        
+                        
+                        }
 
                     </TouchableOpacity>
                 </View>
@@ -77,7 +104,7 @@ const anglePress =()=>{
                     <View style={{ width: "50%", justifyContent: 'center', alignItems: 'center', margin: 2 }}>
                         <TouchableOpacity
                         onPress={transportPress}
-                            style={{ width: '100%', justifyContent: 'center', alignItems: 'center', backgroundColor: 'black', padding: 10 }}
+                            style={{ width: '100%', justifyContent: 'center', alignItems: 'center', backgroundColor: showTransportList===true? "#E1E1E1" : 'black', padding: 10 }}
                         >
                             <Text headline bold whiteColor>
                                 TRANSPORT
@@ -87,7 +114,7 @@ const anglePress =()=>{
                     <View style={{ width: "50%", justifyContent: 'center', alignItems: 'center', margin: 2 }}>
                         <TouchableOpacity
                         onPress={airPortPress}
-                            style={{ width: '100%', justifyContent: 'center', alignItems: 'center', backgroundColor: 'black', padding: 10 }}
+                            style={{ width: '100%', justifyContent: 'center', alignItems: 'center', backgroundColor: showAirPort===true? "#E1E1E1" : 'black', padding: 10 }}
                         >
                             <Text headline bold whiteColor>
                                 AIRPORT
@@ -197,7 +224,8 @@ const anglePress =()=>{
                             <Text style={{ marginRight: 10 }} headline bold whiteColor>
                                 SENDEN
                             </Text>
-                            <FontAwesome5 name="angle-double-right" color={"white"} size={25} />
+                            {/* <FontAwesome5 name="angle-double-right" color={"white"} size={25} /> */}
+                            <ArrowPng tintColor="white"/>
 
                         </View>
                         <View style={{ width: 20, height: 100, }} />
