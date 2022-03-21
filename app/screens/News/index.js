@@ -3,54 +3,15 @@ import { BaseStyle, useTheme, Images, BaseColor } from "@config";
 // Load sample data
 import styles from './styles'
 import React, { useState, useMemo, useEffect } from "react";
-import { FlatList, View, TouchableOpacity, RefreshControl, Linking } from "react-native";
+import { FlatList, View, TouchableOpacity, RefreshControl, Linking, ActivityIndicator } from "react-native";
 import { useTranslation } from "react-i18next";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
 import RenderList from "./RenderList"
 import Svg, { Rect } from 'react-native-svg';
 import { useFocusEffect } from '@react-navigation/native';
 import { useSelector } from "react-redux";
+import { WebView } from 'react-native-webview';
 
-function renderFooter() {
-  const contact = useSelector((state) => state.application.contact);
-  const { colors } = useTheme();
-  return (
-    <TouchableOpacity onPress={()=>Linking.openURL("https://www.goldhofer.com/en/contact")} style={{ width: "95%", flexDirection: 'row', height: 90, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
-     
-     <View style={{borderTopLeftRadius: 55, backgroundColor:'black', width:100, height:'100%', justifyContent:'center', alignItems:'center'}}>
-     <Image source={Images.G} style={styles.manImage} resizeMode="contain" />
-
-     </View>
-      <View style={{ width: '50%', alignItems: 'center', marginTop: 10 }}>
-        <Text style={{ marginTop: 10 }} headline bold blackColor>
-          {contact.name}
-        </Text>
-        <View style={{ width: "95%", flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
-         
-          <Text style={{ marginLeft: 10, fontSize: 18 }} blackColor>
-          {contact.number}
-          </Text>
-        </View>
-      </View>
-
-    </TouchableOpacity>
-    // <View style={{
-    //   width: 300,
-    //   height: 50,
-    //   backgroundColor: "transparent",
-    //   borderStyle: "solid",
-    //   borderLeftWidth: 0,
-    //   borderRightWidth: 100,
-    //   borderBottomWidth: 50,
-    //   borderLeftColor: "transparent",
-    //   borderRightColor: "transparent",
-    //   borderBottomColor: "red",
-    // }}>
-
-
-    // </View>
-  )
-}
 
 export default function News(props) {
 
@@ -58,9 +19,8 @@ export default function News(props) {
   const { navigation } = props;
   const { t } = useTranslation();
   const { colors } = useTheme();
-  const [isTransportActive, setTransPortActive] = useState(null)
-  const [list, setList] = useState(["s", "2", "s", "2", "s", "2", "s", "2", "s", "2"])
-  const [searchArr, setsearchArr] = useState(["s", "2", "s", "2", "s", "2", "s", "2", "s", "2"])
+  const [isLoading, setloisLoading] = useState(null)
+
 
 
   const [search, setsearch] = useState("");
@@ -72,33 +32,39 @@ export default function News(props) {
 
     }
   };
-  useFocusEffect(() => {
-   
-    Linking.openURL("https://www.goldhofer.com/en/press")
-    navigation.goBack("Home")
-  }, [])
-  const memoizedValue = useMemo(() => RenderList(), [list]);
+  // useFocusEffect(() => {
+
+  //   Linking.openURL("https://www.goldhofer.com/en/press")
+  //   navigation.goBack("Home")
+  // }, [])
+  // const memoizedValue = useMemo(() => RenderList(), [list]);
   return (
     <SafeAreaView style={BaseStyle.safeAreaView} edges={['right', 'top', 'left']}>
 
 
+      <WebView
 
-      {/* <FlatList
-        refreshControl={
-          <RefreshControl
-            colors={[colors.primary]}
-            tintColor={colors.primary}
-            refreshing={false}
-            onRefresh={() => { }}
-          />
-        }
-        data={search.length > 0 ? searchArr : list}
-        keyExtractor={(item, index) => Math.random().toString()}
+        onLoadStart={(syntheticEvent) => {
+          // update component to be aware of loading status
+          const { nativeEvent } = syntheticEvent;
+          console.log({ isLoading: nativeEvent.loading })
+          setloisLoading(nativeEvent.loading)
+        }}
 
-        ListFooterComponent={renderFooter}
-        renderItem={()=>memoizedValue}
-        ItemSeparatorComponent={()=><View style={{marginTop:10}}/>}
-      /> */}
+        onLoadEnd={(syntheticEvent) => {
+          // update component to be aware of loading status
+          const { nativeEvent } = syntheticEvent;
+          console.log({ isLoading: nativeEvent.loading })
+          setloisLoading(nativeEvent.loading)
+        }}
+
+        source={{ uri: 'https://www.goldhofer.com/en/press' }} />
+      {isLoading && <View style={{
+        position: 'absolute', width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center'
+      }}>
+
+        <ActivityIndicator color={"black"} size="large" />
+      </View>}
     </SafeAreaView>
   );
 };
