@@ -32,8 +32,8 @@ export default function ContactOverView(props) {
     const [showBtn, setShowBtn] = useState(false)
     const [showTransportList, setShowTransportList] = useState(false)
     const [showAirPort, setShowAirPort] = useState(false)
-    const transportArr = ["ANHÄNGER", "SATTELAUFLIEGER", "SCHWERLASTMODULE", "SONDERLÖSUNGEN FÜR WINDANLAGEN", "SERVICES RUND UM SCHWER-& SPEZIALTRANSPORTE", "TECHNOLOGIEN RUND UM SCHWER- & SPEZIALTRANSPORTE", "SONSTIGES"]
-    const airportArr = ["CARGOSCHLEPPER", "KONVENTIONELLE FLUGZEUGSCHLEPPER", "STANGENLOSE FLUGZEUGSCHLEPPER", "FLUGZEUGBERGESYSTEME", "SERVICES FÜR DEN AIRPORT", "TECHNOLOGIEN FÜR DEN AIRPORT", "SONSTIGES"]
+    const transportArr = ["TRAILSTAR", "SATTELANHÄNGER", "SCHWERLASTMODULE", "SPEZIALANWENDUNGEN", "SOFORT VERFÜGBAR", "PARTNER",]
+    const airportArr = ["FRACHT-/PUSHBACKSCHLEPPER", "KONVENTIONELLE SCHLEPPER", "STANGENLOSE SCHLEPPER", "FLUGZEUGBERGESYSTEME", "PARTNER", ]
  const transportPress =()=>{
     setShowTransportList(true)
     setShowAirPort(false)
@@ -190,9 +190,9 @@ const anglePress =()=>{
 
                         </View>
                         <View
-                            style={{ flexDirection: 'row', alignSelf: 'center', width: '85%', justifyContent: 'flex-start', alignItems: 'center', backgroundColor: '#D2D9DE', padding: 0, margin: 5 }}
+                            style={{ flexDirection: 'row', alignSelf: 'center', width: '85%', justifyContent: 'flex-start', alignItems: 'center', backgroundColor: '#D2D9DE', padding: 0, margin: 5,height: 80 }}
                         >
-                            <TextInput style={{ backgroundColor: 'transparent', fontWeight: 'bold' }} placeholder="ADRESSE (OPTIONAL)" placeholderTextColor="white" />
+                            <TextInput multiline={true} style={{ backgroundColor: 'transparent', fontWeight: 'bold' }} placeholder="ADRESSE (OPTIONAL)" placeholderTextColor="white" />
 
 
                         </View>

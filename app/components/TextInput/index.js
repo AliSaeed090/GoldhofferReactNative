@@ -27,7 +27,7 @@ const Index = forwardRef((props, ref) => {
       <TextInput
         ref={ref}
         style={{
-          fontFamily: `${font}-Regular`,
+          fontFamily: `${font}-Bold`,
           flex: 1,
           height: "100%",
           textAlign: I18nManager.isRTL ? "right" : "auto",

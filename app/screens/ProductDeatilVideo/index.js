@@ -13,37 +13,37 @@ import Svg, { Rect } from 'react-native-svg';
 import { useSelector } from "react-redux";
 const ArrowPng = () => {
     return (
-      <Image source={Images.arrows} style={{ width: 30, height: 30 }} resizeMode="contain" />
+        <Image source={Images.arrows} style={{ width: 30, height: 30 }} resizeMode="contain" />
     );
-  }
-  const BackArrowPng = () => {
+}
+const BackArrowPng = () => {
     return (
-      <Image source={Images.backArrow} style={{ width: 20, height: 20 }} resizeMode="contain" />
+        <Image source={Images.backArrow} style={{ width: 20, height: 20 }} resizeMode="contain" />
     );
-  }
+}
 function renderFooter() {
-  const contact = useSelector((state) => state.application.contact);
-  const { colors } = useTheme();
-  return (
-    <TouchableOpacity onPress={()=>Linking.openURL("https://www.goldhofer.com/en/contact")} style={{ width: "95%", flexDirection: 'row', height: 90, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
-     
-     <View style={{borderTopLeftRadius: 55, backgroundColor:'black', width:100, height:'100%', justifyContent:'center', alignItems:'center'}}>
-     <Image source={Images.G} style={styles.manImage} resizeMode="contain" />
+    const contact = useSelector((state) => state.application.contact);
+    const { colors } = useTheme();
+    return (
+        <TouchableOpacity onPress={() => Linking.openURL("https://www.goldhofer.com/en/contact")} style={{ width: "95%", flexDirection: 'row', height: 90, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
 
-     </View>
-      <View style={{ width: '50%', alignItems: 'center', marginTop: 10 }}>
-        <Text style={{ marginTop: 10 }} headline bold blackColor>
-          {contact.name}
-        </Text>
-        <View style={{ width: "95%", flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
-         
-          <Text style={{ marginLeft: 10, fontSize: 18 }} blackColor>
-          {contact.number}
-          </Text>
-        </View>
-      </View>
+            <View style={{ borderTopLeftRadius: 55, backgroundColor: 'black', width: 100, height: '100%', justifyContent: 'center', alignItems: 'center' }}>
+                <Image source={Images.G} style={styles.manImage} resizeMode="contain" />
 
-    </TouchableOpacity>
+            </View>
+            <View style={{ width: '50%', alignItems: 'center', marginTop: 10 }}>
+                <Text style={{ marginTop: 10 }} headline bold blackColor>
+                    {contact.name}
+                </Text>
+                <View style={{ width: "95%", flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
+
+                    <Text style={{ marginLeft: 10, fontSize: 18 }} blackColor>
+                        {contact.number}
+                    </Text>
+                </View>
+            </View>
+
+        </TouchableOpacity>
 
         // <View style={{
         //   width: 300,
@@ -64,6 +64,7 @@ function renderFooter() {
 }
 
 export default function ProductDetailsList(props) {
+    const contact = useSelector((state) => state.application.contact);
     const { navigation } = props;
     const youTubeRef = useRef()
     const { params } = props.route
@@ -118,15 +119,15 @@ export default function ProductDetailsList(props) {
     };
 
     return (
-        <SafeAreaView style={BaseStyle.safeAreaView} edges={['right', 'top', 'left']}>
+        <SafeAreaView style={{ ...BaseStyle.safeAreaView, backgroundColor: '#D2D9DE' }} edges={['right', 'top', 'left']}>
             <Header
                 style={{ backgroundColor: 'black' }}
                 title=""
                 renderLeft={() => {
                     return (
-                        <View style={{ flexDirection: 'row', width: 100 , justifyContent:'center', alignItems:'center'}}>
+                        <View style={{ flexDirection: 'row', width: 100, justifyContent: 'center', alignItems: 'center' }}>
                             {/* <FontAwesome5 name="angle-double-left" color={"white"} size={25} /> */}
-                            <BackArrowPng/>
+                            <BackArrowPng />
                             <Text style={{ marginLeft: 10 }} headline bold whiteColor>
                                 ZURÜCK
                             </Text>
@@ -148,22 +149,22 @@ export default function ProductDetailsList(props) {
             />
             <ScrollView>
 
-                <View style={{ width: '100%', height: 350, backgroundColor:'#D2D9DE' }}>
+                <View style={{ width: '100%', height: 350, backgroundColor: '#D2D9DE' }}>
                     <Image source={list.image} style={styles.banner} resizeMode="cover" />
 
                 </View>
                 <View style={{ width: '100%', marginTop: -2 }}>
                     {list.text.map((txt) => {
                         return (
-                            <View style={{ width: '100%', flexDirection: 'row', backgroundColor: 'black', padding: 15,justifyContent: 'center', alignItems: 'center', marginTop:5 }}>
+                            <View style={{ width: '100%', flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
                                 <View style={{ width: "90%", marginTop: 2 }}>
                                     <Text headline bold whiteColor>
                                         {txt}
                                     </Text>
                                 </View>
-                                <View style={{ width: "10%",  }}>
-                                    {/* <FontAwesome5 name="angle-double-right" color={"black"} size={25} /> */}
-                                    <ArrowPng/>
+                                <View style={{ width: "10%", }}>
+
+                                    <ArrowPng />
                                 </View>
                             </View>
                         )
@@ -200,34 +201,59 @@ export default function ProductDetailsList(props) {
                                 { height: 200 },
                                 styles.player,
                             ]}
-                            // onError={e => {
-                            //     setState(prvState=>({...prvState, error: e.error}));
-                            // }}
-                            // onReady={e => {
-                            //     setState(prvState=>({...prvState, isReady: true}));
-                                 
-                            // }}
-                            // onChangeState={e => {
-                            //     setState(prvState=>({...prvState,status: e.state}));
-                                 
-                            // }}
-                            // onChangeQuality={e => {
-                            //     setState(prvState=>({...prvState,quality: e.quality }));
-                                 
-                            // }}
-                            // onChangeFullscreen={e => {
-                            //     setState(prvState=>({...prvState,fullscreen: e.isFullscreen }));
-                              
-                            // }}
-                            // onProgress={e => {
-                            //     setState(prvState=>({...prvState,currentTime: e.currentTime }));
-                               
-                            // }}
+                        // onError={e => {
+                        //     setState(prvState=>({...prvState, error: e.error}));
+                        // }}
+                        // onReady={e => {
+                        //     setState(prvState=>({...prvState, isReady: true}));
+
+                        // }}
+                        // onChangeState={e => {
+                        //     setState(prvState=>({...prvState,status: e.state}));
+
+                        // }}
+                        // onChangeQuality={e => {
+                        //     setState(prvState=>({...prvState,quality: e.quality }));
+
+                        // }}
+                        // onChangeFullscreen={e => {
+                        //     setState(prvState=>({...prvState,fullscreen: e.isFullscreen }));
+
+                        // }}
+                        // onProgress={e => {
+                        //     setState(prvState=>({...prvState,currentTime: e.currentTime }));
+
+                        // }}
                         />}
 
 
                     </View>
+
                 </View>
+                <TouchableOpacity style={{ width: '95%', alignSelf: 'center', marginTop: 20, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
+                    <View style={{ width: "90%", marginTop: 2 }}>
+                        <Text headline bold whiteColor>
+                         {contact.type==="SERVICE"?  "TECHNISCHE VIDEOS" :   "EINSATZ VIDEOS"}
+                        </Text>
+                    </View>
+                    <View style={{ width: "10%", }}>
+
+                        <ArrowPng />
+                    </View>
+                </TouchableOpacity>
+
+
+                <TouchableOpacity style={{ width: '100%', alignSelf: 'center', marginTop: 40, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
+                    <View style={{ width: "90%", marginTop: 2 }}>
+                        <Text headline bold whiteColor>
+                        {contact.type==="SERVICE"?  "PRODUKTVIDEOS & MEHR" :  " SERVICE VIDEOS & MEHR"}
+                        </Text>
+                    </View>
+                    <View style={{ width: "10%", }}>
+
+                        <ArrowPng />
+                    </View>
+                </TouchableOpacity>
                 {renderFooter()}
             </ScrollView>
         </SafeAreaView>

@@ -5,7 +5,7 @@ const initialState = {
   force_dark: null,
   language: null,
   contact:{
-    name:'', number:''
+    name:'', number:'',type:''
   },
   menu: "eCommerce",
 };
