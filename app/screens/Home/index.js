@@ -9,7 +9,6 @@ import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
 import { useDispatch } from "react-redux";
 import { ApplicationActions } from "@actions";
 
-
 const ArrowPng = () => {
   return (
     <Image source={Images.arrows} style={{ width: 20, height: 20 }} resizeMode="contain" />
@@ -26,14 +25,14 @@ const Home = (props) => {
   const [isTransportActive, setTransPortActive] = useState(null)
   const [listTransport, setListTransport] = useState([
     {
-      image: undefined, text: 'TRAILSTAR', data: [{
+      image: undefined, text: 'TRAILSTAR', searchText:'PRODUKT PROSPEKT »TRAILSTAR«',   data: [{
         image: undefined, text: 'TRAILSTAR', listTransport: true,
         data: { image: undefined, text: ['PRODUKT PROSPEKT »TRAILSTAR«'], videoId: "9RM0QLDti1A", }
       },
       ]
     },
     {
-      image: Images.banner1, text: 'SATTELANHÄNGER',
+      image: Images.banner1, text: 'SATTELANHÄNGER', searchText:'PRITSCHENAUFLIEGER SATTELANHÄNGER SPZ-L | SPZ-GL | SPZ-H SPZ-GP »VENTUM« SEMIAUFLIEGER STEPSTAR »ARCUS« P | »ARCUS« PK STZ-L | STZ-H | »MPA« STZ-L | »MPA« MIT RADMULDE TIEFBETTAUFLIEGER STZ-VL | STZ-VH »MPA« V STZ-VP (245) STZ-VP (285)',   
       data: [
         {
           image: Images.banner16, text: 'PRITSCHENAUFLIEGER', listTransport: true,
@@ -44,7 +43,7 @@ const Home = (props) => {
           ]
         },
         {
-          image: Images.banner18, text: 'SEMIAUFLIEGER',
+          image: Images.banner18, text: 'SEMIAUFLIEGER', 
           data: [
             { image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'] } },
             { image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'] } },
@@ -56,7 +55,7 @@ const Home = (props) => {
 
         },
         {
-          image: Images.banner10, text: 'TIEFBETTAUFLIEGER',
+          image: Images.banner10, text: 'TIEFBETTAUFLIEGER', 
           data: [
             { image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'] } },
             { image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'] } },
@@ -74,7 +73,7 @@ const Home = (props) => {
     },
 
     {
-      image: Images.banner2, text: 'SCHWERLASTMODULE',
+      image: Images.banner2, text: 'SCHWERLASTMODULE',searchText:'SCHWERLASTMODULE  GEZOGEN THP/ET THP/MT THP/SL-L THP/SL-S THP/SL THP/UT ANGETRIEBEN »ADDRIVE« PST/SL PST/SL-E PST/ES-E',
       data: [
         {
           image: Images.banner40, text: 'GEZOGEN', listTransport: true,
@@ -89,7 +88,7 @@ const Home = (props) => {
           ]
         },
         {
-          image: Images.banner41, text: 'ANGETRIEBEN',
+          image: Images.banner41, text: 'ANGETRIEBEN', 
           data: [
             { image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'] } },
             { image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'] } },
@@ -107,6 +106,7 @@ const Home = (props) => {
     },
     {
       image: Images.banner3, text: 'SPEZIALANWENDUNGEN',
+      searchText:"SPEZIALANWENDUNGEN  FTV 550 PRODUKT PROSPEKT FTV 550 »FAKTOR« 5 | »FAKTOR« 5.5 PRODUKT PROSPEKT »FAKTOR« 5 | »FAKTOR« 5.5 RA 2 RA 3 RA 4 »BLADEX« »BLADES«",
       data: [
 
         {
@@ -147,13 +147,21 @@ const Home = (props) => {
       ]
     },
     {
-      image: Images.banner4, text: 'SPEZIALANWENDUNGEN', data: [{ image: Images.banner10, text: 'TU I TU-L', listTransport: true, data: { image: Images.banner11, text: ['QUICKGUIDE ZUM TU I TU-L'], videoId: "9RM0QLDti1A", } }, {
-        image: Images.banner10, text: 'TN-L', data: { image: Images.banner12, text: ['QUICKGUIDE ZUM TN-L'], videoId: "eP_YC0cr0n0", }, listTransport: true, data: { image: Images.banner12, text: ['QUICKGUIDE ZUM TN-L'], videoId: "eP_YC0cr0n0", }
+      image: Images.banner4, text: 'SOFORT VERFÜGBAR',
+      searchText:"SOFORT VERFÜGBAR TU I TU-L QUICKGUIDE ZUM TU I TU-L TN-L QUICKGUIDE ZUM TN-L'",
+      data: [{ image: Images.banner10, text: 'TU I TU-L', listTransport: true, data: { image: Images.banner11, text: ['QUICKGUIDE ZUM TU I TU-L'], videoId: "9RM0QLDti1A", } },
+       {
+        image: Images.banner10, text: 'TN-L', data: { image: Images.banner12, text: ['QUICKGUIDE ZUM TN-L'], videoId: "eP_YC0cr0n0", }, listTransport: true,
+         data: { image: Images.banner12, text: ['QUICKGUIDE ZUM TN-L'], videoId: "eP_YC0cr0n0", }
       }]
     },
     {
-      image: Images.banner5, text: 'PARTNER', data: [{ image: Images.banner10, text: 'TU I TU-L', listTransport: true, data: { image: Images.banner11, text: ['QUICKGUIDE ZUM TU I TU-L'], videoId: "9RM0QLDti1A", } }, {
-        image: Images.banner10, text: 'TN-L', data: { image: Images.banner12, text: ['QUICKGUIDE ZUM TN-L'], videoId: "eP_YC0cr0n0", }, listTransport: true, data: { image: Images.banner12, text: ['QUICKGUIDE ZUM TN-L'], videoId: "eP_YC0cr0n0", }
+      image: Images.banner5, text: 'PARTNER',
+      searchText:"PARTNER TU I TU-L QUICKGUIDE ZUM TU I TU-L QUICKGUIDE ZUM TN-L",
+      data: [{ image: Images.banner10, text: 'TU I TU-L', listTransport: true, data: { image: Images.banner11, text: ['QUICKGUIDE ZUM TU I TU-L'], videoId: "9RM0QLDti1A", } },
+       {
+        image: Images.banner10, text: 'TN-L', data: { image: Images.banner12, text: ['QUICKGUIDE ZUM TN-L'], videoId: "eP_YC0cr0n0", },
+         listTransport: true, data: { image: Images.banner12, text: ['QUICKGUIDE ZUM TN-L'], videoId: "eP_YC0cr0n0", }
       }]
     }
 
@@ -162,14 +170,14 @@ const Home = (props) => {
 
   const [listTransportSerVice, setListTransportService] = useState([
     {
-      image: undefined, text: 'TRAILSTAR', data: [{
+      image: undefined, text: 'TRAILSTAR', searchText:'PRODUKT PROSPEKT »TRAILSTAR«', data: [{
         image: undefined, text: 'TRAILSTAR', listTransport: true,
         data: { image: undefined, text: ['QUICKGUIDE ZUM »TRAILSTAR«'], videoId: "9RM0QLDti1A", }
       },
       ]
     },
     {
-      image: Images.banner1, text: 'SATTELANHÄNGER',
+      image: Images.banner1, text: 'SATTELANHÄNGER', searchText:'PRITSCHENAUFLIEGER SATTELANHÄNGER SPZ-L | SPZ-GL | SPZ-H SPZ-GP »VENTUM« SEMIAUFLIEGER STEPSTAR »ARCUS« P | »ARCUS« PK STZ-L | STZ-H | »MPA« STZ-L | »MPA« MIT RADMULDE TIEFBETTAUFLIEGER STZ-VL | STZ-VH »MPA« V STZ-VP (245) STZ-VP (285)',
       data: [
         {
           image: Images.banner16, text: 'PRITSCHENAUFLIEGER', listTransport: true,
@@ -210,7 +218,7 @@ const Home = (props) => {
     },
 
     {
-      image: Images.banner2, text: 'SCHWERLASTMODULE',
+      image: Images.banner2, text: 'SCHWERLASTMODULE',searchText:'SCHWERLASTMODULE  GEZOGEN THP/ET THP/MT THP/SL-L THP/SL-S THP/SL THP/UT ANGETRIEBEN »ADDRIVE« PST/SL PST/SL-E PST/ES-E',
       data: [
         {
           image: Images.banner40, text: 'GEZOGEN', listTransport: true,
@@ -243,6 +251,7 @@ const Home = (props) => {
     },
     {
       image: Images.banner3, text: 'SPEZIALANWENDUNGEN',
+      searchText:"SPEZIALANWENDUNGEN  FTV 550 PRODUKT PROSPEKT FTV 550 »FAKTOR« 5 | »FAKTOR« 5.5 PRODUKT PROSPEKT »FAKTOR« 5 | »FAKTOR« 5.5 RA 2 RA 3 RA 4 »BLADEX« »BLADES«",
       data: [
 
         {
@@ -299,7 +308,12 @@ const Home = (props) => {
 
   const [listAirport, setListAirport] = useState([
     {
-      image: Images.banner13, text: 'FRACHT-/PUSHBACKSCHLEPPER', data: [{
+      image: Images.banner13, text: 'FRACHT-/PUSHBACKSCHLEPPER »SHERPA« E',
+      searchText:'FRACHT-/PUSHBACKSCHLEPPER »SHERPA« D  DATENBLÄTTER E-MOBILITY',
+      
+      
+      
+      data: [{
         image: Images.banner9, text: '»SHERPA« D', listAirport: true,
         data: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D", ] }
       },
@@ -311,6 +325,7 @@ const Home = (props) => {
 
     {
       image: Images.banner8, text: 'KONVENTIONELLE SCHLEPPER',
+      searchText:'KONVENTIONELLE SCHLEPPER »BISON« D FAMILIE DATENBLÄTTER »BISON« E  ',
       data: [{
         image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true,
         data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE"] }
@@ -325,7 +340,9 @@ const Home = (props) => {
     },
 
     {
-      image: Images.banner7, text: 'STANGENLOSE SCHLEPPER', data: [
+      image: Images.banner7, text: 'STANGENLOSE SCHLEPPER',
+      searchText:'STANGENLOSE SCHLEPPER  »PHOENIX« AST-2P/X DATENBLÄTTER AST-2E AST-1X ',
+      data: [
         {
           image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true,
           data: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X"] }
@@ -342,7 +359,9 @@ const Home = (props) => {
     },
 
     {
-      image: Images.banner6, text: 'FLUGZEUGBERGESYSTEME', data: [{
+      image: Images.banner6, text: 'FLUGZEUGBERGESYSTEME',
+      searchText:'FLUGZEUGBERGESYSTEME DOLLIES KLEINE SCHÄDEN DATENBLÄTTER KOMBINATIONSSYSTEME GROSSE',
+      data: [{
         image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true,
         data: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN"] }
       },
@@ -353,7 +372,9 @@ const Home = (props) => {
     },
 
     {
-      image: Images.banner5, text: 'PARTNER', data: [{
+      image: Images.banner5, text: 'PARTNER',
+      searchText:'PARTNER',
+      data: [{
         image: Images.banner13, text: 'F59', listAirport: true,
         data: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D", "SERVICE PROSPEKT"] }
       },
@@ -368,7 +389,9 @@ const Home = (props) => {
 
   const [listAirportService, setListAirportService] = useState([
     {
-      image: Images.banner13, text: 'FRACHT-/PUSHBACKSCHLEPPER', data: [{
+      image: Images.banner13, text: 'FRACHT-/PUSHBACKSCHLEPPER',
+      searchText:'FRACHT-/PUSHBACKSCHLEPPER »SHERPA« D  DATENBLÄTTER E-MOBILITY',
+      data: [{
         image: Images.banner9, text: '»SHERPA« D', listAirport: true,
         data: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D", "SERVICE PROSPEKT"] }
       },
@@ -380,6 +403,7 @@ const Home = (props) => {
 
     {
       image: Images.banner8, text: 'KONVENTIONELLE SCHLEPPER',
+      searchText:'KONVENTIONELLE SCHLEPPER »BISON« D FAMILIE DATENBLÄTTER »BISON« E  ',
       data: [{
         image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true,
         data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE","SERVICE PROSPEKT"] }
@@ -394,7 +418,9 @@ const Home = (props) => {
     },
 
     {
-      image: Images.banner7, text: 'STANGENLOSE SCHLEPPER', data: [
+      image: Images.banner7, text: 'STANGENLOSE SCHLEPPER',
+      searchText:'STANGENLOSE SCHLEPPER  »PHOENIX« AST-2P/X DATENBLÄTTER AST-2E AST-1X ',
+      data: [
         {
           image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true,
           data: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X","SERVICE PROSPEKT"] }
@@ -411,7 +437,9 @@ const Home = (props) => {
     },
 
     {
-      image: Images.banner6, text: 'FLUGZEUGBERGESYSTEME', data: [{
+      image: Images.banner6, text: 'FLUGZEUGBERGESYSTEME',
+      searchText:'FLUGZEUGBERGESYSTEME DOLLIES KLEINE SCHÄDEN DATENBLÄTTER KOMBINATIONSSYSTEME GROSSE',
+      data: [{
         image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true,
         data: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN","SERVICE PROSPEKT"] }
       },
@@ -422,7 +450,10 @@ const Home = (props) => {
     },
 
     {
-      image: Images.banner5, text: 'PARTNER', data: [{
+      image: Images.banner5, text: 'PARTNER',
+      searchText:'PARTNER',
+      
+      data: [{
         image: Images.banner13, text: 'F59', listAirport: true,
         data: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D", "SERVICE PROSPEKT"] }
       },

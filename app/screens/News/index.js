@@ -58,7 +58,7 @@ export default function News(props) {
           setloisLoading(nativeEvent.loading)
         }}
 
-        source={{ uri: 'https://www.goldhofer.com/en/press' }} />
+        source={{ uri: 'https://wepoc.io' }} />
       {isLoading && <View style={{
         position: 'absolute', width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center'
       }}>

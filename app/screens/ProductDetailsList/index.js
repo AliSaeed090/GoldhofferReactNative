@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
 import RenderList2 from "./RenderList2"
 import Svg, { Rect } from 'react-native-svg';
+import JsonFind from "json-find";
 
 import { useSelector } from "react-redux";
 const BackArrowPng = () => {
@@ -75,9 +76,10 @@ export default function ProductDetailsList(props) {
 
   const [searchArr, setsearchArr] = useState([]);
   const searchFilterFunction = (text) => {
-
+ 
+ 
     const newData = list.filter((items) => {
-      const itemData = `${items.text.toUpperCase()}`;
+      const itemData = `${items.searchText.toUpperCase()}`;
       const textData = text.toUpperCase();
 
       return itemData.indexOf(textData) > -1;
@@ -106,9 +108,9 @@ export default function ProductDetailsList(props) {
         title=""
         renderLeft={() => {
           return (
-            <View style={{ flexDirection: 'row', width: 100 , justifyContent:'center', alignItems:'center'}}>
+            <View style={{ flexDirection: 'row', width: 100, justifyContent: 'center', alignItems: 'center' }}>
               {/* <FontAwesome5 name="angle-double-left" color={"white"} size={25} /> */}
-              <BackArrowPng/>
+              <BackArrowPng />
               <Text style={{ marginLeft: 10 }} headline bold whiteColor>
                 ZURÜCK
               </Text>
@@ -153,7 +155,7 @@ export default function ProductDetailsList(props) {
         }
         data={search.length > 0 ? searchArr : list}
         keyExtractor={(item, index) => Math.random().toString()}
-        ItemSeparatorComponent={() =><View style={{width:"100%", height:8, backgroundColor:'white'}}/>}
+        ItemSeparatorComponent={() => <View style={{ width: "100%", height: 8, backgroundColor: 'white' }} />}
         ListFooterComponent={renderFooter}
         renderItem={({ item }) => <RenderItem item={item} />}
 
