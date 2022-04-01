@@ -76,7 +76,7 @@ export default function ProductDetailsList(props) {
         text: [],
 
     })
-
+    const [isServiceType, SetisServiceType] = useState(contact.type)
 
     const [state, setState] = useState({
         isReady: false,
@@ -109,14 +109,16 @@ export default function ProductDetailsList(props) {
     }, [])
     const [VideosList, setVideosList] = useState([]);
 
-    const filter = (text) => {
-        setsearch(text);
-        if (text) {
-
-        } else {
-
-        }
-    };
+ const changeServiceType=()=>{
+     if(isServiceType==="SERVICE"){
+        SetisServiceType("")
+        
+     }
+     else{
+        SetisServiceType("SERVICE")
+        
+     }
+ }
 
     return (
         <SafeAreaView style={{ ...BaseStyle.safeAreaView, backgroundColor: '#D2D9DE' }} edges={['right', 'top', 'left']}>
@@ -233,7 +235,7 @@ export default function ProductDetailsList(props) {
                 <TouchableOpacity style={{ width: '95%', alignSelf: 'center', marginTop: 20, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
                     <View style={{ width: "90%", marginTop: 2 }}>
                         <Text headline bold whiteColor>
-                         {contact.type==="SERVICE"?  "TECHNISCHE VIDEOS" :   "EINSATZ VIDEOS"}
+                        { isServiceType ==="SERVICE"?    "TECHNISCHE VIDEOS" :   "EINSATZ VIDEOS"}
                         </Text>
                     </View>
                     <View style={{ width: "10%", }}>
@@ -243,10 +245,10 @@ export default function ProductDetailsList(props) {
                 </TouchableOpacity>
 
 
-                <TouchableOpacity style={{ width: '100%', alignSelf: 'center', marginTop: 40, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
+                <TouchableOpacity onPress={()=>changeServiceType()} style={{ width: '100%', alignSelf: 'center', marginTop: 40, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
                     <View style={{ width: "90%", marginTop: 2 }}>
                         <Text headline bold whiteColor>
-                        {contact.type==="SERVICE"?  "PRODUKTVIDEOS & MEHR" :  " SERVICE VIDEOS & MEHR"}
+                        { isServiceType ==="SERVICE"?  "PRODUKTVIDEOS & MEHR" :  " SERVICE VIDEOS & MEHR"}
                         </Text>
                     </View>
                     <View style={{ width: "10%", }}>
