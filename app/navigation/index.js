@@ -8,12 +8,6 @@ import React, { useEffect } from "react";
 import { Platform, StatusBar } from "react-native";
 import { useDarkMode, DarkModeProvider } from 'react-native-dynamic'
 import EBottomTabNavigator from "./main";
-
-import ProductDetailsList from "@screens/ProductDetailsList";
-import ProductDeatilMoreInfo from "@screens/ProductDeatilMoreInfo";
-import ProductDeatilVideo from "@screens/ProductDeatilVideo";
-
-import ProductDeatilInfo from "@screens/ProductDeatilInfo"
 const RootStack = createStackNavigator();
 const Navigator = (props) => {
   const { theme, colors } = useTheme();

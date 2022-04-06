@@ -19,12 +19,12 @@ export default function RenderList2({ item }) {
 
     const navigation = useNavigation()
     return (
-        <TouchableOpacity onPress={() => navigation.navigate("ProductDeatilInfo", { item: item.data })} style={{ width: '100%', backgroundColor: '#D2D9DE', height: 200 }}>
+        <TouchableOpacity  disabled={item.disabled}  onPress={() => navigation.navigate("ProductDeatilInfo", { item: item.data })} style={{ width: '100%', backgroundColor: '#D2D9DE', height: 200 }}>
             <View style={{ height: 200, justifyContent: 'center', alignItems: 'center' }}>
                 <Image source={item.image} style={styles.banner} resizeMode="cover" />
 
             </View>
-            <TouchableOpacity onPress={() => navigation.navigate("ProductDeatilInfo", { item: item.data })}
+            <TouchableOpacity disabled={item.disabled}  onPress={() => navigation.navigate("ProductDeatilInfo", { item: item.data })}
                 style={{ width: '100%', height: 50, position: 'absolute', bottom: 0, backgroundColor: 'black', flexDirection: 'row', padding: 12, justifyContent:'center', alignItems:'center' }}>
                 <View style={{ width: "90%",justifyContent:'center', alignItems:'flex-start' }}>
                     <Text headline bold whiteColor>
