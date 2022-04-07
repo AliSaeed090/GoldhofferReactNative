@@ -5,10 +5,10 @@ import styles from './styles'
 import React, { useState, useMemo, useEffect } from "react";
 import { FlatList, View, TouchableOpacity, RefreshControl, Linking } from "react-native";
 import { useTranslation } from "react-i18next";
-import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
-import RenderList2 from "./RenderList2"
-import Svg, { Rect } from 'react-native-svg';
-import JsonFind from "json-find";
+ import RenderList2 from "./RenderList2"
+ import {dataSetTransportService, dataSetTransportProducts, dataSetAirportService, dataSetAirportProducts} from "./Data"
+
+ 
 
 import { useSelector } from "react-redux";
 const BackArrowPng = () => {
@@ -16,47 +16,7 @@ const BackArrowPng = () => {
     <Image source={Images.backArrow} style={{ width: 20, height: 20 }} resizeMode="contain" />
   );
 }
-function renderFooter() {
-  const contact = useSelector((state) => state.application.contact);
-  console.log({ contact })
-  const { colors } = useTheme();
-  return (
-    <TouchableOpacity onPress={() => Linking.openURL("https://www.goldhofer.com/en/contact")} style={{ width: "95%", flexDirection: 'row', height: 90, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
-
-      <View style={{ borderTopLeftRadius: 55, backgroundColor: 'black', width: 100, height: '100%', justifyContent: 'center', alignItems: 'center' }}>
-        <Image source={Images.G} style={styles.manImage} resizeMode="contain" />
-
-      </View>
-      <View style={{ width: '50%', alignItems: 'center', marginTop: 10 }}>
-        <Text style={{ marginTop: 10 }} headline bold blackColor>
-          {contact.name}
-        </Text>
-        <View style={{ width: "95%", flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
-
-          <Text style={{ marginLeft: 10, fontSize: 18 }} blackColor>
-            {contact.number}
-          </Text>
-        </View>
-      </View>
-
-    </TouchableOpacity>
-    // <View style={{
-    //   width: 300,
-    //   height: 50,
-    //   backgroundColor: "transparent",
-    //   borderStyle: "solid",
-    //   borderLeftWidth: 0,
-    //   borderRightWidth: 100,
-    //   borderBottomWidth: 50,
-    //   borderLeftColor: "transparent",
-    //   borderRightColor: "transparent",
-    //   borderBottomColor: "red",
-    // }}>
-
-
-    // </View>
-  )
-}
+ 
 
 export default function ProductDetailsList(props) {
   const { navigation } = props;
@@ -64,22 +24,41 @@ export default function ProductDetailsList(props) {
   const { colors } = useTheme();
   const { params } = props.route
   const [isTransportActive, setTransPortActive] = useState(null)
-  const [list, setList] = useState([
+  const [list, setList] = useState([ ])
+  const [dataSet, setDataSet] = useState([ ])
+  const contact = useSelector((state) => state.application.contact);
+  useEffect(()=>{
+    if(contact.type==='SALES TRANSPORT'){
+      setDataSet([...dataSetTransportProducts])
+    }
+    else if(contact.type==='SERVICE TRANSPORT'){
+      setDataSet([...dataSetTransportService])
+    }
+    else if(contact.type==='SALES AIRPORT'){
+      setDataSet([...dataSetAirportProducts])
+    }
+
+    else if(contact.type==='SERVICE AIRPORT'){
+      setDataSet([...dataSetAirportService])
+    }
 
 
-  ])
-  useEffect(() => {
+  },[contact])
 
-    setList(params.list)
-  }, [params])
+  useEffect(()=>{
+    if(params){
+      filter(params.data)
+    }
 
+  },[params])
+   
 
   const [searchArr, setsearchArr] = useState([]);
   const searchFilterFunction = (text) => {
  
  
-    const newData = list.filter((items) => {
-      const itemData = `${items.searchText.toUpperCase()}`;
+    const newData = dataSet.filter((items) => {
+      const itemData = `${items.text.toUpperCase()}`;
       const textData = text.toUpperCase();
 
       return itemData.indexOf(textData) > -1;
@@ -89,13 +68,12 @@ export default function ProductDetailsList(props) {
 
   const [search, setsearch] = useState("");
   const filter = (text) => {
-    navigation.navigate("SearchHistory", {data:text})
-    // setsearch(text);
-    // if (text) {
-    //   searchFilterFunction(text)
-    // } else {
+    setsearch(text);
+    if (text) {
+      searchFilterFunction(text)
+    } else {
 
-    // }
+    }
   };
 
 
@@ -131,7 +109,7 @@ export default function ProductDetailsList(props) {
         }}
 
       />
-      <TouchableOpacity disabled={true} onPress={()=>navigation.navigate("SearchHistory")} style={{ paddingHorizontal: 0, paddingVertical: 15 }}>
+      <View onPress={()=>navigation.navigate("SearchHistory")} style={{ paddingHorizontal: 0, paddingVertical: 15 }}>
         <TextInput
           style={{ width: '90%', alignSelf: 'center', borderRadius: 50, padding: 10 }}
           onChangeText={filter}
@@ -143,7 +121,7 @@ export default function ProductDetailsList(props) {
             </TouchableOpacity>
           }
         />
-      </TouchableOpacity>
+      </View>
 
       <FlatList
         refreshControl={
@@ -157,7 +135,7 @@ export default function ProductDetailsList(props) {
         data={search.length > 0 ? searchArr : list}
         keyExtractor={(item, index) => Math.random().toString()}
         ItemSeparatorComponent={() => <View style={{ width: "100%", height: 8, backgroundColor: 'white' }} />}
-        ListFooterComponent={renderFooter}
+      
         renderItem={({ item }) => <RenderItem item={item} />}
 
       />

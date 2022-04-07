@@ -69,7 +69,7 @@ export default function ProductDetailsList(props) {
   ])
   useEffect(() => {
  
-    setList(params.list)
+    setList(params.item)
 }, [params])
   const [searchArr, setsearchArr] = useState(["s", "2", "s", "2", "s", "2", "s", "2", "s", "2"])
 
@@ -117,7 +117,7 @@ export default function ProductDetailsList(props) {
         }}
 
       />
-      <View style={{ paddingHorizontal: 0, paddingVertical: 15 }}>
+      {/* <View style={{ paddingHorizontal: 0, paddingVertical: 15 }}>
         <TextInput
           style={{ width: '90%', alignSelf: 'center', borderRadius: 50, padding: 10 }}
           onChangeText={filter}
@@ -129,7 +129,7 @@ export default function ProductDetailsList(props) {
             </TouchableOpacity>
           }
         />
-      </View>
+      </View> */}
 
       <FlatList
         refreshControl={

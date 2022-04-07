@@ -471,7 +471,7 @@ const Home = (props) => {
     dispatch(ApplicationActions.onChangeContact({
       name: 'SALES TRANSPORT',
       number: '+49 8331 15-341',
-      type:'SALES'
+      type: 'SALES TRANSPORT',
     }));
 
   }
@@ -481,7 +481,7 @@ const Home = (props) => {
     dispatch(ApplicationActions.onChangeContact({
       name: 'SERVICE TRANSPORT',
       number: '+49 8331 15-400',
-      type:'SERVICE'
+      type:'SERVICE TRANSPORT',
     }));
 
   }
@@ -492,7 +492,7 @@ const Home = (props) => {
     dispatch(ApplicationActions.onChangeContact({
       name: 'SALES AIRPORT',
       number: '+49 8331 15-343',
-      type:'SALES'
+      type:'SALES AIRPORT',
     }));
 
   }
@@ -504,7 +504,7 @@ const Home = (props) => {
     dispatch(ApplicationActions.onChangeContact({
       name: 'SERVICE AIRPORT',
       number: '+49 8331 9629999',
-      type:'SERVICE'
+      type: 'SERVICE AIRPORT',
     }));
 
   }

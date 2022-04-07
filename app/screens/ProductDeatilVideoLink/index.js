@@ -110,7 +110,7 @@ export default function ProductDeatilVideoLink(props) {
 
             name: 'SERVICE TRANSPORT',
             number: '+49 8331 15-400',
-            type: 'SERVICE'
+            type: 'SERVICE TRANSPORT',
 
         }));
     }
@@ -118,21 +118,21 @@ export default function ProductDeatilVideoLink(props) {
         dispatch(ApplicationActions.onChangeContact({
             name: 'SALES TRANSPORT',
             number: '+49 8331 15-341',
-            type: 'SALES'
+            type: 'SALES TRANSPORT',
         }));
     }
     else if (contact.name === "SALES AIRPORT") {
         dispatch(ApplicationActions.onChangeContact({
             name: 'SERVICE AIRPORT',
             number: '+49 8331 9629999',
-            type: 'SERVICE'
+            type: 'SERVICE AIRPORT',
         }));
     }
     else if (contact.name === "SERVICE AIRPORT") {
         dispatch(ApplicationActions.onChangeContact({
             name: 'SALES AIRPORT',
             number: '+49 8331 15-343',
-            type: 'SALES'
+            type:  'SALES AIRPORT',
         }));
     }
 

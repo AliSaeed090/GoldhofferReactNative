@@ -32,7 +32,7 @@ import NewsDetails from "@screens/NewsDetails";
 import ContactOverView from "@screens/ContactOverView";
 import ProductDeatilVideo from "@screens/ProductDeatilVideo";
 import ProductDeatilVideoLink from "@screens/ProductDeatilVideoLink";
-
+import SearchHistory from "@screens/SearchHistory";
 
 
 import { Image } from "@components";
@@ -163,7 +163,8 @@ const Main = (props) => {
       <MainStack.Screen name="ProductDeatilMoreInfo" component={ProductDeatilMoreInfo} />
       <MainStack.Screen name="ProductDeatilVideo" component={ProductDeatilVideo} />
       <MainStack.Screen name="ProductDeatilVideoLink" component={ProductDeatilVideoLink} />
-
+      <MainStack.Screen name="SearchHistory" component={SearchHistory} />
+      
 
       
       <MainStack.Screen name="NewsDetails" component={NewsDetails} />

@@ -20,9 +20,9 @@ export default function RenderList2({ item }) {
 //  /
 
     return (
-        <TouchableOpacity onPress={ item.data.length >0?   () => navigation.navigate("ProductDeatilMoreInfo", { list: item.data}): () => navigation.navigate("ProductDeatilVideo", { item:item.data })} style={{ width: '100%', height: 250,backgroundColor:'#D2D9DE' }}>
+        <TouchableOpacity onPress={ item.data.length >0?   () => navigation.navigate("ProductDeatilMoreInfo", { item: item.data}): () => navigation.navigate("ProductDeatilVideo", { item:item.data })} style={{ width: '100%', height: 250,backgroundColor:'#D2D9DE' }}>
             <Image source={item.image} style={styles.banner} resizeMode="contain"   />
-            <TouchableOpacity  onPress={ item.data.length >0?   () => navigation.navigate("ProductDeatilMoreInfo", { list: item.data}): () => navigation.navigate("ProductDeatilVideo", { item:item.data })}
+            <TouchableOpacity  onPress={ item.data.length >0?   () => navigation.navigate("ProductDeatilMoreInfo", { item: item.data}): () => navigation.navigate("ProductDeatilVideo", { item:item.data })}
              style={{ width: '100%', position: 'absolute', bottom: 0, backgroundColor: 'black', flexDirection: 'row', padding: 12 ,justifyContent:'center', alignItems:'center'}}>
                 <View style={{ width: "90%", justifyContent:'center', alignItems:'flex-start'  }}>
                     <Text headline bold whiteColor>
