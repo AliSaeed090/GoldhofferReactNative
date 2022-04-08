@@ -76,8 +76,8 @@ export default function ProductDetailsList(props) {
 
   const [searchArr, setsearchArr] = useState([]);
   const searchFilterFunction = (text) => {
- 
- 
+
+
     const newData = list.filter((items) => {
       const itemData = `${items.searchText.toUpperCase()}`;
       const textData = text.toUpperCase();
@@ -89,7 +89,7 @@ export default function ProductDetailsList(props) {
 
   const [search, setsearch] = useState("");
   const filter = (text) => {
-    navigation.navigate("SearchHistory", {data:text})
+    navigation.navigate("SearchHistory", { data: search })
     // setsearch(text);
     // if (text) {
     //   searchFilterFunction(text)
@@ -131,10 +131,12 @@ export default function ProductDetailsList(props) {
         }}
 
       />
-      <TouchableOpacity disabled={true} onPress={()=>navigation.navigate("SearchHistory")} style={{ paddingHorizontal: 0, paddingVertical: 15 }}>
+      <View   disabled={true} onPress={() => navigation.navigate("SearchHistory")}
+       style={{ width:'100%',  paddingHorizontal: 0, paddingVertical: 15, flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
         <TextInput
+        onFocus={() => navigation.navigate("SearchHistory")}
           style={{ width: '90%', alignSelf: 'center', borderRadius: 50, padding: 10 }}
-          onChangeText={filter}
+          onChangeText={(text) => setsearch(text)}
           placeholder={t("Search")}
           value={search}
           icon={
@@ -143,7 +145,12 @@ export default function ProductDetailsList(props) {
             </TouchableOpacity>
           }
         />
-      </TouchableOpacity>
+        {/* <TouchableOpacity style={{width:'20%'}} onPress={() => filter("")}>
+          {search.length > 0 && <Text   bold blackColor>
+            Search
+          </Text>}
+        </TouchableOpacity> */}
+      </View>
 
       <FlatList
         refreshControl={
@@ -154,14 +161,14 @@ export default function ProductDetailsList(props) {
             onRefresh={() => { }}
           />
         }
-        data={search.length > 0 ? searchArr : list}
+        data={  list}
         keyExtractor={(item, index) => Math.random().toString()}
         ItemSeparatorComponent={() => <View style={{ width: "100%", height: 8, backgroundColor: 'white' }} />}
         ListFooterComponent={renderFooter}
         renderItem={({ item }) => <RenderItem item={item} />}
 
       />
-    </SafeAreaView>
+    </SafeAreaView >
   );
 };
 

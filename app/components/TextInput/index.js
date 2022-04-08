@@ -20,6 +20,7 @@ const Index = forwardRef((props, ref) => {
     textAlignVertical,
     icon,
     onSubmitEditing,
+    autoFocus,
     ...attrs
   } = props;
   return (
@@ -47,6 +48,7 @@ const Index = forwardRef((props, ref) => {
         multiline={multiline}
         textAlignVertical={textAlignVertical}
         onSubmitEditing={onSubmitEditing}
+        autoFocus={autoFocus}
         {...attrs}
       />
       {icon}
@@ -67,6 +69,7 @@ Index.propTypes = {
   textAlignVertical: PropTypes.string,
   icon: PropTypes.node,
   onSubmitEditing: PropTypes.func,
+  autoFocus: PropTypes.bool,
 };
 
 Index.defaultProps = {

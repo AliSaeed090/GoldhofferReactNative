@@ -48,6 +48,7 @@ export default function ProductDetailsList(props) {
   useEffect(()=>{
     if(params){
       filter(params.data)
+      searchFilterFunction(params.data)
     }
 
   },[params])
@@ -71,6 +72,7 @@ export default function ProductDetailsList(props) {
     setsearch(text);
     if (text) {
       searchFilterFunction(text)
+     
     } else {
 
     }
@@ -111,6 +113,7 @@ export default function ProductDetailsList(props) {
       />
       <View onPress={()=>navigation.navigate("SearchHistory")} style={{ paddingHorizontal: 0, paddingVertical: 15 }}>
         <TextInput
+        autoFocus={true}
           style={{ width: '90%', alignSelf: 'center', borderRadius: 50, padding: 10 }}
           onChangeText={filter}
           placeholder={t("Search")}
@@ -132,7 +135,7 @@ export default function ProductDetailsList(props) {
             onRefresh={() => { }}
           />
         }
-        data={search.length > 0 ? searchArr : list}
+        data={ searchArr}
         keyExtractor={(item, index) => Math.random().toString()}
         ItemSeparatorComponent={() => <View style={{ width: "100%", height: 8, backgroundColor: 'white' }} />}
       
