@@ -102,14 +102,14 @@ export default function ProductDetailsList(props) {
     const [VideosList, setVideosList] = useState([]);
 
     const changeServiceType = () => {
-       
+
         if (contact.name === "SALES TRANSPORT") {
             dispatch(ApplicationActions.onChangeContact({
-    
+
                 name: 'SERVICE TRANSPORT',
                 number: '+49 8331 15-400',
                 type: 'SERVICE TRANSPORT',
-    
+
             }));
         }
         else if (contact.name === "SERVICE TRANSPORT") {
@@ -123,14 +123,14 @@ export default function ProductDetailsList(props) {
             dispatch(ApplicationActions.onChangeContact({
                 name: 'SERVICE AIRPORT',
                 number: '+49 8331 9629999',
-                type:'SERVICE AIRPORT',
+                type: 'SERVICE AIRPORT',
             }));
         }
         else if (contact.name === "SERVICE AIRPORT") {
             dispatch(ApplicationActions.onChangeContact({
                 name: 'SALES AIRPORT',
                 number: '+49 8331 15-343',
-                type:  'SALES AIRPORT',
+                type: 'SALES AIRPORT',
             }));
         }
         setIsRendered(null)
@@ -197,7 +197,7 @@ export default function ProductDetailsList(props) {
                 </View>
                 <View style={{ width: '95%', alignSelf: 'center', marginTop: 10 }}>
                     <Text headline bold blackColor>
-                    { isServiceType ==="SERVICE"?  "TRAININGSVIDEOS" :  "PRODUKTVIDEOS"}
+                    {isServiceType === "SERVICE AIRPORT"  ?  "TRAININGSVIDEOS" : isServiceType ===  "SERVICE TRANSPORT" ?  "TRAININGSVIDEOS" : "PRODUKTVIDEOS"}
                     </Text>
                     <Text blackColor>
                         VON A -Z
@@ -260,7 +260,7 @@ export default function ProductDetailsList(props) {
                 <TouchableOpacity style={{ width: '95%', alignSelf: 'center', marginTop: 20, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
                     <View style={{ width: "90%", marginTop: 2 }}>
                         <Text headline bold whiteColor>
-                            {isServiceType === "SERVICE" ? "TECHNISCHE VIDEOS" : "EINSATZ VIDEOS"}
+                        {isServiceType === "SERVICE AIRPORT" ? "TECHNISCHE VIDEOS"  : isServiceType === "SERVICE TRANSPORT" ? "TECHNISCHE VIDEOS" : "EINSATZ VIDEOS"}
                         </Text>
                     </View>
                     <View style={{ width: "10%", }}>
@@ -273,7 +273,7 @@ export default function ProductDetailsList(props) {
                 <TouchableOpacity onPress={() => changeServiceType()} style={{ width: '100%', alignSelf: 'center', marginTop: 40, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
                     <View style={{ width: "90%", marginTop: 2 }}>
                         <Text headline bold whiteColor>
-                            {isServiceType === "SERVICE" ? "PRODUKTVIDEOS & MEHR" : " SERVICE VIDEOS & MEHR"}
+                            {isServiceType === "SERVICE AIRPORT"    ? "PRODUKTVIDEOS & MEHR" :  isServiceType ==="SERVICE TRANSPORT" ? "PRODUKTVIDEOS & MEHR":" SERVICE VIDEOS & MEHR"}
                         </Text>
                     </View>
                     <View style={{ width: "10%", }}>

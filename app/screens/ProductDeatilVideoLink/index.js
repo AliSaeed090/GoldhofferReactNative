@@ -5,7 +5,7 @@ import styles from './styles'
 import React, { useState, useMemo, useEffect, useRef } from "react";
 import { FlatList, View, TouchableOpacity, ScrollView, Dimensions, Linking } from "react-native";
 import { useTranslation } from "react-i18next";
- 
+
 import YouTube from 'react-native-youtube';
 import { useDispatch } from "react-redux";
 import { ApplicationActions } from "@actions";
@@ -47,7 +47,7 @@ function renderFooter() {
 
         </TouchableOpacity>
 
-         
+
     )
 }
 
@@ -84,10 +84,10 @@ export default function ProductDeatilVideoLink(props) {
     useEffect(() => {
         console.log({ xxx: params.item })
 
-        if(params){
+        if (params) {
             setList(params.item)
         }
-    
+
 
 
     }, [params])
@@ -104,45 +104,45 @@ export default function ProductDeatilVideoLink(props) {
     }, [])
     const [VideosList, setVideosList] = useState([]);
 
- const changeServiceType=()=>{
-    if (contact.name === "SALES TRANSPORT") {
-        dispatch(ApplicationActions.onChangeContact({
+    const changeServiceType = () => {
+        if (contact.name === "SALES TRANSPORT") {
+            dispatch(ApplicationActions.onChangeContact({
 
-            name: 'SERVICE TRANSPORT',
-            number: '+49 8331 15-400',
-            type: 'SERVICE TRANSPORT',
+                name: 'SERVICE TRANSPORT',
+                number: '+49 8331 15-400',
+                type: 'SERVICE TRANSPORT',
 
-        }));
-    }
-    else if (contact.name === "SERVICE TRANSPORT") {
-        dispatch(ApplicationActions.onChangeContact({
-            name: 'SALES TRANSPORT',
-            number: '+49 8331 15-341',
-            type: 'SALES TRANSPORT',
-        }));
-    }
-    else if (contact.name === "SALES AIRPORT") {
-        dispatch(ApplicationActions.onChangeContact({
-            name: 'SERVICE AIRPORT',
-            number: '+49 8331 9629999',
-            type: 'SERVICE AIRPORT',
-        }));
-    }
-    else if (contact.name === "SERVICE AIRPORT") {
-        dispatch(ApplicationActions.onChangeContact({
-            name: 'SALES AIRPORT',
-            number: '+49 8331 15-343',
-            type:  'SALES AIRPORT',
-        }));
-    }
+            }));
+        }
+        else if (contact.name === "SERVICE TRANSPORT") {
+            dispatch(ApplicationActions.onChangeContact({
+                name: 'SALES TRANSPORT',
+                number: '+49 8331 15-341',
+                type: 'SALES TRANSPORT',
+            }));
+        }
+        else if (contact.name === "SALES AIRPORT") {
+            dispatch(ApplicationActions.onChangeContact({
+                name: 'SERVICE AIRPORT',
+                number: '+49 8331 9629999',
+                type: 'SERVICE AIRPORT',
+            }));
+        }
+        else if (contact.name === "SERVICE AIRPORT") {
+            dispatch(ApplicationActions.onChangeContact({
+                name: 'SALES AIRPORT',
+                number: '+49 8331 15-343',
+                type: 'SALES AIRPORT',
+            }));
+        }
 
-    navigation.goBack();
- }
- useFocusEffect(() => {
-    setTimeout(() => {
-        setIsRendered(true)
-    }, 100);
-}, [])
+        navigation.goBack();
+    }
+    useFocusEffect(() => {
+        setTimeout(() => {
+            setIsRendered(true)
+        }, 100);
+    }, [])
     return (
         <SafeAreaView style={{ ...BaseStyle.safeAreaView, backgroundColor: '#D2D9DE' }} edges={['right', 'top', 'left']}>
             <Header
@@ -197,8 +197,8 @@ export default function ProductDeatilVideoLink(props) {
                 </View>
                 <View style={{ width: '95%', alignSelf: 'center', marginTop: 10 }}>
                     <Text headline bold blackColor>
-                        
-                        { isServiceType ==="SERVICE"?  "TRAININGSVIDEOS" :  "PRODUKTVIDEOS"}
+
+                        {isServiceType === "SERVICE AIRPORT" ? "TRAININGSVIDEOS" : isServiceType === "SERVICE TRANSPORT" ? "TRAININGSVIDEOS" : "PRODUKTVIDEOS"}
                     </Text>
                     <Text blackColor>
                         VON A -Z
@@ -207,52 +207,52 @@ export default function ProductDeatilVideoLink(props) {
                 <View style={{ width: '95%', alignSelf: 'center', marginTop: 10, height: 200 }}>
                     <View style={{ width: '100%', backgroundColor: 'black', height: 200 }}>
 
-                    {isRendered &&
-                        
-                        <YouTube
-                            // AIzaSyADirxd-_5JqMTKVqA-2ECnq1TfcxksH7I
+                        {isRendered &&
 
-                            // ref={youTubeRef}
-                            // You must have an API Key for the player to load in Android
-                            apiKey="AIzaSyCCuJKVuq5JX7bAzLERMJ0ctHRM_iuqFJA"
-                            // Un-comment one of videoId / videoIds / playlist.
-                            // You can also edit these props while Hot-Loading in development mode to see how
-                            // it affects the loaded native module
-                            videoId={list.videoId}
-                            // videoIds={['uMK0prafzw0', 'qzYgSecGQww', 'XXlZfc1TrD0', 'czcjU1w-c6k']}
-                            // playlistId="PLfvaFAgzJJDgBIpMqcqolowsZf9y5hmId"
-                            play={state.isPlaying}
-                            loop={state.isLooping}
-                            fullscreen={state.fullscreen}
-                            controls={1}
-                            style={[
-                                { height: 200 },
-                                styles.player,
-                            ]}
-                        // onError={e => {
-                        //     setState(prvState=>({...prvState, error: e.error}));
-                        // }}
-                        // onReady={e => {
-                        //     setState(prvState=>({...prvState, isReady: true}));
+                            <YouTube
+                                // AIzaSyADirxd-_5JqMTKVqA-2ECnq1TfcxksH7I
 
-                        // }}
-                        // onChangeState={e => {
-                        //     setState(prvState=>({...prvState,status: e.state}));
+                                // ref={youTubeRef}
+                                // You must have an API Key for the player to load in Android
+                                apiKey="AIzaSyCCuJKVuq5JX7bAzLERMJ0ctHRM_iuqFJA"
+                                // Un-comment one of videoId / videoIds / playlist.
+                                // You can also edit these props while Hot-Loading in development mode to see how
+                                // it affects the loaded native module
+                                videoId={list.videoId}
+                                // videoIds={['uMK0prafzw0', 'qzYgSecGQww', 'XXlZfc1TrD0', 'czcjU1w-c6k']}
+                                // playlistId="PLfvaFAgzJJDgBIpMqcqolowsZf9y5hmId"
+                                play={state.isPlaying}
+                                loop={state.isLooping}
+                                fullscreen={state.fullscreen}
+                                controls={1}
+                                style={[
+                                    { height: 200 },
+                                    styles.player,
+                                ]}
+                            // onError={e => {
+                            //     setState(prvState=>({...prvState, error: e.error}));
+                            // }}
+                            // onReady={e => {
+                            //     setState(prvState=>({...prvState, isReady: true}));
 
-                        // }}
-                        // onChangeQuality={e => {
-                        //     setState(prvState=>({...prvState,quality: e.quality }));
+                            // }}
+                            // onChangeState={e => {
+                            //     setState(prvState=>({...prvState,status: e.state}));
 
-                        // }}
-                        // onChangeFullscreen={e => {
-                        //     setState(prvState=>({...prvState,fullscreen: e.isFullscreen }));
+                            // }}
+                            // onChangeQuality={e => {
+                            //     setState(prvState=>({...prvState,quality: e.quality }));
 
-                        // }}
-                        // onProgress={e => {
-                        //     setState(prvState=>({...prvState,currentTime: e.currentTime }));
+                            // }}
+                            // onChangeFullscreen={e => {
+                            //     setState(prvState=>({...prvState,fullscreen: e.isFullscreen }));
 
-                        // }}
-                        />}
+                            // }}
+                            // onProgress={e => {
+                            //     setState(prvState=>({...prvState,currentTime: e.currentTime }));
+
+                            // }}
+                            />}
 
 
                     </View>
@@ -261,7 +261,7 @@ export default function ProductDeatilVideoLink(props) {
                 <TouchableOpacity style={{ width: '95%', alignSelf: 'center', marginTop: 20, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
                     <View style={{ width: "90%", marginTop: 2 }}>
                         <Text headline bold whiteColor>
-                        { isServiceType ==="SERVICE"?    "TECHNISCHE VIDEOS" :   "EINSATZ VIDEOS"}
+                            {isServiceType === "SERVICE AIRPORT" ? "TECHNISCHE VIDEOS"  : isServiceType === "SERVICE TRANSPORT" ? "TECHNISCHE VIDEOS" : "EINSATZ VIDEOS"}
                         </Text>
                     </View>
                     <View style={{ width: "10%", }}>
@@ -271,10 +271,10 @@ export default function ProductDeatilVideoLink(props) {
                 </TouchableOpacity>
 
 
-                <TouchableOpacity onPress={()=>changeServiceType()} style={{ width: '100%', alignSelf: 'center', marginTop: 40, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
+                <TouchableOpacity onPress={() => changeServiceType()} style={{ width: '100%', alignSelf: 'center', marginTop: 40, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
                     <View style={{ width: "90%", marginTop: 2 }}>
                         <Text headline bold whiteColor>
-                        { isServiceType ==="SERVICE"?  "PRODUKTVIDEOS & MEHR" :  " SERVICE VIDEOS & MEHR"}
+                            {isServiceType === "SERVICE AIRPORT" ? "PRODUKTVIDEOS & MEHR" : isServiceType === "SERVICE TRANSPORT" ? "PRODUKTVIDEOS & MEHR" : " SERVICE VIDEOS & MEHR"}
                         </Text>
                     </View>
                     <View style={{ width: "10%", }}>
