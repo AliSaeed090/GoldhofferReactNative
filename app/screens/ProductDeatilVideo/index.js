@@ -3,7 +3,7 @@ import { BaseStyle, useTheme, Images, BaseColor } from "@config";
 // Load sample data
 import styles from './styles'
 import React, { useState, useMemo, useEffect, useRef } from "react";
-import { FlatList, View, TouchableOpacity, ScrollView, Dimensions, Linking } from "react-native";
+import { FlatList, View, TouchableOpacity, ScrollView, Dimensions, Linking , Platform} from "react-native";
 import { useTranslation } from "react-i18next";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
 import YouTube from 'react-native-youtube';
@@ -26,9 +26,28 @@ const BackArrowPng = () => {
 function renderFooter() {
     const contact = useSelector((state) => state.application.contact);
     const { colors } = useTheme();
-    return (
-        <TouchableOpacity onPress={() => Linking.openURL("https://www.goldhofer.com/en/contact")} style={{ width: "95%", flexDirection: 'row', height: 90, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
-
+    const callNumber = phone => {
+        console.log('callNumber ----> ', phone);
+        let phoneNumber = phone;
+        if (Platform.OS !== 'android') {
+          phoneNumber = `telprompt:${phone}`;
+        }
+        else  {
+          phoneNumber = `tel:${phone}`;
+        }
+        Linking.canOpenURL(phoneNumber)
+        .then(supported => {
+          if (!supported) {
+            Alert.alert('Phone number is not available');
+          } else {
+            return Linking.openURL(phoneNumber);
+          }
+        })
+        .catch(err => console.log(err));
+      };
+      return (
+        <TouchableOpacity onPress={()=>callNumber(contact.number)} style={{ width: "95%", flexDirection: 'row', height: 90, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
+         
             <View style={{ borderTopLeftRadius: 55, backgroundColor: 'black', width: 100, height: '100%', justifyContent: 'center', alignItems: 'center' }}>
                 <Image source={Images.G} style={styles.manImage} resizeMode="contain" />
 
@@ -67,7 +86,7 @@ export default function ProductDetailsList(props) {
 
     })
     const [isServiceType, SetisServiceType] = useState(contact.type)
-
+    const [playerHeight, setPlayerHeight] = useState(250)
     const [state, setState] = useState({
         isReady: false,
         status: null,
@@ -143,6 +162,12 @@ export default function ProductDetailsList(props) {
             setIsRendered(true)
         }, 100);
     }, [])
+    const onPressRight =()=>{
+        navigation.reset({
+          index: 0,
+          routes: [{ name: "Main" }]
+      });
+      }
     return (
         <SafeAreaView style={{ ...BaseStyle.safeAreaView, backgroundColor: '#D2D9DE' }} edges={['right', 'top', 'left']}>
             <Header
@@ -166,7 +191,7 @@ export default function ProductDetailsList(props) {
                         <Image source={Images.logo} style={styles.logo} resizeMode="contain" />
                     );
                 }}
-
+                onPressRight={onPressRight}
                 onPressLeft={() => {
                     navigation.goBack();
                 }}
@@ -203,8 +228,8 @@ export default function ProductDetailsList(props) {
                         VON A -Z
                     </Text>
                 </View>
-                <View style={{ width: '95%', alignSelf: 'center', marginTop: 10, height: 200 }}>
-                    <View style={{ width: '100%', backgroundColor: 'black', height: 200 }}>
+               
+                    
 
                         {isRendered &&
 
@@ -224,39 +249,44 @@ export default function ProductDetailsList(props) {
                                 loop={state.isLooping}
                                 fullscreen={state.fullscreen}
                                 controls={1}
-                                style={[
-                                    { height: 200 },
-                                    styles.player,
-                                ]}
-                            // onError={e => {
-                            //     setState(prvState=>({...prvState, error: e.error}));
-                            // }}
-                            // onReady={e => {
-                            //     setState(prvState=>({...prvState, isReady: true}));
+                                style={{ alignSelf: 'stretch',  height:playerHeight, backgroundColor: 'black', marginVertical: 10 }}
+                             
+                              
+ 
+                            onError={e => {
+                               
+                                console.log({onError: e.error})
+                            }}
+                            onReady={e => {
+                                // setPlayerHeight(200)
+                                console.log({onReady: true})
 
-                            // }}
-                            // onChangeState={e => {
-                            //     setState(prvState=>({...prvState,status: e.state}));
+                            }}
+                            onChangeState={e => {
+                                
+                                console.log({onChangeState: e.state})
 
-                            // }}
-                            // onChangeQuality={e => {
-                            //     setState(prvState=>({...prvState,quality: e.quality }));
+                            }}
+                            onChangeQuality={e => {
+                              
+                                console.log({onChangeQuality: e.quality})
 
-                            // }}
-                            // onChangeFullscreen={e => {
-                            //     setState(prvState=>({...prvState,fullscreen: e.isFullscreen }));
+                            }}
+                            onChangeFullscreen={e => {
+                                 
+                                console.log({onChangeFullscreen: e.isFullscreen})
 
-                            // }}
-                            // onProgress={e => {
-                            //     setState(prvState=>({...prvState,currentTime: e.currentTime }));
+                            }}
+                            onProgress={e => {
+                                 console.log({onProgress:  e.currentTime})
 
-                            // }}
+                            }}
                             />}
 
 
-                    </View>
+                    
 
-                </View>
+                 
                 <TouchableOpacity style={{ width: '95%', alignSelf: 'center', marginTop: 20, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
                     <View style={{ width: "90%", marginTop: 2 }}>
                         <Text headline bold whiteColor>

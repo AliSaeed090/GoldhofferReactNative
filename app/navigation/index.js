@@ -24,7 +24,7 @@ const Navigator = (props) => {
 
     // Config status bar
     if (Platform.OS == "android") {
-      StatusBar.setBackgroundColor(colors.primary, true);
+      // StatusBar.setBackgroundColor(colors.primary, true);
     }
     StatusBar.setBarStyle(isDarkMode ? "light-content" : "dark-content", true);
   }, []);

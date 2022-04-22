@@ -79,7 +79,12 @@ export default function ProductDetailsList(props) {
   };
 
 
-
+  const onPressRight =()=>{
+    navigation.reset({
+      index: 0,
+      routes: [{ name: "Main" }]
+  });
+  }
 
   const RenderItem = useMemo((item) => RenderList2, [list]);
   return (
@@ -99,7 +104,7 @@ export default function ProductDetailsList(props) {
 
           );
         }}
-
+        onPressRight={onPressRight}
         renderRight={() => {
           return (
             <Image source={Images.logo} style={styles.logo} resizeMode="contain" />

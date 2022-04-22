@@ -1,8 +1,8 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
- 
-import {  View,Text,Linking } from "react-native";
+
+import { View, Text, Linking } from "react-native";
 import { useFocusEffect } from '@react-navigation/native';
 
 
@@ -15,7 +15,7 @@ import { useFocusEffect } from '@react-navigation/native';
 
 /* Stack Screen */
 import Home from "@screens/Home";
- 
+
 import ProductDetailsList from "@screens/ProductDetailsList";
 import ProductDeatilMoreInfo from "@screens/ProductDeatilMoreInfo";
 
@@ -39,6 +39,7 @@ import { Image } from "@components";
 
 import { BaseColor, useTheme, Images, BaseStyle } from "@config";
 import { useTranslation } from "react-i18next";
+import { TouchableOpacity } from "react-native";
 
 
 
@@ -52,15 +53,15 @@ import { useTranslation } from "react-i18next";
 
 
 
-const Shop =(props)=>{
+const Shop = (props) => {
   const { navigation } = props;
   useFocusEffect(() => {
-    Linking.openURL("https://e-shop.goldhofer.com/index.php?lang=1&cl=account")
+    Linking.openURL("https://e-shop.goldhofer.com/mein-konto/")
     // 
     navigation.goBack("Home")
   }, [])
-  return(
-    <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>Shop</Text>
     </View>
   )
@@ -77,19 +78,27 @@ const TabBarIcon = (props) => {
       resizeMode='contain'
       source={props.src}
       tintColor={props.color}
-      style={{ height: 40, width: 40,  }}
+      style={{ height: 40, width: 40, }}
     />
   );
 };
 
 const EBottomTabNavigator = (props) => {
+  const onPressRight = () => {
+    props.navigation.reset({
+      index: 0,
+      routes: [{ name: "Main" }]
+    });
+  }
   const { t } = useTranslation();
   const { colors } = useTheme();
   return (
     <BottomTab.Navigator
+
       initialRouteName="Home"
       tabBarOptions={{
-      
+
+        keyboardHidesTabBar: true,
         showIcon: true,
         showLabel: false,
         activeTintColor: "black",
@@ -102,12 +111,16 @@ const EBottomTabNavigator = (props) => {
       }}
     >
       <BottomTab.Screen
+
         name="Home"
         component={Main}
         options={{
+
           title: t(""),
           tabBarIcon: ({ color }) => {
-            return <TabBarIcon color={color} src={Images.homeTab} />
+            return (<TouchableOpacity onPress={onPressRight}>
+              <TabBarIcon color={color} src={Images.homeTab} />
+            </TouchableOpacity>)
           },
         }}
       />
@@ -118,7 +131,7 @@ const EBottomTabNavigator = (props) => {
         options={{
           title: t(""),
           tabBarIcon: ({ color }) => {
-            return <TabBarIcon  color={color} src={Images.newsTab} />
+            return <TabBarIcon color={color} src={Images.newsTab} />
           },
         }}
       />
@@ -129,7 +142,7 @@ const EBottomTabNavigator = (props) => {
         options={{
           title: t(""),
           tabBarIcon: ({ color }) => {
-            return <TabBarIcon  color={color} src={Images.bagTab} />
+            return <TabBarIcon color={color} src={Images.bagTab} />
           },
         }}
       />
@@ -141,7 +154,7 @@ const EBottomTabNavigator = (props) => {
         options={{
           title: t(""),
           tabBarIcon: ({ color }) => {
-            return <TabBarIcon  color={color} src={Images.chatTab} />
+            return <TabBarIcon color={color} src={Images.chatTab} />
           },
         }}
       />
@@ -164,11 +177,11 @@ const Main = (props) => {
       <MainStack.Screen name="ProductDeatilVideo" component={ProductDeatilVideo} />
       <MainStack.Screen name="ProductDeatilVideoLink" component={ProductDeatilVideoLink} />
       <MainStack.Screen name="SearchHistory" component={SearchHistory} />
-      
 
-      
+
+
       <MainStack.Screen name="NewsDetails" component={NewsDetails} />
-      
+
 
       <MainStack.Screen name="ChangeLanguage" component={ChangeLanguage} />
 

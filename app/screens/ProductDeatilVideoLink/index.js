@@ -3,7 +3,7 @@ import { BaseStyle, useTheme, Images, BaseColor } from "@config";
 // Load sample data
 import styles from './styles'
 import React, { useState, useMemo, useEffect, useRef } from "react";
-import { FlatList, View, TouchableOpacity, ScrollView, Dimensions, Linking } from "react-native";
+import { FlatList, View, TouchableOpacity, ScrollView, Dimensions, Linking ,Platform} from "react-native";
 import { useTranslation } from "react-i18next";
 
 import YouTube from 'react-native-youtube';
@@ -26,9 +26,28 @@ const BackArrowPng = () => {
 function renderFooter() {
     const contact = useSelector((state) => state.application.contact);
     const { colors } = useTheme();
-    return (
-        <TouchableOpacity onPress={() => Linking.openURL("https://www.goldhofer.com/en/contact")} style={{ width: "95%", flexDirection: 'row', height: 90, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
-
+    const callNumber = phone => {
+        console.log('callNumber ----> ', phone);
+        let phoneNumber = phone;
+        if (Platform.OS !== 'android') {
+          phoneNumber = `telprompt:${phone}`;
+        }
+        else  {
+          phoneNumber = `tel:${phone}`;
+        }
+        Linking.canOpenURL(phoneNumber)
+        .then(supported => {
+          if (!supported) {
+            Alert.alert('Phone number is not available');
+          } else {
+            return Linking.openURL(phoneNumber);
+          }
+        })
+        .catch(err => console.log(err));
+      };
+      return (
+        <TouchableOpacity onPress={()=>callNumber(contact.number)} style={{ width: "95%", flexDirection: 'row', height: 90, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
+         
             <View style={{ borderTopLeftRadius: 55, backgroundColor: 'black', width: 100, height: '100%', justifyContent: 'center', alignItems: 'center' }}>
                 <Image source={Images.G} style={styles.manImage} resizeMode="contain" />
 
@@ -143,6 +162,12 @@ export default function ProductDeatilVideoLink(props) {
             setIsRendered(true)
         }, 100);
     }, [])
+    const onPressRight =()=>{
+        navigation.reset({
+          index: 0,
+          routes: [{ name: "Main" }]
+      });
+      }
     return (
         <SafeAreaView style={{ ...BaseStyle.safeAreaView, backgroundColor: '#D2D9DE' }} edges={['right', 'top', 'left']}>
             <Header
@@ -166,7 +191,7 @@ export default function ProductDeatilVideoLink(props) {
                         <Image source={Images.logo} style={styles.logo} resizeMode="contain" />
                     );
                 }}
-
+                onPressRight={onPressRight}
                 onPressLeft={() => {
                     navigation.goBack();
                 }}

@@ -593,7 +593,7 @@ export const dataSetTransportService = [
 
 export const dataSetAirportProducts = [
     {
-        image: Images.banner13, text: 'FRACHT-/PUSHBACKSCHLEPPER »SHERPA« E', navigateTo: 'ProductDeatilInfo',
+        image: Images.banner13, text: 'FRACHT-/PUSHBACKSCHLEPPER', navigateTo: 'ProductDeatilInfo',
 
         data: [
             {
@@ -725,7 +725,7 @@ export const dataSetAirportProducts = [
 
 export const dataSetAirportService = [
     {
-        image: Images.banner13, text: 'FRACHT-/PUSHBACKSCHLEPPER »SHERPA« E', navigateTo: 'ProductDeatilInfo',
+        image: Images.banner13, text: 'FRACHT-/PUSHBACKSCHLEPPER', navigateTo: 'ProductDeatilInfo',
 
         data: [
             {
