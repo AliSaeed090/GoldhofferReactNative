@@ -1,16 +1,32 @@
 import { Images } from "@config";
 
 export const dataSetTransportProducts = [
+    // {
+    //     image: undefined, text: 'TRAILSTAR', navigateTo: 'ProductDeatilInfo',
+    //     data: [
+    //         {
+    //             image: undefined, text: 'TRAILSTAR', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
+    //             data: { image: undefined, text: ['PRODUKT PROSPEKT »TRAILSTAR«'], videoId: "9RM0QLDti1A", otherData: { image: undefined, text: ['QUICKGUIDE ZUM »TRAILSTAR«'], videoId: "9RM0QLDti1A", } }
+    //         },
+    //     ]
+    // },
     {
-        image: undefined, text: 'TRAILSTAR', navigateTo: 'ProductDeatilInfo',
+        image: Images.banner4, text: 'SOFORT VERFÜGBAR',navigateTo: 'ProductDeatilInfo',
+        searchText: "SOFORT VERFÜGBAR TU I TU-L QUICKGUIDE ZUM TU I TU-L TN-L QUICKGUIDE ZUM TN-L'",
         data: [
-            {
-                image: undefined, text: 'TRAILSTAR', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: undefined, text: ['PRODUKT PROSPEKT »TRAILSTAR«'], videoId: "9RM0QLDti1A", otherData: { image: undefined, text: ['QUICKGUIDE ZUM »TRAILSTAR«'], videoId: "9RM0QLDti1A", } }
-            },
-        ]
-    },
-
+          {
+            image: Images.banner1, text: 'LAGERFAHRZEUGE', listTransport: true,
+            data: [], listTransport: true,
+            linking: 'https://www.goldhofer.com/lagerfahrzeuge'
+  
+          },
+          {
+            image: Images.banner94, text: 'GEBRAUCHTFAHRZEUGE',
+            data: [], listTransport: true,
+            linking: 'https://www.goldhofer.com/gebrauchtfahrzeuge'
+  
+          }]
+      },
 
     {
         image: Images.banner1, text: 'SATTELANHÄNGER', navigateTo: 'ProductDeatilInfo',
@@ -259,17 +275,33 @@ export const dataSetTransportProducts = [
 
 
 export const dataSetTransportService = [
+    // {
+    //     image: undefined, text: 'TRAILSTAR', navigateTo: 'ProductDeatilInfo',
+    //     data: [
+    //         {
+    //             image: undefined, text: 'TRAILSTAR', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
+    //             data: { image: undefined, text: ['QUICKGUIDE ZUM »TRAILSTAR«'], videoId: "9RM0QLDti1A", 
+    //             otherData: { image: undefined, text: ['PRODUKT PROSPEKT »TRAILSTAR«'], videoId: "9RM0QLDti1A", } }
+    //         },
+    //     ]
+    // },
     {
-        image: undefined, text: 'TRAILSTAR', navigateTo: 'ProductDeatilInfo',
+        image: Images.banner4, text: 'SOFORT VERFÜGBAR',navigateTo: 'ProductDeatilInfo',
+        searchText: "SOFORT VERFÜGBAR TU I TU-L QUICKGUIDE ZUM TU I TU-L TN-L QUICKGUIDE ZUM TN-L'",
         data: [
-            {
-                image: undefined, text: 'TRAILSTAR', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: undefined, text: ['QUICKGUIDE ZUM »TRAILSTAR«'], videoId: "9RM0QLDti1A", 
-                otherData: { image: undefined, text: ['PRODUKT PROSPEKT »TRAILSTAR«'], videoId: "9RM0QLDti1A", } }
-            },
-        ]
-    },
-
+          {
+            image: Images.banner1, text: 'LAGERFAHRZEUGE', listTransport: true,
+            data: [], listTransport: true,
+            linking: 'https://www.goldhofer.com/lagerfahrzeuge'
+  
+          },
+          {
+            image: Images.banner94, text: 'GEBRAUCHTFAHRZEUGE',
+            data: [], listTransport: true,
+            linking: 'https://www.goldhofer.com/gebrauchtfahrzeuge'
+  
+          }]
+      },
 
     {
         image: Images.banner1, text: 'SATTELANHÄNGER', navigateTo: 'ProductDeatilInfo',

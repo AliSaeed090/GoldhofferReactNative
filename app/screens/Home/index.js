@@ -298,10 +298,21 @@ const Home = (props) => {
       ]
     },
     {
-      image: Images.banner4, text: 'SOFORT VERFÜGBAR', disabled: true,
-      data: [{ image: Images.banner10, text: 'TU I TU-L', listTransport: true, data: { image: Images.banner11, text: ['QUICKGUIDE ZUM TU I TU-L'], otherData: {}, videoId: "9RM0QLDti1A", } }, {
-        image: Images.banner10, text: 'TN-L', data: { image: Images.banner12, text: ['QUICKGUIDE ZUM TN-L'], videoId: "eP_YC0cr0n0", }, listTransport: true, data: { image: Images.banner12, text: ['QUICKGUIDE ZUM TN-L'], otherData: {}, videoId: "eP_YC0cr0n0", }
-      }]
+      image: Images.banner4, text: 'SOFORT VERFÜGBAR',
+      searchText: "SOFORT VERFÜGBAR TU I TU-L QUICKGUIDE ZUM TU I TU-L TN-L QUICKGUIDE ZUM TN-L'",
+      data: [
+        {
+          image: Images.banner1, text: 'LAGERFAHRZEUGE', listTransport: true,
+          data: [], listTransport: true,
+          linking: 'https://www.goldhofer.com/lagerfahrzeuge'
+
+        },
+        {
+          image: Images.banner94, text: 'GEBRAUCHTFAHRZEUGE',
+          data: [], listTransport: true,
+          linking: 'https://www.goldhofer.com/gebrauchtfahrzeuge'
+
+        }]
     },
     {
       image: Images.banner5, text: 'PARTNER', disabled: true, data: [{ image: Images.banner10, text: 'TU I TU-L', listTransport: true, data: { image: Images.banner11, text: ['QUICKGUIDE ZUM TU I TU-L'], otherData: {}, videoId: "9RM0QLDti1A", } }, {

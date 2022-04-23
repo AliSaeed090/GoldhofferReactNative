@@ -108,37 +108,47 @@ export default function ContactOverView(props) {
     }
     const sendmail = (Data) => {
         console.log('Mail Run');
-        var data = {
-            service_id: 'gmaildeliv',
-            template_id: 'template_hVEuuFhZ',
-            user_id: 'user_CEnkVvNSUvXDcA8X1NxA5',
+        var data = {    
+            service_id: 'service_ks951so',
+            template_id: 'template_IEFbrbr9',
+            user_id: 'user_ZfC9PoaLGK6Jw614hFdeE',
+            accessToken:'0cdfff898bb93fd81ef1be5835712110',
             template_params: {
-                // "message": 'Please Accept my order', "Client_name": name,
-                "deliveryLocation": Data.deliveryLocation,
-                "store": Data.store,
-                "tip": Data.tip,
-                "deliveryTime": Data.deliveryTime,
-                "paymentMethod": Data.paymentMethod,
-                "item": Data.item.map((data) =>  { return (`<div><p>Item: ${data.item} Qty:${data.qty}</p></div>`)}),
-                "OrderDate": new Date().toDateString(),
-                "OrderTime": new Date().toLocaleTimeString(),
-                "OrderID": Data.OrderID,
+                // // "message": 'Please Accept my order', "Client_name": name,
+                // "deliveryLocation": Data.deliveryLocation,
+                // "store": Data.store,
+                // "tip": Data.tip,
+                // "deliveryTime": Data.deliveryTime,
+                // "paymentMethod": Data.paymentMethod,
+                // "item": Data.item.map((data) =>  { return (`<div><p>Item: ${data.item} Qty:${data.qty}</p></div>`)}),
+                // "OrderDate": new Date().toDateString(),
+                // "OrderTime": new Date().toLocaleTimeString(),
+                // "OrderID": Data.OrderID,
     
+
+                VORNAME: Data.VORNAME,
+                NACHNAME: Data.NACHNAME,
+                FIRMA: Data.FIRMA,
+                MOBILNUMMER: Data.MOBILNUMMER,
+                ADRESSE: Data.ADRESSE,
+                LAND: Data.LAND,
+                MEINANLIEGEN: Data.MEINANLIEGEN
     
             }
         };
     
-    
+         
         fetch('https://api.emailjs.com/api/v1.0/email/send', {
             method: 'post',
             body: JSON.stringify(data),
             headers: new Headers({ 'content-type': 'application/json' }),
     
         }).then(function (response) {
-            console.log({ response })
-        }).catch(function (data) {
-            ChromeSamples.log('Created Gist:', data);
-            console.log({ data })
+            console.log({response})
+           alert("Successfully Sent")
+        }).catch(function (err) {
+           
+            console.log({ err })
         });
     }
     const send = () => {
