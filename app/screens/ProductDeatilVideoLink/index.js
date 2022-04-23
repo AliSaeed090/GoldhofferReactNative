@@ -26,6 +26,7 @@ const BackArrowPng = () => {
 function renderFooter() {
     const contact = useSelector((state) => state.application.contact);
     const { colors } = useTheme();
+   
     const callNumber = phone => {
         console.log('callNumber ----> ', phone);
         let phoneNumber = phone;
@@ -74,7 +75,7 @@ export default function ProductDeatilVideoLink(props) {
     const dispatch = useDispatch();
     const contact = useSelector((state) => state.application.contact);
     const [isRendered, setIsRendered] = useState(null)
-
+    const [playerHeight, setPlayerHeight] = useState(250)
     const { navigation } = props;
     const youTubeRef = useRef()
     const { params } = props.route
@@ -229,8 +230,7 @@ export default function ProductDeatilVideoLink(props) {
                         VON A -Z
                     </Text>
                 </View>
-                <View style={{ width: '95%', alignSelf: 'center', marginTop: 10, height: 200 }}>
-                    <View style={{ width: '100%', backgroundColor: 'black', height: 200 }}>
+                 
 
                         {isRendered &&
 
@@ -250,10 +250,12 @@ export default function ProductDeatilVideoLink(props) {
                                 loop={state.isLooping}
                                 fullscreen={state.fullscreen}
                                 controls={1}
-                                style={[
-                                    { height: 200 },
-                                    styles.player,
-                                ]}
+                                style={{ alignSelf: 'stretch',  height:playerHeight, backgroundColor: 'black', marginVertical: 10 }}
+                                onReady={e => {
+                                    // setPlayerHeight(200)
+                                    console.log({onReady: true})
+    
+                                }}
                             // onError={e => {
                             //     setState(prvState=>({...prvState, error: e.error}));
                             // }}
@@ -280,9 +282,7 @@ export default function ProductDeatilVideoLink(props) {
                             />}
 
 
-                    </View>
-
-                </View>
+                     
                 <TouchableOpacity style={{ width: '95%', alignSelf: 'center', marginTop: 20, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
                     <View style={{ width: "90%", marginTop: 2 }}>
                         <Text headline bold whiteColor>
