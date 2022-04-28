@@ -188,10 +188,11 @@ export default function ProductDetailsList(props) {
         data={  list}
         keyExtractor={(item, index) => Math.random().toString()}
         ItemSeparatorComponent={() => <View style={{ width: "100%", height: 8, backgroundColor: 'white' }} />}
-        ListFooterComponent={renderFooter}
+        // ListFooterComponent={renderFooter}
         renderItem={({ item }) => <RenderItem item={item} />}
 
       />
+        {renderFooter()}
     </SafeAreaView >
   );
 };

@@ -167,10 +167,11 @@ export default function ProductDetailsList(props) {
         data={search.length > 0 ? searchArr : list}
         keyExtractor={(item, index) => Math.random().toString()}
 
-        ListFooterComponent={renderFooter}
+        // ListFooterComponent={renderFooter}
         renderItem={({ item }) => <RenderItem item={item} />}
       
       />
+   {renderFooter()}
     </SafeAreaView>
   );
 };
