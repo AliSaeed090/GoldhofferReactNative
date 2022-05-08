@@ -81,6 +81,8 @@ export default function ProductDeatilVideoLink(props) {
     const { params } = props.route
     const { t } = useTranslation();
     const { colors } = useTheme();
+    const [linkList, setLinkList] = useState([])
+    const [showLinkList, setShowLinkList] = useState(false)
     const [isTransportActive, setTransPortActive] = useState(null)
     const [list, setList] = useState({
         image: '',
@@ -169,6 +171,220 @@ export default function ProductDeatilVideoLink(props) {
           routes: [{ name: "Main" }]
       });
       }
+      const getPdfLink = (txt) => {
+        console.log({ txt })
+        if (txt === 'PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H') {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/SPZ_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT SPZ-GP") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/SPZ_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT »VENTUM«") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/SPZ_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/ARCUS-P-PK_DE-A4.pdf"
+        }
+
+        else if (txt == "PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/STZ-L_STZ-H_MPA_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/STZ-L_STZ-H_MPA_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT STZ-VL | STZ-VH") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/STZ-VL_STZ-VH_MPA-V_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT »MPA« V") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/STZ-VL_STZ-VH_MPA-V_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT STZ-VP (245)") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/STZ-VP_245-285_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT STZ-VP (285)") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/STZ-VP_245-285_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT THP/ET") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/THP-ET-UT-MT_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT THP/UT") {
+            return "http://www.goldhofer.com/fileadmin//downloads/prospekte/THP-ET-UT-MT_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT THP/MT") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/THP-ET-UT-MT_DE-A4.pdf"
+        }
+
+        else if (txt == "PRODUKT PROSPEKT THP/SL-S") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/THP_SL-S_SL-L_SL_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT THP/SL-L") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/THP_SL-S_SL-L_SL_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT THP/SL") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/THP_SL-S_SL-L_SL_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT THP/SL") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/THP_SL-S_SL-L_SL_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT »ADDRIVE«") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/ADDRIVE_PST-SL_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT PST/SL") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/ADDRIVE_PST-SL_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT PST/SL-E") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/PST-ES-E_PST-SL-E_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT PST/ES-E") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/PST-ES-E_PST-SL-E_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT FTV 550") {
+            return "https://www.goldhofer.com/fileadmin/downloads/prospekte/FTV-550_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT »FAKTOR« 5 | »FAKTOR« 5.5") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/Faktor5_Faktor5-5_DE-A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT RA 2") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_DE.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT RA 3") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_DE.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT RA 4") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_DE.pdf"
+        }
+        // else if(txt=="QPRODUKT PROSPEKT »BLADEX«"){
+        //     return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_DE.pdf"
+        // }
+        else if (txt == "PRODUKT PROSPEKT »BLADES«") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/BladeS_DE-A4.pdf"
+        }
+
+        // else if(txt=="QUICKGUIDE ZUM STEPSTAR"){
+        //     return "https://www.goldhofer.com/fileadmin//downloads/prospekte/BladeS_DE-A4.pdf"
+        // }
+        else if (txt == "PRODUKT PROSPEKT »SHERPA« D") {
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/SHERPA-FAMILY_DE-met_A4.pdf"
+        }
+        else if (txt == "DATENBLÄTTER »SHERPA« D") {
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_SHERPA-FAMILY_EN-met_A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT »SHERPA« E") {
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/SHERPA-FAMILY_DE-met_A4.pdf"
+        }
+        else if (txt == "DATENBLÄTTER »SHERPA« E") {
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_SHERPA-E-FAMILY_EN-met_A4.pdf"
+        }
+        else if (txt == "E-MOBILITY PROSPEKT") {
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/E-MOBILITY_DE-met_A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT »BISON« D FAMILIE") {
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/BISON-FAMILY_DE-met_A4.pdf"
+            
+        }
+        else if (txt == "DATENBLÄTTER »BISON« D FAMILIE") {
+             setShowLinkList(!showLinkList)
+            let arr = [
+              {name:'»BISON« D 370', link:'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D370_EN-met_A4.pdf'},
+              {name:'»BISON« D 620', link:'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D620_EN-met_A4.pdf'},
+              {name:' »BISON« D 1000', link:'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D1000_EN-met_A4.pdf'},
+              {name:'»BISON« D 1500', link:'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D1500_EN-met_A4.pdf'},
+            ]
+           
+            setLinkList([...arr])
+            return 'ss'
+        }
+        else if (txt == "PRODUKT PROSPEKT  »BISON« E FAMILIE") {
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/BISON-FAMILY_DE-met_A4.pdf"
+        }
+        else if (txt == "DATENBLÄTTER »BISON« E FAMILIE") {
+            setShowLinkList(!showLinkList)
+            let arr = [ 
+              {link:  "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-E370_EN-met_A4.pdf", name:': »BISON« E 370'},
+              {link:  "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-E620_EN-met_A4.pdf",name:'»BISON« E 620'}
+                 
+            ]
+          
+            setLinkList([...arr])
+            return 'ss'
+        }
+        else if (txt == "PRODUKT PROSPEKT  »PHOENIX« AST-2P/X") {
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/PHOENIX-FAMILIE_DE-met_A4.pdf"
+        }
+        else if (txt == "DATENBLÄTTER »PHOENIX« AST-2P/X") {
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_PHOENIX_AST-2P-X_EN-met_A4.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT »PHOENIX« AST-2E") {
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/PHOENIX-FAMILIE_DE-met_A4.pdf"
+            
+        }
+        else if (txt == "DATENBLÄTTER »PHOENIX« AST-2E") {
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_PHOENIX_AST-2E_EN-met_A4.pdf"
+        }
+
+        else if (txt == "PRODUKT PROSPEKT AST-1X") {
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/AST-1X_DE-met_A4.pdf"
+            
+        }
+
+        else if (txt == "DATENBLÄTTER AST-1X") {
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_AST-1X_EN-met_A4.pdf"
+        }
+        
+        else if (txt == "PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN") {
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/ARTS_DE-met_A4.pdf"
+        }
+
+        else if (txt == "PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN") {
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/ARTS_DE-met_A4.pdf"
+        }
+        else if (txt == "'QUICKGUIDE ZUM STEPSTAR") {
+            
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/ARTS_DE-met_A4.pdf"
+        }
+        
+    }
+    const openPdf = (txt) => {
+        let PDFLink = getPdfLink(txt)
+        console.log({ PDFLink })
+        if (PDFLink) {
+            Linking.canOpenURL(PDFLink)
+                .then(supported => {
+                    if (!supported) {
+
+                    } else {
+                        return Linking.openURL(PDFLink);
+                    }
+                })
+                .catch(err => console.log(err));
+        }
+        else {
+            alert('PDF is not available');
+        }
+
+
+    }
+
+    const openPdf2 = (link) => {
+       
+        
+        if (link) {
+            Linking.canOpenURL(link)
+                .then(supported => {
+                    if (!supported) {
+
+                    } else {
+                        return Linking.openURL(link);
+                    }
+                })
+                .catch(err => console.log(err));
+        }
+        else {
+            alert('PDF is not available');
+        }
+
+
+    }
     return (
         <SafeAreaView style={{ ...BaseStyle.safeAreaView, backgroundColor: '#D2D9DE' }} edges={['right', 'top', 'left']}>
             <Header
@@ -207,7 +423,7 @@ export default function ProductDeatilVideoLink(props) {
                 <View style={{ width: '100%', marginTop: -2 }}>
                     {list.text.map((txt, i) => {
                         return (
-                            <View key={i} style={{ width: '100%', flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
+                            <TouchableOpacity onPress={() => openPdf(txt)} key={i} style={{ width: '100%', flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
                                 <View style={{ width: "90%", marginTop: 2 }}>
                                     <Text headline bold whiteColor>
                                         {txt}
@@ -217,10 +433,25 @@ export default function ProductDeatilVideoLink(props) {
 
                                     <ArrowPng />
                                 </View>
-                            </View>
+                            </TouchableOpacity>
                         )
                     })}
                 </View>
+
+                {showLinkList &&
+                    <View style={{ width: '100%', marginTop: -2 }}>
+                        {linkList.map((txt, i) => {
+                            return (
+                                <TouchableOpacity onPress={() => openPdf2(txt.link)} key={i} style={{ width: '100%', flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
+                                    <Text headline bold whiteColor>
+                                     {txt.name}
+                                    </Text>
+
+
+                                </TouchableOpacity>
+                            )
+                        })}
+                    </View>}
                 <View style={{ width: '95%', alignSelf: 'center', marginTop: 10 }}>
                     <Text headline bold blackColor>
 

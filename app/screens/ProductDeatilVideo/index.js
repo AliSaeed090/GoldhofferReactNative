@@ -79,6 +79,8 @@ export default function ProductDetailsList(props) {
     const { t } = useTranslation();
     const { colors } = useTheme();
     const [isRendered, setIsRendered] = useState(null)
+    const [videoId, setvideoId] = useState(null)
+    const [playListArr, setPlayListArr] = useState([])
     const [list, setList] = useState({
         image: '',
         text: [],
@@ -102,23 +104,69 @@ export default function ProductDetailsList(props) {
         playerWidth: Dimensions.get('window').width,
     })
     useEffect(() => {
-        console.log({ xxx: params.item })
+        console.log({ xxx: params })
         if (params) {
             setList(params.item)
+
+            if (isServiceType === "SERVICE AIRPORT") {
+                const playListId = getPlaylistServiceVideoId(params.text)
+                if (playListId) {
+                    getVideo(playListId)
+                }
+
+            }
+            else if (isServiceType === "SALES AIRPORT") {
+                const playListId = getPlaylistProductVideoId(params.text)
+                if (playListId) {
+                    getVideo(playListId)
+                }
+            }
+            else if (isServiceType === "SALES TRANSPORT") {
+                const playListId = getPlaylistProductVideoId(params.text)
+                if (playListId) {
+                    getVideo(playListId)
+                }
+            }
+            else if (isServiceType === "SERVICE TRANSPORT") {
+                const playListId = getPlaylistServiceVideoId(params.text)
+                if (playListId) {
+                    getVideo(playListId)
+                }
+            }
+
+
+
+
         }
 
 
     }, [params])
 
-    useEffect(() => {
 
+    const getVideo = (id) => {
         fetch(
-            "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2C+id&playlistId=PLfvaFAgzJJDi_Ou0GOaiLftS7MK-hvMDv&key=AIzaSyCCuJKVuq5JX7bAzLERMJ0ctHRM_iuqFJA")
+            `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2C+id&playlistId=${id}&key=AIzaSyAfOlpt6icgYuSUVVu8yXR-TJVoQ16bC3A`)
             .then((res) => res.json())
             .then((json) => {
-                console.log({ json })
-                setVideosList(json.items)
+                if (json.items && json.items.length > 0) {
+                    console.log({ json: json.items[0].snippet.resourceId.videoId })
+                    setvideoId(json.items[0].snippet.resourceId.videoId)
+                    let arr = json.items.map((data) => {
+                        data["play"] = false
+
+                        return data
+                    })
+                    setPlayListArr([...arr])
+
+                }
+
+
             })
+    }
+
+    useEffect(() => {
+
+
     }, [])
     const [VideosList, setVideosList] = useState([]);
 
@@ -159,11 +207,24 @@ export default function ProductDetailsList(props) {
 
     }
 
-    useFocusEffect(() => {
-        setTimeout(() => {
-            setIsRendered(true)
-        }, 100);
-    }, [])
+    // useFocusEffect(() => {
+
+
+    //     setTimeout(() => {
+    //         setIsRendered(true)
+    //     }, 100);
+
+
+    // }, [])
+
+    useFocusEffect(
+        React.useCallback(() => {
+            setTimeout(() => {
+                setIsRendered(true)
+            }, 100);
+        }, [])
+    );
+
     const onPressRight = () => {
         navigation.reset({
             index: 0,
@@ -279,17 +340,18 @@ export default function ProductDetailsList(props) {
             return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/E-MOBILITY_DE-met_A4.pdf"
         }
         else if (txt == "PRODUKT PROSPEKT »BISON« D FAMILIE") {
-            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/E-MOBILITY_DE-met_A4.pdf"
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/BISON-FAMILY_DE-met_A4.pdf"
+
         }
         else if (txt == "DATENBLÄTTER »BISON« D FAMILIE") {
             setShowLinkList(!showLinkList)
             let arr = [
-                "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D370_EN-met_A4.pdf",
-                "http://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D620_EN-met_A4.pdf",
-                "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D1000_EN-met_A4.pdf",
-                "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D1500_EN-met_A4.pdf"
+                { name: '»BISON« D 370', link: 'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D370_EN-met_A4.pdf' },
+                { name: '»BISON« D 620', link: 'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D620_EN-met_A4.pdf' },
+                { name: ' »BISON« D 1000', link: 'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D1000_EN-met_A4.pdf' },
+                { name: '»BISON« D 1500', link: 'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D1500_EN-met_A4.pdf' },
             ]
-           
+
             setLinkList([...arr])
             return 'ss'
         }
@@ -299,11 +361,11 @@ export default function ProductDetailsList(props) {
         else if (txt == "DATENBLÄTTER »BISON« E FAMILIE") {
             setShowLinkList(!showLinkList)
             let arr = [
-                "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-E370_EN-met_A4.pdf",
-                "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-E620_EN-met_A4.pdf",
-                 
+                { link: "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-E370_EN-met_A4.pdf", name: ': »BISON« E 370' },
+                { link: "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-E620_EN-met_A4.pdf", name: '»BISON« E 620' }
+
             ]
-          
+
             setLinkList([...arr])
             return 'ss'
         }
@@ -314,20 +376,22 @@ export default function ProductDetailsList(props) {
             return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_PHOENIX_AST-2P-X_EN-met_A4.pdf"
         }
         else if (txt == "PRODUKT PROSPEKT »PHOENIX« AST-2E") {
-            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/AST-1X_DE-met_A4.pdf"
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/PHOENIX-FAMILIE_DE-met_A4.pdf"
+
         }
         else if (txt == "DATENBLÄTTER »PHOENIX« AST-2E") {
             return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_PHOENIX_AST-2E_EN-met_A4.pdf"
         }
 
         else if (txt == "PRODUKT PROSPEKT AST-1X") {
-            return " h>ps://www.goldhofer.com/fileadmin//downloads/airport_technology/AST-1X_DE-met_A4.pdf"
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/AST-1X_DE-met_A4.pdf"
+
         }
 
         else if (txt == "DATENBLÄTTER AST-1X") {
             return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_AST-1X_EN-met_A4.pdf"
         }
-        
+
         else if (txt == "PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN") {
             return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/ARTS_DE-met_A4.pdf"
         }
@@ -335,7 +399,13 @@ export default function ProductDetailsList(props) {
         else if (txt == "PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN") {
             return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/ARTS_DE-met_A4.pdf"
         }
+        else if (txt == "'QUICKGUIDE ZUM STEPSTAR") {
+
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/ARTS_DE-met_A4.pdf"
+        }
+
     }
+
     const openPdf = (txt) => {
         let PDFLink = getPdfLink(txt)
         console.log({ PDFLink })
@@ -358,8 +428,8 @@ export default function ProductDetailsList(props) {
     }
 
     const openPdf2 = (link) => {
-       
-        
+
+
         if (link) {
             Linking.canOpenURL(link)
                 .then(supported => {
@@ -375,6 +445,460 @@ export default function ProductDetailsList(props) {
             alert('PDF is not available');
         }
 
+
+    }
+
+    // const getPlaylistVideoId = (txt) => {
+    //     console.log({ txt })
+    //     if (txt === 'PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H') {
+    //         return "PLPP-gBF73hLPD9LtfobjLdAEcGJwIujnZ"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT SPZ-GP") {
+    //         return "PLPP-gBF73hLNevJnEECS7KL70mhl0-I7f"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT »VENTUM«") {
+    //         return "PLPP-gBF73hLNEn5y12OByzw5P3Wv733Yi"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT STEPSTAR") {
+    //         return "PLPP-gBF73hLOPZ1evqUqHfS3-hay3Ec-F"
+    //     }
+
+    //     else if (txt == "PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK") {
+    //         return "PLPP-gBF73hLMGGKk62KFWvTsPBzmIFn0T"
+    //     }
+
+    //     else if (txt == "PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«") {
+    //         return "PLPP-gBF73hLOEIWZR1YGRwz4VKwUcRseY"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE") {
+    //         return "PLPP-gBF73hLPRlrbnFp2nfpEu0t-qbnoM"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT STZ-VL | STZ-VH") {
+    //         return "PLPP-gBF73hLP2aLrwMBqlSrrKY4sR0o0z"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT »MPA« V") {
+    //         return null
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT STZ-VP (245)") {
+    //         return null
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT STZ-VP (285)") {
+    //         return "https://www.goldhofer.com/fileadmin//downloads/prospekte/STZ-VP_245-285_DE-A4.pdf"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT THP/ET") {
+    //         return "PLPP-gBF73hLOl_FFEBn7FPVPZFgfN1JzI"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT THP/UT") {
+    //         return "PLPP-gBF73hLO1Vh237ETwyIaggnnqvXaM"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT THP/MT") {
+    //         return "PLPP-gBF73hLNeRbjqYK4sKojfkM1a0sZJ"
+    //     }
+
+    //     else if (txt == "PRODUKT PROSPEKT THP/SL-S") {
+    //         return "PLPP-gBF73hLOACHMH2JEKWtygDkVbu-gz"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT THP/SL-L") {
+    //         return "PLPP-gBF73hLMbGWcfuPY45wlvshSr3y02"
+    //     }
+
+    //     else if (txt == "PRODUKT PROSPEKT THP/SL") {
+    //         return "PLPP-gBF73hLMEpbX8bbCZ-P7wMlB8S7af"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT »ADDRIVE«") {
+    //         return "PLPP-gBF73hLNYwwjcpe3KRTHqltrYIcos"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT PST/SL") {
+    //         return "PLPP-gBF73hLMxhhcHDIfUoIcWRCNIA0t7"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT PST/SL-E") {
+    //         return "PLPP-gBF73hLM8p6hxLqGXpZbHOc6vqTZU"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT PST/ES-E") {
+    //         return "PLPP-gBF73hLOH4Y9FN78Cz7sG8J8zBk70"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT FTV 550") {
+    //         return "PLPP-gBF73hLOJbyEwtCKwCly7dKAVDb5d"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT »FAKTOR« 5 | »FAKTOR« 5.5") {
+    //         return "PLPP-gBF73hLPUjUrZiQdEKEi8Sxnjt0io"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT RA 2") {
+    //         return "PLPP-gBF73hLO4sltdttNDDuGxdgiUpYZR"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT RA 3") {
+    //         return "PLPP-gBF73hLOz4M4poYfrWLMqHDK6PqDj"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT RA 4") {
+    //         return "PLPP-gBF73hLNKegUCMeILLMk9FmUeG6zo"
+    //     }
+
+    //     else if (txt == "PRODUKT PROSPEKT »BLADES«") {
+    //         return "PLPP-gBF73hLOnSblANOcUnSIYyys6k_T5"
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT »BLADEX«") {
+    //         return "PLPP-gBF73hLN_h7mYbLc--B4wk0yoX0z6"
+    //     }
+
+
+    //     else if (txt == "PRODUKT PROSPEKT »SHERPA« D") {
+    //         return null
+    //     }
+    //     else if (txt == "DATENBLÄTTER »SHERPA« D") {
+    //         return null
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT »SHERPA« E") {
+    //         return null
+    //     }
+    //     else if (txt == "DATENBLÄTTER »SHERPA« E") {
+    //         return null
+    //     }
+    //     else if (txt == "E-MOBILITY PROSPEKT") {
+    //         return null
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT »BISON« D FAMILIE") {
+    //         return null
+    //     }
+    //     else if (txt == "DATENBLÄTTER »BISON« D FAMILIE") {
+    //         return null
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT  »BISON« E FAMILIE") {
+    //         return null
+    //     }
+    //     else if (txt == "DATENBLÄTTER »BISON« E FAMILIE") {
+    //         return null
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT  »PHOENIX« AST-2P/X") {
+    //         return null
+    //     }
+    //     else if (txt == "DATENBLÄTTER »PHOENIX« AST-2P/X") {
+    //         return null
+    //     }
+    //     else if (txt == "PRODUKT PROSPEKT »PHOENIX« AST-2E") {
+    //         return null
+
+    //     }
+    //     else if (txt == "DATENBLÄTTER »PHOENIX« AST-2E") {
+    //         return null
+    //     }
+
+    //     else if (txt == "PRODUKT PROSPEKT AST-1X") {
+    //         return null
+
+    //     }
+
+    //     else if (txt == "DATENBLÄTTER AST-1X") {
+    //         return null
+    //     }
+
+    //     else if (txt == "PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN") {
+    //         return null
+    //     }
+
+    //     else if (txt == "PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN") {
+    //         return null
+    //     }
+    //     else if (txt == "'QUICKGUIDE ZUM STEPSTAR") {
+
+    //         return null
+    //     }
+
+    // }
+    const getPlaylistProductVideoId = (txt) => {
+        console.log({ txt })
+        if (txt === 'SPZ-L | SPZ-GL | SPZ-H') {
+            return "PLPP-gBF73hLPD9LtfobjLdAEcGJwIujnZ"
+        }
+        else if (txt == "SPZ-GP") {
+            return "PLPP-gBF73hLNevJnEECS7KL70mhl0-I7f"
+        }
+        else if (txt == "»VENTUM«") {
+            return "PLPP-gBF73hLNEn5y12OByzw5P3Wv733Yi"
+        }
+        else if (txt == "STEPSTAR") {
+            // return "PLPP-gBF73hLOPZ1evqUqHfS3-hay3Ec-F"
+            return "PLPP-gBF73hLOPZ1evqUqHfS3-hay3Ec-F"
+        }
+
+        else if (txt == "PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK") {
+            return "PLPP-gBF73hLMGGKk62KFWvTsPBzmIFn0T"
+        }
+
+        else if (txt == "STZ-L | STZ-H | »MPA«") {
+            return "PLPP-gBF73hLOEIWZR1YGRwz4VKwUcRseY"
+        }
+        else if (txt == "STZ-L | »MPA« MIT RADMULDE") {
+            return "PLPP-gBF73hLPRlrbnFp2nfpEu0t-qbnoM"
+        }
+        else if (txt == "STZ-VL | STZ-VH") {
+            return "PLPP-gBF73hLP2aLrwMBqlSrrKY4sR0o0z"
+        }
+        else if (txt == "»MPA« V") {
+            return null
+        }
+        else if (txt == "STZ-VP (245)") {
+            return null
+        }
+        else if (txt == "STZ-VP (285)") {
+            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/STZ-VP_245-285_DE-A4.pdf"
+        }
+        else if (txt == "THP/ET") {
+            return "PLPP-gBF73hLOl_FFEBn7FPVPZFgfN1JzI"
+        }
+        else if (txt == "THP/UT") {
+            return "PLPP-gBF73hLO1Vh237ETwyIaggnnqvXaM"
+        }
+        else if (txt == "THP/MT") {
+            return "PLPP-gBF73hLNeRbjqYK4sKojfkM1a0sZJ"
+        }
+
+        else if (txt == "THP/SL-S") {
+            return "PLPP-gBF73hLOACHMH2JEKWtygDkVbu-gz"
+        }
+        else if (txt == "THP/SL-L") {
+            return "PLPP-gBF73hLMbGWcfuPY45wlvshSr3y02"
+        }
+
+        else if (txt == "THP/SL") {
+            return "PLPP-gBF73hLMEpbX8bbCZ-P7wMlB8S7af"
+        }
+        else if (txt == "»ADDRIVE«") {
+            return "PLPP-gBF73hLNYwwjcpe3KRTHqltrYIcos"
+        }
+        else if (txt == "PST/SL") {
+            return "PLPP-gBF73hLMxhhcHDIfUoIcWRCNIA0t7"
+        }
+        else if (txt == "PST/SL-E") {
+            return "PLPP-gBF73hLM8p6hxLqGXpZbHOc6vqTZU"
+        }
+        else if (txt == "PST/ES-E") {
+            return "PLPP-gBF73hLOH4Y9FN78Cz7sG8J8zBk70"
+        }
+        else if (txt == "FTV 550") {
+            return "PLPP-gBF73hLOJbyEwtCKwCly7dKAVDb5d"
+        }
+        else if (txt == "»FAKTOR« 5 | »FAKTOR« 5.5") {
+            return "PLPP-gBF73hLPUjUrZiQdEKEi8Sxnjt0io"
+        }
+        else if (txt == "RA 2") {
+            return "PLPP-gBF73hLO4sltdttNDDuGxdgiUpYZR"
+        }
+        else if (txt == "RA 3") {
+            return "PLPP-gBF73hLOz4M4poYfrWLMqHDK6PqDj"
+        }
+        else if (txt == "RA 4") {
+            return "PLPP-gBF73hLNKegUCMeILLMk9FmUeG6zo"
+        }
+        else if (txt == "»BLADES«") {
+            return "PLPP-gBF73hLOnSblANOcUnSIYyys6k_T5"
+        }
+        else if (txt == "»BLADEX«") {
+            return "PLPP-gBF73hLN_h7mYbLc--B4wk0yoX0z6"
+        }
+        else if (txt == "»SHERPA« D") {
+            return null
+        }
+        else if (txt == "DATENBLÄTTER »SHERPA« D") {
+            return null
+        }
+        else if (txt == "»SHERPA« E") {
+            return null
+        }
+        else if (txt == "DATENBLÄTTER »SHERPA« E") {
+            return null
+        }
+        else if (txt == "E-MOBILITY PROSPEKT") {
+            return null
+        }
+        else if (txt == "»BISON« D FAMILIE") {
+            return null
+        }
+        else if (txt == "DATENBLÄTTER »BISON« D FAMILIE") {
+            return null
+        }
+        else if (txt == "»BISON« E FAMILIE") {
+            return null
+        }
+        else if (txt == "DATENBLÄTTER »BISON« E FAMILIE") {
+            return null
+        }
+        else if (txt == "»PHOENIX« AST-2P/X") {
+            return null
+        }
+        else if (txt == "DATENBLÄTTER »PHOENIX« AST-2P/X") {
+            return null
+        }
+        else if (txt == "»PHOENIX« AST-2E") {
+            return null
+
+        }
+        else if (txt == "DATENBLÄTTER »PHOENIX« AST-2E") {
+            return null
+        }
+        else if (txt == "AST-1X") {
+            return null
+        }
+        else if (txt == "DATENBLÄTTER AST-1X") {
+            return null
+        }
+        else if (txt == "DOLLIES KLEINE SCHÄDEN") {
+            return null
+        }
+        else if (txt == "KOMBINATIONSSYSTEME GROSSE SCHÄDEN") {
+            return null
+        }
+        else if (txt == "'QUICKGUIDE ZUM STEPSTAR") {
+
+            return null
+        }
+
+    }
+    const getPlaylistServiceVideoId = (txt) => {
+        console.log({ txt })
+        if (txt === 'SPZ-L | SPZ-GL | SPZ-H') {
+            return "PLPP-gBF73hLMy-EbARpkRE6htTOYvpxCj"
+        }
+        else if (txt == "SPZ-GP") {
+            return "PLPP-gBF73hLNevJnEECS7KL70mhl0-I7f"
+        }
+        else if (txt == "»VENTUM«") {
+            return "PLPP-gBF73hLNhPWANb0VK2PHGlQAScHPY"
+        }
+        else if (txt == "STEPSTAR") {
+            return "PLPP-gBF73hLNGQ6CJCjOJQ2QNaw9g13fW"
+        }
+
+        else if (txt == "»ARCUS« P | »ARCUS« PK") {
+            return "PLPP-gBF73hLMMhPyKbKQ-EX9OreMor3FY"
+        }
+
+        else if (txt == "STZ-L | STZ-H | »MPA«") {
+            return "PLPP-gBF73hLMY5mVFN7Xmbv-V5sFwDsDK"
+        }
+        else if (txt == "STZ-L | »MPA« MIT RADMULDE") {
+            return "PLPP-gBF73hLPRlrbnFp2nfpEu0t-qbnoM"
+        }
+        else if (txt == "STZ-VL | STZ-VH") {
+            return "PLPP-gBF73hLNiZxE1m98oVApEccUnlJcw"
+        }
+        else if (txt == "»MPA« V") {
+            return null
+        }
+        else if (txt == "STZ-VP (245)") {
+            return "PLPP-gBF73hLNmj8fNPE_zOwKFfGhwjp7x"
+        }
+        else if (txt == "STZ-VP (285)") {
+            return "PLPP-gBF73hLNmj8fNPE_zOwKFfGhwjp7x"
+        }
+        else if (txt == "THP/ET") {
+            return "PLPP-gBF73hLNZK6-GPdyPZr-TmKL2YNvw"
+        }
+        else if (txt == "THP/UT") {
+            return "PLPP-gBF73hLPIrKho3UMA7ayQxw_AluYP"
+        }
+        else if (txt == "THP/MT") {
+            return "PLPP-gBF73hLO4Pi-7kRSLE4C9pxsg_edH"
+        }
+
+        else if (txt == "THP/SL-S") {
+            return "PLPP-gBF73hLM4yY6IGQg5XcH0xCRRq5sP"
+        }
+        else if (txt == "THP/SL-L") {
+            return "PLPP-gBF73hLNria-9eAVB9i9WrQwE9M6t"
+        }
+
+        else if (txt == "THP/SL") {
+            return "PLPP-gBF73hLOi7M_n8QtmIYyfFj5LRztO"
+        }
+        else if (txt == "»ADDRIVE«") {
+            return "PLPP-gBF73hLOZdZ2S2RVUsyHhApi0VcfH"
+        }
+        else if (txt == "PST/SL") {
+            return "PLPP-gBF73hLPJUYT1lXVDmlLOnuilUYVs"
+        }
+        else if (txt == "PST/SL-E") {
+            return "PLPP-gBF73hLObmLPm4EBShLVwFE_ilYr9"
+        }
+        else if (txt == "PST/ES-E") {
+            return "PLPP-gBF73hLNyfQ6GXYLVpWeC-oiD2fZL"
+        }
+        else if (txt == "FTV 550") {
+            return "PLPP-gBF73hLMXROTaliN1-zA99Uds1rcn"
+        }
+        else if (txt == "»FAKTOR« 5 | »FAKTOR« 5.5") {
+            return "PLPP-gBF73hLOd00d2FGTocoe3XdkcA2bH"
+        }
+        else if (txt == "RA 2") {
+            return "PLPP-gBF73hLOxkk77DOf_8v56S8Z1FsPQ"
+        }
+        else if (txt == "RA 3") {
+            return "PLPP-gBF73hLNQllxr5uBZIZOs2xFOZyJa"
+        }
+        else if (txt == "RA 4") {
+            return "PLPP-gBF73hLN31psDymSQn34wQmOXw7SV"
+        }
+        else if (txt == "»BLADES«") {
+            return "PLPP-gBF73hLOOWDAcUKXAypiwOf4jLrvB"
+        }
+        else if (txt == "»BLADEX«") {
+            return "PLPP-gBF73hLOQYe7hqocKCkYEx30LLfyG"
+        }
+        else if (txt == "»SHERPA« D") {
+            return null
+        }
+        else if (txt == "DATENBLÄTTER »SHERPA« D") {
+            return null
+        }
+        else if (txt == "»SHERPA« E") {
+            return null
+        }
+        else if (txt == "DATENBLÄTTER »SHERPA« E") {
+            return null
+        }
+        else if (txt == "E-MOBILITY PROSPEKT") {
+            return null
+        }
+        else if (txt == "»BISON« D FAMILIE") {
+            return null
+        }
+        else if (txt == "DATENBLÄTTER »BISON« D FAMILIE") {
+            return null
+        }
+        else if (txt == "»BISON« E FAMILIE") {
+            return null
+        }
+        else if (txt == "DATENBLÄTTER »BISON« E FAMILIE") {
+            return null
+        }
+        else if (txt == "»PHOENIX« AST-2P/X") {
+            return null
+        }
+        else if (txt == "DATENBLÄTTER »PHOENIX« AST-2P/X") {
+            return null
+        }
+        else if (txt == "»PHOENIX« AST-2E") {
+            return null
+
+        }
+        else if (txt == "DATENBLÄTTER »PHOENIX« AST-2E") {
+            return null
+        }
+        else if (txt == "AST-1X") {
+            return null
+        }
+        else if (txt == "DATENBLÄTTER AST-1X") {
+            return null
+        }
+        else if (txt == "DOLLIES KLEINE SCHÄDEN") {
+            return null
+        }
+        else if (txt == "KOMBINATIONSSYSTEME GROSSE SCHÄDEN") {
+            return null
+        }
+        else if (txt == "'QUICKGUIDE ZUM STEPSTAR") {
+
+            return null
+        }
 
     }
     return (
@@ -433,9 +957,9 @@ export default function ProductDetailsList(props) {
                     <View style={{ width: '100%', marginTop: -2 }}>
                         {linkList.map((txt, i) => {
                             return (
-                                <TouchableOpacity onPress={() => openPdf2(txt)} key={i} style={{ width: '100%', flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
+                                <TouchableOpacity onPress={() => openPdf2(txt.link)} key={i} style={{ width: '100%', flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
                                     <Text headline bold whiteColor>
-                                        Pdf Link {i + 1}
+                                        {txt.name}
                                     </Text>
 
 
@@ -457,19 +981,19 @@ export default function ProductDetailsList(props) {
                 </View>
 
 
-
-                {isRendered &&
+                {/* 
+                {isRendered && videoId &&
 
                     <YouTube
                         // AIzaSyADirxd-_5JqMTKVqA-2ECnq1TfcxksH7I
 
                         // ref={youTubeRef}
                         // You must have an API Key for the player to load in Android
-                        apiKey="AIzaSyCCuJKVuq5JX7bAzLERMJ0ctHRM_iuqFJA"
+                        apiKey="AIzaSyAfOlpt6icgYuSUVVu8yXR-TJVoQ16bC3A"
                         // Un-comment one of videoId / videoIds / playlist.
                         // You can also edit these props while Hot-Loading in development mode to see how
                         // it affects the loaded native module
-                        videoId={list.videoId}
+                        videoId={videoId}
                         // videoIds={['uMK0prafzw0', 'qzYgSecGQww', 'XXlZfc1TrD0', 'czcjU1w-c6k']}
                         // playlistId="PLfvaFAgzJJDgBIpMqcqolowsZf9y5hmId"
                         play={state.isPlaying}
@@ -508,10 +1032,66 @@ export default function ProductDetailsList(props) {
                             console.log({ onProgress: e.currentTime })
 
                         }}
-                    />}
+                    />} */}
+
+
+                {
+                    playListArr.map((data, i) => {
+                        return (
+
+
+                            <YouTube
+                                key={i}
+                               
+
+                                // ref={youTubeRef}
+                                // You must have an API Key for the player to load in Android
+                                apiKey="AIzaSyAfOlpt6icgYuSUVVu8yXR-TJVoQ16bC3A"
+                                // Un-comment one of videoId / videoIds / playlist.
+                                // You can also edit these props while Hot-Loading in development mode to see how
+                                // it affects the loaded native module
+                                videoId={data.snippet.resourceId.videoId}
+                                // videoIds={['uMK0prafzw0', 'qzYgSecGQww', 'XXlZfc1TrD0', 'czcjU1w-c6k']}
+                                // playlistId="PLfvaFAgzJJDgBIpMqcqolowsZf9y5hmId"
+                                play={data.play}
+                                loop={state.isLooping}
+                                fullscreen={state.fullscreen}
+                                controls={3}
+                                style={{ alignSelf: 'stretch', height: playerHeight, backgroundColor: 'black', marginVertical: 10 }}
 
 
 
+                                onError={e => {
+
+                                    console.log({ onError: e.error })
+                                }}
+                                onReady={e => {
+                                    // setPlayerHeight(200)
+                                    console.log({ onReady: true })
+
+                                }}
+                                onChangeState={e => {
+
+                                    console.log({ onChangeState: e.state })
+
+                                }}
+                                onChangeQuality={e => {
+
+                                    console.log({ onChangeQuality: e.quality })
+
+                                }}
+                                onChangeFullscreen={e => {
+
+                                    console.log({ onChangeFullscreen: e.isFullscreen })
+
+                                }}
+                                onProgress={e => {
+                                    console.log({ onProgress: e.currentTime })
+
+                                }}
+                            />)
+                    })
+                }
 
 
                 <TouchableOpacity style={{ width: '95%', alignSelf: 'center', marginTop: 20, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>

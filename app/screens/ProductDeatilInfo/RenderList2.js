@@ -21,10 +21,10 @@ export default function RenderList2({ item }) {
             Linking.openURL(item.linking)
         }
         else if (item.data.length > 0) {
-            navigation.navigate("ProductDeatilMoreInfo", { item: item.data })
+            navigation.navigate("ProductDeatilMoreInfo", { item: item.data , text:item.text})
         }
         else {
-            navigation.navigate("ProductDeatilVideo", { item: item.data })
+            navigation.navigate("ProductDeatilVideo", { item: item.data , text:item.text})
         }
 
 
