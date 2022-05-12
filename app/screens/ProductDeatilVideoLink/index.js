@@ -3,7 +3,7 @@ import { BaseStyle, useTheme, Images, BaseColor } from "@config";
 // Load sample data
 import styles from './styles'
 import React, { useState, useMemo, useEffect, useRef } from "react";
-import { FlatList, View, TouchableOpacity, ScrollView, Dimensions, Linking ,Platform} from "react-native";
+import { FlatList, View, TouchableOpacity, ScrollView, Dimensions, Linking, Platform } from "react-native";
 import { useTranslation } from "react-i18next";
 
 import YouTube from 'react-native-youtube';
@@ -26,29 +26,29 @@ const BackArrowPng = () => {
 function renderFooter() {
     const contact = useSelector((state) => state.application.contact);
     const { colors } = useTheme();
-   
+
     const callNumber = phone => {
         console.log('callNumber ----> ', phone);
         let phoneNumber = phone;
         if (Platform.OS !== 'android') {
-          phoneNumber = `telprompt:${phone}`;
+            phoneNumber = `telprompt:${phone}`;
         }
-        else  {
-          phoneNumber = `tel:${phone}`;
+        else {
+            phoneNumber = `tel:${phone}`;
         }
         Linking.canOpenURL(phoneNumber)
-        .then(supported => {
-          if (!supported) {
-            Alert.alert('Phone number is not available');
-          } else {
-            return Linking.openURL(phoneNumber);
-          }
-        })
-        .catch(err => console.log(err));
-      };
-      return (
-        <TouchableOpacity onPress={()=>callNumber(contact.number)} style={{ width: "95%", flexDirection: 'row', height: 90, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
-         
+            .then(supported => {
+                if (!supported) {
+                    Alert.alert('Phone number is not available');
+                } else {
+                    return Linking.openURL(phoneNumber);
+                }
+            })
+            .catch(err => console.log(err));
+    };
+    return (
+        <TouchableOpacity onPress={() => callNumber(contact.number)} style={{ width: "95%", flexDirection: 'row', height: 90, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
+
             <View style={{ borderTopLeftRadius: 55, backgroundColor: 'black', width: 100, height: '100%', justifyContent: 'center', alignItems: 'center' }}>
                 <Image source={Images.G} style={styles.manImage} resizeMode="contain" />
 
@@ -89,8 +89,9 @@ export default function ProductDeatilVideoLink(props) {
         text: [],
 
     })
-    const [isServiceType, SetisServiceType] = useState(contact.type)
-
+    const [isServiceType, SetisServiceType] = useState("")
+    const [videoId, setvideoId] = useState(null)
+    const [playListArr, setPlayListArr] = useState([])
     const [state, setState] = useState({
         isReady: false,
         status: null,
@@ -104,25 +105,77 @@ export default function ProductDeatilVideoLink(props) {
         playerWidth: Dimensions.get('window').width,
     })
     useEffect(() => {
-        console.log({ xxx: params.item })
+        if (contact.type) {
+            SetisServiceType(contact.type)
+        }
+    }, [contact.type])
+    useEffect(() => {
+        console.log({ xxx: params, isServiceType: contact.name })
 
         if (params) {
             setList(params.item)
+            if (contact.name === "SERVICE AIRPORT") {
+                const playListId = getPlaylistServiceVideoId(params.text)
+
+                if (playListId) {
+                    getVideo(playListId)
+                }
+
+            }
+            else if (contact.name === "SALES AIRPORT") {
+                const playListId = getPlaylistProductVideoId(params.text)
+                if (playListId) {
+                    getVideo(playListId)
+                }
+            }
+            else if (contact.name === "SALES TRANSPORT") {
+                const playListId = getPlaylistProductVideoId(params.text)
+                if (playListId) {
+                    getVideo(playListId)
+                }
+            }
+            else if (contact.name === "SERVICE TRANSPORT") {
+                const playListId = getPlaylistServiceVideoId(params.text)
+                if (playListId) {
+                    getVideo(playListId)
+                }
+            }
         }
 
 
+        if (contact.type) {
+            SetisServiceType(contact.type)
+        }
 
-    }, [params])
+    }, [params, contact])
+    const getVideo = (id) => {
+        const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2C+id&playlistId=${id}&key=AIzaSyAfOlpt6icgYuSUVVu8yXR-TJVoQ16bC3A`
+        console.log({ id })
+        fetch(
+            `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2C+id&playlistId=${id}&key=AIzaSyAfOlpt6icgYuSUVVu8yXR-TJVoQ16bC3A`)
+            .then((res) => res.json())
+            .then((json) => {
+                if (json.items && json.items.length > 0) {
+                    console.log({ json })
+                    setvideoId(json.items[0].snippet.resourceId.videoId)
+                    let arr = json.items.map((data) => {
+                        data["play"] = false
+
+                        return data
+                    })
+                    setPlayListArr([...arr])
+
+                }
+
+
+            })
+    }
 
     useEffect(() => {
 
-        fetch(
-            "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2C+id&playlistId=PLfvaFAgzJJDi_Ou0GOaiLftS7MK-hvMDv&key=AIzaSyCCuJKVuq5JX7bAzLERMJ0ctHRM_iuqFJA")
-            .then((res) => res.json())
-            .then((json) => {
-                console.log({ json })
-                setVideosList(json.items)
-            })
+        return () => {
+            setvideoId(null)
+        }
     }, [])
     const [VideosList, setVideosList] = useState([]);
 
@@ -160,19 +213,21 @@ export default function ProductDeatilVideoLink(props) {
 
         navigation.goBack();
     }
-    useFocusEffect(() => {
-        setTimeout(() => {
-            setIsRendered(true)
-        }, 100);
-    }, [])
-    const onPressRight =()=>{
+    useFocusEffect(
+        React.useCallback(() => {
+            setTimeout(() => {
+                setIsRendered(true)
+            }, 100);
+        }, [])
+    );
+    const onPressRight = () => {
         navigation.reset({
-          index: 0,
-          routes: [{ name: "Main" }]
-      });
-      }
-      const getPdfLink = (txt) => {
-        console.log({ txt })
+            index: 0,
+            routes: [{ name: "Main" }]
+        });
+    }
+    const getPdfLink = (txt) => {
+        // console.log({ txt })
         if (txt === 'PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H') {
             return "https://www.goldhofer.com/fileadmin//downloads/prospekte/SPZ_DE-A4.pdf"
         }
@@ -280,17 +335,17 @@ export default function ProductDeatilVideoLink(props) {
         }
         else if (txt == "PRODUKT PROSPEKT »BISON« D FAMILIE") {
             return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/BISON-FAMILY_DE-met_A4.pdf"
-            
+
         }
         else if (txt == "DATENBLÄTTER »BISON« D FAMILIE") {
-             setShowLinkList(!showLinkList)
+            setShowLinkList(!showLinkList)
             let arr = [
-              {name:'»BISON« D 370', link:'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D370_EN-met_A4.pdf'},
-              {name:'»BISON« D 620', link:'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D620_EN-met_A4.pdf'},
-              {name:' »BISON« D 1000', link:'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D1000_EN-met_A4.pdf'},
-              {name:'»BISON« D 1500', link:'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D1500_EN-met_A4.pdf'},
+                { name: '»BISON« D 370', link: 'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D370_EN-met_A4.pdf' },
+                { name: '»BISON« D 620', link: 'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D620_EN-met_A4.pdf' },
+                { name: ' »BISON« D 1000', link: 'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D1000_EN-met_A4.pdf' },
+                { name: '»BISON« D 1500', link: 'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D1500_EN-met_A4.pdf' },
             ]
-           
+
             setLinkList([...arr])
             return 'ss'
         }
@@ -299,12 +354,12 @@ export default function ProductDeatilVideoLink(props) {
         }
         else if (txt == "DATENBLÄTTER »BISON« E FAMILIE") {
             setShowLinkList(!showLinkList)
-            let arr = [ 
-              {link:  "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-E370_EN-met_A4.pdf", name:': »BISON« E 370'},
-              {link:  "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-E620_EN-met_A4.pdf",name:'»BISON« E 620'}
-                 
+            let arr = [
+                { link: "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-E370_EN-met_A4.pdf", name: ': »BISON« E 370' },
+                { link: "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-E620_EN-met_A4.pdf", name: '»BISON« E 620' }
+
             ]
-          
+
             setLinkList([...arr])
             return 'ss'
         }
@@ -316,7 +371,7 @@ export default function ProductDeatilVideoLink(props) {
         }
         else if (txt == "PRODUKT PROSPEKT »PHOENIX« AST-2E") {
             return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/PHOENIX-FAMILIE_DE-met_A4.pdf"
-            
+
         }
         else if (txt == "DATENBLÄTTER »PHOENIX« AST-2E") {
             return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_PHOENIX_AST-2E_EN-met_A4.pdf"
@@ -324,13 +379,13 @@ export default function ProductDeatilVideoLink(props) {
 
         else if (txt == "PRODUKT PROSPEKT AST-1X") {
             return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/AST-1X_DE-met_A4.pdf"
-            
+
         }
 
         else if (txt == "DATENBLÄTTER AST-1X") {
             return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_AST-1X_EN-met_A4.pdf"
         }
-        
+
         else if (txt == "PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN") {
             return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/ARTS_DE-met_A4.pdf"
         }
@@ -339,14 +394,14 @@ export default function ProductDeatilVideoLink(props) {
             return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/ARTS_DE-met_A4.pdf"
         }
         else if (txt == "'QUICKGUIDE ZUM STEPSTAR") {
-            
+
             return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/ARTS_DE-met_A4.pdf"
         }
-        
+
     }
     const openPdf = (txt) => {
         let PDFLink = getPdfLink(txt)
-        console.log({ PDFLink })
+        // console.log({ PDFLink })
         if (PDFLink) {
             Linking.canOpenURL(PDFLink)
                 .then(supported => {
@@ -366,8 +421,8 @@ export default function ProductDeatilVideoLink(props) {
     }
 
     const openPdf2 = (link) => {
-       
-        
+
+
         if (link) {
             Linking.canOpenURL(link)
                 .then(supported => {
@@ -381,6 +436,292 @@ export default function ProductDeatilVideoLink(props) {
         }
         else {
             alert('PDF is not available');
+        }
+
+
+    }
+    const getPlaylistProductVideoId = (txt) => {
+        // console.log({ txt })
+        if (txt === 'SPZ-L | SPZ-GL | SPZ-H') {
+            return "PLPP-gBF73hLPD9LtfobjLdAEcGJwIujnZ"
+        }
+        else if (txt == "SPZ-GP") {
+            return "PLPP-gBF73hLPn2ihSCi09q9sirGB691Rn"
+
+
+        }
+        else if (txt == "»VENTUM«") {
+            return "PLPP-gBF73hLNEn5y12OByzw5P3Wv733Yi"
+
+        }
+        else if (txt == "STEPSTAR") {
+
+            return "PLPP-gBF73hLM8ISAtWciP6QoWoKZRJIuU"
+
+        }
+
+        else if (txt == "»ARCUS« P | »ARCUS« PK") {
+            return "PLPP-gBF73hLMGGKk62KFWvTsPBzmIFn0T"
+
+        }
+
+        else if (txt == "STZ-L | STZ-H | »MPA«") {
+            return "PLPP-gBF73hLOEIWZR1YGRwz4VKwUcRseY"
+
+        }
+        else if (txt == "STZ-L | »MPA« MIT RADMULDE") {
+            return "PLPP-gBF73hLOEIWZR1YGRwz4VKwUcRseY"
+
+
+        }
+        else if (txt == "STZ-VL | STZ-VH") {
+            return "PLPP-gBF73hLP2aLrwMBqlSrrKY4sR0o0z"
+
+        }
+        else if (txt == "»MPA« V") {
+            return null
+        }
+        else if (txt == "STZ-VP (245)") {
+            return null
+        }
+        else if (txt == "STZ-VP (285)") {
+            return null
+        }
+        else if (txt == "THP/ET") {
+
+            return "PLPP-gBF73hLOl_FFEBn7FPVPZFgfN1JzI"
+        }
+        else if (txt == "THP/UT") {
+            return "PLPP-gBF73hLO1Vh237ETwyIaggnnqvXaM"
+        }
+        else if (txt == "THP/MT") {
+            return "PLPP-gBF73hLNeRbjqYK4sKojfkM1a0sZJ"
+        }
+
+        else if (txt == "THP/SL-S") {
+
+            return "PLPP-gBF73hLOACHMH2JEKWtygDkVbu-gz"
+        }
+        else if (txt == "THP/SL-L") {
+            return "PLPP-gBF73hLMbGWcfuPY45wlvshSr3y02"
+        }
+
+        else if (txt == "THP/SL") {
+            return "PLPP-gBF73hLMEpbX8bbCZ-P7wMlB8S7af"
+
+        }
+        else if (txt == "»ADDRIVE«") {
+
+            return "PLPP-gBF73hLNYwwjcpe3KRTHqltrYIcos"
+        }
+        else if (txt == "PST/SL") {
+            return "PLPP-gBF73hLMxhhcHDIfUoIcWRCNIA0t7"
+        }
+        else if (txt == "PST/SL-E") {
+            return "PLPP-gBF73hLM8p6hxLqGXpZbHOc6vqTZU"
+        }
+        else if (txt == "PST/ES-E") {
+            return "PLPP-gBF73hLOH4Y9FN78Cz7sG8J8zBk70"
+        }
+        else if (txt == "FTV 550") {
+            return "PLPP-gBF73hLOJbyEwtCKwCly7dKAVDb5d"
+        }
+        else if (txt == "»FAKTOR« 5 | »FAKTOR« 5.5") {
+            return "PLPP-gBF73hLPUjUrZiQdEKEi8Sxnjt0io"
+
+        }
+        else if (txt == "RA 2") {
+            return "PLPP-gBF73hLO4sltdttNDDuGxdgiUpYZR"
+        }
+        else if (txt == "RA 3") {
+            return "PLPP-gBF73hLOz4M4poYfrWLMqHDK6PqDj"
+        }
+        else if (txt == "RA 4") {
+            return "PLPP-gBF73hLNKegUCMeILLMk9FmUeG6zo"
+        }
+        else if (txt == "»BLADES«") {
+            return "PLPP-gBF73hLOnSblANOcUnSIYyys6k_T5"
+        }
+        else if (txt == "»BLADEX«") {
+            return "PLPP-gBF73hLN_h7mYbLc--B4wk0yoX0z6"
+        }
+        else if (txt == "»SHERPA« D") {
+            return "PLPB7BeGg23Sod6ZCymIRXbPbQ7dhQ1XvI"
+        }
+
+        else if (txt == "»SHERPA« E") {
+            return "PLPB7BeGg23Sod6ZCymIRXbPbQ7dhQ1XvI"
+        }
+
+        else if (txt == "»BISON« D FAMILIE") {
+            return "PLPB7BeGg23SovWix2nfV01H_pWzftVBrs"
+        }
+
+        else if (txt == "»BISON« E FAMILIE") {
+            return "PLPB7BeGg23SovWix2nfV01H_pWzftVBrs"
+        }
+
+        else if (txt == "»PHOENIX« AST-2P/X") {
+            return "PLPB7BeGg23SpGnrDQfRPu-7EoH1__451w"
+        }
+
+        else if (txt == "»PHOENIX« AST-2E") {
+            return "PLPB7BeGg23Sr2Kv8bpN-zWRdvJqqIBoSI"
+
+        }
+
+        else if (txt == "AST-1X") {
+            return "PLPB7BeGg23Sr4YjBaN5DDwFAco9B8gtFi"
+        }
+
+        else if (txt == "DOLLIES KLEINE SCHÄDEN") {
+            return null
+        }
+        else if (txt == "KOMBINATIONSSYSTEME GROSSE SCHÄDEN") {
+            return null
+        }
+
+
+    }
+    const getPlaylistServiceVideoId = (txt) => {
+        console.log({ txt })
+        if (txt === 'SPZ-L | SPZ-GL | SPZ-H') {
+            return "PLPP-gBF73hLMy-EbARpkRE6htTOYvpxCj"
+
+        }
+        else if (txt == "SPZ-GP") {
+            return "PLPP-gBF73hLNevJnEECS7KL70mhl0-I7f"
+
+        }
+        else if (txt == "»VENTUM«") {
+            return "PLPP-gBF73hLNhPWANb0VK2PHGlQAScHPY"
+        }
+        else if (txt == "STEPSTAR") {
+            return "PLPP-gBF73hLNGQ6CJCjOJQ2QNaw9g13fW"
+
+        }
+
+        else if (txt == "»ARCUS« P | »ARCUS« PK") {
+            return "PLPP-gBF73hLMMhPyKbKQ-EX9OreMor3FY"
+
+        }
+
+        else if (txt == "STZ-L | STZ-H | »MPA«") {
+            return "PLPP-gBF73hLMY5mVFN7Xmbv-V5sFwDsDK"
+
+        }
+        else if (txt == "STZ-L | »MPA« MIT RADMULDE") {
+            return "PLPP-gBF73hLNkudzg1wSBxOeCCMK9Aj2n"
+        }
+        else if (txt == "STZ-VL | STZ-VH") {
+            return "PLPP-gBF73hLNiZxE1m98oVApEccUnlJcw"
+
+
+        }
+        else if (txt == "»MPA« V") {
+            return null
+        }
+        else if (txt == "STZ-VP (245)") {
+            return null
+        }
+        else if (txt == "STZ-VP (285)") {
+            return null
+        }
+        else if (txt == "THP/ET") {
+            return "PLPP-gBF73hLNZK6-GPdyPZr-TmKL2YNvw"
+
+        }
+        else if (txt == "THP/UT") {
+            return "PLPP-gBF73hLPIrKho3UMA7ayQxw_AluYP"
+
+        }
+        else if (txt == "THP/MT") {
+            return "PLPP-gBF73hLO4Pi-7kRSLE4C9pxsg_edH"
+        }
+
+        else if (txt == "THP/SL-S") {
+            return "PLPP-gBF73hLM4yY6IGQg5XcH0xCRRq5sP"
+        }
+        else if (txt == "THP/SL-L") {
+            return "PLPP-gBF73hLNria-9eAVB9i9WrQwE9M6t"
+        }
+
+        else if (txt == "THP/SL") {
+            return "PLPP-gBF73hLOi7M_n8QtmIYyfFj5LRztO"
+
+        }
+        else if (txt == "»ADDRIVE«") {
+
+            return "PLPP-gBF73hLOZdZ2S2RVUsyHhApi0VcfH"
+        }
+        else if (txt == "PST/SL") {
+            return "PLPP-gBF73hLPJUYT1lXVDmlLOnuilUYVs"
+
+        }
+        else if (txt == "PST/SL-E") {
+            return "PLPP-gBF73hLObmLPm4EBShLVwFE_ilYr9"
+        }
+        else if (txt == "PST/ES-E") {
+            return "PLPP-gBF73hLNyfQ6GXYLVpWeC-oiD2fZL"
+
+        }
+        else if (txt == "FTV 550") {
+            return "PLPP-gBF73hLMXROTaliN1-zA99Uds1rcn"
+
+        }
+        else if (txt == "»FAKTOR« 5 | »FAKTOR« 5.5") {
+            return "PLPP-gBF73hLOd00d2FGTocoe3XdkcA2bH"
+
+        }
+        else if (txt == "RA 2") {
+            return "PLPP-gBF73hLOxkk77DOf_8v56S8Z1FsPQ"
+        }
+        else if (txt == "RA 3") {
+            return "PLPP-gBF73hLNQllxr5uBZIZOs2xFOZyJa"
+        }
+        else if (txt == "RA 4") {
+            return "PLPP-gBF73hLN31psDymSQn34wQmOXw7SV"
+        }
+        else if (txt == "»BLADES«") {
+            return "PLPP-gBF73hLOOWDAcUKXAypiwOf4jLrvB"
+        }
+        else if (txt == "»BLADEX«") {
+            return "PLPP-gBF73hLOQYe7hqocKCkYEx30LLfyG"
+        }
+        else if (txt == "»SHERPA« D") {
+            return "PLPB7BeGg23Sod6ZCymIRXbPbQ7dhQ1XvI"
+        }
+
+        else if (txt == "»SHERPA« E") {
+            return "PLPB7BeGg23Sod6ZCymIRXbPbQ7dhQ1XvI"
+        }
+
+        else if (txt == "»BISON« D FAMILIE") {
+            return "PLPB7BeGg23SovWix2nfV01H_pWzftVBrs"
+        }
+
+        else if (txt == "»BISON« E FAMILIE") {
+            return "PLPB7BeGg23SovWix2nfV01H_pWzftVBrs"
+        }
+
+        else if (txt == "»PHOENIX« AST-2P/X") {
+            return "PLPB7BeGg23SpZSqoObs7zdM8s7Nu3cx2F"
+        }
+
+        else if (txt == "»PHOENIX« AST-2E") {
+            return "PLPB7BeGg23SqUj2ZArL-DHY8TAIDD4hE9"
+
+        }
+
+        else if (txt == "AST-1X") {
+            return "PLPB7BeGg23SohP4JsrK3gwv9oNzbCp1AE"
+        }
+
+        else if (txt == "DOLLIES KLEINE SCHÄDEN") {
+            return null
+        }
+        else if (txt == "KOMBINATIONSSYSTEME GROSSE SCHÄDEN") {
+            return null
         }
 
 
@@ -410,7 +751,7 @@ export default function ProductDeatilVideoLink(props) {
                 }}
                 onPressRight={onPressRight}
                 onPressLeft={() => {
-                    navigation.goBack();
+                    changeServiceType();
                 }}
 
             />
@@ -444,7 +785,7 @@ export default function ProductDeatilVideoLink(props) {
                             return (
                                 <TouchableOpacity onPress={() => openPdf2(txt.link)} key={i} style={{ width: '100%', flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
                                     <Text headline bold whiteColor>
-                                     {txt.name}
+                                        {txt.name}
                                     </Text>
 
 
@@ -461,63 +802,81 @@ export default function ProductDeatilVideoLink(props) {
                         VON A -Z
                     </Text>
                 </View>
-                 
-
-                        {isRendered &&
-
-                            <YouTube
-                                // AIzaSyADirxd-_5JqMTKVqA-2ECnq1TfcxksH7I
-
-                                // ref={youTubeRef}
-                                // You must have an API Key for the player to load in Android
-                                apiKey="AIzaSyCCuJKVuq5JX7bAzLERMJ0ctHRM_iuqFJA"
-                                // Un-comment one of videoId / videoIds / playlist.
-                                // You can also edit these props while Hot-Loading in development mode to see how
-                                // it affects the loaded native module
-                                videoId={list.videoId}
-                                // videoIds={['uMK0prafzw0', 'qzYgSecGQww', 'XXlZfc1TrD0', 'czcjU1w-c6k']}
-                                // playlistId="PLfvaFAgzJJDgBIpMqcqolowsZf9y5hmId"
-                                play={state.isPlaying}
-                                loop={state.isLooping}
-                                fullscreen={state.fullscreen}
-                                controls={1}
-                                style={{ alignSelf: 'stretch',  height:playerHeight, backgroundColor: 'black', marginVertical: 10 }}
-                                onReady={e => {
-                                    // setPlayerHeight(200)
-                                    console.log({onReady: true})
-    
-                                }}
-                            // onError={e => {
-                            //     setState(prvState=>({...prvState, error: e.error}));
-                            // }}
-                            // onReady={e => {
-                            //     setState(prvState=>({...prvState, isReady: true}));
-
-                            // }}
-                            // onChangeState={e => {
-                            //     setState(prvState=>({...prvState,status: e.state}));
-
-                            // }}
-                            // onChangeQuality={e => {
-                            //     setState(prvState=>({...prvState,quality: e.quality }));
-
-                            // }}
-                            // onChangeFullscreen={e => {
-                            //     setState(prvState=>({...prvState,fullscreen: e.isFullscreen }));
-
-                            // }}
-                            // onProgress={e => {
-                            //     setState(prvState=>({...prvState,currentTime: e.currentTime }));
-
-                            // }}
-                            />}
 
 
-                     
-                <TouchableOpacity style={{ width: '95%', alignSelf: 'center', marginTop: 20, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
+                {isRendered && videoId &&
+
+                    <YouTube
+                        // AIzaSyADirxd-_5JqMTKVqA-2ECnq1TfcxksH7I
+
+                        // ref={youTubeRef}
+                        // You must have an API Key for the player to load in Android
+                        apiKey="AIzaSyCCuJKVuq5JX7bAzLERMJ0ctHRM_iuqFJA"
+                        // Un-comment one of videoId / videoIds / playlist.
+                        // You can also edit these props while Hot-Loading in development mode to see how
+                        // it affects the loaded native module
+                        videoId={videoId}
+                        // videoIds={['uMK0prafzw0', 'qzYgSecGQww', 'XXlZfc1TrD0', 'czcjU1w-c6k']}
+                        // playlistId="PLfvaFAgzJJDgBIpMqcqolowsZf9y5hmId"
+                        play={state.isPlaying}
+                        loop={state.isLooping}
+                        fullscreen={state.fullscreen}
+                        controls={1}
+                        style={{ alignSelf: 'stretch', height: playerHeight, backgroundColor: 'black', marginVertical: 10 }}
+                        onReady={e => {
+                            // setPlayerHeight(200)
+                            // console.log({ onReady: true })
+
+                        }}
+                    // onError={e => {
+                    //     setState(prvState=>({...prvState, error: e.error}));
+                    // }}
+                    // onReady={e => {
+                    //     setState(prvState=>({...prvState, isReady: true}));
+
+                    // }}
+                    // onChangeState={e => {
+                    //     setState(prvState=>({...prvState,status: e.state}));
+
+                    // }}
+                    // onChangeQuality={e => {
+                    //     setState(prvState=>({...prvState,quality: e.quality }));
+
+                    // }}
+                    // onChangeFullscreen={e => {
+                    //     setState(prvState=>({...prvState,fullscreen: e.isFullscreen }));
+
+                    // }}
+                    // onProgress={e => {
+                    //     setState(prvState=>({...prvState,currentTime: e.currentTime }));
+
+                    // }}
+                    />}
+
+                {playListArr.length > 1 && <View style={{ width: '100%', alignSelf: 'center', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                    <ScrollView horizontal>
+                        <Text style={{ marginLeft: 10 }}>Playlist</Text>
+                        {
+                            playListArr.map((data, i) => {
+                                // console.log({ data: data.snippet.thumbnails.maxres.url })
+                                return (
+                                    <TouchableOpacity key={i} onPress={() => setvideoId(data.snippet.resourceId.videoId)} style={{ margin: 5, width: 150, padding: 5 }} >
+                                        <Image source={{ uri: data.snippet.thumbnails.maxres.url }} style={{ width: 150, height: 150, borderRadius: 20 }} resizeMode="contain" />
+
+                                        <Text style={{ textAlign: 'center' }}>{data.snippet.title}</Text>
+                                    </TouchableOpacity>
+                                )
+                            })
+                        }
+                    </ScrollView>
+
+                </View>}
+
+
+                <TouchableOpacity onPress={() => changeServiceType()} style={{ width: '95%', alignSelf: 'center', marginTop: 20, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
                     <View style={{ width: "90%", marginTop: 2 }}>
                         <Text headline bold whiteColor>
-                            {isServiceType === "SERVICE AIRPORT" ? "TECHNISCHE VIDEOS"  : isServiceType === "SERVICE TRANSPORT" ? "TECHNISCHE VIDEOS" : "EINSATZ VIDEOS"}
+                            {isServiceType === "SERVICE AIRPORT" ? "TECHNISCHE VIDEOS" : isServiceType === "SERVICE TRANSPORT" ? "TECHNISCHE VIDEOS" : "EINSATZ VIDEOS"}
                         </Text>
                     </View>
                     <View style={{ width: "10%", }}>

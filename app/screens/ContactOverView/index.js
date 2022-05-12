@@ -4,7 +4,7 @@ import { BaseStyle, useTheme, Images, BaseColor } from "@config";
 // Load sample data
 import styles from './styles'
 import React, { useState, useMemo } from "react";
-import { FlatList, View, TouchableOpacity, ScrollView } from "react-native";
+import { FlatList, View, TouchableOpacity, ScrollView, ActivityIndicator } from "react-native";
 import { useTranslation } from "react-i18next";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
 import { useNavigation } from '@react-navigation/native';
@@ -31,6 +31,8 @@ const DownArrowPng = () => {
 export default function ContactOverView(props) {
     const navigation = useNavigation()
     const [showBtn, setShowBtn] = useState(false)
+    const [loading, setloading] = useState(false)
+
     const [isAgree, setIsAgree] = useState(false)
     const [property, setProperty] = useState({
         VORNAME: '',
@@ -107,7 +109,7 @@ export default function ContactOverView(props) {
      
     }
     const sendmail = (Data) => {
-        console.log('Mail Run');
+        setloading(true)
         var data = {    
             service_id: 'service_ks951so',
             template_id: 'template_IEFbrbr9',
@@ -145,6 +147,16 @@ export default function ContactOverView(props) {
     
         }).then(function (response) {
             console.log({response})
+            setloading(false)
+            setProperty({
+                VORNAME: '',
+                NACHNAME: '',
+                FIRMA: '',
+                MOBILNUMMER: '',
+                ADRESSE: '',
+                LAND: '',
+                MEINANLIEGEN: ''
+            })
            alert("Successfully Sent")
         }).catch(function (err) {
            
@@ -336,14 +348,17 @@ export default function ContactOverView(props) {
                         </Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity onPress={() => send()} style={{ flexDirection: 'row', width: "95%", alignSelf: 'center', justifyContent: 'flex-end', alignItems: 'flex-end' }}>
+                  {loading===true ?
+                  <ActivityIndicator  color={"white"} size="large" />
+                  
+                  :  <TouchableOpacity onPress={() => send()} style={{ flexDirection: 'row', width: "95%", alignSelf: 'center', justifyContent: 'flex-end', alignItems: 'flex-end' }}>
                         <Text style={{ marginRight: 10 }} headline bold whiteColor>
                             SENDEN
                         </Text>
                         {/* <FontAwesome5 name="angle-double-right" color={"white"} size={25} /> */}
                         <ArrowPng tintColor="white" />
 
-                    </TouchableOpacity>
+                    </TouchableOpacity>}
                     <View style={{ width: 20, height: 100, }} />
                 </View>
 

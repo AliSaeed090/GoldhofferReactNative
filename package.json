@@ -16,6 +16,8 @@
     "@react-navigation/bottom-tabs": "^5.11.11",
     "@react-navigation/native": "^5.9.4",
     "@react-navigation/stack": "^5.14.5",
+    "css-select": "^5.1.0",
+    "css-tree": "^2.1.0",
     "i18next": "^20.2.2",
     "json-find": "^2.0.8",
     "moment": "^2.29.1",
