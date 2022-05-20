@@ -84,6 +84,8 @@ export default function ProductDeatilVideoLink(props) {
     const [linkList, setLinkList] = useState([])
     const [showLinkList, setShowLinkList] = useState(false)
     const [isTransportActive, setTransPortActive] = useState(null)
+    const [txt, setText] = useState(undefined)
+
     const [list, setList] = useState({
         image: '',
         text: [],
@@ -113,6 +115,7 @@ export default function ProductDeatilVideoLink(props) {
         console.log({ xxx: params, isServiceType: contact.name })
 
         if (params) {
+            setText(params.text)
             setList(params.item)
             if (contact.name === "SERVICE AIRPORT") {
                 const playListId = getPlaylistServiceVideoId(params.text)
@@ -307,6 +310,10 @@ export default function ProductDeatilVideoLink(props) {
         }
         else if (txt == "PRODUKT PROSPEKT RA 4") {
             return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_DE.pdf"
+        }
+        else if (txt == "PRODUKT PROSPEKT STEPSTAR") {
+
+            return "https://stepstar.goldhofer.com/fileadmin/STEPSTAR/05_Broschuere/STEPSTAR_NL_DE-A4_Paket2.pdf"
         }
         // else if(txt=="QPRODUKT PROSPEKT »BLADEX«"){
         //     return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_DE.pdf"
@@ -778,7 +785,20 @@ export default function ProductDeatilVideoLink(props) {
                         )
                     })}
                 </View>
+                <View style={{ width: '100%', marginTop: -2 }}>
+                    {list.text.length === 0 && txt &&
 
+                        <View onPress={() => openPdf(txt)}  style={{ width: '100%', flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
+                            <View style={{ width: "100%", marginTop: 2 }}>
+                                <Text headline bold whiteColor>
+                                    {txt}
+                                </Text>
+                            </View>
+                        
+                        </View>
+
+                    }
+                </View>
                 {showLinkList &&
                     <View style={{ width: '100%', marginTop: -2 }}>
                         {linkList.map((txt, i) => {

@@ -90,6 +90,7 @@ export default function ProductDetailsList(props) {
     const [linkList, setLinkList] = useState([])
     const [showLinkList, setShowLinkList] = useState(false)
     const [isServiceType, SetisServiceType] = useState("")
+    const [txt, setText] = useState(undefined)
     const [playerHeight, setPlayerHeight] = useState(250)
     const [state, setState] = useState({
         isReady: false,
@@ -103,10 +104,12 @@ export default function ProductDetailsList(props) {
         fullscreen: false,
         playerWidth: Dimensions.get('window').width,
     })
- 
+
     useEffect(() => {
-        console.log({ xxx: params, isServiceType:contact.name })
+        console.log({ xxx: params.text, isServiceType: contact.name })
+
         if (params) {
+            setText(params.text)
             setList(params.item)
 
             if (contact.name === "SERVICE AIRPORT") {
@@ -139,7 +142,7 @@ export default function ProductDetailsList(props) {
 
 
         }
-        if(contact.type){
+        if (contact.type) {
             SetisServiceType(contact.type)
         }
 
@@ -168,8 +171,8 @@ export default function ProductDetailsList(props) {
 
             })
     }
- 
- 
+
+
 
     const changeServiceType = () => {
 
@@ -204,7 +207,7 @@ export default function ProductDetailsList(props) {
             }));
         }
         setIsRendered(null)
-        navigation.navigate("ProductDeatilVideoLink", { item: list.otherData, otherData: list, text:params.text })
+        navigation.navigate("ProductDeatilVideoLink", { item: list.otherData, otherData: list, text: params.text })
 
     }
 
@@ -319,8 +322,9 @@ export default function ProductDetailsList(props) {
             return "https://www.goldhofer.com/fileadmin//downloads/prospekte/BladeS_DE-A4.pdf"
         }
 
-        else if(txt=="QUICKGUIDE ZUM STEPSTAR"){
-            return "https://www.goldhofer.com/fileadmin/downloads/prospekte/Quickguide_Stepstar_DE-EN.pdf"
+        else if (txt == "PRODUKT PROSPEKT STEPSTAR") {
+
+            return "https://stepstar.goldhofer.com/fileadmin/STEPSTAR/05_Broschuere/STEPSTAR_NL_DE-A4_Paket2.pdf"
         }
         else if (txt == "PRODUKT PROSPEKT »SHERPA« D") {
             return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/SHERPA-FAMILY_DE-met_A4.pdf"
@@ -446,7 +450,7 @@ export default function ProductDetailsList(props) {
 
     }
 
-   
+
     const getPlaylistProductVideoId = (txt) => {
         // console.log({ txt })
         if (txt === 'SPZ-L | SPZ-GL | SPZ-H') {
@@ -495,34 +499,34 @@ export default function ProductDetailsList(props) {
             return null
         }
         else if (txt == "THP/ET") {
-            
+
             return "PLPP-gBF73hLOl_FFEBn7FPVPZFgfN1JzI"
-         }
+        }
         else if (txt == "THP/UT") {
             return "PLPP-gBF73hLO1Vh237ETwyIaggnnqvXaM"
-         }
+        }
         else if (txt == "THP/MT") {
             return "PLPP-gBF73hLNeRbjqYK4sKojfkM1a0sZJ"
-         }
+        }
 
         else if (txt == "THP/SL-S") {
-         
+
             return "PLPP-gBF73hLOACHMH2JEKWtygDkVbu-gz"
-         }
+        }
         else if (txt == "THP/SL-L") {
             return "PLPP-gBF73hLMbGWcfuPY45wlvshSr3y02"
         }
 
         else if (txt == "THP/SL") {
             return "PLPP-gBF73hLMEpbX8bbCZ-P7wMlB8S7af"
-            
+
         }
         else if (txt == "»ADDRIVE«") {
-            
+
             return "PLPP-gBF73hLNYwwjcpe3KRTHqltrYIcos"
         }
         else if (txt == "PST/SL") {
-             return "PLPP-gBF73hLMxhhcHDIfUoIcWRCNIA0t7"
+            return "PLPP-gBF73hLMxhhcHDIfUoIcWRCNIA0t7"
         }
         else if (txt == "PST/SL-E") {
             return "PLPP-gBF73hLM8p6hxLqGXpZbHOc6vqTZU"
@@ -535,7 +539,7 @@ export default function ProductDetailsList(props) {
         }
         else if (txt == "»FAKTOR« 5 | »FAKTOR« 5.5") {
             return "PLPP-gBF73hLPUjUrZiQdEKEi8Sxnjt0io"
-            
+
         }
         else if (txt == "RA 2") {
             return "PLPP-gBF73hLO4sltdttNDDuGxdgiUpYZR"
@@ -636,49 +640,49 @@ export default function ProductDetailsList(props) {
         }
         else if (txt == "THP/ET") {
             return "PLPP-gBF73hLNZK6-GPdyPZr-TmKL2YNvw"
-             
+
         }
         else if (txt == "THP/UT") {
             return "PLPP-gBF73hLPIrKho3UMA7ayQxw_AluYP"
-             
+
         }
         else if (txt == "THP/MT") {
-             return "PLPP-gBF73hLO4Pi-7kRSLE4C9pxsg_edH"
+            return "PLPP-gBF73hLO4Pi-7kRSLE4C9pxsg_edH"
         }
 
         else if (txt == "THP/SL-S") {
             return "PLPP-gBF73hLM4yY6IGQg5XcH0xCRRq5sP"
-         }
+        }
         else if (txt == "THP/SL-L") {
-             return "PLPP-gBF73hLNria-9eAVB9i9WrQwE9M6t"
+            return "PLPP-gBF73hLNria-9eAVB9i9WrQwE9M6t"
         }
 
         else if (txt == "THP/SL") {
             return "PLPP-gBF73hLOi7M_n8QtmIYyfFj5LRztO"
-            
+
         }
         else if (txt == "»ADDRIVE«") {
-            
+
             return "PLPP-gBF73hLOZdZ2S2RVUsyHhApi0VcfH"
         }
         else if (txt == "PST/SL") {
             return "PLPP-gBF73hLPJUYT1lXVDmlLOnuilUYVs"
-            
+
         }
         else if (txt == "PST/SL-E") {
             return "PLPP-gBF73hLObmLPm4EBShLVwFE_ilYr9"
         }
         else if (txt == "PST/ES-E") {
             return "PLPP-gBF73hLNyfQ6GXYLVpWeC-oiD2fZL"
-            
+
         }
         else if (txt == "FTV 550") {
             return "PLPP-gBF73hLMXROTaliN1-zA99Uds1rcn"
-            
+
         }
         else if (txt == "»FAKTOR« 5 | »FAKTOR« 5.5") {
             return "PLPP-gBF73hLOd00d2FGTocoe3XdkcA2bH"
-            
+
         }
         else if (txt == "RA 2") {
             return "PLPP-gBF73hLOxkk77DOf_8v56S8Z1FsPQ"
@@ -785,6 +789,23 @@ export default function ProductDetailsList(props) {
                         )
                     })}
                 </View>
+
+                <View style={{ width: '100%', marginTop: -2 }}>
+                    {list.text.length === 0 && txt &&
+
+                        <View onPress={() => openPdf(txt)}  style={{ width: '100%', flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
+                            <View style={{ width: "100%", marginTop: 2 }}>
+                                <Text headline bold whiteColor>
+                                    {txt}
+                                </Text>
+                            </View>
+                        
+                        </View>
+
+                    }
+                </View>
+
+
                 {showLinkList &&
                     <View style={{ width: '100%', marginTop: -2 }}>
                         {linkList.map((txt, i) => {
@@ -867,19 +888,19 @@ export default function ProductDetailsList(props) {
                     />}
 
 
-           { playListArr.length>1 &&    <View style={{ width: '100%', alignSelf:'center', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                    <ScrollView  horizontal>
-                        <Text style={{marginLeft:10}}>Playlist</Text>
+                {playListArr.length > 1 && <View style={{ width: '100%', alignSelf: 'center', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                    <ScrollView horizontal>
+                        <Text style={{ marginLeft: 10 }}>Playlist</Text>
                         {
                             playListArr.map((data) => {
-                                // console.log({uri:data.snippet.thumbnails.maxres.url})
+                               
                                 return (
-                                    <TouchableOpacity onPress={()=>setvideoId(data.snippet.resourceId.videoId)} style={{margin:5,width: 150, padding:5}} >
-                                      <Image  source={{uri:data.snippet.thumbnails.maxres.url}} style={{ width: 150, height: 150, borderRadius:20 }} resizeMode="contain" />
-                                    
-                                      <Text style={{textAlign:'center'}}>{data.snippet.title}</Text>
+                                    <TouchableOpacity onPress={() => setvideoId(data.snippet.resourceId.videoId)} style={{ margin: 5, width: 150, padding: 5 }} >
+                                        <Image source={{ uri: data.snippet.thumbnails.default.url }} style={{ width: 150, height: 150, borderRadius: 20 }} resizeMode="contain" />
+
+                                        <Text style={{ textAlign: 'center' }}>{data.snippet.title}</Text>
                                     </TouchableOpacity>
-)
+                                )
                             })
                         }
                     </ScrollView>
