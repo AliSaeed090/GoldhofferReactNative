@@ -33,7 +33,7 @@ export default function RenderList2({ item }) {
     //  /
 
     return (
-        <TouchableOpacity onPress={() => onPressFunc(item)} style={{ width: '100%', height: 250, backgroundColor: '#D2D9DE' }}>
+        <TouchableOpacity onPress={() => onPressFunc(item)} style={{ width: '100%', height: 250, backgroundColor: '#D2D9DE' ,  marginBottom:item.linking?7:null}}>
             <Image source={item.image} style={{...styles.banner, height:item.linking?250:"75%"}} resizeMode={item.linking?"cover":"contain"} />
             <View 
                 style={{ width: '100%', position: 'absolute', bottom: 0, backgroundColor: 'black', flexDirection: 'row', padding: 12, justifyContent: 'center', alignItems: 'center' }}>
