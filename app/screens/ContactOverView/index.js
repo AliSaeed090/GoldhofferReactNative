@@ -41,12 +41,53 @@ export default function ContactOverView(props) {
         MOBILNUMMER: '',
         ADRESSE: '',
         LAND: '',
-        MEINANLIEGEN: ''
+        MEINANLIEGEN: '',
+        selectedTopic:''
     })
     const [showTransportList, setShowTransportList] = useState(false)
     const [showAirPort, setShowAirPort] = useState(false)
-    const transportArr = ["TRAILSTAR", "SATTELANHÄNGER", "SCHWERLASTMODULE", "SPEZIALANWENDUNGEN", "SOFORT VERFÜGBAR", "PARTNER",]
-    const airportArr = ["FRACHT-/PUSHBACKSCHLEPPER", "KONVENTIONELLE SCHLEPPER", "STANGENLOSE SCHLEPPER", "FLUGZEUGBERGESYSTEME", "PARTNER",]
+
+
+    const [transportArr, setTransportArr] = useState([{ txt: "TRAILSTAR", selected: false }, { txt: "SATTELANHÄNGER", selected: false }, { txt: "SCHWERLASTMODULE", selected: false }, { txt: "SPEZIALANWENDUNGEN", selected: false }, { txt: "SOFORT VERFÜGBAR", selected: false }, { txt: "PARTNER", selected: false },])
+
+    const [airportArr, setAirportArr] = useState([{ txt: "FRACHT-/PUSHBACKSCHLEPPER", selected: false }, { txt: "KONVENTIONELLE SCHLEPPER", selected: false }, { txt: "STANGENLOSE SCHLEPPER", selected: false }, { txt: "FLUGZEUGBERGESYSTEME", selected: false }, { txt: "PARTNER", selected: false },])
+    const setTransportArrFunc = (txt) => {
+        let arr = transportArr
+        arr= arr.map((x, i)=>{
+            if(txt===x.txt){
+                x.selected=true
+            }
+            else{
+                x.selected=false
+            }
+            return x
+          
+        })
+        setProperty({ ...property, selectedTopic: txt })
+        setTransportArr([...arr])
+      
+
+    }
+
+
+    const setAirportArrFunc = (txt) => {
+        let arr = airportArr
+        arr= arr.map((x, i)=>{
+            if(txt===x.txt){
+                x.selected=true
+            }
+            else{
+                x.selected=false
+            }
+            return x
+        })
+        setProperty({ ...property, selectedTopic: txt })
+        setAirportArr([...arr])
+
+    }
+
+
+
     const transportPress = () => {
         setShowTransportList(true)
         setShowAirPort(false)
@@ -83,18 +124,18 @@ export default function ContactOverView(props) {
             alert("Bitte geben Sie einen gültigen NACHNAME ein")
             return false
         }
-        else if (property.FIRMA === "" || property.FIRMA.length < 3) {
-            alert("Bitte geben Sie einen gültigen FIRMA ein")
-            return false
-        }
+        // else if (property.FIRMA === "" || property.FIRMA.length < 3) {
+        //     alert("Bitte geben Sie einen gültigen FIRMA ein")
+        //     return false
+        // }
         else if (property.MOBILNUMMER === "" || property.MOBILNUMMER.length < 3) {
             alert("Bitte geben Sie einen gültigen MOBILNUMMER ein")
             return false
         }
-        else if (property.ADRESSE === "" || property.ADRESSE.length < 3) {
-            alert("Bitte geben Sie einen gültigen ADRESSE ein")
-            return false
-        }
+        // else if (property.ADRESSE === "" || property.ADRESSE.length < 3) {
+        //     alert("Bitte geben Sie einen gültigen ADRESSE ein")
+        //     return false
+        // }
         else if (property.LAND === "" || property.LAND.length < 3) {
             alert("Bitte geben Sie einen gültigen LAND ein")
             return false
@@ -103,18 +144,18 @@ export default function ContactOverView(props) {
             alert("Bitte geben Sie einen gültigen MEINANLIEGEN ein")
             return false
         }
-        else{
+        else {
             return true
         }
-     
+
     }
     const sendmail = (Data) => {
         setloading(true)
-        var data = {    
+        var data = {
             service_id: 'service_ks951so',
             template_id: 'template_IEFbrbr9',
             user_id: 'user_ZfC9PoaLGK6Jw614hFdeE',
-            accessToken:'0cdfff898bb93fd81ef1be5835712110',
+            accessToken: '0cdfff898bb93fd81ef1be5835712110',
             template_params: {
                 // // "message": 'Please Accept my order', "Client_name": name,
                 // "deliveryLocation": Data.deliveryLocation,
@@ -126,8 +167,8 @@ export default function ContactOverView(props) {
                 // "OrderDate": new Date().toDateString(),
                 // "OrderTime": new Date().toLocaleTimeString(),
                 // "OrderID": Data.OrderID,
-    
 
+                selectedTopic:Data.selectedTopic,
                 VORNAME: Data.VORNAME,
                 NACHNAME: Data.NACHNAME,
                 FIRMA: Data.FIRMA,
@@ -135,18 +176,18 @@ export default function ContactOverView(props) {
                 ADRESSE: Data.ADRESSE,
                 LAND: Data.LAND,
                 MEINANLIEGEN: Data.MEINANLIEGEN
-    
+
             }
         };
-    
-         
+
+
         fetch('https://api.emailjs.com/api/v1.0/email/send', {
             method: 'post',
             body: JSON.stringify(data),
             headers: new Headers({ 'content-type': 'application/json' }),
-    
+
         }).then(function (response) {
-            console.log({response})
+            console.log({ response })
             setloading(false)
             setProperty({
                 VORNAME: '',
@@ -157,9 +198,9 @@ export default function ContactOverView(props) {
                 LAND: '',
                 MEINANLIEGEN: ''
             })
-           alert("Successfully Sent")
+            alert("Successfully Sent")
         }).catch(function (err) {
-           
+
             console.log({ err })
         });
     }
@@ -170,12 +211,12 @@ export default function ContactOverView(props) {
 
 
     }
-    const onPressRight =()=>{
+    const onPressRight = () => {
         navigation.reset({
-          index: 0,
-          routes: [{ name: "Main" }]
-      });
-      }
+            index: 0,
+            routes: [{ name: "Main" }]
+        });
+    }
     return (
         <SafeAreaView style={BaseStyle.safeAreaView} edges={['right', 'top', 'left']}>
             <Header
@@ -254,16 +295,20 @@ export default function ContactOverView(props) {
 
                     {transportArr.map((data, i) => {
                         return (
-                            <View
+                            <TouchableOpacity
+                                onPress={()=>setTransportArrFunc(data.txt)}
                                 key={i}
                                 style={{ flexDirection: 'row', width: '100%', justifyContent: 'flex-start', alignItems: 'center', backgroundColor: '#D2D9DE', padding: 10, marginTop: 5 }}
                             >
-                                <View style={{ width: 10, height: 10, borderRadius: 10, borderColor: 'black', borderWidth: 1, margin: 5 }} />
+                                <View style={{ width: 10, height: 10, borderRadius: 10, borderColor: 'black', borderWidth: 1, margin: 5, justifyContent: 'center', alignItems: 'center', }}>
+                                    {data.selected && <View style={{ width: 4, height: 4, backgroundColor: "black", }} />}
+
+                                </View>
 
                                 <Text blackColor>
-                                    {data}
+                                    {data.txt}
                                 </Text>
-                            </View>
+                            </TouchableOpacity>
                         )
                     })}
                 </View>}
@@ -273,16 +318,21 @@ export default function ContactOverView(props) {
 
                     {airportArr.map((data, i) => {
                         return (
-                            <View
+                            <TouchableOpacity
+                            onPress={()=>setAirportArrFunc(data.txt)}
                                 key={i}
                                 style={{ flexDirection: 'row', width: '100%', justifyContent: 'flex-start', alignItems: 'center', backgroundColor: '#D2D9DE', padding: 10, marginTop: 5 }}
                             >
-                                <View style={{ width: 10, height: 10, borderRadius: 10, borderColor: 'black', borderWidth: 1, margin: 5 }} />
+                                <View style={{ width: 10, height: 10, borderRadius: 10, borderColor: 'black', borderWidth: 1, margin: 5, justifyContent: 'center', alignItems: 'center', }}>
+                                    {data.selected && <View style={{ width: 4, height: 4, backgroundColor: "black", }} />}
+
+                                </View>
+
 
                                 <Text blackColor>
-                                    {data}
+                                    {data.txt}
                                 </Text>
-                            </View>
+                            </TouchableOpacity>
                         )
                     })}
                 </View>}
@@ -348,17 +398,17 @@ export default function ContactOverView(props) {
                         </Text>
                     </TouchableOpacity>
 
-                  {loading===true ?
-                  <ActivityIndicator  color={"white"} size="large" />
-                  
-                  :  <TouchableOpacity onPress={() => send()} style={{ flexDirection: 'row', width: "95%", alignSelf: 'center', justifyContent: 'flex-end', alignItems: 'flex-end' }}>
-                        <Text style={{ marginRight: 10 }} headline bold whiteColor>
-                            SENDEN
-                        </Text>
-                        {/* <FontAwesome5 name="angle-double-right" color={"white"} size={25} /> */}
-                        <ArrowPng tintColor="white" />
+                    {loading === true ?
+                        <ActivityIndicator color={"white"} size="large" />
 
-                    </TouchableOpacity>}
+                        : <TouchableOpacity onPress={() => send()} style={{ flexDirection: 'row', width: "95%", alignSelf: 'center', justifyContent: 'flex-end', alignItems: 'flex-end' }}>
+                            <Text style={{ marginRight: 10 }} headline bold whiteColor>
+                                SENDEN
+                            </Text>
+                            {/* <FontAwesome5 name="angle-double-right" color={"white"} size={25} /> */}
+                            <ArrowPng tintColor="white" />
+
+                        </TouchableOpacity>}
                     <View style={{ width: 20, height: 100, }} />
                 </View>
 
