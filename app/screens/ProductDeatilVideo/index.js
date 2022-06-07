@@ -907,7 +907,7 @@ export default function ProductDetailsList(props) {
 
                 </View>}
 
-                <TouchableOpacity onPress={() => changeServiceType()} style={{ width: '95%', alignSelf: 'center', marginTop: 20, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
+                {/* <TouchableOpacity onPress={() => changeServiceType()} style={{ width: '95%', alignSelf: 'center', marginTop: 20, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
                     <View style={{ width: "90%", marginTop: 2 }}>
                         <Text headline bold whiteColor>
                             {isServiceType === "SERVICE AIRPORT" ? "TECHNISCHE VIDEOS" : isServiceType === "SERVICE TRANSPORT" ? "TECHNISCHE VIDEOS" : "EINSATZ VIDEOS"}
@@ -917,7 +917,7 @@ export default function ProductDetailsList(props) {
 
                         <ArrowPng />
                     </View>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
 
 
                 <TouchableOpacity onPress={() => changeServiceType()} style={{ width: '100%', alignSelf: 'center', marginTop: 40, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>

@@ -6,7 +6,16 @@
    <intent>
      <action android:name="com.google.android.youtube.api.service.START" />
    </intent>
+      <intent>
+          <action android:name="android.intent.action.VIEW" />
+          <data android:scheme="http" />
+      </intent>
+      <intent>
+          <action android:name="android.intent.action.VIEW" />
+          <data android:scheme="https" />
+      </intent>
 </queries>
+ 
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
