@@ -906,7 +906,7 @@ export default function ProductDeatilVideoLink(props) {
                 </TouchableOpacity> */}
 
 
-                <TouchableOpacity onPress={() => changeServiceType()} style={{ width: '100%', alignSelf: 'center', marginTop: 40, flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
+                <TouchableOpacity onPress={() => changeServiceType()} style={{ width: '100%', alignSelf: 'center',  marginTop: 5,flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', }}>
                     <View style={{ width: "90%", marginTop: 2 }}>
                         <Text headline bold whiteColor>
                             {isServiceType === "SERVICE AIRPORT" ? "PRODUKTVIDEOS & MEHR" : isServiceType === "SERVICE TRANSPORT" ? "PRODUKTVIDEOS & MEHR" : " SERVICE VIDEOS & MEHR"}
