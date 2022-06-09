@@ -118,6 +118,13 @@ setList(params.item)
 
     }
   };
+  const onPressRight =()=>{
+    navigation.reset({
+      index: 0,
+      routes: [{ name: "Main" }]
+  });
+  }
+
 
   // const memoizedValue = useMemo(() => RenderList2, [list]);
   const RenderItem = useMemo((item) => RenderList2, [list]);
@@ -144,7 +151,7 @@ setList(params.item)
             <Image source={Images.logo} style={styles.logo} resizeMode="contain" />
           );
         }}
-
+        onPressRight={onPressRight}
         onPressLeft={() => {
           navigation.goBack();
         }}
