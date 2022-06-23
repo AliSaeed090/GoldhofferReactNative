@@ -14,6 +14,7 @@ import { WebView } from 'react-native-webview';
 
 
 export default function News(props) {
+  const languageSelectedBysUser = useSelector((state) => state.application.language);
 
 
   const { navigation } = props;
@@ -58,13 +59,13 @@ export default function News(props) {
           setloisLoading(nativeEvent.loading)
         }}
 
-        source={{ uri: 'https://www.goldhofer.com/presse' }} />
+        source={{ uri: languageSelectedBysUser === "en" ? "https://www.goldhofer.com/en/press" : 'https://www.goldhofer.com/presse' }} />
       {isLoading && <View style={{
-        position: 'absolute', width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center'
-      }}>
+          position: 'absolute', width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center'
+        }}>
 
-        <ActivityIndicator color={"black"} size="large" />
-      </View>}
+          <ActivityIndicator color={"black"} size="large" />
+        </View>}
     </SafeAreaView>
   );
 };

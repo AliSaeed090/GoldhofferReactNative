@@ -1,11 +1,10 @@
 import Text from "@components/Text";
 import PropTypes from "prop-types";
-import React, { useEffect } from "react";
-import { StatusBar, TouchableOpacity, View } from "react-native";
+import React, { useEffect, useState } from "react";
+import { StatusBar, TouchableOpacity, View, } from "react-native";
 import { useDarkMode } from 'react-native-dynamic'
 import { useSelector } from "react-redux";
 import styles from "./styles";
-
 export default function Header(props) {
   const forceDark = useSelector((state) => state.application.force_dark);
   const {
@@ -63,6 +62,7 @@ export default function Header(props) {
           </Text>
         )}
       </View>
+    
       <View style={[styles.right, styleRight]}>
         <TouchableOpacity
           style={[styles.contentRightSecond, styleRightSecond]}
@@ -76,7 +76,9 @@ export default function Header(props) {
         >
           {renderRight()}
         </TouchableOpacity>
+
       </View>
+
     </View>
   );
 }
@@ -110,12 +112,12 @@ Header.defaultProps = {
   styleRight: {},
   styleRightSecond: {},
   styleContentRight: {},
-  renderLeft: () => {},
-  renderRight: () => {},
-  renderRightSecond: () => {},
-  onPressLeft: () => {},
-  onPressRight: () => {},
-  onPressRightSecond: () => {},
+  renderLeft: () => { },
+  renderRight: () => { },
+  renderRightSecond: () => { },
+  onPressLeft: () => { },
+  onPressRight: () => { },
+  onPressRightSecond: () => { },
   title: "Title",
   subTitle: "",
   barStyle: "",

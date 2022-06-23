@@ -3,13 +3,19 @@ import { SafeAreaView, Image, Text, Header, Icon, TextInput, Button } from "@com
 import { BaseStyle, useTheme, Images, BaseColor } from "@config";
 // Load sample data
 import styles from './styles'
-import React, { useState, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import { FlatList, View, TouchableOpacity, ScrollView, ActivityIndicator } from "react-native";
 import { useTranslation } from "react-i18next";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
 import { useNavigation } from '@react-navigation/native';
 import { Send } from "react-native-gifted-chat";
+import { useSelector } from "react-redux";
 
+const listTransportArrGerman = [{ txt: "TRAILSTAR", selected: false }, { txt: "SATTELANHÄNGER", selected: false }, { txt: "SCHWERLASTMODULE", selected: false }, { txt: "SPEZIALANWENDUNGEN", selected: false }, { txt: "SOFORT VERFÜGBAR", selected: false }, { txt: "PARTNER", selected: false },]
+const listTransportArrEnglish = [{ txt: "TRAILSTAR", selected: false }, { txt: "SEMI-TRAILERS", selected: false }, { txt: "HEAVY-DUTY MODULES", selected: false }, { txt: "SPECIAL APPLICATIONS", selected: false }, { txt: "IMMEDIATELY AVAILABLE", selected: false },]
+const lisrAirportEnglish = [{ txt: "CARGO & PUSHBACK TRACTORS", selected: false }, { txt: "CONVENTIONAL TRACTORS", selected: false }, { txt: "TOWBARLESS TRACTORS", selected: false }, { txt: "AIRCRAFT RECOVERY TRANSPORT SYSTEMS", selected: false },]
+
+const lisrAirportGerman = [{ txt: "FRACHT-/PUSHBACKSCHLEPPER", selected: false }, { txt: "KONVENTIONELLE SCHLEPPER", selected: false }, { txt: "STANGENLOSE SCHLEPPER", selected: false }, { txt: "FLUGZEUGBERGESYSTEME", selected: false }, { txt: "PARTNER", selected: false },]
 
 const ArrowPng = (props) => {
     return (
@@ -30,6 +36,9 @@ const DownArrowPng = () => {
 
 export default function ContactOverView(props) {
     const navigation = useNavigation()
+    const { t } = useTranslation();
+    const languageSelectedBysUser = useSelector((state) => state.application.language);
+
     const [showBtn, setShowBtn] = useState(false)
     const [loading, setloading] = useState(false)
 
@@ -42,42 +51,58 @@ export default function ContactOverView(props) {
         ADRESSE: '',
         LAND: '',
         MEINANLIEGEN: '',
-        selectedTopic:''
+        selectedTopic: ''
     })
     const [showTransportList, setShowTransportList] = useState(false)
     const [showAirPort, setShowAirPort] = useState(false)
 
 
-    const [transportArr, setTransportArr] = useState([{ txt: "TRAILSTAR", selected: false }, { txt: "SATTELANHÄNGER", selected: false }, { txt: "SCHWERLASTMODULE", selected: false }, { txt: "SPEZIALANWENDUNGEN", selected: false }, { txt: "SOFORT VERFÜGBAR", selected: false }, { txt: "PARTNER", selected: false },])
+    const [transportArr, setTransportArr] = useState(
+        listTransportArrGerman
+    )
 
-    const [airportArr, setAirportArr] = useState([{ txt: "FRACHT-/PUSHBACKSCHLEPPER", selected: false }, { txt: "KONVENTIONELLE SCHLEPPER", selected: false }, { txt: "STANGENLOSE SCHLEPPER", selected: false }, { txt: "FLUGZEUGBERGESYSTEME", selected: false }, { txt: "PARTNER", selected: false },])
+    const [airportArr, setAirportArr] = useState(
+        lisrAirportGerman
+
+    )
+    useEffect(() => {
+        if (languageSelectedBysUser === "en") {
+            setAirportArr(lisrAirportEnglish)
+            setTransportArr(listTransportArrEnglish)
+        }
+        else {
+            setAirportArr(lisrAirportGerman)
+            setTransportArr(listTransportArrGerman)
+        }
+
+    }, [languageSelectedBysUser])
     const setTransportArrFunc = (txt) => {
         let arr = transportArr
-        arr= arr.map((x, i)=>{
-            if(txt===x.txt){
-                x.selected=true
+        arr = arr.map((x, i) => {
+            if (txt === x.txt) {
+                x.selected = true
             }
-            else{
-                x.selected=false
+            else {
+                x.selected = false
             }
             return x
-          
+
         })
         setProperty({ ...property, selectedTopic: txt })
         setTransportArr([...arr])
-      
+
 
     }
 
 
     const setAirportArrFunc = (txt) => {
         let arr = airportArr
-        arr= arr.map((x, i)=>{
-            if(txt===x.txt){
-                x.selected=true
+        arr = arr.map((x, i) => {
+            if (txt === x.txt) {
+                x.selected = true
             }
-            else{
-                x.selected=false
+            else {
+                x.selected = false
             }
             return x
         })
@@ -168,7 +193,7 @@ export default function ContactOverView(props) {
                 // "OrderTime": new Date().toLocaleTimeString(),
                 // "OrderID": Data.OrderID,
 
-                selectedTopic:Data.selectedTopic,
+                selectedTopic: Data.selectedTopic,
                 VORNAME: Data.VORNAME,
                 NACHNAME: Data.NACHNAME,
                 FIRMA: Data.FIRMA,
@@ -228,7 +253,7 @@ export default function ContactOverView(props) {
                             {/* <FontAwesome5 name="angle-double-left" color={"white"} size={25} /> */}
                             <BackArrowPng />
                             <Text style={{ marginLeft: 10 }} headline bold whiteColor>
-                                ZURÜCK
+                                {t("BACK")}
                             </Text>
                         </View>
 
@@ -250,7 +275,8 @@ export default function ContactOverView(props) {
                 <TouchableOpacity onPress={() => anglePress()} style={{ flexDirection: "row", width: "95%", alignSelf: 'center', justifyContent: 'center', alignItems: 'center', marginTop: 20 }}>
                     <View style={{ width: "90%", justifyContent: 'center', alignItems: 'center', padding: 10, backgroundColor: 'black', }}>
                         <Text headline bold whiteColor>
-                            ICH INTERESSIERE MICH FÜR
+                            {t("I_AM_INTERESTED_IN")}
+
                         </Text>
                     </View>
                     <TouchableOpacity onPress={() => anglePress()} style={{ width: "10%", alignItems: 'flex-end', justifyContent: 'flex-end' }}>
@@ -296,7 +322,7 @@ export default function ContactOverView(props) {
                     {transportArr.map((data, i) => {
                         return (
                             <TouchableOpacity
-                                onPress={()=>setTransportArrFunc(data.txt)}
+                                onPress={() => setTransportArrFunc(data.txt)}
                                 key={i}
                                 style={{ flexDirection: 'row', width: '100%', justifyContent: 'flex-start', alignItems: 'center', backgroundColor: '#D2D9DE', padding: 10, marginTop: 5 }}
                             >
@@ -319,7 +345,7 @@ export default function ContactOverView(props) {
                     {airportArr.map((data, i) => {
                         return (
                             <TouchableOpacity
-                            onPress={()=>setAirportArrFunc(data.txt)}
+                                onPress={() => setAirportArrFunc(data.txt)}
                                 key={i}
                                 style={{ flexDirection: 'row', width: '100%', justifyContent: 'flex-start', alignItems: 'center', backgroundColor: '#D2D9DE', padding: 10, marginTop: 5 }}
                             >
@@ -342,47 +368,47 @@ export default function ContactOverView(props) {
                     <View
                         style={{ flexDirection: 'row', alignSelf: 'center', width: '85%', justifyContent: 'flex-start', alignItems: 'center', backgroundColor: '#D2D9DE', padding: 0, margin: 5, marginTop: 10 }}
                     >
-                        <TextInput onChangeText={(txt) => setProperty({ ...property, VORNAME: txt })} value={property.VORNAME} style={{ backgroundColor: 'transparent', fontWeight: 'bold' }} placeholder="VORNAME" placeholderTextColor="white" />
+                        <TextInput onChangeText={(txt) => setProperty({ ...property, VORNAME: txt })} value={property.VORNAME} style={{ backgroundColor: 'transparent', fontWeight: 'bold' }} placeholder={t("FIRST_NAME")} placeholderTextColor="white" />
 
                     </View>
                     <View
                         style={{ flexDirection: 'row', alignSelf: 'center', width: '85%', justifyContent: 'flex-start', alignItems: 'center', backgroundColor: '#D2D9DE', padding: 0, margin: 5 }}
                     >
-                        <TextInput onChangeText={(txt) => setProperty({ ...property, NACHNAME: txt })} value={property.NACHNAME} style={{ backgroundColor: 'transparent', fontWeight: 'bold' }} placeholder="NACHNAME" placeholderTextColor="white" />
+                        <TextInput onChangeText={(txt) => setProperty({ ...property, NACHNAME: txt })} value={property.NACHNAME} style={{ backgroundColor: 'transparent', fontWeight: 'bold' }} placeholder={t("LAST_NAME")} placeholderTextColor="white" />
 
                     </View>
                     <View
                         style={{ flexDirection: 'row', alignSelf: 'center', width: '85%', justifyContent: 'flex-start', alignItems: 'center', backgroundColor: '#D2D9DE', padding: 0, margin: 5 }}
                     >
-                        <TextInput onChangeText={(txt) => setProperty({ ...property, FIRMA: txt })} value={property.FIRMA} style={{ backgroundColor: 'transparent', fontWeight: 'bold' }} placeholder="FIRMA (OPTIONAL)" placeholderTextColor="white" />
+                        <TextInput onChangeText={(txt) => setProperty({ ...property, FIRMA: txt })} value={property.FIRMA} style={{ backgroundColor: 'transparent', fontWeight: 'bold' }} placeholder={t("COMPANY_OPTIONAL")} placeholderTextColor="white" />
 
 
                     </View>
                     <View
                         style={{ flexDirection: 'row', alignSelf: 'center', width: '85%', justifyContent: 'flex-start', alignItems: 'center', backgroundColor: '#D2D9DE', padding: 0, margin: 5 }}
                     >
-                        <TextInput keyboardType={'phone-pad'} onChangeText={(txt) => setProperty({ ...property, MOBILNUMMER: txt })} value={property.MOBILNUMMER} style={{ backgroundColor: 'transparent', fontWeight: 'bold' }} placeholder="MOBILNUMMER" placeholderTextColor="white" />
+                        <TextInput keyboardType={'phone-pad'} onChangeText={(txt) => setProperty({ ...property, MOBILNUMMER: txt })} value={property.MOBILNUMMER} style={{ backgroundColor: 'transparent', fontWeight: 'bold' }} placeholder={t("MOBILNUMMER")} placeholderTextColor="white" />
 
 
                     </View>
                     <View
                         style={{ flexDirection: 'row', alignSelf: 'center', width: '85%', justifyContent: 'flex-start', alignItems: 'center', backgroundColor: '#D2D9DE', padding: 0, margin: 5, height: 80 }}
                     >
-                        <TextInput onChangeText={(txt) => setProperty({ ...property, ADRESSE: txt })} value={property.ADRESSE} multiline={true} style={{ backgroundColor: 'transparent', fontWeight: 'bold' }} placeholder="ADRESSE (OPTIONAL)" placeholderTextColor="white" />
+                        <TextInput onChangeText={(txt) => setProperty({ ...property, ADRESSE: txt })} value={property.ADRESSE} multiline={true} style={{ backgroundColor: 'transparent', fontWeight: 'bold' }} placeholder={t("ADDRESS_OPTIONAL")} placeholderTextColor="white" />
 
 
                     </View>
                     <View
                         style={{ flexDirection: 'row', alignSelf: 'center', width: '85%', justifyContent: 'flex-start', alignItems: 'center', backgroundColor: '#D2D9DE', padding: 0, margin: 5 }}
                     >
-                        <TextInput onChangeText={(txt) => setProperty({ ...property, LAND: txt })} value={property.LAND} style={{ backgroundColor: 'transparent', fontWeight: 'bold' }} placeholder="LAND" placeholderTextColor="white" />
+                        <TextInput onChangeText={(txt) => setProperty({ ...property, LAND: txt })} value={property.LAND} style={{ backgroundColor: 'transparent', fontWeight: 'bold' }} placeholder={t("COUNTRY")} placeholderTextColor="white" />
 
                     </View>
 
                     <View
                         style={{ flexDirection: 'row', alignSelf: 'center', width: '85%', justifyContent: 'flex-start', alignItems: 'center', backgroundColor: '#D2D9DE', padding: 0, margin: 5, height: 150 }}
                     >
-                        <TextInput onChangeText={(txt) => setProperty({ ...property, MEINANLIEGEN: txt })} value={property.MEINANLIEGEN} style={{ backgroundColor: 'transparent', fontWeight: 'bold' }} placeholder="MEIN ANLIEGEN" placeholderTextColor="white" />
+                        <TextInput onChangeText={(txt) => setProperty({ ...property, MEINANLIEGEN: txt })} value={property.MEINANLIEGEN} style={{ backgroundColor: 'transparent', fontWeight: 'bold' }} placeholder={t("MY_REQUEST")} placeholderTextColor="white" />
 
                     </View>
 
@@ -394,7 +420,7 @@ export default function ContactOverView(props) {
                         </View>
 
                         <Text whiteColor>
-                            Ich stimme den Datenschutzrichtlinien & den AGB’s zu
+                            {t("Privacy_terms")}
                         </Text>
                     </TouchableOpacity>
 
@@ -403,7 +429,7 @@ export default function ContactOverView(props) {
 
                         : <TouchableOpacity onPress={() => send()} style={{ flexDirection: 'row', width: "95%", alignSelf: 'center', justifyContent: 'flex-end', alignItems: 'flex-end' }}>
                             <Text style={{ marginRight: 10 }} headline bold whiteColor>
-                                SENDEN
+                                {t("SEND")}
                             </Text>
                             {/* <FontAwesome5 name="angle-double-right" color={"white"} size={25} /> */}
                             <ArrowPng tintColor="white" />

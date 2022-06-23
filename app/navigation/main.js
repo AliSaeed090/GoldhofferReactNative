@@ -40,6 +40,7 @@ import { Image } from "@components";
 import { BaseColor, useTheme, Images, BaseStyle } from "@config";
 import { useTranslation } from "react-i18next";
 import { TouchableOpacity } from "react-native";
+import { useSelector } from "react-redux";
 
 
 
@@ -55,7 +56,10 @@ import { TouchableOpacity } from "react-native";
 
 const Shop = (props) => {
   const { navigation } = props;
+  const languageSelectedBysUser = useSelector((state) => state.application.language);
+
   useFocusEffect(() => {
+    let url=  languageSelectedBysUser === "en" ? "https://e-shop.goldhofer.com/index.php?lang=1&cl=account" :"https://e-shop.goldhofer.com/mein-konto/"
     Linking.openURL("https://e-shop.goldhofer.com/mein-konto/")
     // 
     navigation.goBack("Home")

@@ -123,7 +123,7 @@ export default function ProductDetailsList(props) {
               {/* <FontAwesome5 name="angle-double-left" color={"white"} size={25} /> */}
               <BackArrowPng/>
               <Text style={{ marginLeft: 10 }} headline bold whiteColor>
-                ZURÜCK
+              {t("BACK")}
               </Text>
             </View>
 
