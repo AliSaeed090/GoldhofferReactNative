@@ -3,7 +3,7 @@ import { BaseStyle, useTheme, Images, BaseSetting } from "@config";
 // Load sample data
 import styles from './styles'
 import React, { useEffect, useState } from "react";
-import { ImageBackground, View, TouchableOpacity } from "react-native";
+import { ImageBackground, View, TouchableOpacity, ActionSheetIOS, Platform, Button } from "react-native";
 import { useTranslation } from "react-i18next";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
 import { useDispatch, useSelector } from "react-redux";
@@ -31,7 +31,7 @@ const Home = (props) => {
 
   const languageSelectedBysUser = useSelector((state) => state.application.language);
   const dispatch = useDispatch();
-
+  const [result, setResult] = useState("🔮");
   const { navigation } = props;
   const { t, i18n } = useTranslation();
   const { colors } = useTheme();
@@ -54,7 +54,7 @@ const Home = (props) => {
       setListAirportService(listAirportServicesEnglish)
 
     }
-    else{
+    else {
       setListTransportService(listTransportServicesGerman)
       setListTransport(listTransportProductGerman)
       setListAirport(listAirportProductGerman)
@@ -105,6 +105,7 @@ const Home = (props) => {
 
   }
   const onValueChange = (itemValue) => {
+
     setSelectedLanguage(itemValue)
     console.log({ itemValue })
 
@@ -117,10 +118,33 @@ const Home = (props) => {
 
     }, 500);
   }
+  const onPress = () =>
+    ActionSheetIOS.showActionSheetWithOptions(
+      {
+        options:  language.map((x) => Utils.languageFromCode(x)),
+        destructiveButtonIndex: 3,
+        cancelButtonIndex: 2,
+        userInterfaceStyle: 'dark'
+      },
+      buttonIndex => {
+        console.log({buttonIndex})
+        if (buttonIndex === 0) {
+              onValueChange("en")
+
+          // cancel action
+        } else if (buttonIndex === 1) {
+          onValueChange("de")
+
+        } else if (buttonIndex === 2) {
+       
+
+        }
+      }
+    );
   return (
     <SafeAreaView style={BaseStyle.safeAreaView} edges={['right', 'top', 'left']}>
       <View style={{ width: "40%", position: 'absolute', top: 0, zIndex: 1, backgroundColor: 'rgba(255,255,255, 0.8)', right: 0 }}>
-        <Picker
+        {Platform.OS === "android" ? <Picker
           selectedValue={selectedLanguage}
           onValueChange={(itemValue, itemIndex) =>
             onValueChange(itemValue)
@@ -129,15 +153,28 @@ const Home = (props) => {
           {language.map((x) => <Picker.Item label={Utils.languageFromCode(x)} value={x} />)}
 
           {/* <Picker.Item label="German" value="de" /> */}
-        </Picker>
+        </Picker> :
+
+
+         null
+
+
+        }
       </View>
       <ImageBackground
 
         style={styles.backgroundImage}
         imageStyle={{ borderRadius: 0 }}
         source={Images.homeBackGround}>
-
+             
+           
         <View style={styles.ViewFirst} >
+        {Platform.OS === "ios" &&
+                  <View style={{ width: "40%", position: 'absolute', top: 0, zIndex: 1, backgroundColor: 'rgba(255,255,255, 0.8)', right: 0 }}>
+            <Button onPress={onPress} title={Utils.languageFromCode(selectedLanguage)} />
+            </View>
+      }
+
           <TouchableOpacity disabled={isTransportActive} onPress={() => setTransPortActive(true)}
             style={{
               ...styles.ViewSecond,
