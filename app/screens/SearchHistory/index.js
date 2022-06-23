@@ -5,10 +5,19 @@ import styles from './styles'
 import React, { useState, useMemo, useEffect } from "react";
 import { FlatList, View, TouchableOpacity, RefreshControl, Linking } from "react-native";
 import { useTranslation } from "react-i18next";
- import RenderList2 from "./RenderList2"
- import {dataSetTransportService, dataSetTransportProducts, dataSetAirportService, dataSetAirportProducts} from "./Data"
+import RenderList2 from "./RenderList2"
+import {
+  dataSetTransportService,
+  dataSetTransportProducts,
+  dataSetAirportService,
+  dataSetAirportProducts,
+  dataSetTransportServiceEnglish,
+  dataSetTransportProductsEnglish,
+  dataSetAirportServiceEnglish,
+  dataSetAirportProductsEnglish,
+} from "./Data"
 
- 
+
 
 import { useSelector } from "react-redux";
 const BackArrowPng = () => {
@@ -16,48 +25,70 @@ const BackArrowPng = () => {
     <Image source={Images.backArrow} style={{ width: 20, height: 20 }} resizeMode="contain" />
   );
 }
- 
+
 
 export default function ProductDetailsList(props) {
   const { navigation } = props;
   const { t } = useTranslation();
   const { colors } = useTheme();
+  const languageSelectedBysUser = useSelector((state) => state.application.language);
   const { params } = props.route
   const [isTransportActive, setTransPortActive] = useState(null)
-  const [list, setList] = useState([ ])
-  const [dataSet, setDataSet] = useState([ ])
+  const [list, setList] = useState([])
+  const [dataSet, setDataSet] = useState([])
   const contact = useSelector((state) => state.application.contact);
-  useEffect(()=>{
-    if(contact.type==='SALES TRANSPORT'){
-      setDataSet([...dataSetTransportProducts])
+  useEffect(() => {
+    if (contact.type === 'SALES TRANSPORT') {
+      if (languageSelectedBysUser === "en") {
+        setDataSet([...dataSetTransportProductsEnglish])
+       }
+      else {
+        setDataSet([...dataSetTransportProducts])
+      }
+
     }
-    else if(contact.type==='SERVICE TRANSPORT'){
-      setDataSet([...dataSetTransportService])
+    else if (contact.type === 'SERVICE TRANSPORT') {
+      if (languageSelectedBysUser === "en") {
+        setDataSet([...dataSetTransportServiceEnglish])
+       }
+      else {
+        setDataSet([...dataSetTransportService])
+      }
     }
-    else if(contact.type==='SALES AIRPORT'){
-      setDataSet([...dataSetAirportProducts])
+    else if (contact.type === 'SALES AIRPORT') {
+      if (languageSelectedBysUser === "en") { 
+        setDataSet([...dataSetAirportProductsEnglish])
+      }
+      else {
+        setDataSet([...dataSetAirportProducts])
+      }
     }
 
-    else if(contact.type==='SERVICE AIRPORT'){
-      setDataSet([...dataSetAirportService])
+    else if (contact.type === 'SERVICE AIRPORT') {
+      if (languageSelectedBysUser === "en") {
+        setDataSet([...dataSetAirportServiceEnglish])
+       }
+      else {
+        setDataSet([...dataSetAirportService])
+      }
     }
 
 
-  },[contact])
+  }, [contact, languageSelectedBysUser])
 
-  useEffect(()=>{
-    if(params){
+  useEffect(() => {
+    if (params) {
       filter(params.data)
       searchFilterFunction(params.data)
     }
 
-  },[params])
-   
+  }, [params])
+
 
   const [searchArr, setsearchArr] = useState([]);
   const searchFilterFunction = (text) => {
- 
- 
+
+
     const newData = dataSet.filter((items) => {
       const itemData = `${items.text.toUpperCase()}`;
       const textData = text.toUpperCase();
@@ -72,18 +103,18 @@ export default function ProductDetailsList(props) {
     setsearch(text);
     if (text) {
       searchFilterFunction(text)
-     
+
     } else {
 
     }
   };
 
 
-  const onPressRight =()=>{
+  const onPressRight = () => {
     navigation.reset({
       index: 0,
       routes: [{ name: "Main" }]
-  });
+    });
   }
 
   const RenderItem = useMemo((item) => RenderList2, [list]);
@@ -98,7 +129,7 @@ export default function ProductDetailsList(props) {
               {/* <FontAwesome5 name="angle-double-left" color={"white"} size={25} /> */}
               <BackArrowPng />
               <Text style={{ marginLeft: 10 }} headline bold whiteColor>
-              {t("BACK")}
+                {t("BACK")}
               </Text>
             </View>
 
@@ -116,9 +147,9 @@ export default function ProductDetailsList(props) {
         }}
 
       />
-      <View onPress={()=>navigation.navigate("SearchHistory")} style={{ paddingHorizontal: 0, paddingVertical: 15 }}>
+      <View onPress={() => navigation.navigate("SearchHistory")} style={{ paddingHorizontal: 0, paddingVertical: 15 }}>
         <TextInput
-        autoFocus={true}
+          autoFocus={true}
           style={{ width: '90%', alignSelf: 'center', borderRadius: 50, padding: 10 }}
           onChangeText={filter}
           placeholder={t("Search")}
@@ -140,10 +171,10 @@ export default function ProductDetailsList(props) {
             onRefresh={() => { }}
           />
         }
-        data={ searchArr}
+        data={searchArr}
         keyExtractor={(item, index) => Math.random().toString()}
         ItemSeparatorComponent={() => <View style={{ width: "100%", height: 8, backgroundColor: 'white' }} />}
-      
+
         renderItem={({ item }) => <RenderItem item={item} />}
 
       />
