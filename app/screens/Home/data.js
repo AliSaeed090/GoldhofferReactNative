@@ -1,6 +1,6 @@
 import { Images } from "@config";
 
-
+ 
 export const listTransportProductGerman = [
     // {
     //   image: undefined, text: 'TRAILSTAR', searchText:'PRODUKT PROSPEKT »TRAILSTAR«',   data: [{
@@ -397,7 +397,7 @@ export const listTransportProductEnglish = [
     //   ]
     // },
     {
-      image: Images.banner1, text: 'SEMI-TRAILERS', searchText: 'FLATBED SEMI-TRAILERS SEMI-TRAILERS SPZ-L | SPZ-GL | SPZ-H SPZ-GP »VENTUM« SEMI LOWLOADERS STEPSTAR »ARCUS« P | »ARCUS« PK STZ-L | STZ-H | »MPA« STZ-L | »MPA« MIT RADMULDE LOWLOADER TRAILERS STZ-VL | STZ-VH »MPA« V STZ-VP (245) STZ-VP (285)',
+      image: Images.banner1, text: 'SEMI-TRAILERS', searchText: 'FLATBED SEMI-TRAILERS SEMI-TRAILERS SPZ-L | SPZ-GL | SPZ-H SPZ-GP »VENTUM« SEMI LOWLOADERS STEPSTAR »ARCUS« P | »ARCUS« PK STZ-L | STZ-H | »MPA« STZ-L | »MPA« WITH RADMULDE LOWLOADER TRAILERS STZ-VL | STZ-VH »MPA« V STZ-VP (245) STZ-VP (285)',
       data: [
           {
               image: Images.banner16, text: 'FLATBED SEMI-TRAILERS', listTransport: true,
@@ -468,11 +468,11 @@ export const listTransportProductEnglish = [
                       }
                   },
                   {
-                      image: Images.banner27, text: 'STZ-L | »MPA« MIT RADMULDE', data: {
+                      image: Images.banner27, text: 'STZ-L | »MPA« WITH RADMULDE', data: {
                           videoId: "9RM0QLDti1A", image: Images.banner39, text: [
-                              'PRODUCT BROCHURE STZ-L | »MPA« MIT RADMULDE'], otherData: {
+                              'PRODUCT BROCHURE STZ-L | »MPA« WITH RADMULDE'], otherData: {
                                   videoId: "9RM0QLDti1A", image: Images.banner39, text: [
-                                      // 'QUICKGUIDE ZUM STZ-L | »MPA« MIT RADMULDE'
+                                      // 'QUICKGUIDE ZUM STZ-L | »MPA« WITH RADMULDE'
                                   ]
                               }
                       }
@@ -1281,7 +1281,7 @@ export const listTransportServicesEnglish = [
                 }
               },
               {
-                image: Images.banner27, text: 'STZ-L | »MPA« MIT RADMULDE', data: {
+                image: Images.banner27, text: 'STZ-L | »MPA« WITH RADMULDE', data: {
                   videoId: "9RM0QLDti1A", image: Images.banner39, text: [
                     // 'QUICKGUIDE ZUM STZ-L | »MPA« MIT RADMULDE'
                   ], otherData: {
@@ -1702,15 +1702,15 @@ export const listAirportProductEnglish = [
         image: Images.banner9, text: '»SHERPA« D', listAirport: true,
         data: {
             image: Images.banner14, videoId: "9RM0QLDti1A", text: [
-                'PRODUCT BROCHURE  »SHERPA« D', "TECHNICAL DATA »SHERPA« D",]
-            , otherData: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  »SHERPA« D', "TECHNICAL DATA »SHERPA« D",] }
+                'PRODUCT BROCHURE »SHERPA« D', "TECHNICAL DATA »SHERPA« D",]
+            , otherData: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE »SHERPA« D', "TECHNICAL DATA »SHERPA« D",] }
         }
     },
     {
         image: Images.banner15, text: '»SHERPA« E', listAirport: true,
         data: {
-            image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ',]
-            , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ', 'SERVICE-BROCHURE '] }
+            image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ',]
+            , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ', 'SERVICE-BROCHURE '] }
 
         }
     }]
@@ -1771,11 +1771,11 @@ export const listAirportProductEnglish = [
 //   searchText: 'PARTNER',
 //   data: [{
 //     image: Images.banner13, text: 'F59', listAirport: true,
-//     data: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  »SHERPA« D', "TECHNICAL DATA »SHERPA« D",  ], otherData: {} }
+//     data: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE »SHERPA« D', "TECHNICAL DATA »SHERPA« D",  ], otherData: {} }
 //   },
 //   {
 //     image: Images.banner15, text: 'STT', listAirport: true,
-//     data: { image: Images.banner15, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ', 'SERVICE-BROCHURE '], otherData: {} }
+//     data: { image: Images.banner15, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ', 'SERVICE-BROCHURE '], otherData: {} }
 //   }]
 // }
 ]
@@ -1862,11 +1862,11 @@ export const listAirportServicesEnglish = [
     searchText: 'CARGO & PUSHBACK TRACTORS »SHERPA« D  TECHNICAL DATA E-MOBILITY',
     data: [{
         image: Images.banner9, text: '»SHERPA« D', listAirport: true,
-        data: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  »SHERPA« D', "TECHNICAL DATA »SHERPA« D",], otherData: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  »SHERPA« D', "TECHNICAL DATA »SHERPA« D",] } }
+        data: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE »SHERPA« D', "TECHNICAL DATA »SHERPA« D",], otherData: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE »SHERPA« D', "TECHNICAL DATA »SHERPA« D",] } }
     },
     {
         image: Images.banner15, text: '»SHERPA« E', listAirport: true,
-        data: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ', 'SERVICE-BROCHURE '], otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ',] } }
+        data: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ', 'SERVICE-BROCHURE '], otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ',] } }
     }]
 },
 
@@ -1924,11 +1924,11 @@ export const listAirportServicesEnglish = [
 
 //   data: [{
 //     image: Images.banner13, text: 'F59', listAirport: true,
-//     data: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  »SHERPA« D', "TECHNICAL DATA »SHERPA« D",  ],otherData:{} }
+//     data: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE »SHERPA« D', "TECHNICAL DATA »SHERPA« D",  ],otherData:{} }
 //   },
 //   {
 //     image: Images.banner15, text: 'STT', listAirport: true,
-//     data: { image: Images.banner15, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ', 'SERVICE-BROCHURE '] ,otherData:{}}
+//     data: { image: Images.banner15, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ', 'SERVICE-BROCHURE '] ,otherData:{}}
 //   }]
 // }
 

@@ -247,7 +247,7 @@ export default function ProductDetailsList(props) {
 
     const getPdfLink = (txt) => {
         console.log({ txt })
-        txt=txt.trim()
+        // txt=txt.trim()
         if (txt === 'PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H' || txt === 'PRODUCT BROCHURE SPZ-L | SPZ-GL | SPZ-H') {
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/SPZ_EN-A4.pdf"
@@ -259,8 +259,9 @@ export default function ProductDetailsList(props) {
 
         }
         else if (txt === "PRODUKT PROSPEKT SPZ-GP" || txt === "PRODUCT BROCHURE SPZ-GP") {
+          
             if (isEnglish) {
-                "https://www.goldhofer.com/fileadmin//downloads/prospekte/SPZ_EN-A4.pdf"
+                return  "https://www.goldhofer.com/fileadmin//downloads/prospekte/SPZ_EN-A4.pdf"
             }
             else {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/SPZ_DE-A4.pdf"
@@ -296,7 +297,7 @@ export default function ProductDetailsList(props) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/STZ-L_STZ-H_MPA_DE-A4.pdf"
             }
         }
-        else if (txt == "PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE" || txt == "PRODUCT BROCHURE STZ-L | »MPA« MIT RADMULDE") {
+        else if (txt == "PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE" || txt == "PRODUCT BROCHURE STZ-L | »MPA« WITH RADMULDE") {
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/STZ-L_STZ-H_MPA_EN-A4.pdf"
             }
@@ -723,7 +724,7 @@ export default function ProductDetailsList(props) {
             return "PLPP-gBF73hLOEIWZR1YGRwz4VKwUcRseY"
 
         }
-        else if (txt == "STZ-L | »MPA« MIT RADMULDE") {
+        else if (txt == "STZ-L | »MPA« MIT RADMULDE" || txt == "STZ-L | »MPA« WITH RADMULDE" ) {
             return "PLPP-gBF73hLOEIWZR1YGRwz4VKwUcRseY"
 
 
@@ -733,13 +734,14 @@ export default function ProductDetailsList(props) {
 
         }
         else if (txt == "»MPA« V") {
-            return null
+           
+             return"PLPP-gBF73hLP__WTK2jepPZLIrnqSbdwu"
         }
         else if (txt == "STZ-VP (245)") {
-            return null
+            return "PLPP-gBF73hLPI2LlgZ6tAxF0Z1sHPC8nF"
         }
         else if (txt == "STZ-VP (285)") {
-            return null
+            return "PLPP-gBF73hLPisIH1-tmIsxF64kopMu-G"
         }
         else if (txt == "THP/ET") {
 
@@ -800,19 +802,20 @@ export default function ProductDetailsList(props) {
             return "PLPP-gBF73hLN_h7mYbLc--B4wk0yoX0z6"
         }
         else if (txt == "»SHERPA« D") {
-            return "PLPB7BeGg23Sod6ZCymIRXbPbQ7dhQ1XvI"
+            return "PLPB7BeGg23SqJOSe8-6sorJp3TjhHCmHK"
         }
 
         else if (txt == "»SHERPA« E") {
-            return "PLPB7BeGg23Sod6ZCymIRXbPbQ7dhQ1XvI"
+            return "PLPB7BeGg23SrkB9R0A6-lAA0Hp83WpwIG"
         }
 
         else if (txt == "»BISON« D FAMILIE") {
-            return "PLPB7BeGg23SovWix2nfV01H_pWzftVBrs"
+            // return "PLPB7BeGg23SovWix2nfV01H_pWzftVBrs"
+            return "PLPB7BeGg23Sr4u8hHEmoBJBeTV-ImBEN-"
         }
 
         else if (txt == "»BISON« E FAMILIE") {
-            return "PLPB7BeGg23SovWix2nfV01H_pWzftVBrs"
+            return "PLPB7BeGg23SoQqp0T3wgD1pOBRjfH-OP9"
         }
 
         else if (txt == "»PHOENIX« AST-2P/X") {
@@ -828,11 +831,11 @@ export default function ProductDetailsList(props) {
             return "PLPB7BeGg23Sr4YjBaN5DDwFAco9B8gtFi"
         }
 
-        else if (txt == "DOLLIES KLEINE SCHÄDEN") {
-            return null
+        else if (txt == "DOLLIES KLEINE SCHÄDEN" || "DOLLIES - MINOR DAMAGE") {
+            return "PLPB7BeGg23SqSx_012cu3CP_6y_ku32e4"
         }
-        else if (txt == "KOMBINATIONSSYSTEME GROSSE SCHÄDEN") {
-            return null
+        else if (txt == "KOMBINATIONSSYSTEME GROSSE SCHÄDEN" || "COMBINATION SYSTEMS - MAJOR DAMAGE") {
+            return "PLPB7BeGg23SqIKYKL8qvj5IvsiWSXzrkf"
         }
 
 
@@ -864,7 +867,7 @@ export default function ProductDetailsList(props) {
             return "PLPP-gBF73hLMY5mVFN7Xmbv-V5sFwDsDK"
 
         }
-        else if (txt == "STZ-L | »MPA« MIT RADMULDE") {
+        else if (txt == "STZ-L | »MPA« MIT RADMULDE" || txt == "STZ-L | »MPA« WITH RADMULDE") {
             return "PLPP-gBF73hLNkudzg1wSBxOeCCMK9Aj2n"
         }
         else if (txt == "STZ-VL | STZ-VH") {
@@ -873,13 +876,13 @@ export default function ProductDetailsList(props) {
 
         }
         else if (txt == "»MPA« V") {
-            return null
+            "PLPP-gBF73hLOGhiR5rg8hWUls9_UFtVjl"
         }
         else if (txt == "STZ-VP (245)") {
-            return null
+            return "PLPP-gBF73hLPy9y8D2KdQr7xoYiO3JlJJ"
         }
         else if (txt == "STZ-VP (285)") {
-            return null
+            return "PLPP-gBF73hLOm1GwRFuhTqFIoo1QH0eH_"
         }
         else if (txt == "THP/ET") {
             return "PLPP-gBF73hLNZK6-GPdyPZr-TmKL2YNvw"
@@ -974,12 +977,14 @@ export default function ProductDetailsList(props) {
             return "PLPB7BeGg23SohP4JsrK3gwv9oNzbCp1AE"
         }
 
-        else if (txt == "DOLLIES KLEINE SCHÄDEN") {
-            return null
+        else if (txt == "DOLLIES KLEINE SCHÄDEN" || "DOLLIES - MINOR DAMAGE") {
+            return "PLPB7BeGg23SrH2hMik_rCrS2zOehmPKqT"
         }
-        else if (txt == "KOMBINATIONSSYSTEME GROSSE SCHÄDEN") {
-            return null
+        else if (txt == "KOMBINATIONSSYSTEME GROSSE SCHÄDEN" || "COMBINATION SYSTEMS - MAJOR DAMAGE") {
+            return "PLPB7BeGg23SqX6i0DQhuCIUgD_kNnwYSa"
+
         }
+
 
 
     }
