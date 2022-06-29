@@ -124,7 +124,8 @@ const Home = (props) => {
         options:  language.map((x) => Utils.languageFromCode(x)),
         destructiveButtonIndex: 3,
         cancelButtonIndex: 2,
-        userInterfaceStyle: 'dark'
+        userInterfaceStyle: 'dark',
+        tintColor:"white"
       },
       buttonIndex => {
         console.log({buttonIndex})
@@ -171,7 +172,7 @@ const Home = (props) => {
         <View style={styles.ViewFirst} >
         {Platform.OS === "ios" &&
                   <View style={{ width: "40%", position: 'absolute', top: 0, zIndex: 1, backgroundColor: 'rgba(255,255,255, 0.8)', right: 0 }}>
-            <Button onPress={onPress} title={Utils.languageFromCode(selectedLanguage)} />
+            <Button color={"black"} onPress={onPress} title={Utils.languageFromCode(selectedLanguage)} />
             </View>
       }
 
