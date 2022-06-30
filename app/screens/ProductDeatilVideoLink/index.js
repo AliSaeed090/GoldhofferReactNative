@@ -543,7 +543,7 @@ export default function ProductDeatilVideoLink(props) {
             setLinkList([...arr])
             return 'ss'
         }
-        else if (txt == "PRODUKT PROSPEKT  »BISON« E FAMILIE" || txt == "PRODUCT BROCHURE  »BISON« E FAMILIE") {
+        else if (txt == "PRODUKT PROSPEKT  »BISON« E FAMILIE" || txt == "PRODUCT BROCHURE »BISON« E FAMILIE") {
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/BISON-FAMILY_EN-met_A4.pdf"
             }
@@ -563,7 +563,7 @@ export default function ProductDeatilVideoLink(props) {
             setLinkList([...arr])
             return 'ss'
         }
-        else if (txt == "PRODUKT PROSPEKT  »PHOENIX« AST-2P/X" || txt == "PRODUCT BROCHURE  »PHOENIX« AST-2P/X") {
+        else if (txt == "PRODUKT PROSPEKT  »PHOENIX« AST-2P/X" || txt == "PRODUCT BROCHURE »PHOENIX« AST-2P/X") {
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/PHOENIX-FAMILIE_EN-met_A4.pdf"
             } else {
@@ -661,7 +661,8 @@ export default function ProductDeatilVideoLink(props) {
                 .catch(err => console.log(err));
         }
         else {
-            alert('PDF is not available');
+            return Linking.openURL("https://www.goldhofer.com/fileadmin/downloads/prospekte/Quickguide_Stepstar_DE-EN.pdf");
+            // alert('PDF is not available');
         }
 
 

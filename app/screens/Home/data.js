@@ -1721,14 +1721,14 @@ export const listAirportProductEnglish = [
     searchText: 'CONVENTIONAL TRACTORS »BISON« D FAMILY TECHNICAL DATA »BISON« E  ',
     data: [{
         image: Images.banner75, text: '»BISON« D FAMILY', listAirport: true,
-        data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  »BISON« D FAMILY', "TECHNICAL DATA »BISON« D FAMILY"], otherData: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  »BISON« D FAMILY', "TECHNICAL DATA »BISON« D FAMILY",] } }
+        data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE »BISON« D FAMILY', "TECHNICAL DATA »BISON« D FAMILY"], otherData: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE »BISON« D FAMILY', "TECHNICAL DATA »BISON« D FAMILY",] } }
     },
     {
         image: Images.banner77, text: '»BISON« E FAMILY', listAirport: true,
         data: {
-            image: Images.banner78, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE   »BISON« E FAMILY', 'TECHNICAL DATA »BISON« E FAMILY',], otherData: {
+            image: Images.banner78, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  »BISON« E FAMILY', 'TECHNICAL DATA »BISON« E FAMILY',], otherData: {
                 image: Images.banner78, videoId: "eP_YC0cr0n0",
-                text: ['PRODUCT BROCHURE   »BISON« E FAMILY', 'TECHNICAL DATA »BISON« E FAMILY',],
+                text: ['PRODUCT BROCHURE  »BISON« E FAMILY', 'TECHNICAL DATA »BISON« E FAMILY',],
             }
         }
     }]
@@ -1740,15 +1740,15 @@ export const listAirportProductEnglish = [
     data: [
         {
             image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true,
-            data: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE   »PHOENIX« AST-2P/X', "TECHNICAL DATA »PHOENIX« AST-2P/X"], otherData: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE   »PHOENIX« AST-2P/X', "TECHNICAL DATA »PHOENIX« AST-2P/X",] } }
+            data: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  »PHOENIX« AST-2P/X', "TECHNICAL DATA »PHOENIX« AST-2P/X"], otherData: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  »PHOENIX« AST-2P/X', "TECHNICAL DATA »PHOENIX« AST-2P/X",] } }
         },
         {
             image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true,
-            data: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  »PHOENIX« AST-2E', 'TECHNICAL DATA »PHOENIX« AST-2E',], otherData: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  »PHOENIX« AST-2E', 'TECHNICAL DATA »PHOENIX« AST-2E', "E-MOBILITY BROCHURE ",] } }
+            data: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »PHOENIX« AST-2E', 'TECHNICAL DATA »PHOENIX« AST-2E',], otherData: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »PHOENIX« AST-2E', 'TECHNICAL DATA »PHOENIX« AST-2E', "E-MOBILITY BROCHURE ",] } }
         },
         {
             image: Images.banner83, text: 'AST-1X', listAirport: true,
-            data: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  AST-1X', 'TECHNICAL DATA AST-1X',], otherData: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  AST-1X', 'TECHNICAL DATA AST-1X',] } }
+            data: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE AST-1X', 'TECHNICAL DATA AST-1X',], otherData: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE AST-1X', 'TECHNICAL DATA AST-1X',] } }
         }
     ]
 },
@@ -1758,11 +1758,11 @@ export const listAirportProductEnglish = [
     searchText: 'AIRCRAFT RECOVERY TRANSPORT SYSTEMS DOLLIES - MINOR DAMAGE TECHNICAL DATA KOMBINATIONSSYSTEME GROSSE',
     data: [{
         image: Images.banner85, text: 'DOLLIES - MINOR DAMAGE', listAirport: true,
-        data: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  DOLLIES - MINOR DAMAGE',], otherData: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  DOLLIES - MINOR DAMAGE', ,] } }
+        data: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE DOLLIES - MINOR DAMAGE',], otherData: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE DOLLIES - MINOR DAMAGE', ,] } }
     },
     {
         image: Images.banner87, text: 'COMBINATION SYSTEMS - MAJOR DAMAGE', listAirport: true,
-        data: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  COMBINATION SYSTEMS - MAJOR DAMAGE',], otherData: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  COMBINATION SYSTEMS - MAJOR DAMAGE',] } }
+        data: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE COMBINATION SYSTEMS - MAJOR DAMAGE',], otherData: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE COMBINATION SYSTEMS - MAJOR DAMAGE',] } }
     }]
 },
 
@@ -1875,13 +1875,13 @@ export const listAirportServicesEnglish = [
     searchText: 'CONVENTIONAL TRACTORS »BISON« D FAMILY TECHNICAL DATA »BISON« E  ',
     data: [{
         image: Images.banner75, text: '»BISON« D FAMILY', listAirport: true,
-        data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  »BISON« D FAMILY', "TECHNICAL DATA »BISON« D FAMILY",], otherData: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  »BISON« D FAMILY', "TECHNICAL DATA »BISON« D FAMILY"] } }
+        data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE »BISON« D FAMILY', "TECHNICAL DATA »BISON« D FAMILY",], otherData: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE »BISON« D FAMILY', "TECHNICAL DATA »BISON« D FAMILY"] } }
     },
     {
         image: Images.banner77, text: '»BISON« E FAMILY', listAirport: true,
         data: {
             image: Images.banner78, videoId: "eP_YC0cr0n0",
-            text: ['PRODUCT BROCHURE   »BISON« E FAMILY', 'TECHNICAL DATA »BISON« E FAMILY',], otherData: { image: Images.banner78, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE   »BISON« E FAMILY', 'TECHNICAL DATA »BISON« E FAMILY',] }
+            text: ['PRODUCT BROCHURE  »BISON« E FAMILY', 'TECHNICAL DATA »BISON« E FAMILY',], otherData: { image: Images.banner78, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  »BISON« E FAMILY', 'TECHNICAL DATA »BISON« E FAMILY',] }
         }
     }]
 },
@@ -1892,15 +1892,15 @@ export const listAirportServicesEnglish = [
     data: [
         {
             image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true,
-            data: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE   »PHOENIX« AST-2P/X', "TECHNICAL DATA »PHOENIX« AST-2P/X",], otherData: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE   »PHOENIX« AST-2P/X', "TECHNICAL DATA »PHOENIX« AST-2P/X"] } }
+            data: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  »PHOENIX« AST-2P/X', "TECHNICAL DATA »PHOENIX« AST-2P/X",], otherData: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  »PHOENIX« AST-2P/X', "TECHNICAL DATA »PHOENIX« AST-2P/X"] } }
         },
         {
             image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true,
-            data: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  »PHOENIX« AST-2E', 'TECHNICAL DATA »PHOENIX« AST-2E', "E-MOBILITY BROCHURE ",], otherData: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  »PHOENIX« AST-2E', 'TECHNICAL DATA »PHOENIX« AST-2E',] } }
+            data: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »PHOENIX« AST-2E', 'TECHNICAL DATA »PHOENIX« AST-2E', "E-MOBILITY BROCHURE ",], otherData: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »PHOENIX« AST-2E', 'TECHNICAL DATA »PHOENIX« AST-2E',] } }
         },
         {
             image: Images.banner83, text: 'AST-1X', listAirport: true,
-            data: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  AST-1X', 'TECHNICAL DATA AST-1X',], otherData: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  AST-1X', 'TECHNICAL DATA AST-1X',] } }
+            data: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE AST-1X', 'TECHNICAL DATA AST-1X',], otherData: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE AST-1X', 'TECHNICAL DATA AST-1X',] } }
         }
     ]
 },
@@ -1910,11 +1910,11 @@ export const listAirportServicesEnglish = [
     searchText: 'AIRCRAFT RECOVERY TRANSPORT SYSTEMS DOLLIES - MINOR DAMAGE TECHNICAL DATA KOMBINATIONSSYSTEME GROSSE',
     data: [{
         image: Images.banner85, text: 'DOLLIES - MINOR DAMAGE', listAirport: true,
-        data: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  DOLLIES - MINOR DAMAGE',], otherData: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE  DOLLIES - MINOR DAMAGE',] } }
+        data: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE DOLLIES - MINOR DAMAGE',], otherData: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE DOLLIES - MINOR DAMAGE',] } }
     },
     {
         image: Images.banner87, text: 'COMBINATION SYSTEMS - MAJOR DAMAGE', listAirport: true,
-        data: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  COMBINATION SYSTEMS - MAJOR DAMAGE',], otherData: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE  COMBINATION SYSTEMS - MAJOR DAMAGE',] } }
+        data: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE COMBINATION SYSTEMS - MAJOR DAMAGE',], otherData: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE COMBINATION SYSTEMS - MAJOR DAMAGE',] } }
     }]
 },
 

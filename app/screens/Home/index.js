@@ -151,7 +151,7 @@ const Home = (props) => {
             onValueChange(itemValue)
 
           }>
-          {language.map((x) => <Picker.Item label={Utils.languageFromCode(x)} value={x} />)}
+          {language.map((x, i) => <Picker.Item label={Utils.languageFromCode(x)} value={x} key={i} />)}
 
           {/* <Picker.Item label="German" value="de" /> */}
         </Picker> :
