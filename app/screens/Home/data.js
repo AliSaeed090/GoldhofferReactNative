@@ -334,7 +334,9 @@ export const listTransportProductGerman = [
                 image: Images.banner71, text: '»BLADEX«',
                 data: {
                     image: Images.banner72, text: [
-                        'PRODUKT PROSPEKT »BLADEX«'], videoId: "eP_YC0cr0n0", otherData: {
+                        // 'PRODUKT PROSPEKT »BLADEX«'
+                      
+                      ], videoId: "eP_YC0cr0n0", otherData: {
                             image: Images.banner72, text: [
                                 // 'QQUICKGUIDE ZUM »BLADEX«'
                             ], videoId: "eP_YC0cr0n0"
@@ -397,7 +399,7 @@ export const listTransportProductEnglish = [
     //   ]
     // },
     {
-      image: Images.banner1, text: 'SEMI-TRAILERS', searchText: 'FLATBED SEMI-TRAILERS SEMI-TRAILERS SPZ-L | SPZ-GL | SPZ-H SPZ-GP »VENTUM« SEMI LOWLOADERS STEPSTAR »ARCUS« P | »ARCUS« PK STZ-L | STZ-H | »MPA« STZ-L | »MPA« WITH RADMULDE LOWLOADER TRAILERS STZ-VL | STZ-VH »MPA« V STZ-VP (245) STZ-VP (285)',
+      image: Images.banner1, text: 'SEMI-TRAILERS', searchText: 'FLATBED SEMI-TRAILERS SEMI-TRAILERS SPZ-L | SPZ-GL | SPZ-H SPZ-GP »VENTUM« SEMI LOWLOADERS STEPSTAR »ARCUS« P | »ARCUS« PK STZ-L | STZ-H | »MPA« STZ-L | »MPA« WITH WHEEL RECESS LOWLOADER TRAILERS STZ-VL | STZ-VH »MPA« V STZ-VP (245) STZ-VP (285)',
       data: [
           {
               image: Images.banner16, text: 'FLATBED SEMI-TRAILERS', listTransport: true,
@@ -468,11 +470,11 @@ export const listTransportProductEnglish = [
                       }
                   },
                   {
-                      image: Images.banner27, text: 'STZ-L | »MPA« WITH RADMULDE', data: {
+                      image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: {
                           videoId: "9RM0QLDti1A", image: Images.banner39, text: [
-                              'PRODUCT BROCHURE STZ-L | »MPA« WITH RADMULDE'], otherData: {
+                              'PRODUCT BROCHURE STZ-L | »MPA« WITH WHEEL RECESS'], otherData: {
                                   videoId: "9RM0QLDti1A", image: Images.banner39, text: [
-                                      // 'QUICKGUIDE ZUM STZ-L | »MPA« WITH RADMULDE'
+                                      // 'QUICKGUIDE ZUM STZ-L | »MPA« WITH WHEEL RECESS'
                                   ]
                               }
                       }
@@ -721,7 +723,9 @@ export const listTransportProductEnglish = [
               image: Images.banner71, text: '»BLADEX«',
               data: {
                   image: Images.banner72, text: [
-                      'PRODUCT BROCHURE »BLADEX«'], videoId: "eP_YC0cr0n0", otherData: {
+                      // 'PRODUCT BROCHURE »BLADEX«'
+                    
+                    ], videoId: "eP_YC0cr0n0", otherData: {
                           image: Images.banner72, text: [
                               // 'QQUICKGUIDE ZUM »BLADEX«'
                           ], videoId: "eP_YC0cr0n0"
@@ -1281,7 +1285,7 @@ export const listTransportServicesEnglish = [
                 }
               },
               {
-                image: Images.banner27, text: 'STZ-L | »MPA« WITH RADMULDE', data: {
+                image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: {
                   videoId: "9RM0QLDti1A", image: Images.banner39, text: [
                     // 'QUICKGUIDE ZUM STZ-L | »MPA« MIT RADMULDE'
                   ], otherData: {
@@ -1651,7 +1655,7 @@ export const listAirportProductGerman = [
   
       {
         image: Images.banner7, text: 'STANGENLOSE SCHLEPPER',
-        searchText: 'STANGENLOSE SCHLEPPER  »PHOENIX« AST-2P/X DATENBLÄTTER AST-2E AST-1X ',
+        searchText: 'STANGENLOSE SCHLEPPER  »PHOENIX« AST-2P/X DATENBLÄTTER AST-2E AST-1X',
         data: [
           {
             image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true,
@@ -1709,8 +1713,8 @@ export const listAirportProductEnglish = [
     {
         image: Images.banner15, text: '»SHERPA« E', listAirport: true,
         data: {
-            image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ',]
-            , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ', 'SERVICE-BROCHURE '] }
+            image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE',]
+            , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE', 'SERVICE-BROCHURE'] }
 
         }
     }]
@@ -1718,7 +1722,7 @@ export const listAirportProductEnglish = [
 
 {
     image: Images.banner8, text: 'CONVENTIONAL TRACTORS',
-    searchText: 'CONVENTIONAL TRACTORS »BISON« D FAMILY TECHNICAL DATA »BISON« E  ',
+    searchText: 'CONVENTIONAL TRACTORS »BISON« D FAMILY TECHNICAL DATA »BISON« E',
     data: [{
         image: Images.banner75, text: '»BISON« D FAMILY', listAirport: true,
         data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE »BISON« D FAMILY', "TECHNICAL DATA »BISON« D FAMILY"], otherData: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE »BISON« D FAMILY', "TECHNICAL DATA »BISON« D FAMILY",] } }
@@ -1744,7 +1748,7 @@ export const listAirportProductEnglish = [
         },
         {
             image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true,
-            data: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »PHOENIX« AST-2E', 'TECHNICAL DATA »PHOENIX« AST-2E',], otherData: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »PHOENIX« AST-2E', 'TECHNICAL DATA »PHOENIX« AST-2E', "E-MOBILITY BROCHURE ",] } }
+            data: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »PHOENIX« AST-2E', 'TECHNICAL DATA »PHOENIX« AST-2E',], otherData: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »PHOENIX« AST-2E', 'TECHNICAL DATA »PHOENIX« AST-2E', "E-MOBILITY BROCHURE",] } }
         },
         {
             image: Images.banner83, text: 'AST-1X', listAirport: true,
@@ -1775,7 +1779,7 @@ export const listAirportProductEnglish = [
 //   },
 //   {
 //     image: Images.banner15, text: 'STT', listAirport: true,
-//     data: { image: Images.banner15, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ', 'SERVICE-BROCHURE '], otherData: {} }
+//     data: { image: Images.banner15, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE', 'SERVICE-BROCHURE '], otherData: {} }
 //   }]
 // }
 ]
@@ -1795,7 +1799,7 @@ export const listAirportServicesGerman = [
   
       {
         image: Images.banner8, text: 'KONVENTIONELLE SCHLEPPER',
-        searchText: 'KONVENTIONELLE SCHLEPPER »BISON« D FAMILIE DATENBLÄTTER »BISON« E  ',
+        searchText: 'KONVENTIONELLE SCHLEPPER »BISON« D FAMILIE DATENBLÄTTER »BISON« E',
         data: [{
           image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true,
           data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE",], otherData: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE"] } }
@@ -1811,7 +1815,7 @@ export const listAirportServicesGerman = [
   
       {
         image: Images.banner7, text: 'STANGENLOSE SCHLEPPER',
-        searchText: 'STANGENLOSE SCHLEPPER  »PHOENIX« AST-2P/X DATENBLÄTTER AST-2E AST-1X ',
+        searchText: 'STANGENLOSE SCHLEPPER  »PHOENIX« AST-2P/X DATENBLÄTTER AST-2E AST-1X',
         data: [
           {
             image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true,
@@ -1866,13 +1870,13 @@ export const listAirportServicesEnglish = [
     },
     {
         image: Images.banner15, text: '»SHERPA« E', listAirport: true,
-        data: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ', 'SERVICE-BROCHURE '], otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ',] } }
+        data: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE', 'SERVICE-BROCHURE '], otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE',] } }
     }]
 },
 
 {
     image: Images.banner8, text: 'CONVENTIONAL TRACTORS',
-    searchText: 'CONVENTIONAL TRACTORS »BISON« D FAMILY TECHNICAL DATA »BISON« E  ',
+    searchText: 'CONVENTIONAL TRACTORS »BISON« D FAMILY TECHNICAL DATA »BISON« E',
     data: [{
         image: Images.banner75, text: '»BISON« D FAMILY', listAirport: true,
         data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE »BISON« D FAMILY', "TECHNICAL DATA »BISON« D FAMILY",], otherData: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUCT BROCHURE »BISON« D FAMILY', "TECHNICAL DATA »BISON« D FAMILY"] } }
@@ -1888,7 +1892,7 @@ export const listAirportServicesEnglish = [
 
 {
     image: Images.banner7, text: 'TOWBARLESS TRACTORS',
-    searchText: 'TOWBARLESS TRACTORS  »PHOENIX« AST-2P/X TECHNICAL DATA AST-2E AST-1X ',
+    searchText: 'TOWBARLESS TRACTORS  »PHOENIX« AST-2P/X TECHNICAL DATA AST-2E AST-1X',
     data: [
         {
             image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true,
@@ -1896,7 +1900,7 @@ export const listAirportServicesEnglish = [
         },
         {
             image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true,
-            data: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »PHOENIX« AST-2E', 'TECHNICAL DATA »PHOENIX« AST-2E', "E-MOBILITY BROCHURE ",], otherData: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »PHOENIX« AST-2E', 'TECHNICAL DATA »PHOENIX« AST-2E',] } }
+            data: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »PHOENIX« AST-2E', 'TECHNICAL DATA »PHOENIX« AST-2E', "E-MOBILITY BROCHURE",], otherData: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »PHOENIX« AST-2E', 'TECHNICAL DATA »PHOENIX« AST-2E',] } }
         },
         {
             image: Images.banner83, text: 'AST-1X', listAirport: true,
@@ -1928,7 +1932,7 @@ export const listAirportServicesEnglish = [
 //   },
 //   {
 //     image: Images.banner15, text: 'STT', listAirport: true,
-//     data: { image: Images.banner15, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE ', 'SERVICE-BROCHURE '] ,otherData:{}}
+//     data: { image: Images.banner15, videoId: "eP_YC0cr0n0", text: ['PRODUCT BROCHURE »SHERPA« E', 'TECHNICAL DATA »SHERPA« E', 'E-MOBILITY BROCHURE', 'SERVICE-BROCHURE '] ,otherData:{}}
 //   }]
 // }
 

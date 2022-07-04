@@ -944,7 +944,7 @@ export const dataSetTransportProductsEnglish = [
                     { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['QUICKGUIDE ZUM STEPSTAR'] } } },
                     { navigateTo: 'ProductDeatilVideo', image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['QUICKGUIDE ZUM»ARCUS« P | »ARCUS« PK'] } } },
                     { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« WITH RADMULDE'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH RADMULDE'] } } }
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« WITH WHEEL RECESS'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH WHEEL RECESS'] } } }
 
                 ],
                 listTransport: true,
@@ -985,7 +985,7 @@ export const dataSetTransportProductsEnglish = [
             { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['QUICKGUIDE ZUM STEPSTAR'] } } },
             { navigateTo: 'ProductDeatilVideo', image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['QUICKGUIDE ZUM»ARCUS« P | »ARCUS« PK'] } } },
             { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH RADMULDE'] } } }
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH WHEEL RECESS'] } } }
 
         ],
         listTransport: true,
@@ -995,7 +995,7 @@ export const dataSetTransportProductsEnglish = [
     { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['QUICKGUIDE ZUM STEPSTAR'] } } },
     { navigateTo: 'ProductDeatilVideo', image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['QUICKGUIDE ZUM»ARCUS« P | »ARCUS« PK'] } } },
     { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH RADMULDE'] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH WHEEL RECESS'] } } },
 
     {
         image: Images.banner10, text: 'LOWLOADER TRAILERS', navigateTo: 'ProductDeatilMoreInfo',
@@ -1225,8 +1225,8 @@ export const dataSetTransportServiceEnglish = [
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT »ARCUS« P | »ARCUS« PK'] } } },
                     { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH RADMULDE'], 
-                    otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« WITH RADMULDE'] } } }
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH WHEEL RECESS'], 
+                    otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« WITH WHEEL RECESS'] } } }
 
                 ],
                 listTransport: true,
@@ -1280,8 +1280,8 @@ export const dataSetTransportServiceEnglish = [
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['QUICKGUIDE ZUM»ARCUS« P | »ARCUS« PK'] } } },
             { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH RADMULDE'], 
-            otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« WITH RADMULDE'] } } }
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH WHEEL RECESS'], 
+            otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« WITH WHEEL RECESS'] } } }
 
         ],
         listTransport: true,
@@ -1294,8 +1294,8 @@ export const dataSetTransportServiceEnglish = [
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['QUICKGUIDE ZUM»ARCUS« P | »ARCUS« PK'] } } },
     { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH RADMULDE'], 
-    otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« WITH RADMULDE'] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH WHEEL RECESS'], 
+    otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« WITH WHEEL RECESS'] } } },
 
     {
         image: Images.banner10, text: 'LOWLOADER TRAILERS', navigateTo: 'ProductDeatilMoreInfo',

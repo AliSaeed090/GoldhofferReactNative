@@ -292,7 +292,7 @@ export default function ProductDeatilVideoLink(props) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/STZ-L_STZ-H_MPA_DE-A4.pdf"
             }
         }
-        else if (txt == "PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE" || txt == "PRODUCT BROCHURE STZ-L | »MPA« WITH RADMULDE") {
+        else if (txt == "PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE" || txt == "PRODUCT BROCHURE STZ-L | »MPA« WITH WHEEL RECESS") {
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/STZ-L_STZ-H_MPA_EN-A4.pdf"
             }
@@ -443,9 +443,14 @@ export default function ProductDeatilVideoLink(props) {
         }
         else if (txt == "PRODUKT PROSPEKT RA 2" || txt == "PRODUCT BROCHURE RA 2") {
 
-            return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_DE.pdf"
+            if (isEnglish) {
+                return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_EN.pdf"
+            }
+            else {
+                return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_DE.pdf"
+            }
         }
-        else if (txt == "PRODUKT PROSPEKT RA 3") {
+        else if (txt == "PRODUKT PROSPEKT RA 3" || "PRODUCT BROCHURE RA 3") {
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_EN.pdf"
             }
@@ -493,6 +498,7 @@ export default function ProductDeatilVideoLink(props) {
         else if (txt == "DATENBLÄTTER »SHERPA« D" || txt == "TECHNICAL DATA »SHERPA« D") {
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_SHERPA-FAMILY_EN-met_A4.pdf"
+               
             }
             else {
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_SHERPA-FAMILY_DE-met_A4.pdf"
@@ -509,6 +515,7 @@ export default function ProductDeatilVideoLink(props) {
         else if (txt == "DATENBLÄTTER »SHERPA« E" || txt == "TECHNICAL DATA »SHERPA« E") {
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_SHERPA-E-FAMILY_EN-met_A4.pdf"
+                
             }
             else {
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_SHERPA-E-FAMILY_EN-met_A4.pdf"
@@ -636,7 +643,7 @@ export default function ProductDeatilVideoLink(props) {
             }
 
         }
-        else if (txt == "'QUICKGUIDE ZUM STEPSTAR" || txt == "'QUICKGUIDE ZUM STEPSTAR") {
+        else if (txt == "'QUICKGUIDE ZUM STEPSTAR" || txt == "QUICKGUIDE ZUM STEPSTAR") {
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin/downloads/prospekte/Quickguide_Stepstar_DE-EN.pdf"
             }
@@ -717,7 +724,7 @@ export default function ProductDeatilVideoLink(props) {
             return "PLPP-gBF73hLOEIWZR1YGRwz4VKwUcRseY"
 
         }
-        else if (txt == "STZ-L | »MPA« MIT RADMULDE"  || txt == "STZ-L | »MPA« WITH RADMULDE" ) {
+        else if (txt == "STZ-L | »MPA« MIT RADMULDE"  || txt == "STZ-L | »MPA« WITH WHEEL RECESS" ) {
             return "PLPP-gBF73hLOEIWZR1YGRwz4VKwUcRseY"
 
 
@@ -862,7 +869,7 @@ export default function ProductDeatilVideoLink(props) {
             return "PLPP-gBF73hLMY5mVFN7Xmbv-V5sFwDsDK"
 
         }
-        else if (txt == "STZ-L | »MPA« MIT RADMULDE" ||txt == "STZ-L | »MPA« WITH RADMULDE"  ) {
+        else if (txt == "STZ-L | »MPA« MIT RADMULDE" ||txt == "STZ-L | »MPA« WITH WHEEL RECESS"  ) {
             return "PLPP-gBF73hLNkudzg1wSBxOeCCMK9Aj2n"
         }
         else if (txt == "STZ-VL | STZ-VH") {
