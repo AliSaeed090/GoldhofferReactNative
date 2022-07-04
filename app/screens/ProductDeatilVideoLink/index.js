@@ -242,7 +242,7 @@ export default function ProductDeatilVideoLink(props) {
     }
     const getPdfLink = (txt) => {
         console.log({ txt })
-        txt = txt.trim()
+        txt=txt.trim()
         if (txt === 'PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H' || txt === 'PRODUCT BROCHURE SPZ-L | SPZ-GL | SPZ-H') {
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/SPZ_EN-A4.pdf"
@@ -254,7 +254,7 @@ export default function ProductDeatilVideoLink(props) {
 
         }
         else if (txt === "PRODUKT PROSPEKT SPZ-GP" || txt === "PRODUCT BROCHURE SPZ-GP") {
-           
+          
             if (isEnglish) {
                 return  "https://www.goldhofer.com/fileadmin//downloads/prospekte/SPZ_EN-A4.pdf"
             }
@@ -441,7 +441,17 @@ export default function ProductDeatilVideoLink(props) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/Faktor5_Faktor5-5_DE-A4.pdf"
             }
         }
+        else if (txt == "PRODUKT PROSPEKT »BLADES«" || txt == "PRODUCT BROCHURE »BLADES«") {
+            
+            if (isEnglish) {
+                return "https://www.goldhofer.com/fileadmin//downloads/prospekte/BladeS_EN-A4.pdf"
+            } else {
+                return "https://www.goldhofer.com/fileadmin//downloads/prospekte/BladeS_DE-A4.pdf"
+            }
+
+        }
         else if (txt == "PRODUKT PROSPEKT RA 2" || txt == "PRODUCT BROCHURE RA 2") {
+            alert(1)
 
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_EN.pdf"
@@ -450,7 +460,8 @@ export default function ProductDeatilVideoLink(props) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_DE.pdf"
             }
         }
-        else if (txt == "PRODUKT PROSPEKT RA 3" || "PRODUCT BROCHURE RA 3") {
+        else if (txt == "PRODUKT PROSPEKT RA 3" || txt =="PRODUCT BROCHURE RA 3") {
+            alert(2)
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_EN.pdf"
             }
@@ -459,24 +470,16 @@ export default function ProductDeatilVideoLink(props) {
             }
         }
         else if (txt == "PRODUKT PROSPEKT RA 4" || txt == "PRODUCT BROCHURE RA 4") {
+            alert(3)
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_EN.pdf"
             }
             else {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_DE.pdf"
             }
-        }
-        // else if(txt=="QPRODUKT PROSPEKT »BLADEX«"){
-        //     return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_DE.pdf"
-        // }
-        else if (txt == "PRODUKT PROSPEKT »BLADES«" || txt == "PRODUCT BROCHURE »BLADES«") {
-            if (isEnglish) {
-                return "https://www.goldhofer.com/fileadmin//downloads/prospekte/BladeS_EN-A4.pdf"
-            } else {
-                return "https://www.goldhofer.com/fileadmin//downloads/prospekte/BladeS_DE-A4.pdf"
-            }
-
-        }
+        } 
+ 
+        
 
         else if (txt == "PRODUKT PROSPEKT STEPSTAR" || txt == "PRODUCT BROCHURE STEPSTAR") {
             if (isEnglish) {
@@ -498,7 +501,6 @@ export default function ProductDeatilVideoLink(props) {
         else if (txt == "DATENBLÄTTER »SHERPA« D" || txt == "TECHNICAL DATA »SHERPA« D") {
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_SHERPA-FAMILY_EN-met_A4.pdf"
-               
             }
             else {
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_SHERPA-FAMILY_DE-met_A4.pdf"
@@ -515,7 +517,6 @@ export default function ProductDeatilVideoLink(props) {
         else if (txt == "DATENBLÄTTER »SHERPA« E" || txt == "TECHNICAL DATA »SHERPA« E") {
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_SHERPA-E-FAMILY_EN-met_A4.pdf"
-                
             }
             else {
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_SHERPA-E-FAMILY_EN-met_A4.pdf"
@@ -529,16 +530,17 @@ export default function ProductDeatilVideoLink(props) {
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/E-MOBILITY_DE-met_A4.pdf"
             }
         }
-        else if (txt == "PRODUKT PROSPEKT »BISON« D FAMILIE" || txt == "PRODUCT BROCHURE »BISON« D FAMILIE") {
+        
+        else if (txt == "PRODUKT PROSPEKT »BISON« D FAMILIE" ||txt == "PRODUCT BROCHURE »BISON« D FAMILY") {
             if (isEnglish) {
-                return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/BISON-FAMILY_EN-met_A4.pdf"
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/BISON-FAMILY_EN-met_A4.pdf"
             }
-            else {
+            else{
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/BISON-FAMILY_DE-met_A4.pdf"
             }
 
         }
-        else if (txt == "DATENBLÄTTER »BISON« D FAMILIE" || txt == "TECHNICAL DATA »BISON« D FAMILIE") {
+        else if (txt == "DATENBLÄTTER »BISON« D FAMILIE" ||txt == "TECHNICAL DATA »BISON« D FAMILY") {
             setShowLinkList(!showLinkList)
             let arr = [
                 { name: '»BISON« D 370', link: 'https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-D370_EN-met_A4.pdf' },
@@ -549,17 +551,17 @@ export default function ProductDeatilVideoLink(props) {
 
             setLinkList([...arr])
             return 'ss'
-        }
-        else if (txt == "PRODUKT PROSPEKT  »BISON« E FAMILIE" || txt == "PRODUCT BROCHURE »BISON« E FAMILIE") {
-            if (isEnglish) {
+        } 
+        else if (txt == "PRODUKT PROSPEKT  »BISON« E FAMILIE"||txt == "PRODUCT BROCHURE  »BISON« E FAMILY") {
+            if(isEnglish){
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/BISON-FAMILY_EN-met_A4.pdf"
             }
-            else {
+            else{
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/BISON-FAMILY_DE-met_A4.pdf"
             }
-
+           
         }
-        else if (txt == "DATENBLÄTTER »BISON« E FAMILIE" || txt == "TECHNICAL DATA »BISON« E FAMILIE") {
+        else if (txt == "DATENBLÄTTER »BISON« E FAMILIE" ||txt == "TECHNICAL DATA »BISON« E FAMILY") {
             setShowLinkList(!showLinkList)
             let arr = [
                 { link: "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_BISON-E370_EN-met_A4.pdf", name: '»BISON« E 370' },
@@ -570,84 +572,85 @@ export default function ProductDeatilVideoLink(props) {
             setLinkList([...arr])
             return 'ss'
         }
-        else if (txt == "PRODUKT PROSPEKT  »PHOENIX« AST-2P/X" || txt == "PRODUCT BROCHURE »PHOENIX« AST-2P/X") {
-            if (isEnglish) {
+        else if (txt == "PRODUKT PROSPEKT  »PHOENIX« AST-2P/X" ||txt == "PRODUCT BROCHURE  »PHOENIX« AST-2P/X" ) {
+            if(isEnglish){
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/PHOENIX-FAMILIE_EN-met_A4.pdf"
-            } else {
-                return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/PHOENIX-FAMILIE_DE-met_A4.pdf"
+            }else{
+                return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/PHOENIX-FAMILIE_DE-met_A4.pdf" 
             }
-
+          
         }
         else if (txt == "DATENBLÄTTER »PHOENIX« AST-2P/X" || txt == "TECHNICAL DATA »PHOENIX« AST-2P/X") {
-            if (isEnglish) {
+            if(isEnglish){
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_PHOENIX_AST-2P-X_EN-met_A4.pdf"
             }
-            else {
+            else{
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_PHOENIX_AST-2P-X_EN-met_A4.pdf"
             }
-
+          
         }
-        else if (txt == "PRODUKT PROSPEKT »PHOENIX« AST-2E" || txt == "PRODUCT BROCHURE »PHOENIX« AST-2E") {
-            if (isEnglish) {
+        else if (txt == "PRODUKT PROSPEKT »PHOENIX« AST-2E" ||txt == "PRODUCT BROCHURE »PHOENIX« AST-2E" ) {
+            if(isEnglish){
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/PHOENIX-FAMILIE_EN-met_A4.pdf"
 
-            } else {
+            }else{
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/PHOENIX-FAMILIE_DE-met_A4.pdf"
 
             }
-
+           
         }
         else if (txt == "DATENBLÄTTER »PHOENIX« AST-2E" || txt == "TECHNICAL DATA »PHOENIX« AST-2E") {
-            if (isEnglish) {
+            if(isEnglish){
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_PHOENIX_AST-2E_EN-met_A4.pdf"
             }
-            else {
+            else{
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_PHOENIX_AST-2E_EN-met_A4.pdf"
             }
-
+          
         }
 
         else if (txt == "PRODUKT PROSPEKT AST-1X" || txt == "PRODUCT BROCHURE AST-1X") {
-            if (isEnglish) {
+            if(isEnglish){
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/AST-1X_EN-met_A4.pdf"
-            } else {
+            }else{
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/AST-1X_DE-met_A4.pdf"
             }
-
-
-        }
-
-        else if (txt == "DATENBLÄTTER AST-1X" || txt == "TECHNICAL DATA AST-1X") {
-            if (isEnglish) {
-                return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_AST-1X_EN-met_A4.pdf"
-            } else {
-                return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_AST-1X_EN-met_A4.pdf"
-            }
+           
 
         }
 
-        else if (txt == "PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN" || txt == "PRODUCT BROCHURE DOLLIES KLEINE SCHÄDEN") {
-            if (isEnglish) {
-                return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/ARTS_EN-met_A4.pdf"
+        else if (txt == "DATENBLÄTTER AST-1X" ||txt == "TECHNICAL DATA AST-1X" ) {
+            if(isEnglish){
+                return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_AST-1X_EN-met_A4.pdf"
+            }else{
+                return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_AST-1X_EN-met_A4.pdf"
             }
-            else {
+        
+        }
+
+        else if (txt == "PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN" ||txt == "PRODUCT BROCHURE DOLLIES - MINOR DAMAGE"  ) {
+            if(isEnglish){
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/ARTS_EN-met_A4.pdf"
+            }
+            else{
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/ARTS_DE-met_A4.pdf"
             }
         }
+        
 
-        else if (txt == "PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN" || txt == "PRODUCT BROCHURE KOMBINATIONSSYSTEME GROSSE SCHÄDEN") {
-            if (isEnglish) {
-                return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/ARTS_EN-met_A4.pdf"
-            } else {
-                return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/ARTS_DE-met_A4.pdf"
-            }
-
+        else if (txt == "PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN" || txt == "PRODUCT BROCHURE COMBINATION SYSTEMS - MAJOR DAMAGE") {
+           if(isEnglish){
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/ARTS_EN-met_A4.pdf"
+           }else{
+            return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/ARTS_DE-met_A4.pdf"
+           }
+           
         }
-        else if (txt == "'QUICKGUIDE ZUM STEPSTAR" || txt == "QUICKGUIDE ZUM STEPSTAR") {
-            if (isEnglish) {
-                return "https://www.goldhofer.com/fileadmin/downloads/prospekte/Quickguide_Stepstar_DE-EN.pdf"
+        else if (txt == "'QUICKGUIDE ZUM STEPSTAR" || txt == "'QUICKGUIDE ZUM STEPSTAR") {
+            if(isEnglish){
+            return "https://www.goldhofer.com/fileadmin/downloads/prospekte/Quickguide_Stepstar_DE-EN.pdf"
             }
-            else {
+            else{
                 return "https://www.goldhofer.com/fileadmin/downloads/prospekte/Quickguide_Stepstar_DE-EN.pdf"
             }
         }
