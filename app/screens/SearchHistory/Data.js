@@ -200,26 +200,26 @@ export const dataSetTransportProducts = [
 
             {
                 image: Images.banner61, text: 'FTV 550', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550'], otherData: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'] }, videoId: "9RM0QLDti1A", }
+                data: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550',  "DATENBLÄTTER FTV 550"], otherData: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'] }, videoId: "9RM0QLDti1A", }
             },
             {
                 image: Images.banner63, text: '»FAKTOR« 5 | »FAKTOR« 5.5', navigateTo: 'ProductDeatilMoreInfo',
                 data: {
-                    image: Images.banner64, text: ['PRODUKT PROSPEKT »FAKTOR« 5 | »FAKTOR« 5.5'], otherData: { image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
+                    image: Images.banner64, text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], otherData: { image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
                 },
 
             },
             {
                 image: Images.banner65, text: 'RA 2', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner66, text: ['PRODUKT PROSPEKT RA 2'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", } }
+                data: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", } }
             },
             {
-                image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['PRODUKT PROSPEKT RA 3'], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", } },
+                image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", } },
 
             },
             {
                 image: Images.banner69, text: 'RA 4', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner70, text: ['PRODUKT PROSPEKT RA 4'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", } }
+                data: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", } }
             },
             {
                 image: Images.banner71, text: '»BLADEX«', navigateTo: 'ProductDeatilMoreInfo',
@@ -238,26 +238,26 @@ export const dataSetTransportProducts = [
 
     {
         image: Images.banner61, text: 'FTV 550', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550'], otherData: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'] }, videoId: "9RM0QLDti1A", }
+        data: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550', "DATENBLÄTTER FTV 550"], otherData: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'] }, videoId: "9RM0QLDti1A", }
     },
     {
         image: Images.banner63, text: '»FAKTOR« 5 | »FAKTOR« 5.5', navigateTo: 'ProductDeatilMoreInfo',
         data: {
-            image: Images.banner64, text: ['PRODUKT PROSPEKT »FAKTOR« 5 | »FAKTOR« 5.5'], otherData: { image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
+            image: Images.banner64, text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], otherData: { image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
         },
 
     },
     {
         image: Images.banner65, text: 'RA 2', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner66, text: ['PRODUKT PROSPEKT RA 2'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", } }
+        data: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", } }
     },
     {
-        image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['PRODUKT PROSPEKT RA 3'], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", } },
+        image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", } },
 
     },
     {
         image: Images.banner69, text: 'RA 4', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner70, text: ['PRODUKT PROSPEKT RA 4'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", } }
+        data: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", } }
     },
     {
         image: Images.banner71, text: '»BLADEX«', navigateTo: 'ProductDeatilMoreInfo',
@@ -545,24 +545,24 @@ export const dataSetTransportService = [
                 image: Images.banner63, text: '»FAKTOR« 5 | »FAKTOR« 5.5', navigateTo: 'ProductDeatilMoreInfo',
                 data: {
                     image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], 
-                    otherData: { image: Images.banner64, text: ['PRODUKT PROSPEKT »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
+                    otherData: { image: Images.banner64, text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
                 },
 
             },
             {
                 image: Images.banner65, text: 'RA 2', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", 
-                otherData: { image: Images.banner66, text: ['PRODUKT PROSPEKT RA 2'], videoId: "9RM0QLDti1A", } }
+                otherData: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", } }
             },
             {
                 image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", 
-                otherData: { image: Images.banner68, text: ['PRODUKT PROSPEKT RA 3'], videoId: "eP_YC0cr0n0", } },
+                otherData: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", } },
 
             },
             {
                 image: Images.banner69, text: 'RA 4', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", 
-                otherData: { image: Images.banner70, text: ['PRODUKT PROSPEKT RA 4'], videoId: "9RM0QLDti1A", } }
+                otherData: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", } }
             },
             {
                 image: Images.banner71, text: '»BLADEX«', navigateTo: 'ProductDeatilMoreInfo',
@@ -584,30 +584,30 @@ export const dataSetTransportService = [
     {
         image: Images.banner61, text: 'FTV 550', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
         data: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'], 
-        otherData: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550'] }, videoId: "9RM0QLDti1A", }
+        otherData: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550', "DATENBLÄTTER FTV 550"] }, videoId: "9RM0QLDti1A", }
     },
     {
         image: Images.banner63, text: '»FAKTOR« 5 | »FAKTOR« 5.5', navigateTo: 'ProductDeatilMoreInfo',
         data: {
             image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], 
-            otherData: { image: Images.banner64, text: ['PRODUKT PROSPEKT »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
+            otherData: { image: Images.banner64, text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
         },
 
     },
     {
         image: Images.banner65, text: 'RA 2', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
         data: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", 
-        otherData: { image: Images.banner66, text: ['PRODUKT PROSPEKT RA 2'], videoId: "9RM0QLDti1A", } }
+        otherData: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", } }
     },
     {
         image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", 
-        otherData: { image: Images.banner68, text: ['PRODUKT PROSPEKT RA 3'], videoId: "eP_YC0cr0n0", } },
+        otherData: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", } },
 
     },
     {
         image: Images.banner69, text: 'RA 4', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
         data: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", 
-        otherData: { image: Images.banner70, text: ['PRODUKT PROSPEKT RA 4'], videoId: "9RM0QLDti1A", } }
+        otherData: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", } }
     },
     {
         image: Images.banner71, text: '»BLADEX«', navigateTo: 'ProductDeatilMoreInfo',
@@ -639,7 +639,7 @@ export const dataSetAirportProducts = [
                 image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: {
                     image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',]
-                    , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT', 'SERVICE-PROSPEKT'] }
+                    , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',] }
 
                 }
             }
@@ -658,7 +658,7 @@ export const dataSetAirportProducts = [
         image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
         data: {
             image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',]
-            , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT', 'SERVICE-PROSPEKT'] }
+            , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',] }
 
         }
     },
@@ -770,7 +770,7 @@ export const dataSetAirportService = [
             {
                 image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: {
-                    image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT' ,'SERVICE-PROSPEKT']
+                    image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT' ]
                     , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',] }
 
                 }
@@ -1099,26 +1099,26 @@ export const dataSetTransportProductsEnglish = [
 
             {
                 image: Images.banner61, text: 'FTV 550', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550'], otherData: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'] }, videoId: "9RM0QLDti1A", }
+                data: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550', "DATENBLÄTTER FTV 550"], otherData: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'] }, videoId: "9RM0QLDti1A", }
             },
             {
                 image: Images.banner63, text: '»FAKTOR« 5 | »FAKTOR« 5.5', navigateTo: 'ProductDeatilMoreInfo',
                 data: {
-                    image: Images.banner64, text: ['PRODUKT PROSPEKT »FAKTOR« 5 | »FAKTOR« 5.5'], otherData: { image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
+                    image: Images.banner64, text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], otherData: { image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
                 },
 
             },
             {
                 image: Images.banner65, text: 'RA 2', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner66, text: ['PRODUKT PROSPEKT RA 2'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", } }
+                data: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", } }
             },
             {
-                image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['PRODUKT PROSPEKT RA 3'], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", } },
+                image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", } },
 
             },
             {
                 image: Images.banner69, text: 'RA 4', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner70, text: ['PRODUKT PROSPEKT RA 4'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", } }
+                data: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", } }
             },
             {
                 image: Images.banner71, text: '»BLADEX«', navigateTo: 'ProductDeatilMoreInfo',
@@ -1137,26 +1137,26 @@ export const dataSetTransportProductsEnglish = [
 
     {
         image: Images.banner61, text: 'FTV 550', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550'], otherData: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'] }, videoId: "9RM0QLDti1A", }
+        data: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550', "DATENBLÄTTER FTV 550"], otherData: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'] }, videoId: "9RM0QLDti1A", }
     },
     {
         image: Images.banner63, text: '»FAKTOR« 5 | »FAKTOR« 5.5', navigateTo: 'ProductDeatilMoreInfo',
         data: {
-            image: Images.banner64, text: ['PRODUKT PROSPEKT »FAKTOR« 5 | »FAKTOR« 5.5'], otherData: { image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
+            image: Images.banner64, text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], otherData: { image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
         },
 
     },
     {
         image: Images.banner65, text: 'RA 2', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner66, text: ['PRODUKT PROSPEKT RA 2'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", } }
+        data: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", } }
     },
     {
-        image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['PRODUKT PROSPEKT RA 3'], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", } },
+        image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", } },
 
     },
     {
         image: Images.banner69, text: 'RA 4', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner70, text: ['PRODUKT PROSPEKT RA 4'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", } }
+        data: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", } }
     },
     {
         image: Images.banner71, text: '»BLADEX«', navigateTo: 'ProductDeatilMoreInfo',
@@ -1438,30 +1438,30 @@ export const dataSetTransportServiceEnglish = [
             {
                 image: Images.banner61, text: 'FTV 550', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'], 
-                otherData: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550'] }, videoId: "9RM0QLDti1A", }
+                otherData: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550', "DATENBLÄTTER FTV 550"] }, videoId: "9RM0QLDti1A", }
             },
             {
                 image: Images.banner63, text: '»FAKTOR« 5 | »FAKTOR« 5.5', navigateTo: 'ProductDeatilMoreInfo',
                 data: {
                     image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], 
-                    otherData: { image: Images.banner64, text: ['PRODUKT PROSPEKT »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
+                    otherData: { image: Images.banner64, text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
                 },
 
             },
             {
                 image: Images.banner65, text: 'RA 2', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", 
-                otherData: { image: Images.banner66, text: ['PRODUKT PROSPEKT RA 2'], videoId: "9RM0QLDti1A", } }
+                otherData: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", } }
             },
             {
                 image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", 
-                otherData: { image: Images.banner68, text: ['PRODUKT PROSPEKT RA 3'], videoId: "eP_YC0cr0n0", } },
+                otherData: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", } },
 
             },
             {
                 image: Images.banner69, text: 'RA 4', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", 
-                otherData: { image: Images.banner70, text: ['PRODUKT PROSPEKT RA 4'], videoId: "9RM0QLDti1A", } }
+                otherData: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", } }
             },
             {
                 image: Images.banner71, text: '»BLADEX«', navigateTo: 'ProductDeatilMoreInfo',
@@ -1483,30 +1483,30 @@ export const dataSetTransportServiceEnglish = [
     {
         image: Images.banner61, text: 'FTV 550', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
         data: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'], 
-        otherData: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550'] }, videoId: "9RM0QLDti1A", }
+        otherData: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550', "DATENBLÄTTER FTV 550"] }, videoId: "9RM0QLDti1A", }
     },
     {
         image: Images.banner63, text: '»FAKTOR« 5 | »FAKTOR« 5.5', navigateTo: 'ProductDeatilMoreInfo',
         data: {
             image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], 
-            otherData: { image: Images.banner64, text: ['PRODUKT PROSPEKT »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
+            otherData: { image: Images.banner64, text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
         },
 
     },
     {
         image: Images.banner65, text: 'RA 2', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
         data: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", 
-        otherData: { image: Images.banner66, text: ['PRODUKT PROSPEKT RA 2'], videoId: "9RM0QLDti1A", } }
+        otherData: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", } }
     },
     {
         image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", 
-        otherData: { image: Images.banner68, text: ['PRODUKT PROSPEKT RA 3'], videoId: "eP_YC0cr0n0", } },
+        otherData: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", } },
 
     },
     {
         image: Images.banner69, text: 'RA 4', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
         data: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", 
-        otherData: { image: Images.banner70, text: ['PRODUKT PROSPEKT RA 4'], videoId: "9RM0QLDti1A", } }
+        otherData: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", } }
     },
     {
         image: Images.banner71, text: '»BLADEX«', navigateTo: 'ProductDeatilMoreInfo',
@@ -1538,7 +1538,7 @@ export const dataSetAirportProductsEnglish = [
                 image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: {
                     image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',]
-                    , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT', 'SERVICE-PROSPEKT'] }
+                    , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',] }
 
                 }
             }
@@ -1557,7 +1557,7 @@ export const dataSetAirportProductsEnglish = [
         image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
         data: {
             image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',]
-            , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT', 'SERVICE-PROSPEKT'] }
+            , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',] }
 
         }
     },
@@ -1669,7 +1669,7 @@ export const dataSetAirportServiceEnglish = [
             {
                 image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: {
-                    image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT' ,'SERVICE-PROSPEKT']
+                    image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT' ]
                     , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',] }
 
                 }
