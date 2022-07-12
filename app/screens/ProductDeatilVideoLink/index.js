@@ -461,7 +461,7 @@ export default function ProductDeatilVideoLink(props) {
 
         }
         else if (txt == "DATENBLÄTTER RA 2" || txt == "TECHNICAL DATA RA 2") {
-            alert(1)
+            
 
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_EN.pdf"
@@ -471,7 +471,7 @@ export default function ProductDeatilVideoLink(props) {
             }
         }
         else if (txt == "DATENBLÄTTER RA 3" || txt =="TECHNICAL DATA RA 3") {
-            alert(2)
+            
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_EN.pdf"
             }
@@ -480,7 +480,7 @@ export default function ProductDeatilVideoLink(props) {
             }
         }
         else if (txt == "DATENBLÄTTER RA 4" || txt == "TECHNICAL DATA RA 4") {
-            alert(3)
+           
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_EN.pdf"
             }
