@@ -60,7 +60,7 @@ const Shop = (props) => {
 
   useFocusEffect(() => {
     let url=  languageSelectedBysUser === "en" ? "https://e-shop.goldhofer.com/index.php?lang=1&cl=account" :"https://e-shop.goldhofer.com/mein-konto/"
-    Linking.openURL("https://e-shop.goldhofer.com/mein-konto/")
+    Linking.openURL(url)
     // 
     navigation.goBack("Home")
   }, [])

@@ -2,13 +2,14 @@ import { Images } from "@config";
 
 
 export const listTransportProductGerman = [
-  // {
-  //   image: undefined, text: 'TRAILSTAR', searchText:'PRODUKT PROSPEKT »TRAILSTAR«',   data: [{
-  //     image: undefined, text: 'TRAILSTAR', listTransport: true,
-  //     data: { image: undefined, text: ['PRODUKT PROSPEKT »TRAILSTAR«'],videoId: "9RM0QLDti1A",otherData:{  image: undefined, text: ['QUICKGUIDE ZUM »TRAILSTAR«'], videoId: "9RM0QLDti1A", }}
-  //   },
-  //   ]
-  // },
+  {
+    image: Images.banner95, text: 'TRAILSTAR', searchText:'QUICKGUIDE  »TRAILSTAR«',   data: [{
+      image: Images.banner95, text: 'TRAILSTAR', listTransport: true,
+      data: { image: Images.banner95, text: ['QUICKGUIDE »TRAILSTAR«'],videoId: "9RM0QLDti1A",
+      otherData:{  image: Images.banner95, text: ['QUICKGUIDE »TRAILSTAR«'], videoId: "9RM0QLDti1A", }}
+    },
+    ]
+  },
   {
     image: Images.banner1, text: 'SATTELANHÄNGER', searchText: 'PRITSCHENAUFLIEGER SATTELANHÄNGER SPZ-L | SPZ-GL | SPZ-H SPZ-GP »VENTUM« SEMIAUFLIEGER STEPSTAR »ARCUS« P | »ARCUS« PK STZ-L | STZ-H | »MPA« STZ-L | »MPA« MIT RADMULDE TIEFBETTAUFLIEGER STZ-VL | STZ-VH »MPA« V STZ-VP (245) STZ-VP (285)',
     data: [
@@ -393,13 +394,14 @@ export const listTransportProductGerman = [
 ]
 
 export const listTransportProductEnglish = [
-  // {
-  //   image: undefined, text: 'TRAILSTAR', searchText:'PRODUCT BROCHURE »TRAILSTAR«',   data: [{
-  //     image: undefined, text: 'TRAILSTAR', listTransport: true,
-  //     data: { image: undefined, text: ['PRODUCT BROCHURE »TRAILSTAR«'],videoId: "9RM0QLDti1A",otherData:{  image: undefined, text: ['QUICKGUIDE ZUM »TRAILSTAR«'], videoId: "9RM0QLDti1A", }}
-  //   },
-  //   ]
-  // },
+  {
+    image: Images.banner95, text: 'TRAILSTAR', searchText:'QUICKGUIDE  »TRAILSTAR«',   data: [{
+      image: Images.banner95, text: 'TRAILSTAR', listTransport: true,
+      data: { image: Images.banner95, text: ['QUICKGUIDE »TRAILSTAR«'],videoId: "9RM0QLDti1A",
+      otherData:{  image: Images.banner95, text: ['QUICKGUIDE »TRAILSTAR«'], videoId: "9RM0QLDti1A", }}
+    },
+    ]
+  },
   {
     image: Images.banner1, text: 'SEMI-TRAILERS', searchText: 'FLATBED SEMI-TRAILERS SEMI-TRAILERS SPZ-L | SPZ-GL | SPZ-H SPZ-GP »VENTUM« SEMI LOWLOADERS STEPSTAR »ARCUS« P | »ARCUS« PK STZ-L | STZ-H | »MPA« STZ-L | »MPA« WITH WHEEL RECESS LOWLOADER TRAILERS STZ-VL | STZ-VH »MPA« V STZ-VP (245) STZ-VP (285)',
     data: [
@@ -782,13 +784,14 @@ export const listTransportProductEnglish = [
   // }]
 ]
 export const listTransportServicesGerman = [
-  // {
-  //   image: undefined, text: 'TRAILSTAR', searchText:'PRODUKT PROSPEKT »TRAILSTAR«', data: [{
-  //     image: undefined, text: 'TRAILSTAR', listTransport: true,
-  //     data: { image: undefined, text: ['QUICKGUIDE ZUM »TRAILSTAR«'], videoId: "9RM0QLDti1A",  otherData:{ image: undefined, text: ['PRODUKT PROSPEKT »TRAILSTAR«'],videoId: "9RM0QLDti1A",},}
-  //   },
-  //   ]
-  // },
+  {
+    image: Images.banner95, text: 'TRAILSTAR', searchText:'QUICKGUIDE  »TRAILSTAR«',   data: [{
+      image: Images.banner95, text: 'TRAILSTAR', listTransport: true,
+      data: { image: Images.banner95, text: ['QUICKGUIDE »TRAILSTAR«'],videoId: "9RM0QLDti1A",
+      otherData:{  image: Images.banner95, text: ['QUICKGUIDE »TRAILSTAR«'], videoId: "9RM0QLDti1A", }}
+    },
+    ]
+  },
   {
     image: Images.banner1, text: 'SATTELANHÄNGER', searchText: 'PRITSCHENAUFLIEGER SATTELANHÄNGER SPZ-L | SPZ-GL | SPZ-H SPZ-GP »VENTUM« SEMIAUFLIEGER STEPSTAR »ARCUS« P | »ARCUS« PK STZ-L | STZ-H | »MPA« STZ-L | »MPA« MIT RADMULDE TIEFBETTAUFLIEGER STZ-VL | STZ-VH »MPA« V STZ-VP (245) STZ-VP (285)',
     data: [
@@ -1200,13 +1203,14 @@ export const listTransportServicesGerman = [
 ]
 
 export const listTransportServicesEnglish = [
-  // {
-  //   image: undefined, text: 'TRAILSTAR', searchText:'PRODUCT BROCHURE »TRAILSTAR«', data: [{
-  //     image: undefined, text: 'TRAILSTAR', listTransport: true,
-  //     data: { image: undefined, text: ['QUICKGUIDE ZUM »TRAILSTAR«'], videoId: "9RM0QLDti1A",  otherData:{ image: undefined, text: ['PRODUCT BROCHURE »TRAILSTAR«'],videoId: "9RM0QLDti1A",},}
-  //   },
-  //   ]
-  // },
+  {
+    image: Images.banner95, text: 'TRAILSTAR', searchText:'QUICKGUIDE  »TRAILSTAR«',   data: [{
+      image: Images.banner95, text: 'TRAILSTAR', listTransport: true,
+      data: { image: Images.banner95, text: ['QUICKGUIDE »TRAILSTAR«'],videoId: "9RM0QLDti1A",
+      otherData:{  image: Images.banner95, text: ['QUICKGUIDE »TRAILSTAR«'], videoId: "9RM0QLDti1A", }}
+    },
+    ]
+  },
   {
     image: Images.banner1, text: 'SEMI-TRAILERS', searchText: 'FLATBED SEMI-TRAILERS SEMI-TRAILERS SPZ-L | SPZ-GL | SPZ-H SPZ-GP »VENTUM« SEMI LOWLOADERS STEPSTAR »ARCUS« P | »ARCUS« PK STZ-L | STZ-H | »MPA« STZ-L | »MPA« MIT RADMULDE LOWLOADER TRAILERS STZ-VL | STZ-VH »MPA« V STZ-VP (245) STZ-VP (285)',
     data: [

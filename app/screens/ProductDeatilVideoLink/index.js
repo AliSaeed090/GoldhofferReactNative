@@ -664,6 +664,15 @@ export default function ProductDeatilVideoLink(props) {
                 return "https://www.goldhofer.com/fileadmin/downloads/prospekte/Quickguide_Stepstar_DE-EN.pdf"
             }
         }
+        else if (txt == "QUICKGUIDE »TRAILSTAR«" ) {
+            if(isEnglish){
+            return "https://www.goldhofer.com/fileadmin/downloads/prospekte/Qucikguide_Trailstar_DE-EN.pdf"
+            }
+            else{
+                return "https://www.goldhofer.com/fileadmin/downloads/prospekte/Qucikguide_Trailstar_DE-EN.pdf"
+            }
+        }
+
 
     }
     const openPdf = (txt) => {
