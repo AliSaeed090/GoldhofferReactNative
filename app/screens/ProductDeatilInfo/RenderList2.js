@@ -34,7 +34,7 @@ export default function RenderList2({ item }) {
 
     return (
         <TouchableOpacity onPress={() => onPressFunc(item)} style={{ width: '100%', height: 250, backgroundColor: '#D2D9DE' ,  marginBottom:item.linking?7:null}}>
-            <Image source={item.image} style={{...styles.banner, height:item.linking?250:"75%"}} resizeMode={item.linking?"cover":"contain"} />
+            <Image source={item.image} style={{...styles.banner, height:item.linking?250: item.text==="TRAILSTAR"?"100%":"75%"}} resizeMode={item.linking?"cover": item.text==="TRAILSTAR"?"cover":"contain"} />
             <View 
                 style={{ width: '100%', position: 'absolute', bottom: 0, backgroundColor: 'black', flexDirection: 'row', padding: 12, justifyContent: 'center', alignItems: 'center' }}>
                 <View style={{ width: "90%", justifyContent: 'center', alignItems: 'flex-start' }}>
