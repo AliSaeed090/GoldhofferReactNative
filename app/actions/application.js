@@ -35,7 +35,11 @@ const setContact = contact => {
 };
 
 
-
+export const setPrivacyAccepted = () => {
+  return {
+    type: actionTypes.SET_PRIVACY_POLICY_ACCEPTED,
+  };
+};
 
 export const onChangeTheme = theme => dispatch => {
   dispatch(changeTheme(theme));

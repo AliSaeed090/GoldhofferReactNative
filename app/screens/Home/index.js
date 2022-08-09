@@ -3,9 +3,8 @@ import { BaseStyle, useTheme, Images, BaseSetting } from "@config";
 // Load sample data
 import styles from './styles'
 import React, { useEffect, useState } from "react";
-import { ImageBackground, View, TouchableOpacity, ActionSheetIOS, Platform, Button } from "react-native";
+import { ImageBackground, View, TouchableOpacity, ActionSheetIOS, Platform, Button, Alert, Modal, StyleSheet, Pressable, Linking } from "react-native";
 import { useTranslation } from "react-i18next";
-import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
 import { useDispatch, useSelector } from "react-redux";
 import { ApplicationActions } from "@actions";
 import { Picker } from '@react-native-picker/picker';
@@ -30,6 +29,7 @@ const ArrowPng = () => {
 const Home = (props) => {
 
   const languageSelectedBysUser = useSelector((state) => state.application.language);
+  const isPrivacyAccepted = useSelector((state) => state.application.isPrivacyAccepted);
   const dispatch = useDispatch();
   const [result, setResult] = useState("🔮");
   const { navigation } = props;
@@ -44,7 +44,7 @@ const Home = (props) => {
   // listTransportServicesEnglish, listTransportProductEnglish
   const [listAirport, setListAirport] = useState(listAirportProductEnglish)
   const [listAirportService, setListAirportService] = useState(listAirportServicesEnglish)
-
+  const [modalVisible, setModalVisible] = useState(true);
 
   useEffect(() => {
     if (languageSelectedBysUser === "en") {
@@ -71,6 +71,11 @@ const Home = (props) => {
     }));
 
   }
+  useEffect(() => {
+    setModalVisible(!isPrivacyAccepted)
+    console.log({ isPrivacyAccepted })
+  }, [isPrivacyAccepted])
+
   const navigateToTransportService = () => {
 
     navigation.navigate("ProductDetailsList", { list: listTransportSerVice })
@@ -121,27 +126,43 @@ const Home = (props) => {
   const onPress = () =>
     ActionSheetIOS.showActionSheetWithOptions(
       {
-        options:  language.map((x) => Utils.languageFromCode(x)),
+        options: language.map((x) => Utils.languageFromCode(x)),
         destructiveButtonIndex: 3,
         cancelButtonIndex: 2,
         userInterfaceStyle: 'dark',
-        tintColor:"white"
+        tintColor: "white"
       },
       buttonIndex => {
-        console.log({buttonIndex})
+        console.log({ buttonIndex })
         if (buttonIndex === 0) {
-              onValueChange("en")
+          onValueChange("en")
 
           // cancel action
         } else if (buttonIndex === 1) {
           onValueChange("de")
 
         } else if (buttonIndex === 2) {
-       
+
 
         }
       }
     );
+
+  const dataProtectionPolicyClick = () => {
+    let url = languageSelectedBysUser === "en" ? "https://www.goldhofer.com/fileadmin/noindex/App/20134187862_3_Data_Protection_Information_App_EN.pdf" : 'https://www.goldhofer.com/fileadmin/noindex/App/20134187862_3_Datenschutzhinweise_App_DE.pdf'
+    Linking.openURL(url)
+
+  }
+
+  const termsServicePolicyClick = () => {
+    let url = languageSelectedBysUser === "en" ? "https://www.goldhofer.com/fileadmin/noindex/App/20134199564_5_Terms_of_Service_App_EN.pdf" : 'https://www.goldhofer.com/fileadmin/noindex/App/20134199564_5_Nutzungshinweise_Goldhofer-App_DE.pdf'
+    Linking.openURL(url)
+
+  }
+  const setIAgree = () => {
+    dispatch(ApplicationActions.setPrivacyAccepted());
+  }
+
   return (
     <SafeAreaView style={BaseStyle.safeAreaView} edges={['right', 'top', 'left']}>
       <View style={{ width: "40%", position: 'absolute', top: 0, zIndex: 1, backgroundColor: 'rgba(255,255,255, 0.8)', right: 0 }}>
@@ -157,24 +178,85 @@ const Home = (props) => {
         </Picker> :
 
 
-         null
+          null
 
 
         }
       </View>
+      {modalVisible &&
+
+        <Modal
+          animationType="slide"
+          transparent={true}
+          visible={modalVisible}
+          onRequestClose={() => {
+            Alert.alert("Modal has been closed.");
+            setModalVisible(!modalVisible);
+          }}
+        >
+
+          <View style={styles.centeredView}>
+
+
+            <View style={styles.modalView}>
+              <View style={{ width: "50%", position: 'absolute', top: 0, zIndex: 1, backgroundColor: 'white', right: 0 }}>
+                {Platform.OS === "android" ? <Picker
+                  selectedValue={selectedLanguage}
+                  onValueChange={(itemValue, itemIndex) =>
+                    onValueChange(itemValue)
+
+                  }>
+                  {language.map((x, i) => <Picker.Item label={Utils.languageFromCode(x)} value={x} key={i} />)}
+
+                  {/* <Picker.Item label="German" value="de" /> */}
+                </Picker> :
+
+
+                  <Button color={"black"} onPress={onPress} title={Utils.languageFromCode(selectedLanguage)} />
+
+
+                }
+
+
+              </View>
+              <View style={{ width: "100%", marginTop: 30 }}>
+
+                <Text style={styles.modalText}>{t("Privacy_terms")}</Text>
+                <TouchableOpacity onPress={dataProtectionPolicyClick}>
+                  <Text headline bold style={styles.modalText2}>{t("DataProtectionPolicy")}</Text>
+                </TouchableOpacity>
+                <Text style={styles.modalText}>& </Text>
+                <TouchableOpacity onPress={termsServicePolicyClick}>
+                  <Text headline bold style={styles.modalText2}>{t("TermsofServicePolicy")}</Text>
+                </TouchableOpacity>
+                <Pressable
+                  style={[styles.button, styles.buttonClose]}
+                  onPress={setIAgree}
+                >
+                  <Text style={styles.textStyle}>{t("I_agree")}</Text>
+                </Pressable>
+
+              </View>
+            </View>
+          </View>
+        </Modal>
+
+
+
+      }
       <ImageBackground
 
         style={styles.backgroundImage}
         imageStyle={{ borderRadius: 0 }}
         source={Images.homeBackGround}>
-             
-           
+
+
         <View style={styles.ViewFirst} >
-        {Platform.OS === "ios" &&
-                  <View style={{ width: "40%", position: 'absolute', top: 0, zIndex: 1, backgroundColor: 'rgba(255,255,255, 0.8)', right: 0 }}>
-            <Button color={"black"} onPress={onPress} title={Utils.languageFromCode(selectedLanguage)} />
+          {Platform.OS === "ios" &&
+            <View style={{ width: "40%", position: 'absolute', top: 0, zIndex: 1, backgroundColor: 'rgba(255,255,255, 0.8)', right: 0 }}>
+              <Button color={"black"} onPress={onPress} title={Utils.languageFromCode(selectedLanguage)} />
             </View>
-      }
+          }
 
           <TouchableOpacity disabled={isTransportActive} onPress={() => setTransPortActive(true)}
             style={{

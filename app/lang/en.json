@@ -22,6 +22,9 @@
   "ADDRESS_OPTIONAL": "ADDRESS (OPTIONAL)",
   "COUNTRY":"COUNTRY",
   "MY_REQUEST":"MY REQUEST",
-  "Privacy_terms":"I agree to the privacy policy & the terms and conditions",
+  "Privacy_terms":"By agreeing, I state that I have read and understood the",
+  "TermsofServicePolicy":"Terms of Service Policy",
+  "DataProtectionPolicy":"Data Protection Policy.",
+  "I_agree":"I agree",
   "SEND":"SEND"
 }

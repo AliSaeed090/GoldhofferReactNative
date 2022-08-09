@@ -4,6 +4,7 @@ const initialState = {
   font: null,
   force_dark: null,
   language: null,
+  isPrivacyAccepted:false, 
   contact:{
     name:'', number:'',type:''
   },
@@ -42,7 +43,12 @@ export default (state = initialState, action = {}) => {
         ...state,
         menu: action.menu,
       };
-
+      case actionTypes.SET_PRIVACY_POLICY_ACCEPTED:
+        return {
+          ...state,
+          isPrivacyAccepted: true,
+        };
+      // 
     default:
       return state;
   }

@@ -20,8 +20,11 @@
     "COMPANY_OPTIONAL": "FIRMA (OPTIONAL)",
     "PHONE_NUMBER": "MOBILNUMMER",
     "ADDRESS_OPTIONAL": "ADRESSE (OPTIONAL)",
-    "COUNTRY":"LAND",
-    "MY_REQUEST":"MEIN ANLIEGEN",
-    "Privacy_terms":" Ich stimme den Datenschutzrichtlinien & den AGB’s zu",
-    "SEND":"SENDEN"
+    "COUNTRY": "LAND",
+    "MY_REQUEST": "MEIN ANLIEGEN",
+    "SEND": "SENDEN",
+    "Privacy_terms": "Mit meiner Zustimmung erkläre ich, dass ich die Datenschutz- & Nutzungshinweise gelesen und verstanden habe",
+    "TermsofServicePolicy": "Nutzungshinweise",
+    "DataProtectionPolicy": "Datenschutzhinweise",
+    "I_agree": "Ich stimme zu"
 }
