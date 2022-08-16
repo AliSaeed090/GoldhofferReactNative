@@ -3,7 +3,7 @@ import { BaseStyle, useTheme, Images, BaseColor } from "@config";
 // Load sample data
 import styles from './styles'
 import React, { useState, useMemo, useEffect } from "react";
-import { FlatList, View, TouchableOpacity, RefreshControl, Linking, ActivityIndicator } from "react-native";
+import { FlatList, View, TouchableOpacity, RefreshControl, Linking, ActivityIndicator , Alert} from "react-native";
 import { useTranslation } from "react-i18next";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5"
 import RenderList from "./RenderList"
@@ -38,15 +38,28 @@ export default function News(props) {
     if (trackingStatus === 'authorized' || trackingStatus === 'unavailable') {
       // enable tracking features
       setAllowed(true)
+    }else{
+        askPermission()
+      //
     }
   }
-  useEffect(async () => {
+  useFocusEffect(async () => {
 
     const trackingStatus = await getTrackingStatus();
+    console.log({trackingStatus})
     if (trackingStatus === 'authorized' || trackingStatus === 'unavailable') {
       // enable tracking features
-    } else {
-      askPermission()
+        setAllowed(true)
+    }
+     else if(trackingStatus=== "denied") {
+      // alert("Please Enable App tracking from setting to view the content of this page")
+ //      let url= languageSelectedBysUser === "en" ? "https://www.goldhofer.com/en/press" : 'https://www.goldhofer.com/presse'
+ // Linking.openURL(url)
+ setAllowed(true)
+
+// navigation.goBack()
+    }else{
+        askPermission()
     }
   }, [])
   // const memoizedValue = useMemo(() => RenderList(), [list]);
@@ -84,5 +97,3 @@ export default function News(props) {
     </SafeAreaView>
   );
 };
-
-
