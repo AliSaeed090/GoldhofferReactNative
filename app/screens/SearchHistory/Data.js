@@ -271,9 +271,6 @@ export const dataSetTransportProducts = [
 
 ]
 
-
-
-
 export const dataSetTransportService = [
     // {
     //     image: undefined, text: 'TRAILSTAR', navigateTo: 'ProductDeatilInfo',
@@ -648,14 +645,14 @@ export const dataSetAirportProducts = [
 
 
     {
-        image: Images.banner9, text: '»SHERPA« D', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner9, text: '»SHERPA« D', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: {
             image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D",]
             , otherData: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D", "SERVICE PROSPEKT"] }
         }
     },
     {
-        image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: {
             image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',]
             , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',] }
@@ -670,11 +667,11 @@ export const dataSetAirportProducts = [
 
         data: [
             {
-                image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE"], otherData: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE", "SERVICE PROSPEKT"] } }
             },
             {
-                image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: {
                     image: Images.banner78, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT  »BISON« E FAMILIE', 'DATENBLÄTTER »BISON« E FAMILIE',], otherData: {
                         image: Images.banner78, videoId: "eP_YC0cr0n0",
@@ -684,11 +681,11 @@ export const dataSetAirportProducts = [
             }]
     },
     {
-        image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE"], otherData: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE", "SERVICE PROSPEKT"] } }
     },
     {
-        image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: {
             image: Images.banner78, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT  »BISON« E FAMILIE', 'DATENBLÄTTER »BISON« E FAMILIE',], otherData: {
                 image: Images.banner78, videoId: "eP_YC0cr0n0",
@@ -701,29 +698,29 @@ export const dataSetAirportProducts = [
 
         data: [
             {
-                image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X"], otherData: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X", "SERVICE PROSPEKT"] } }
             },
             {
-                image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »PHOENIX« AST-2E', 'DATENBLÄTTER »PHOENIX« AST-2E',], otherData: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »PHOENIX« AST-2E', 'DATENBLÄTTER »PHOENIX« AST-2E', "E-MOBILITY PROSPEKT", "SERVICE PROSPEKT"] } }
             },
             {
-                image: Images.banner83, text: 'AST-1X', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner83, text: 'AST-1X', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT AST-1X', 'DATENBLÄTTER AST-1X',], otherData: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT AST-1X', 'DATENBLÄTTER AST-1X', "SERVICE PROSPEKT"] } }
             }
         ]
     },
     {
-        image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X"], otherData: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X", "SERVICE PROSPEKT"] } }
     },
     {
-        image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »PHOENIX« AST-2E', 'DATENBLÄTTER »PHOENIX« AST-2E',], otherData: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »PHOENIX« AST-2E', 'DATENBLÄTTER »PHOENIX« AST-2E', "E-MOBILITY PROSPEKT", "SERVICE PROSPEKT"] } }
     },
     {
-        image: Images.banner83, text: 'AST-1X', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner83, text: 'AST-1X', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT AST-1X', 'DATENBLÄTTER AST-1X',], otherData: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT AST-1X', 'DATENBLÄTTER AST-1X', "SERVICE PROSPEKT"] } }
     },
     {
@@ -731,20 +728,20 @@ export const dataSetAirportProducts = [
 
         data: [
             {
-                image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN"], otherData: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN", "SERVICE PROSPEKT"] } }
             },
             {
-                image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN',], otherData: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', "SERVICE PROSPEKT"] } }
             }]
     },
     {
-        image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN"], otherData: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN", "SERVICE PROSPEKT"] } }
     },
     {
-        image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN',], otherData: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', "SERVICE PROSPEKT"] } }
     },
     {
@@ -754,21 +751,20 @@ export const dataSetAirportProducts = [
 
 ]
 
-
 export const dataSetAirportService = [
     {
         image: Images.banner13, text: 'FRACHT-/PUSHBACKSCHLEPPER', navigateTo: 'ProductDeatilInfo',
 
         data: [
             {
-                image: Images.banner9, text: '»SHERPA« D', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner9, text: '»SHERPA« D', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: {
                     image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D","SERVICE PROSPEKT"]
                     , otherData: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D", ] }
                 }
             },
             {
-                image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: {
                     image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT' ]
                     , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',] }
@@ -780,14 +776,14 @@ export const dataSetAirportService = [
 
 
     {
-        image: Images.banner9, text: '»SHERPA« D', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner9, text: '»SHERPA« D', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: {
             image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D", "SERVICE PROSPEKT"]
             , otherData: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D"] }
         }
     },
     {
-        image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: {
             image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT', "SERVICE PROSPEKT"]
             , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT', ] }
@@ -802,12 +798,12 @@ export const dataSetAirportService = [
 
         data: [
             {
-                image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE", "SERVICE PROSPEKT"],
                  otherData: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE",  ] } }
             },
             {
-                image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: {
                     image: Images.banner78, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT  »BISON« E FAMILIE', 'DATENBLÄTTER »BISON« E FAMILIE', "SERVICE PROSPEKT"], otherData: {
                         image: Images.banner78, videoId: "eP_YC0cr0n0",
@@ -817,12 +813,12 @@ export const dataSetAirportService = [
             }]
     },
     {
-        image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE", "SERVICE PROSPEKT"], 
         otherData: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE",  ] } }
     },
     {
-        image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: {
             image: Images.banner78, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT  »BISON« E FAMILIE', 'DATENBLÄTTER »BISON« E FAMILIE', "SERVICE PROSPEKT"], otherData: {
                 image: Images.banner78, videoId: "eP_YC0cr0n0",
@@ -835,34 +831,34 @@ export const dataSetAirportService = [
 
         data: [
             {
-                image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X", "SERVICE PROSPEKT"],
                  otherData: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X", ] } }
             },
             {
-                image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »PHOENIX« AST-2E', 'DATENBLÄTTER »PHOENIX« AST-2E', "SERVICE PROSPEKT"],
                  otherData: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »PHOENIX« AST-2E', 'DATENBLÄTTER »PHOENIX« AST-2E', "E-MOBILITY PROSPEKT",  ] } }
             },
             {
-                image: Images.banner83, text: 'AST-1X', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner83, text: 'AST-1X', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT AST-1X', 'DATENBLÄTTER AST-1X', "SERVICE PROSPEKT"], 
                 otherData: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT AST-1X', 'DATENBLÄTTER AST-1X',  ] } }
             }
         ]
     },
     {
-        image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X", "SERVICE PROSPEKT"],
          otherData: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X", ] } }
     },
     {
-        image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »PHOENIX« AST-2E', 'DATENBLÄTTER »PHOENIX« AST-2E', "SERVICE PROSPEKT",],
          otherData: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »PHOENIX« AST-2E', 'DATENBLÄTTER »PHOENIX« AST-2E', "E-MOBILITY PROSPEKT", ] } }
     },
     {
-        image: Images.banner83, text: 'AST-1X', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner83, text: 'AST-1X', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT AST-1X', 'DATENBLÄTTER AST-1X', "SERVICE PROSPEKT",], 
         otherData: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT AST-1X', 'DATENBLÄTTER AST-1X',  ] } }
     },
@@ -871,23 +867,23 @@ export const dataSetAirportService = [
 
         data: [
             {
-                image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN", "SERVICE PROSPEKT"], 
                 otherData: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN",  ] } }
             },
             {
-                image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', "SERVICE PROSPEKT",],
                  otherData: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', ] } }
             }]
     },
     {
-        image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN", "SERVICE PROSPEKT"], 
         otherData: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN",  ] } }
     },
     {
-        image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', "SERVICE PROSPEKT",],
          otherData: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN',  ] } }
     },
@@ -897,7 +893,6 @@ export const dataSetAirportService = [
     }
 
 ]
-
 
 export const dataSetTransportProductsEnglish = [
     // {
@@ -1169,9 +1164,6 @@ export const dataSetTransportProductsEnglish = [
     },
 
 ]
-
-
-
 
 export const dataSetTransportServiceEnglish = [
     // {
@@ -1528,14 +1520,14 @@ export const dataSetAirportProductsEnglish = [
 
         data: [
             {
-                image: Images.banner9, text: '»SHERPA« D', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner9, text: '»SHERPA« D', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: {
                     image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D",]
                     , otherData: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D", "SERVICE PROSPEKT"] }
                 }
             },
             {
-                image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: {
                     image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',]
                     , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',] }
@@ -1547,14 +1539,14 @@ export const dataSetAirportProductsEnglish = [
 
 
     {
-        image: Images.banner9, text: '»SHERPA« D', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner9, text: '»SHERPA« D', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: {
             image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D",]
             , otherData: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D", "SERVICE PROSPEKT"] }
         }
     },
     {
-        image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: {
             image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',]
             , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',] }
@@ -1569,11 +1561,11 @@ export const dataSetAirportProductsEnglish = [
 
         data: [
             {
-                image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE"], otherData: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE", "SERVICE PROSPEKT"] } }
             },
             {
-                image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: {
                     image: Images.banner78, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT  »BISON« E FAMILIE', 'DATENBLÄTTER »BISON« E FAMILIE',], otherData: {
                         image: Images.banner78, videoId: "eP_YC0cr0n0",
@@ -1583,11 +1575,11 @@ export const dataSetAirportProductsEnglish = [
             }]
     },
     {
-        image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE"], otherData: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE", "SERVICE PROSPEKT"] } }
     },
     {
-        image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: {
             image: Images.banner78, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT  »BISON« E FAMILIE', 'DATENBLÄTTER »BISON« E FAMILIE',], otherData: {
                 image: Images.banner78, videoId: "eP_YC0cr0n0",
@@ -1600,29 +1592,29 @@ export const dataSetAirportProductsEnglish = [
 
         data: [
             {
-                image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X"], otherData: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X", "SERVICE PROSPEKT"] } }
             },
             {
-                image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »PHOENIX« AST-2E', 'DATENBLÄTTER »PHOENIX« AST-2E',], otherData: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »PHOENIX« AST-2E', 'DATENBLÄTTER »PHOENIX« AST-2E', "E-MOBILITY PROSPEKT", "SERVICE PROSPEKT"] } }
             },
             {
-                image: Images.banner83, text: 'AST-1X', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner83, text: 'AST-1X', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT AST-1X', 'DATENBLÄTTER AST-1X',], otherData: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT AST-1X', 'DATENBLÄTTER AST-1X', "SERVICE PROSPEKT"] } }
             }
         ]
     },
     {
-        image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X"], otherData: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X", "SERVICE PROSPEKT"] } }
     },
     {
-        image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »PHOENIX« AST-2E', 'DATENBLÄTTER »PHOENIX« AST-2E',], otherData: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »PHOENIX« AST-2E', 'DATENBLÄTTER »PHOENIX« AST-2E', "E-MOBILITY PROSPEKT", "SERVICE PROSPEKT"] } }
     },
     {
-        image: Images.banner83, text: 'AST-1X', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner83, text: 'AST-1X', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT AST-1X', 'DATENBLÄTTER AST-1X',], otherData: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT AST-1X', 'DATENBLÄTTER AST-1X', "SERVICE PROSPEKT"] } }
     },
     {
@@ -1630,20 +1622,20 @@ export const dataSetAirportProductsEnglish = [
 
         data: [
             {
-                image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN"], otherData: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN", "SERVICE PROSPEKT"] } }
             },
             {
-                image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN',], otherData: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', "SERVICE PROSPEKT"] } }
             }]
     },
     {
-        image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN"], otherData: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN", "SERVICE PROSPEKT"] } }
     },
     {
-        image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN',], otherData: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', "SERVICE PROSPEKT"] } }
     },
     {
@@ -1653,21 +1645,20 @@ export const dataSetAirportProductsEnglish = [
 
 ]
 
-
 export const dataSetAirportServiceEnglish = [
     {
         image: Images.banner13, text: 'CARGO & PUSHBACK TRACTORS', navigateTo: 'ProductDeatilInfo',
 
         data: [
             {
-                image: Images.banner9, text: '»SHERPA« D', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner9, text: '»SHERPA« D', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: {
                     image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D","SERVICE PROSPEKT"]
                     , otherData: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D", ] }
                 }
             },
             {
-                image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: {
                     image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT' ]
                     , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT',] }
@@ -1679,14 +1670,14 @@ export const dataSetAirportServiceEnglish = [
 
 
     {
-        image: Images.banner9, text: '»SHERPA« D', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner9, text: '»SHERPA« D', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: {
             image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D", "SERVICE PROSPEKT"]
             , otherData: { image: Images.banner14, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »SHERPA« D', "DATENBLÄTTER »SHERPA« D"] }
         }
     },
     {
-        image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner15, text: '»SHERPA« E', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: {
             image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT', "SERVICE PROSPEKT"]
             , otherData: { image: Images.banner93, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »SHERPA« E', 'DATENBLÄTTER »SHERPA« E', 'E-MOBILITY PROSPEKT', ] }
@@ -1701,12 +1692,12 @@ export const dataSetAirportServiceEnglish = [
 
         data: [
             {
-                image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE", "SERVICE PROSPEKT"],
                  otherData: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE",  ] } }
             },
             {
-                image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: {
                     image: Images.banner78, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT  »BISON« E FAMILIE', 'DATENBLÄTTER »BISON« E FAMILIE', "SERVICE PROSPEKT"], otherData: {
                         image: Images.banner78, videoId: "eP_YC0cr0n0",
@@ -1716,12 +1707,12 @@ export const dataSetAirportServiceEnglish = [
             }]
     },
     {
-        image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner75, text: '»BISON« D FAMILIE', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE", "SERVICE PROSPEKT"], 
         otherData: { image: Images.banner76, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT »BISON« D FAMILIE', "DATENBLÄTTER »BISON« D FAMILIE",  ] } }
     },
     {
-        image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner77, text: '»BISON« E FAMILIE', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: {
             image: Images.banner78, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT  »BISON« E FAMILIE', 'DATENBLÄTTER »BISON« E FAMILIE', "SERVICE PROSPEKT"], otherData: {
                 image: Images.banner78, videoId: "eP_YC0cr0n0",
@@ -1734,34 +1725,34 @@ export const dataSetAirportServiceEnglish = [
 
         data: [
             {
-                image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X", "SERVICE PROSPEKT"],
                  otherData: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X", ] } }
             },
             {
-                image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »PHOENIX« AST-2E', 'DATENBLÄTTER »PHOENIX« AST-2E', "SERVICE PROSPEKT"],
                  otherData: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »PHOENIX« AST-2E', 'DATENBLÄTTER »PHOENIX« AST-2E', "E-MOBILITY PROSPEKT",  ] } }
             },
             {
-                image: Images.banner83, text: 'AST-1X', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner83, text: 'AST-1X', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT AST-1X', 'DATENBLÄTTER AST-1X', "SERVICE PROSPEKT"], 
                 otherData: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT AST-1X', 'DATENBLÄTTER AST-1X',  ] } }
             }
         ]
     },
     {
-        image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner79, text: '»PHOENIX« AST-2P/X', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X", "SERVICE PROSPEKT"],
          otherData: { image: Images.banner80, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT  »PHOENIX« AST-2P/X', "DATENBLÄTTER »PHOENIX« AST-2P/X", ] } }
     },
     {
-        image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner81, text: '»PHOENIX« AST-2E', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »PHOENIX« AST-2E', 'DATENBLÄTTER »PHOENIX« AST-2E', "SERVICE PROSPEKT",],
          otherData: { image: Images.banner82, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT »PHOENIX« AST-2E', 'DATENBLÄTTER »PHOENIX« AST-2E', "E-MOBILITY PROSPEKT", ] } }
     },
     {
-        image: Images.banner83, text: 'AST-1X', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner83, text: 'AST-1X', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT AST-1X', 'DATENBLÄTTER AST-1X', "SERVICE PROSPEKT",], 
         otherData: { image: Images.banner84, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT AST-1X', 'DATENBLÄTTER AST-1X',  ] } }
     },
@@ -1770,23 +1761,23 @@ export const dataSetAirportServiceEnglish = [
 
         data: [
             {
-                image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN", "SERVICE PROSPEKT"], 
                 otherData: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN",  ] } }
             },
             {
-                image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+                image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilVideo',
                 data: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', "SERVICE PROSPEKT",],
                  otherData: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', ] } }
             }]
     },
     {
-        image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner85, text: 'DOLLIES KLEINE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN", "SERVICE PROSPEKT"], 
         otherData: { image: Images.banner86, videoId: "9RM0QLDti1A", text: ['PRODUKT PROSPEKT DOLLIES KLEINE SCHÄDEN', "DATENBLÄTTER DOLLIES KLEINE SCHÄDEN",  ] } }
     },
     {
-        image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilMoreInfo',
+        image: Images.banner87, text: 'KOMBINATIONSSYSTEME GROSSE SCHÄDEN', listAirport: true, navigateTo: 'ProductDeatilVideo',
         data: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', "SERVICE PROSPEKT",],
          otherData: { image: Images.banner88, videoId: "eP_YC0cr0n0", text: ['PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN', 'PRODUKT PROSPEKT KOMBINATIONSSYSTEME GROSSE SCHÄDEN',  ] } }
     },

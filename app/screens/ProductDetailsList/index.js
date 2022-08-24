@@ -13,7 +13,7 @@ import JsonFind from "json-find";
 import { useSelector } from "react-redux";
 const BackArrowPng = () => {
   return (
-    <Image source={Images.backArrow} style={{ width: 20, height: 20 }} resizeMode="contain" />
+    <Image source={Images.backArrow} style={{ width: 20, height: 20 , }}   resizeMode="contain" />
   );
 }
 function renderFooter() {
@@ -43,7 +43,7 @@ function renderFooter() {
     <TouchableOpacity onPress={()=>callNumber(contact.number)} style={{ width: "95%", flexDirection: 'row', height: 90, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
      
       <View style={{ borderTopLeftRadius: 55, backgroundColor: 'black', width: 100, height: '100%', justifyContent: 'center', alignItems: 'center' }}>
-        <Image source={Images.G} style={styles.manImage} resizeMode="contain" />
+        <Image source={Images.G} style={styles.manImage} resizeMode="stretch" />
 
       </View>
       <View style={{ width: '50%', alignItems: 'center', marginTop: 10 }}>

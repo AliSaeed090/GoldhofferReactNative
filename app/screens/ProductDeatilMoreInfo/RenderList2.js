@@ -15,6 +15,7 @@ const ArrowPng = () => {
     );
   }
 export default function RenderList2({item}) {
+    console.log({item})
 
     
     const navigation = useNavigation()

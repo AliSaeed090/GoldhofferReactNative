@@ -17,7 +17,11 @@ const Image = (props) => {
       case "center":
         resize = FastImage.resizeMode.center;
         break;
+      case "cover":
+        resize = FastImage.resizeMode.cover;
+        break;
       default:
+        resize = FastImage.resizeMode.contain;
         break;
     }
     return resize;

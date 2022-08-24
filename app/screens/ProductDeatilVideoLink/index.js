@@ -427,18 +427,19 @@ export default function ProductDeatilVideoLink(props) {
         }
         else if (txt == "PRODUKT PROSPEKT FTV 550" || txt == "PRODUCT BROCHURE FTV 550") {
             if (isEnglish) {
-                return "https://www.goldhofer.com/fileadmin//downloads/prospekte/Wind-Energy_Transport-Solutions-Goldhofer_EN.pdf"
-            }
-            else {
-                return "https://www.goldhofer.com/fileadmin//downloads/prospekte/Wind-Energy_Transport-Solutions-Goldhofer_DE.pdf"
-            }
-        }
-        else if (txt == "DATENBLÄTTER FTV 550" || txt == "TECHNICAL DATA FTV 550") {
-            if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin/downloads/prospekte/FTV-550_EN-A4.pdf"
             }
             else {
                 return "https://www.goldhofer.com/fileadmin/downloads/prospekte/FTV-550_DE-A4.pdf"
+            }
+          
+        }
+        else if (txt == "PRODUKT PROSPEKT WINDKRAFT" || txt == "PRODUCT BROCHURE WIND POWER") {
+            if (isEnglish) {
+                return "https://www.goldhofer.com/fileadmin//downloads/prospekte/Wind-Energy_Transport-Solutions-Goldhofer_EN.pdf"
+            }
+            else {
+                return "https://www.goldhofer.com/fileadmin//downloads/prospekte/Wind-Energy_Transport-Solutions-Goldhofer_DE.pdf"
             }
         }
 
@@ -451,7 +452,7 @@ export default function ProductDeatilVideoLink(props) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/Faktor5_Faktor5-5_DE-A4.pdf"
             }
         }
-        else if (txt == "DATENBLÄTTER »BLADES«" || txt == "TECHNICAL DATA »BLADES«") {
+        else if (txt == "PRODUKT BROSCHÜRE »BLADES«" || txt == "PRODUCT BROCHURE »BLADES«") {
             
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/BladeS_EN-A4.pdf"
@@ -460,8 +461,8 @@ export default function ProductDeatilVideoLink(props) {
             }
 
         }
-        else if (txt == "DATENBLÄTTER RA 2" || txt == "TECHNICAL DATA RA 2") {
-            
+        else if (txt == "PRODUKT BROSCHÜRE RA 2" || txt == "PRODUCT BROCHURE RA 2") {
+         
 
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_EN.pdf"
@@ -470,8 +471,8 @@ export default function ProductDeatilVideoLink(props) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_DE.pdf"
             }
         }
-        else if (txt == "DATENBLÄTTER RA 3" || txt =="TECHNICAL DATA RA 3") {
-            
+        else if (txt == "PRODUKT BROSCHÜRE RA 3" || txt =="PRODUCT BROCHURE RA 3") {
+           
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_EN.pdf"
             }
@@ -479,8 +480,8 @@ export default function ProductDeatilVideoLink(props) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_DE.pdf"
             }
         }
-        else if (txt == "DATENBLÄTTER RA 4" || txt == "TECHNICAL DATA RA 4") {
-           
+        else if (txt == "PRODUKT BROSCHÜRE RA 4" || txt == "PRODUCT BROCHURE RA 4") {
+            
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/RA-2_RA-3_RA-4_EN.pdf"
             }
@@ -673,8 +674,10 @@ export default function ProductDeatilVideoLink(props) {
             }
         }
 
+        
 
     }
+ 
     const openPdf = (txt) => {
         let PDFLink = getPdfLink(txt)
         // console.log({ PDFLink })
