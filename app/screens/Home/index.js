@@ -44,7 +44,7 @@ const Home = (props) => {
   // listTransportServicesEnglish, listTransportProductEnglish
   const [listAirport, setListAirport] = useState(listAirportProductEnglish)
   const [listAirportService, setListAirportService] = useState(listAirportServicesEnglish)
-  const [modalVisible, setModalVisible] = useState(true);
+  const [modalVisible, setModalVisible] = useState(false);
 
   useEffect(() => {
     if (languageSelectedBysUser === "en") {
