@@ -86,7 +86,7 @@ export const languageFromCode = (code) => {
     case "de":
       return "Deutsch";
     default:
-      return "Unknown";
+      return "en";
   }
 };
 
