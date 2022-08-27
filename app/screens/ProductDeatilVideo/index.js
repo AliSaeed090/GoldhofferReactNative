@@ -439,7 +439,7 @@ export default function ProductDetailsList(props) {
             }
           
         }
-        else if (txt == "PRODUKT PROSPEKT WINDKRAFT" || txt == "PRODUCT BROCHURE WIND POWER") {
+        else if (txt == "PRODUKT BROSCHÜRE WINDKRAFT" || txt == "PRODUCT BROCHURE WIND POWER") {
             if (isEnglish) {
                 return "https://www.goldhofer.com/fileadmin//downloads/prospekte/Wind-Energy_Transport-Solutions-Goldhofer_EN.pdf"
             }
@@ -1054,6 +1054,20 @@ export default function ProductDetailsList(props) {
                 <View style={{ width: '100%', height: 350, backgroundColor: '#D2D9DE' }}>
                     <Image source={list.image} style={styles.banner} resizeMode="cover" />
 
+                </View>
+                <View style={{ width: '100%', marginTop: -2 }}>
+                {txt==="»BLADEX«" && list.text.length !== 0 &&
+
+                        <View onPress={() => openPdf(txt)} style={{ width: '100%', flexDirection: 'row', backgroundColor: 'black', padding: 15, justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
+                            <View style={{ width: "100%", marginTop: 2 }}>
+                                <Text headline bold whiteColor>
+                                    {txt}
+                                </Text>
+                            </View>
+
+                        </View>
+
+                    }
                 </View>
                 <View style={{ width: '100%', marginTop: -2 }}>
                     {list.text.map((txt, i) => {
