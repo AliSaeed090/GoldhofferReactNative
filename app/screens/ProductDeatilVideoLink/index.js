@@ -1177,7 +1177,7 @@ export default function ProductDeatilVideoLink(props) {
                                 // console.log({ data: data.snippet.thumbnails.maxres.url })
                                 return (
                                     <TouchableOpacity key={i} onPress={() => setvideoId(data.snippet.resourceId.videoId)} style={{ margin: 5, width: 150, padding: 5 }} >
-                                        <Image source={{uri: data.snippet.thumbnails.default.url }} style={{ width: 150, height: 150, borderRadius: 20 }} resizeMode="contain" />
+                                        <Image source={{ uri: data?.snippet?.thumbnails?.default?.url }}  style={{ width: 150, height: 150, borderRadius: 20 }} resizeMode="contain" />
 
                                         <Text style={{ textAlign: 'center' }}>{data.snippet.title}</Text>
                                     </TouchableOpacity>
