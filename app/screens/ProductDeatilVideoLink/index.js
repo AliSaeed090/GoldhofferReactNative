@@ -514,7 +514,7 @@ export default function ProductDeatilVideoLink(props) {
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_SHERPA-FAMILY_EN-met_A4.pdf"
             }
             else {
-                return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_SHERPA-FAMILY_DE-met_A4.pdf"
+                return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_SHERPA-FAMILY_EN-met_A4.pdf"
             }
         }
         else if (txt == "PRODUKT PROSPEKT »SHERPA« E" || txt == "PRODUCT BROCHURE »SHERPA« E") {
