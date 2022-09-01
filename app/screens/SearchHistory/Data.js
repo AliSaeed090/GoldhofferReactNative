@@ -1,4 +1,6 @@
 import { Images } from "@config";
+ 
+
 
 export const dataSetTransportProducts = [
     // {
@@ -34,18 +36,18 @@ export const dataSetTransportProducts = [
             {
                 image: Images.banner16, text: 'PRITSCHENAUFLIEGER', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['QUICKGUIDE ZUM SPZ-L | SPZ-GL | SPZ-H'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['QUICKGUIDE ZUM SPZ-GP'], } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['QUICKGUIDE ZUM »VENTUM«'] } } }
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: [], } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: [] } } }
                 ]
             },
             {
                 image: Images.banner18, text: 'SEMIAUFLIEGER', navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['QUICKGUIDE ZUM STEPSTAR'] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: [] } } },
                     { navigateTo: 'ProductDeatilVideo', image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['QUICKGUIDE ZUM»ARCUS« P | »ARCUS« PK'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« MIT RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« MIT RADMULDE'] } } }
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« MIT RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: [] } } }
 
                 ],
                 listTransport: true,
@@ -54,10 +56,10 @@ export const dataSetTransportProducts = [
             {
                 image: Images.banner10, text: 'TIEFBETTAUFLIEGER', navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['QUICKGUIDE ZUM STZ-VL | STZ-VH'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['QUICKGUIDE ZUM »MPA« V'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['QUICKGUIDE ZUM STZ-VP (245)'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['QUICKGUIDE ZUM STZ-VP (285)'] } } }
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: [] } } }
 
                 ],
                 listTransport: true,
@@ -71,49 +73,49 @@ export const dataSetTransportProducts = [
     {
         image: Images.banner16, text: 'PRITSCHENAUFLIEGER', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['QUICKGUIDE ZUM SPZ-L | SPZ-GL | SPZ-H'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['QUICKGUIDE ZUM SPZ-GP'], } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['QUICKGUIDE ZUM »VENTUM«'] } } }
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: [], } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: [] } } }
         ]
     },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['QUICKGUIDE ZUM SPZ-L | SPZ-GL | SPZ-H'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['QUICKGUIDE ZUM SPZ-GP'], } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['QUICKGUIDE ZUM »VENTUM«'] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: [], } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: [] } } },
 
     {
         image: Images.banner18, text: 'SEMIAUFLIEGER', navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['QUICKGUIDE ZUM STEPSTAR'] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: [] } } },
             { navigateTo: 'ProductDeatilVideo', image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['QUICKGUIDE ZUM»ARCUS« P | »ARCUS« PK'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« MIT RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« MIT RADMULDE'] } } }
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« MIT RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: [] } } }
 
         ],
         listTransport: true,
 
     },
 
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['QUICKGUIDE ZUM STEPSTAR'] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: [] } } },
     { navigateTo: 'ProductDeatilVideo', image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['QUICKGUIDE ZUM»ARCUS« P | »ARCUS« PK'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« MIT RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« MIT RADMULDE'] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« MIT RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: [] } } },
 
     {
         image: Images.banner10, text: 'TIEFBETTAUFLIEGER', navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['QUICKGUIDE ZUM STZ-VL | STZ-VH'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['QUICKGUIDE ZUM »MPA« V'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['QUICKGUIDE ZUM STZ-VP (245)'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['QUICKGUIDE ZUM STZ-VP (285)'] } } }
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: [] } } }
 
         ],
         listTransport: true,
 
     },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['QUICKGUIDE ZUM STZ-VL | STZ-VH'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['QUICKGUIDE ZUM »MPA« V'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['QUICKGUIDE ZUM STZ-VP (245)'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['QUICKGUIDE ZUM STZ-VP (285)'] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: [] } } },
 
 
 
@@ -123,22 +125,22 @@ export const dataSetTransportProducts = [
             {
                 image: Images.banner40, text: 'GEZOGEN', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['QUICKGUIDE ZUM THP/ET'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['QUICKGUIDE ZUM THP/MT'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['QUICKGUIDE ZUM THP/SL-L'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['QUICKGUIDE ZUM THP/SL-S'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['QUICKGUIDE ZUM THP/SL'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['QUICKGUIDE ZUM THP/UT'] } } }
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: [] } } }
 
                 ]
             },
             {
                 image: Images.banner41, text: 'ANGETRIEBEN', navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['QUICKGUIDE ZUM »ADDRIVE«'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['QUICKGUIDE ZUM PST/SL'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['QUICKGUIDE ZUM PST/SL-E'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['QUICKGUIDE ZUM PST/ES-E'] } } }
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: [] } } }
 
                 ],
                 listTransport: true,
@@ -154,43 +156,43 @@ export const dataSetTransportProducts = [
     {
         image: Images.banner40, text: 'GEZOGEN', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['QUICKGUIDE ZUM THP/ET'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['QUICKGUIDE ZUM THP/MT'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['QUICKGUIDE ZUM THP/SL-L'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['QUICKGUIDE ZUM THP/SL-S'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['QUICKGUIDE ZUM THP/SL'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['QUICKGUIDE ZUM THP/UT'] } } }
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: [] } } }
 
         ]
     },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['QUICKGUIDE ZUM THP/ET'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['QUICKGUIDE ZUM THP/MT'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['QUICKGUIDE ZUM THP/SL-L'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['QUICKGUIDE ZUM THP/SL-S'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['QUICKGUIDE ZUM THP/SL'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['QUICKGUIDE ZUM THP/UT'] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: [] } } },
     {
         image: Images.banner41, text: 'ANGETRIEBEN', navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['QUICKGUIDE ZUM »ADDRIVE«'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['QUICKGUIDE ZUM PST/SL'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['QUICKGUIDE ZUM PST/SL-E'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['QUICKGUIDE ZUM PST/ES-E'] } } }
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: [] } } }
 
         ],
         listTransport: true,
 
     },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['QUICKGUIDE ZUM »ADDRIVE«'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['QUICKGUIDE ZUM PST/SL'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['QUICKGUIDE ZUM PST/SL-E'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['QUICKGUIDE ZUM PST/ES-E'] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: [] } } },
 
 
 
 
 
-
+    
 
 
     {
@@ -200,35 +202,35 @@ export const dataSetTransportProducts = [
 
             {
                 image: Images.banner61, text: 'FTV 550', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550',  "DATENBLÄTTER FTV 550"], otherData: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'] }, videoId: "9RM0QLDti1A", }
+                data: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550', "PRODUKT BROSCHÜRE WINDKRAFT"], otherData: { image: Images.banner62, text: [] }, videoId: "9RM0QLDti1A", }
             },
             {
                 image: Images.banner63, text: '»FAKTOR« 5 | »FAKTOR« 5.5', navigateTo: 'ProductDeatilMoreInfo',
                 data: {
-                    image: Images.banner64, text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], otherData: { image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
+                    image: Images.banner64, text: [ 'DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], otherData: { image: Images.banner64, text: [], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
                 },
 
             },
             {
                 image: Images.banner65, text: 'RA 2', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", } }
+                data: { image: Images.banner66, text: ['PRODUKT BROSCHÜRE RA 2', "PRODUKT BROSCHÜRE WINDKRAFT"], videoId: "9RM0QLDti1A", otherData: { image: Images.banner66, text: [], videoId: "9RM0QLDti1A", } }
             },
             {
-                image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", } },
+                image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['PRODUKT BROSCHÜRE RA 3', "PRODUKT BROSCHÜRE WINDKRAFT"], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner68, text: [], videoId: "eP_YC0cr0n0", } },
 
             },
             {
                 image: Images.banner69, text: 'RA 4', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", } }
+                data: { image: Images.banner70, text: ['PRODUKT BROSCHÜRE RA 4', "PRODUKT BROSCHÜRE WINDKRAFT"], videoId: "9RM0QLDti1A", otherData: { image: Images.banner70, text: [], videoId: "9RM0QLDti1A", } }
             },
             {
                 image: Images.banner71, text: '»BLADEX«', navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner72, text: ['QPRODUKT PROSPEKT »BLADEX«'], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner72, text: ['QQUICKGUIDE ZUM »BLADEX«'], videoId: "eP_YC0cr0n0" } }, listTransport: true,
+                data: { image: Images.banner72, text: ["PRODUKT BROSCHÜRE WINDKRAFT"], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner72, text: ['QQUICKGUIDE ZUM »BLADEX«'], videoId: "eP_YC0cr0n0" } }, listTransport: true,
 
             },
             {
                 image: Images.banner73, text: '»BLADES«', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner74, text: ['PRODUKT PROSPEKT »BLADES«'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner74, text: ['QUICKGUIDE ZUM »BLADES«'], videoId: "9RM0QLDti1A" } }
+                data: { image: Images.banner74, text: ['PRODUKT BROSCHÜRE »BLADES«', "PRODUKT BROSCHÜRE WINDKRAFT"], videoId: "9RM0QLDti1A", otherData: { image: Images.banner74, text: [], videoId: "9RM0QLDti1A" } }
             },
 
 
@@ -238,35 +240,35 @@ export const dataSetTransportProducts = [
 
     {
         image: Images.banner61, text: 'FTV 550', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550', "DATENBLÄTTER FTV 550"], otherData: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'] }, videoId: "9RM0QLDti1A", }
+        data: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550', "PRODUKT BROSCHÜRE WINDKRAFT"], otherData: { image: Images.banner62, text: [] }, videoId: "9RM0QLDti1A", }
     },
     {
         image: Images.banner63, text: '»FAKTOR« 5 | »FAKTOR« 5.5', navigateTo: 'ProductDeatilMoreInfo',
         data: {
-            image: Images.banner64, text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], otherData: { image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
+            image: Images.banner64, text: [ 'DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], otherData: { image: Images.banner64, text: [], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
         },
 
     },
     {
         image: Images.banner65, text: 'RA 2', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", } }
+        data: { image: Images.banner66, text: ['PRODUKT BROSCHÜRE RA 2', "PRODUKT BROSCHÜRE WINDKRAFT"], videoId: "9RM0QLDti1A", otherData: { image: Images.banner66, text: [], videoId: "9RM0QLDti1A", } }
     },
     {
-        image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", } },
+        image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['PRODUKT BROSCHÜRE RA 3', "PRODUKT BROSCHÜRE WINDKRAFT"], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner68, text: [], videoId: "eP_YC0cr0n0", } },
 
     },
     {
         image: Images.banner69, text: 'RA 4', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", } }
+        data: { image: Images.banner70, text: ['PRODUKT BROSCHÜRE RA 4', "PRODUKT BROSCHÜRE WINDKRAFT"], videoId: "9RM0QLDti1A", otherData: { image: Images.banner70, text: [], videoId: "9RM0QLDti1A", } }
     },
     {
         image: Images.banner71, text: '»BLADEX«', navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner72, text: ['QPRODUKT PROSPEKT »BLADEX«'], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner72, text: ['QQUICKGUIDE ZUM »BLADEX«'], videoId: "eP_YC0cr0n0" } }, listTransport: true,
+        data: { image: Images.banner72, text: ["PRODUKT BROSCHÜRE WINDKRAFT"], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner72, text: ['QQUICKGUIDE ZUM »BLADEX«'], videoId: "eP_YC0cr0n0" } }, listTransport: true,
 
     },
     {
         image: Images.banner73, text: '»BLADES«', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner74, text: ['PRODUKT PROSPEKT »BLADES«'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner74, text: ['QUICKGUIDE ZUM »BLADES«'], videoId: "9RM0QLDti1A" } }
+        data: { image: Images.banner74, text: ['PRODUKT BROSCHÜRE »BLADES«',"PRODUKT BROSCHÜRE WINDKRAFT" ], videoId: "9RM0QLDti1A", otherData: { image: Images.banner74, text: [], videoId: "9RM0QLDti1A" } }
     },
 
 ]
@@ -306,24 +308,24 @@ export const dataSetTransportService = [
             {
                 image: Images.banner16, text: 'PRITSCHENAUFLIEGER', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['QUICKGUIDE ZUM SPZ-L | SPZ-GL | SPZ-H'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['QUICKGUIDE ZUM SPZ-GP'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['QUICKGUIDE ZUM »VENTUM«'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'] } } }
                 ]
             },
             {
                 image: Images.banner18, text: 'SEMIAUFLIEGER', navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['QUICKGUIDE ZUM STEPSTAR'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'] } } },
                     { navigateTo: 'ProductDeatilVideo', image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT »ARCUS« P | »ARCUS« PK'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« MIT RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« MIT RADMULDE'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« MIT RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'] } } }
 
                 ],
@@ -333,13 +335,13 @@ export const dataSetTransportService = [
             {
                 image: Images.banner10, text: 'TIEFBETTAUFLIEGER', navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['QUICKGUIDE ZUM STZ-VL | STZ-VH'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['QUICKGUIDE ZUM »MPA« V'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['QUICKGUIDE ZUM STZ-VP (245)'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['QUICKGUIDE ZUM STZ-VP (285)'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'] } } }
 
                 ],
@@ -354,31 +356,31 @@ export const dataSetTransportService = [
     {
         image: Images.banner16, text: 'PRITSCHENAUFLIEGER', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['QUICKGUIDE ZUM SPZ-L | SPZ-GL | SPZ-H'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['QUICKGUIDE ZUM SPZ-GP'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['QUICKGUIDE ZUM »VENTUM«'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'] } } }
         ]
     },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['QUICKGUIDE ZUM SPZ-L | SPZ-GL | SPZ-H'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['QUICKGUIDE ZUM SPZ-GP'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['QUICKGUIDE ZUM »VENTUM«'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'] } } },
 
     {
         image: Images.banner18, text: 'SEMIAUFLIEGER', navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['QUICKGUIDE ZUM STEPSTAR'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'] } } },
             { navigateTo: 'ProductDeatilVideo', image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['QUICKGUIDE ZUM»ARCUS« P | »ARCUS« PK'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« MIT RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« MIT RADMULDE'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« MIT RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'] } } }
 
         ],
@@ -386,38 +388,38 @@ export const dataSetTransportService = [
 
     },
 
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['QUICKGUIDE ZUM STEPSTAR'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'] } } },
     { navigateTo: 'ProductDeatilVideo', image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['QUICKGUIDE ZUM»ARCUS« P | »ARCUS« PK'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« MIT RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« MIT RADMULDE'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« MIT RADMULDE', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'] } } },
 
     {
         image: Images.banner10, text: 'TIEFBETTAUFLIEGER', navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['QUICKGUIDE ZUM STZ-VL | STZ-VH'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['QUICKGUIDE ZUM »MPA« V'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['QUICKGUIDE ZUM STZ-VP (245)'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['QUICKGUIDE ZUM STZ-VP (285)'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'] } } }
 
         ],
         listTransport: true,
 
     },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['QUICKGUIDE ZUM STZ-VL | STZ-VH'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['QUICKGUIDE ZUM »MPA« V'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['QUICKGUIDE ZUM STZ-VP (245)'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['QUICKGUIDE ZUM STZ-VP (285)'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'] } } },
 
 
@@ -428,17 +430,17 @@ export const dataSetTransportService = [
             {
                 image: Images.banner40, text: 'GEZOGEN', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['QUICKGUIDE ZUM THP/ET'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['QUICKGUIDE ZUM THP/MT'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['QUICKGUIDE ZUM THP/SL-L'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['QUICKGUIDE ZUM THP/SL-S'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['QUICKGUIDE ZUM THP/SL'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['QUICKGUIDE ZUM THP/UT'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'] } } }
 
                 ]
@@ -446,13 +448,13 @@ export const dataSetTransportService = [
             {
                 image: Images.banner41, text: 'ANGETRIEBEN', navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['QUICKGUIDE ZUM »ADDRIVE«'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['QUICKGUIDE ZUM PST/SL'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['QUICKGUIDE ZUM PST/SL-E'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['QUICKGUIDE ZUM PST/ES-E'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'] } } }
 
                 ],
@@ -469,56 +471,56 @@ export const dataSetTransportService = [
     {
         image: Images.banner40, text: 'GEZOGEN', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['QUICKGUIDE ZUM THP/ET'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['QUICKGUIDE ZUM THP/MT'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['QUICKGUIDE ZUM THP/SL-L'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['QUICKGUIDE ZUM THP/SL-S'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['QUICKGUIDE ZUM THP/SL'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['QUICKGUIDE ZUM THP/UT'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'] } } }
 
         ]
     },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['QUICKGUIDE ZUM THP/ET'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['QUICKGUIDE ZUM THP/MT'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['QUICKGUIDE ZUM THP/SL-L'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['QUICKGUIDE ZUM THP/SL-S'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['QUICKGUIDE ZUM THP/SL'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['QUICKGUIDE ZUM THP/UT'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'] } } },
     {
         image: Images.banner41, text: 'ANGETRIEBEN', navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['QUICKGUIDE ZUM »ADDRIVE«'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['QUICKGUIDE ZUM PST/SL'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['QUICKGUIDE ZUM PST/SL-E'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['QUICKGUIDE ZUM PST/ES-E'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'] } } }
 
         ],
         listTransport: true,
 
     },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['QUICKGUIDE ZUM »ADDRIVE«'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['QUICKGUIDE ZUM PST/SL'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['QUICKGUIDE ZUM PST/SL-E'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['QUICKGUIDE ZUM PST/ES-E'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'] } } },
 
 
@@ -535,30 +537,30 @@ export const dataSetTransportService = [
 
             {
                 image: Images.banner61, text: 'FTV 550', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'], 
-                otherData: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550'] }, videoId: "9RM0QLDti1A", }
+                data: { image: Images.banner62, text: [], 
+                otherData: { image: Images.banner62, text: ["PRODUCT BROCHURE FTV 550"] }, videoId: "9RM0QLDti1A", }
             },
             {
                 image: Images.banner63, text: '»FAKTOR« 5 | »FAKTOR« 5.5', navigateTo: 'ProductDeatilMoreInfo',
                 data: {
-                    image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], 
-                    otherData: { image: Images.banner64, text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
+                    image: Images.banner64, text: [], 
+                    otherData: { image: Images.banner64, text: ['TECHNICAL DATA »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
                 },
 
             },
             {
                 image: Images.banner65, text: 'RA 2', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", 
+                data: { image: Images.banner66, text: [], videoId: "9RM0QLDti1A", 
                 otherData: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", } }
             },
             {
-                image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", 
+                image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: [], videoId: "eP_YC0cr0n0", 
                 otherData: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", } },
 
             },
             {
                 image: Images.banner69, text: 'RA 4', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", 
+                data: { image: Images.banner70, text: [], videoId: "9RM0QLDti1A", 
                 otherData: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", } }
             },
             {
@@ -569,7 +571,7 @@ export const dataSetTransportService = [
             },
             {
                 image: Images.banner73, text: '»BLADES«', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner74, text: ['QUICKGUIDE ZUM »BLADES«'], videoId: "9RM0QLDti1A", 
+                data: { image: Images.banner74, text: [], videoId: "9RM0QLDti1A", 
                 otherData: { image: Images.banner74, text: ['PRODUKT PROSPEKT »BLADES«'], videoId: "9RM0QLDti1A" } }
             },
 
@@ -580,30 +582,30 @@ export const dataSetTransportService = [
 
     {
         image: Images.banner61, text: 'FTV 550', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'], 
-        otherData: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550', "DATENBLÄTTER FTV 550"] }, videoId: "9RM0QLDti1A", }
+        data: { image: Images.banner62, text: [], 
+        otherData: { image: Images.banner62, text: ["PRODUCT BROCHURE FTV 550", "PRODUCT BROCHURE WIND POWER"] }, videoId: "9RM0QLDti1A", }
     },
     {
         image: Images.banner63, text: '»FAKTOR« 5 | »FAKTOR« 5.5', navigateTo: 'ProductDeatilMoreInfo',
         data: {
-            image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], 
-            otherData: { image: Images.banner64, text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
+            image: Images.banner64, text: [], 
+            otherData: { image: Images.banner64, text: ['TECHNICAL DATA »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
         },
 
     },
     {
         image: Images.banner65, text: 'RA 2', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", 
+        data: { image: Images.banner66, text: [], videoId: "9RM0QLDti1A", 
         otherData: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", } }
     },
     {
-        image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", 
+        image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: [], videoId: "eP_YC0cr0n0", 
         otherData: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", } },
 
     },
     {
         image: Images.banner69, text: 'RA 4', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", 
+        data: { image: Images.banner70, text: [], videoId: "9RM0QLDti1A", 
         otherData: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", } }
     },
     {
@@ -614,7 +616,7 @@ export const dataSetTransportService = [
     },
     {
         image: Images.banner73, text: '»BLADES«', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner74, text: ['QUICKGUIDE ZUM »BLADES«'], videoId: "9RM0QLDti1A", 
+        data: { image: Images.banner74, text: [], videoId: "9RM0QLDti1A", 
         otherData: { image: Images.banner74, text: ['PRODUKT PROSPEKT »BLADES«'], videoId: "9RM0QLDti1A" } }
     },
 
@@ -928,18 +930,18 @@ export const dataSetTransportProductsEnglish = [
             {
                 image: Images.banner16, text: 'FLATBED SEMI-TRAILERS', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['QUICKGUIDE ZUM SPZ-L | SPZ-GL | SPZ-H'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['QUICKGUIDE ZUM SPZ-GP'], } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['QUICKGUIDE ZUM »VENTUM«'] } } }
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: [], } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: [] } } }
                 ]
             },
             {
                 image: Images.banner18, text: 'SEMI LOWLOADERS', navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['QUICKGUIDE ZUM STEPSTAR'] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: [] } } },
                     { navigateTo: 'ProductDeatilVideo', image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['QUICKGUIDE ZUM»ARCUS« P | »ARCUS« PK'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« WITH WHEEL RECESS'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH WHEEL RECESS'] } } }
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« WITH WHEEL RECESS'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: [] } } }
 
                 ],
                 listTransport: true,
@@ -948,10 +950,10 @@ export const dataSetTransportProductsEnglish = [
             {
                 image: Images.banner10, text: 'LOWLOADER TRAILERS', navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['QUICKGUIDE ZUM STZ-VL | STZ-VH'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['QUICKGUIDE ZUM »MPA« V'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['QUICKGUIDE ZUM STZ-VP (245)'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['QUICKGUIDE ZUM STZ-VP (285)'] } } }
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: [] } } }
 
                 ],
                 listTransport: true,
@@ -965,49 +967,49 @@ export const dataSetTransportProductsEnglish = [
     {
         image: Images.banner16, text: 'FLATBED SEMI-TRAILERS', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['QUICKGUIDE ZUM SPZ-L | SPZ-GL | SPZ-H'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['QUICKGUIDE ZUM SPZ-GP'], } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['QUICKGUIDE ZUM »VENTUM«'] } } }
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: [], } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: [] } } }
         ]
     },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['QUICKGUIDE ZUM SPZ-L | SPZ-GL | SPZ-H'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['QUICKGUIDE ZUM SPZ-GP'], } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['QUICKGUIDE ZUM »VENTUM«'] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: [], } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: [] } } },
 
     {
         image: Images.banner18, text: 'SEMI LOWLOADERS', navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['QUICKGUIDE ZUM STEPSTAR'] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: [] } } },
             { navigateTo: 'ProductDeatilVideo', image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['QUICKGUIDE ZUM»ARCUS« P | »ARCUS« PK'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH WHEEL RECESS'] } } }
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: [] } } }
 
         ],
         listTransport: true,
 
     },
 
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['QUICKGUIDE ZUM STEPSTAR'] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: [] } } },
     { navigateTo: 'ProductDeatilVideo', image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['QUICKGUIDE ZUM»ARCUS« P | »ARCUS« PK'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH WHEEL RECESS'] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« MIT RADMULDE'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: [] } } },
 
     {
         image: Images.banner10, text: 'LOWLOADER TRAILERS', navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['QUICKGUIDE ZUM STZ-VL | STZ-VH'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['QUICKGUIDE ZUM »MPA« V'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['QUICKGUIDE ZUM STZ-VP (245)'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['QUICKGUIDE ZUM STZ-VP (285)'] } } }
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: [] } } }
 
         ],
         listTransport: true,
 
     },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['QUICKGUIDE ZUM STZ-VL | STZ-VH'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['QUICKGUIDE ZUM »MPA« V'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['QUICKGUIDE ZUM STZ-VP (245)'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['QUICKGUIDE ZUM STZ-VP (285)'] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: [] } } },
 
 
 
@@ -1017,22 +1019,22 @@ export const dataSetTransportProductsEnglish = [
             {
                 image: Images.banner40, text: 'TOWED', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['QUICKGUIDE ZUM THP/ET'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['QUICKGUIDE ZUM THP/MT'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['QUICKGUIDE ZUM THP/SL-L'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['QUICKGUIDE ZUM THP/SL-S'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['QUICKGUIDE ZUM THP/SL'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['QUICKGUIDE ZUM THP/UT'] } } }
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: [] } } }
 
                 ]
             },
             {
                 image: Images.banner41, text: 'SELF-PROPELLED', navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['QUICKGUIDE ZUM »ADDRIVE«'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['QUICKGUIDE ZUM PST/SL'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['QUICKGUIDE ZUM PST/SL-E'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['QUICKGUIDE ZUM PST/ES-E'] } } }
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: [] } } },
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: [] } } }
 
                 ],
                 listTransport: true,
@@ -1048,37 +1050,37 @@ export const dataSetTransportProductsEnglish = [
     {
         image: Images.banner40, text: 'TOWED', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['QUICKGUIDE ZUM THP/ET'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['QUICKGUIDE ZUM THP/MT'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['QUICKGUIDE ZUM THP/SL-L'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['QUICKGUIDE ZUM THP/SL-S'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['QUICKGUIDE ZUM THP/SL'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['QUICKGUIDE ZUM THP/UT'] } } }
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: [] } } }
 
         ]
     },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['QUICKGUIDE ZUM THP/ET'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['QUICKGUIDE ZUM THP/MT'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['QUICKGUIDE ZUM THP/SL-L'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['QUICKGUIDE ZUM THP/SL-S'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['QUICKGUIDE ZUM THP/SL'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['QUICKGUIDE ZUM THP/UT'] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: [] } } },
     {
         image: Images.banner41, text: 'SELF-PROPELLED', navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['QUICKGUIDE ZUM »ADDRIVE«'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['QUICKGUIDE ZUM PST/SL'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['QUICKGUIDE ZUM PST/SL-E'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['QUICKGUIDE ZUM PST/ES-E'] } } }
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: [] } } },
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: [] } } }
 
         ],
         listTransport: true,
 
     },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['QUICKGUIDE ZUM »ADDRIVE«'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['QUICKGUIDE ZUM PST/SL'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['QUICKGUIDE ZUM PST/SL-E'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['QUICKGUIDE ZUM PST/ES-E'] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: [] } } },
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'], otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: [] } } },
 
 
 
@@ -1094,35 +1096,39 @@ export const dataSetTransportProductsEnglish = [
 
             {
                 image: Images.banner61, text: 'FTV 550', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550', "DATENBLÄTTER FTV 550"], otherData: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'] }, videoId: "9RM0QLDti1A", }
+                data: { image: Images.banner62, text: ["PRODUCT BROCHURE FTV 550", "PRODUCT BROCHURE WIND POWER"], otherData: { image: Images.banner62, text: [] }, videoId: "9RM0QLDti1A", }
             },
             {
                 image: Images.banner63, text: '»FAKTOR« 5 | »FAKTOR« 5.5', navigateTo: 'ProductDeatilMoreInfo',
                 data: {
-                    image: Images.banner64, text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], otherData: { image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
+                    image: Images.banner64, text: ['TECHNICAL DATA »FAKTOR« 5 | »FAKTOR« 5.5'], otherData: { image: Images.banner64, text: [], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
                 },
 
             },
             {
                 image: Images.banner65, text: 'RA 2', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", } }
+                data: { image: Images.banner66, text: [ 'PRODUCT BROCHURE RA 2',
+                "PRODUCT BROCHURE WIND POWER"], videoId: "9RM0QLDti1A", otherData: { image: Images.banner66, text: [], videoId: "9RM0QLDti1A", } }
             },
             {
-                image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", } },
+                image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: [ 'PRODUCT BROCHURE RA 3',
+                "PRODUCT BROCHURE WIND POWER"], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner68, text: [], videoId: "eP_YC0cr0n0", } },
 
             },
             {
                 image: Images.banner69, text: 'RA 4', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", } }
+                data: { image: Images.banner70, text: [ 'PRODUCT BROCHURE RA 4',
+                "PRODUCT BROCHURE WIND POWER"], videoId: "9RM0QLDti1A", otherData: { image: Images.banner70, text: [], videoId: "9RM0QLDti1A", } }
             },
             {
                 image: Images.banner71, text: '»BLADEX«', navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner72, text: ['QPRODUKT PROSPEKT »BLADEX«'], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner72, text: ['QQUICKGUIDE ZUM »BLADEX«'], videoId: "eP_YC0cr0n0" } }, listTransport: true,
+                data: { image: Images.banner72, text: ["PRODUCT BROCHURE WIND POWER"], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner72, text: [], videoId: "eP_YC0cr0n0" } }, listTransport: true,
 
             },
             {
                 image: Images.banner73, text: '»BLADES«', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner74, text: ['PRODUKT PROSPEKT »BLADES«'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner74, text: ['QUICKGUIDE ZUM »BLADES«'], videoId: "9RM0QLDti1A" } }
+                data: { image: Images.banner74, text: [ 'PRODUCT BROCHURE »BLADES«',
+                "PRODUCT BROCHURE WIND POWER"], videoId: "9RM0QLDti1A", otherData: { image: Images.banner74, text: [], videoId: "9RM0QLDti1A" } }
             },
 
 
@@ -1132,26 +1138,26 @@ export const dataSetTransportProductsEnglish = [
 
     {
         image: Images.banner61, text: 'FTV 550', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550', "DATENBLÄTTER FTV 550"], otherData: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'] }, videoId: "9RM0QLDti1A", }
+        data: { image: Images.banner62, text: ["PRODUCT BROCHURE FTV 550", "PRODUCT BROCHURE WIND POWER"], otherData: { image: Images.banner62, text: [] }, videoId: "9RM0QLDti1A", }
     },
     {
         image: Images.banner63, text: '»FAKTOR« 5 | »FAKTOR« 5.5', navigateTo: 'ProductDeatilMoreInfo',
         data: {
-            image: Images.banner64, text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], otherData: { image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
+            image: Images.banner64, text: ['TECHNICAL DATA »FAKTOR« 5 | »FAKTOR« 5.5'], otherData: { image: Images.banner64, text: [], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
         },
 
     },
     {
         image: Images.banner65, text: 'RA 2', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", } }
+        data: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner66, text: [], videoId: "9RM0QLDti1A", } }
     },
     {
-        image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", } },
+        image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", otherData: { image: Images.banner68, text: [], videoId: "eP_YC0cr0n0", } },
 
     },
     {
         image: Images.banner69, text: 'RA 4', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", } }
+        data: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner70, text: [], videoId: "9RM0QLDti1A", } }
     },
     {
         image: Images.banner71, text: '»BLADEX«', navigateTo: 'ProductDeatilMoreInfo',
@@ -1160,7 +1166,7 @@ export const dataSetTransportProductsEnglish = [
     },
     {
         image: Images.banner73, text: '»BLADES«', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner74, text: ['PRODUKT PROSPEKT »BLADES«'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner74, text: ['QUICKGUIDE ZUM »BLADES«'], videoId: "9RM0QLDti1A" } }
+        data: { image: Images.banner74, text: ['PRODUKT PROSPEKT »BLADES«'], videoId: "9RM0QLDti1A", otherData: { image: Images.banner74, text: [], videoId: "9RM0QLDti1A" } }
     },
 
 ]
@@ -1200,24 +1206,24 @@ export const dataSetTransportServiceEnglish = [
             {
                 image: Images.banner16, text: 'FLATBED SEMI-TRAILERS', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['QUICKGUIDE ZUM SPZ-L | SPZ-GL | SPZ-H'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['QUICKGUIDE ZUM SPZ-GP'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['QUICKGUIDE ZUM »VENTUM«'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'] } } }
                 ]
             },
             {
                 image: Images.banner18, text: 'SEMI LOWLOADERS', navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['QUICKGUIDE ZUM STEPSTAR'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'] } } },
                     { navigateTo: 'ProductDeatilVideo', image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT »ARCUS« P | »ARCUS« PK'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH WHEEL RECESS'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« WITH WHEEL RECESS'] } } }
 
                 ],
@@ -1227,13 +1233,13 @@ export const dataSetTransportServiceEnglish = [
             {
                 image: Images.banner10, text: 'LOWLOADER TRAILERS', navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['QUICKGUIDE ZUM STZ-VL | STZ-VH'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['QUICKGUIDE ZUM »MPA« V'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['QUICKGUIDE ZUM STZ-VP (245)'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['QUICKGUIDE ZUM STZ-VP (285)'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'] } } }
 
                 ],
@@ -1248,31 +1254,31 @@ export const dataSetTransportServiceEnglish = [
     {
         image: Images.banner16, text: 'FLATBED SEMI-TRAILERS', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['QUICKGUIDE ZUM SPZ-L | SPZ-GL | SPZ-H'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['QUICKGUIDE ZUM SPZ-GP'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['QUICKGUIDE ZUM »VENTUM«'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'] } } }
         ]
     },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['QUICKGUIDE ZUM SPZ-L | SPZ-GL | SPZ-H'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner19, text: 'SPZ-L | SPZ-GL | SPZ-H', data: { videoId: "9RM0QLDti1A", image: Images.banner22, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner22, text: ['PRODUKT PROSPEKT SPZ-L | SPZ-GL | SPZ-H'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['QUICKGUIDE ZUM SPZ-GP'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner20, text: 'SPZ-GP', data: { videoId: "9RM0QLDti1A", image: Images.banner23, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner23, text: ['PRODUKT PROSPEKT SPZ-GP'], } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['QUICKGUIDE ZUM »VENTUM«'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner21, text: '»VENTUM«', data: { videoId: "9RM0QLDti1A", image: Images.banner24, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner24, text: ['PRODUKT PROSPEKT »VENTUM«'] } } },
 
     {
         image: Images.banner18, text: 'SEMI LOWLOADERS', navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['QUICKGUIDE ZUM STEPSTAR'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'] } } },
             { navigateTo: 'ProductDeatilVideo', image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['QUICKGUIDE ZUM»ARCUS« P | »ARCUS« PK'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH WHEEL RECESS'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« WITH WHEEL RECESS'] } } }
 
         ],
@@ -1280,38 +1286,38 @@ export const dataSetTransportServiceEnglish = [
 
     },
 
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['QUICKGUIDE ZUM STEPSTAR'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner35, text: 'STEPSTAR', data: { videoId: "9RM0QLDti1A", image: Images.banner36, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner36, text: ['PRODUKT PROSPEKT STEPSTAR'] } } },
     { navigateTo: 'ProductDeatilVideo', image: Images.banner25, text: '»ARCUS« P | »ARCUS« PK', data: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['PRODUKT PROSPEKT»ARCUS« P | »ARCUS« PK'], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner37, text: ['QUICKGUIDE ZUM»ARCUS« P | »ARCUS« PK'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['QUICKGUIDE ZUM STZ-L | STZ-H | »MPA«'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner28, text: 'STZ-L | STZ-H | »MPA«', data: { videoId: "9RM0QLDti1A", image: Images.banner38, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner38, text: ['PRODUKT PROSPEKT STZ-L | STZ-H | »MPA«'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['QUICKGUIDE ZUM STZ-L | »MPA« WITH WHEEL RECESS'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner27, text: 'STZ-L | »MPA« WITH WHEEL RECESS', data: { videoId: "9RM0QLDti1A", image: Images.banner39, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner39, text: ['PRODUKT PROSPEKT STZ-L | »MPA« WITH WHEEL RECESS'] } } },
 
     {
         image: Images.banner10, text: 'LOWLOADER TRAILERS', navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['QUICKGUIDE ZUM STZ-VL | STZ-VH'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['QUICKGUIDE ZUM »MPA« V'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['QUICKGUIDE ZUM STZ-VP (245)'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['QUICKGUIDE ZUM STZ-VP (285)'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'] } } }
 
         ],
         listTransport: true,
 
     },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['QUICKGUIDE ZUM STZ-VL | STZ-VH'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner31, text: 'STZ-VL | STZ-VH', data: { videoId: "9RM0QLDti1A", image: Images.banner89, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner89, text: ['PRODUKT PROSPEKT STZ-VL | STZ-VH'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['QUICKGUIDE ZUM »MPA« V'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner32, text: '»MPA« V', data: { videoId: "9RM0QLDti1A", image: Images.banner90, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner90, text: ['PRODUKT PROSPEKT »MPA« V'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['QUICKGUIDE ZUM STZ-VP (245)'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner33, text: 'STZ-VP (245)', data: { videoId: "9RM0QLDti1A", image: Images.banner91, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner91, text: ['PRODUKT PROSPEKT STZ-VP (245)'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['QUICKGUIDE ZUM STZ-VP (285)'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner34, text: 'STZ-VP (285)', data: { videoId: "9RM0QLDti1A", image: Images.banner92, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner92, text: ['PRODUKT PROSPEKT STZ-VP (285)'] } } },
 
 
@@ -1322,17 +1328,17 @@ export const dataSetTransportServiceEnglish = [
             {
                 image: Images.banner40, text: 'TOWED', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['QUICKGUIDE ZUM THP/ET'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['QUICKGUIDE ZUM THP/MT'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['QUICKGUIDE ZUM THP/SL-L'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['QUICKGUIDE ZUM THP/SL-S'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['QUICKGUIDE ZUM THP/SL'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['QUICKGUIDE ZUM THP/UT'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'] } } }
 
                 ]
@@ -1340,13 +1346,13 @@ export const dataSetTransportServiceEnglish = [
             {
                 image: Images.banner41, text: 'SELF-PROPELLED', navigateTo: 'ProductDeatilMoreInfo',
                 data: [
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['QUICKGUIDE ZUM »ADDRIVE«'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['QUICKGUIDE ZUM PST/SL'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['QUICKGUIDE ZUM PST/SL-E'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'] } } },
-                    { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['QUICKGUIDE ZUM PST/ES-E'], 
+                    { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: [], 
                     otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'] } } }
 
                 ],
@@ -1363,56 +1369,56 @@ export const dataSetTransportServiceEnglish = [
     {
         image: Images.banner40, text: 'TOWED', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['QUICKGUIDE ZUM THP/ET'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['QUICKGUIDE ZUM THP/MT'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['QUICKGUIDE ZUM THP/SL-L'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['QUICKGUIDE ZUM THP/SL-S'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['QUICKGUIDE ZUM THP/SL'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['QUICKGUIDE ZUM THP/UT'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'] } } }
 
         ]
     },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['QUICKGUIDE ZUM THP/ET'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner40, text: 'THP/ET', data: { videoId: "9RM0QLDti1A", image: Images.banner42, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner42, text: ['PRODUKT PROSPEKT THP/ET'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['QUICKGUIDE ZUM THP/MT'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner43, text: 'THP/MT', data: { videoId: "9RM0QLDti1A", image: Images.banner44, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner44, text: ['PRODUKT PROSPEKT THP/MT'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['QUICKGUIDE ZUM THP/SL-L'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner45, text: 'THP/SL-L', data: { videoId: "9RM0QLDti1A", image: Images.banner46, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner46, text: ['PRODUKT PROSPEKT THP/SL-L'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['QUICKGUIDE ZUM THP/SL-S'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner47, text: 'THP/SL-S', data: { videoId: "9RM0QLDti1A", image: Images.banner48, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner48, text: ['PRODUKT PROSPEKT THP/SL-S'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['QUICKGUIDE ZUM THP/SL'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner49, text: 'THP/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner50, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner50, text: ['PRODUKT PROSPEKT THP/SL'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['QUICKGUIDE ZUM THP/UT'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner51, text: 'THP/UT', data: { videoId: "9RM0QLDti1A", image: Images.banner52, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner52, text: ['PRODUKT PROSPEKT THP/UT'] } } },
     {
         image: Images.banner41, text: 'SELF-PROPELLED', navigateTo: 'ProductDeatilMoreInfo',
         data: [
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['QUICKGUIDE ZUM »ADDRIVE«'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['QUICKGUIDE ZUM PST/SL'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['QUICKGUIDE ZUM PST/SL-E'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'] } } },
-            { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['QUICKGUIDE ZUM PST/ES-E'], 
+            { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: [], 
             otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'] } } }
 
         ],
         listTransport: true,
 
     },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['QUICKGUIDE ZUM »ADDRIVE«'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner53, text: '»ADDRIVE«', data: { videoId: "9RM0QLDti1A", image: Images.banner54, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner54, text: ['PRODUKT PROSPEKT »ADDRIVE«'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['QUICKGUIDE ZUM PST/SL'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner56, text: 'PST/SL', data: { videoId: "9RM0QLDti1A", image: Images.banner55, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner55, text: ['PRODUKT PROSPEKT PST/SL'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['QUICKGUIDE ZUM PST/SL-E'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner57, text: 'PST/SL-E', data: { videoId: "9RM0QLDti1A", image: Images.banner58, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner58, text: ['PRODUKT PROSPEKT PST/SL-E'] } } },
-    { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['QUICKGUIDE ZUM PST/ES-E'], 
+    { navigateTo: 'ProductDeatilVideo', image: Images.banner59, text: 'PST/ES-E', data: { videoId: "9RM0QLDti1A", image: Images.banner60, text: [], 
     otherData: { videoId: "9RM0QLDti1A", image: Images.banner60, text: ['PRODUKT PROSPEKT PST/ES-E'] } } },
 
 
@@ -1429,30 +1435,30 @@ export const dataSetTransportServiceEnglish = [
 
             {
                 image: Images.banner61, text: 'FTV 550', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'], 
-                otherData: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550', "DATENBLÄTTER FTV 550"] }, videoId: "9RM0QLDti1A", }
+                data: { image: Images.banner62, text: [], 
+                otherData: { image: Images.banner62, text: ["PRODUCT BROCHURE FTV 550", "PRODUCT BROCHURE WIND POWER"] }, videoId: "9RM0QLDti1A", }
             },
             {
                 image: Images.banner63, text: '»FAKTOR« 5 | »FAKTOR« 5.5', navigateTo: 'ProductDeatilMoreInfo',
                 data: {
-                    image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], 
-                    otherData: { image: Images.banner64, text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
+                    image: Images.banner64, text: [], 
+                    otherData: { image: Images.banner64, text: ['TECHNICAL DATA »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
                 },
 
             },
             {
                 image: Images.banner65, text: 'RA 2', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", 
+                data: { image: Images.banner66, text: [], videoId: "9RM0QLDti1A", 
                 otherData: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", } }
             },
             {
-                image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", 
+                image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: [], videoId: "eP_YC0cr0n0", 
                 otherData: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", } },
 
             },
             {
                 image: Images.banner69, text: 'RA 4', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", 
+                data: { image: Images.banner70, text: [], videoId: "9RM0QLDti1A", 
                 otherData: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", } }
             },
             {
@@ -1463,7 +1469,7 @@ export const dataSetTransportServiceEnglish = [
             },
             {
                 image: Images.banner73, text: '»BLADES«', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-                data: { image: Images.banner74, text: ['QUICKGUIDE ZUM »BLADES«'], videoId: "9RM0QLDti1A", 
+                data: { image: Images.banner74, text: [], videoId: "9RM0QLDti1A", 
                 otherData: { image: Images.banner74, text: ['PRODUKT PROSPEKT »BLADES«'], videoId: "9RM0QLDti1A" } }
             },
 
@@ -1474,30 +1480,30 @@ export const dataSetTransportServiceEnglish = [
 
     {
         image: Images.banner61, text: 'FTV 550', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner62, text: ['QUICKGUIDE ZUM FTV 550'], 
-        otherData: { image: Images.banner62, text: ['PRODUKT PROSPEKT FTV 550', "DATENBLÄTTER FTV 550"] }, videoId: "9RM0QLDti1A", }
+        data: { image: Images.banner62, text: [], 
+        otherData: { image: Images.banner62, text: ["PRODUCT BROCHURE FTV 550", "PRODUCT BROCHURE WIND POWER"] }, videoId: "9RM0QLDti1A", }
     },
     {
         image: Images.banner63, text: '»FAKTOR« 5 | »FAKTOR« 5.5', navigateTo: 'ProductDeatilMoreInfo',
         data: {
-            image: Images.banner64, text: ['QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'], 
-            otherData: { image: Images.banner64, text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
+            image: Images.banner64, text: [], 
+            otherData: { image: Images.banner64, text: ['TECHNICAL DATA »FAKTOR« 5 | »FAKTOR« 5.5'], videoId: "eP_YC0cr0n0" }, videoId: "eP_YC0cr0n0",
         },
 
     },
     {
         image: Images.banner65, text: 'RA 2', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner66, text: ['QUICKGUIDE ZUM RA 2'], videoId: "9RM0QLDti1A", 
+        data: { image: Images.banner66, text: [], videoId: "9RM0QLDti1A", 
         otherData: { image: Images.banner66, text: ['DATENBLÄTTER RA 2'], videoId: "9RM0QLDti1A", } }
     },
     {
-        image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: ['QUICKGUIDE ZUM RA 3'], videoId: "eP_YC0cr0n0", 
+        image: Images.banner67, text: 'RA 3', navigateTo: 'ProductDeatilMoreInfo', data: { image: Images.banner68, text: [], videoId: "eP_YC0cr0n0", 
         otherData: { image: Images.banner68, text: ['DATENBLÄTTER RA 3'], videoId: "eP_YC0cr0n0", } },
 
     },
     {
         image: Images.banner69, text: 'RA 4', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner70, text: ['QUICKGUIDE ZUM RA 4'], videoId: "9RM0QLDti1A", 
+        data: { image: Images.banner70, text: [], videoId: "9RM0QLDti1A", 
         otherData: { image: Images.banner70, text: ['DATENBLÄTTER RA 4'], videoId: "9RM0QLDti1A", } }
     },
     {
@@ -1508,7 +1514,7 @@ export const dataSetTransportServiceEnglish = [
     },
     {
         image: Images.banner73, text: '»BLADES«', listTransport: true, navigateTo: 'ProductDeatilMoreInfo',
-        data: { image: Images.banner74, text: ['QUICKGUIDE ZUM »BLADES«'], videoId: "9RM0QLDti1A", 
+        data: { image: Images.banner74, text: [], videoId: "9RM0QLDti1A", 
         otherData: { image: Images.banner74, text: ['PRODUKT PROSPEKT »BLADES«'], videoId: "9RM0QLDti1A" } }
     },
 

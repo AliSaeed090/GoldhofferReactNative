@@ -281,7 +281,7 @@ export const listTransportProductGerman = [
         data: {
           image: Images.banner62, text: [
             'PRODUKT PROSPEKT FTV 550',
-            "PRODUKT PROSPEKT WINDKRAFT"
+            "PRODUKT BROSCHÜRE WINDKRAFT"
           ], otherData: {
             image: Images.banner62, text: [
               // 'QUICKGUIDE ZUM FTV 550'
@@ -304,7 +304,7 @@ export const listTransportProductGerman = [
         image: Images.banner65, text: 'RA 2', listTransport: true,
         data: {
           image: Images.banner66, text: [
-            'PRODUKT BROSCHÜRE RA 2'], videoId: "9RM0QLDti1A", otherData: {
+            'PRODUKT BROSCHÜRE RA 2', "PRODUKT BROSCHÜRE WINDKRAFT"], videoId: "9RM0QLDti1A", otherData: {
               image: Images.banner66, text: [
                 // 'QUICKGUIDE ZUM RA 2'
               ], videoId: "9RM0QLDti1A",
@@ -314,7 +314,7 @@ export const listTransportProductGerman = [
       {
         image: Images.banner67, text: 'RA 3', data: {
           image: Images.banner68, text: [
-            'PRODUKT BROSCHÜRE RA 3'], videoId: "eP_YC0cr0n0", otherData: {
+            'PRODUKT BROSCHÜRE RA 3', "PRODUKT BROSCHÜRE WINDKRAFT"], videoId: "eP_YC0cr0n0", otherData: {
               image: Images.banner68, text: [
                 // 'QUICKGUIDE ZUM RA 3'
               ], videoId: "eP_YC0cr0n0",
@@ -326,7 +326,7 @@ export const listTransportProductGerman = [
         image: Images.banner69, text: 'RA 4', listTransport: true,
         data: {
           image: Images.banner70, text: [
-            'PRODUKT BROSCHÜRE RA 4'], videoId: "9RM0QLDti1A", otherData: {
+            'PRODUKT BROSCHÜRE RA 4', "PRODUKT BROSCHÜRE WINDKRAFT"], videoId: "9RM0QLDti1A", otherData: {
               image: Images.banner70, text: [
                 // 'QUICKGUIDE ZUM RA 4'
               ], videoId: "9RM0QLDti1A",
@@ -338,6 +338,7 @@ export const listTransportProductGerman = [
         data: {
           image: Images.banner72, text: [
             // 'PRODUKT PROSPEKT »BLADEX«'
+            "PRODUKT BROSCHÜRE WINDKRAFT"
 
           ], videoId: "eP_YC0cr0n0", otherData: {
             image: Images.banner72, text: [
@@ -351,7 +352,7 @@ export const listTransportProductGerman = [
         image: Images.banner73, text: '»BLADES«', listTransport: true,
         data: {
           image: Images.banner74, text: [
-            'PRODUKT BROSCHÜRE »BLADES«'], videoId: "9RM0QLDti1A", otherData: {
+            'PRODUKT BROSCHÜRE »BLADES«', "PRODUKT BROSCHÜRE WINDKRAFT"], videoId: "9RM0QLDti1A", otherData: {
               image: Images.banner74, text: [
                 // 'QUICKGUIDE ZUM »BLADES«'
               ], videoId: "9RM0QLDti1A"
@@ -697,7 +698,10 @@ export const listTransportProductEnglish = [
         image: Images.banner65, text: 'RA 2', listTransport: true,
         data: {
           image: Images.banner66, text: [
-            'PRODUCT BROCHURE RA 2'], videoId: "9RM0QLDti1A", otherData: {
+            'PRODUCT BROCHURE RA 2',
+            "PRODUCT BROCHURE WIND POWER"
+          
+          ], videoId: "9RM0QLDti1A", otherData: {
               image: Images.banner66, text: [
                 // 'QUICKGUIDE ZUM RA 2'
               ], videoId: "9RM0QLDti1A",
@@ -707,7 +711,8 @@ export const listTransportProductEnglish = [
       {
         image: Images.banner67, text: 'RA 3', data: {
           image: Images.banner68, text: [
-            'PRODUCT BROCHURE RA 3'], videoId: "eP_YC0cr0n0", otherData: {
+            'PRODUCT BROCHURE RA 3',
+            "PRODUCT BROCHURE WIND POWER"], videoId: "eP_YC0cr0n0", otherData: {
               image: Images.banner68, text: [
                 // 'QUICKGUIDE ZUM RA 3'
               ], videoId: "eP_YC0cr0n0",
@@ -719,7 +724,8 @@ export const listTransportProductEnglish = [
         image: Images.banner69, text: 'RA 4', listTransport: true,
         data: {
           image: Images.banner70, text: [
-            'PRODUCT BROCHURE RA 4'], videoId: "9RM0QLDti1A", otherData: {
+            'PRODUCT BROCHURE RA 4',
+            "PRODUCT BROCHURE WIND POWER"], videoId: "9RM0QLDti1A", otherData: {
               image: Images.banner70, text: [
                 // 'QUICKGUIDE ZUM RA 4'
               ], videoId: "9RM0QLDti1A",
@@ -731,10 +737,13 @@ export const listTransportProductEnglish = [
         data: {
           image: Images.banner72, text: [
             // 'PRODUCT BROCHURE »BLADEX«'
+           
+            "PRODUCT BROCHURE WIND POWER"
 
           ], videoId: "eP_YC0cr0n0", otherData: {
             image: Images.banner72, text: [
               // 'QQUICKGUIDE ZUM »BLADEX«'
+              
             ], videoId: "eP_YC0cr0n0"
           }
         }, listTransport: true,
@@ -744,7 +753,8 @@ export const listTransportProductEnglish = [
         image: Images.banner73, text: '»BLADES«', listTransport: true,
         data: {
           image: Images.banner74, text: [
-            'PRODUCT BROCHURE »BLADES«'], videoId: "9RM0QLDti1A", otherData: {
+            'PRODUCT BROCHURE »BLADES«',
+            "PRODUCT BROCHURE WIND POWER"], videoId: "9RM0QLDti1A", otherData: {
               image: Images.banner74, text: [
                 // 'QUICKGUIDE ZUM »BLADES«'
               ], videoId: "9RM0QLDti1A"
