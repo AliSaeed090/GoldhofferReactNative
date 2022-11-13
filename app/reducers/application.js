@@ -36,7 +36,7 @@ export default (state = initialState, action = {}) => {
       case actionTypes.SET_CONTACT_DETAILS:
         return {
           ...state,
-          contact: action.contact,
+          contact: { ...state.contact ,...action.contact},
         };
     case actionTypes.SET_MENU:
       return {

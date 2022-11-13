@@ -40,15 +40,17 @@ function renderFooter() {
      <Image source={Images.G} style={styles.manImage} resizeMode="contain" />
 
      </View>
-      <View style={{ width: '50%', alignItems: 'center', marginTop: 10 }}>
+     <View style={{ width: '70%', alignItems: 'center', marginTop: 10 }}>
         <Text style={{ marginTop: 10 }} headline bold blackColor>
           {contact.name}
         </Text>
-        <View style={{ width: "95%", flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
-         
-          <Text style={{ marginLeft: 10, fontSize: 18 }} blackColor>
-          {contact.number}
+        <View style={{ width: "100%",   justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
+        <Text style={{ marginLeft: 10, fontSize: 16 }} blackColor>
+          Tel.: {contact.number}
           </Text>
+         {contact.email && <Text style={{ marginLeft: 10, fontSize: 18 }} blackColor>
+          Email.: {contact.email}
+          </Text>}
         </View>
       </View>
 

@@ -67,6 +67,7 @@ const Home = (props) => {
     dispatch(ApplicationActions.onChangeContact({
       name: 'SALES TRANSPORT',
       number: '+49 8331 15-341',
+      email:null,
       type: 'SALES TRANSPORT',
     }));
 
@@ -82,6 +83,7 @@ const Home = (props) => {
     dispatch(ApplicationActions.onChangeContact({
       name: 'SERVICE TRANSPORT',
       number: '+49 8331 15-400',
+      email:null,
       type: 'SERVICE TRANSPORT',
     }));
 
