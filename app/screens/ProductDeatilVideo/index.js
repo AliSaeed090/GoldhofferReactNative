@@ -519,7 +519,7 @@ export default function ProductDetailsList(props) {
                 return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_SHERPA-FAMILY_EN-met_A4.pdf"
             }
             else {
-                return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_SHERPA-FAMILY_DE-met_A4.pdf"
+                return "https://www.goldhofer.com/fileadmin//downloads/airport_technology/DS_SHERPA-FAMILY_EN-met_A4.pdf"
             }
         }
         else if (txt == "PRODUKT PROSPEKT »SHERPA« E" || txt == "PRODUCT BROCHURE »SHERPA« E") {
@@ -1194,7 +1194,7 @@ export default function ProductDetailsList(props) {
 
                                 return (
                                     <TouchableOpacity onPress={() => setvideoId(data.snippet.resourceId.videoId)} style={{ margin: 5, width: 150, padding: 5 }} >
-                                        <Image source={{ uri: data.snippet.thumbnails.default.url }} style={{ width: 150, height: 150, borderRadius: 20 }} resizeMode="contain" />
+                                        <Image source={{ uri: data?.snippet?.thumbnails?.default?.url }} style={{ width: 150, height: 150, borderRadius: 20 }} resizeMode="contain" />
 
                                         <Text style={{ textAlign: 'center' }}>{data.snippet.title}</Text>
                                     </TouchableOpacity>
