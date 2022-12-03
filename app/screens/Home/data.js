@@ -425,7 +425,7 @@ export const listTransportProductGerman = [
       },
     ],
   },
-   
+
   {
     image: Images.banner3,
     text: 'SPEZIALANWENDUNGEN',
@@ -1047,7 +1047,7 @@ export const listTransportProductEnglish = [
     searchText:
       'SPECIAL APPLICATIONS  FTV 550 PRODUCT BROCHURE WIND POWER »FAKTOR« 5 | »FAKTOR« 5.5 TECHNICAL DATA »FAKTOR« 5 | »FAKTOR« 5.5 RA 2 RA 3 RA 4 »BLADEX« »BLADES«',
     data: [
-     
+
       {
         image: Images.banner121,
         text: 'SELF-TRACKING DOLLY COMBINATION FOR LONG LOADS',
@@ -1701,7 +1701,7 @@ export const listTransportServicesGerman = [
           videoId: '9RM0QLDti1A',
           otherData: {
             image: Images.banner95,
-           
+
             text: ["PRODUCT BROSCHÜRE TRAILSTAR"],
             videoId: '9RM0QLDti1A',
           },
@@ -2336,7 +2336,7 @@ export const listTransportServicesEnglish = [
           videoId: '9RM0QLDti1A',
           otherData: {
             image: Images.banner95,
-          
+
             text: ['PRODUCT BROCHURE TRAILSTAR'],
             videoId: '9RM0QLDti1A',
           },
