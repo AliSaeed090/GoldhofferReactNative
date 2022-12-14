@@ -34,43 +34,33 @@ function renderFooter() {
     .catch(err => console.log(err));
   };
   return (
-    <TouchableOpacity onPress={()=>callNumber(contact.number)} style={{ width: "95%", flexDirection: 'row', height: 90, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
+    <TouchableOpacity onPress={()=>callNumber(contact.number)} style={{ width: "95%", flexDirection: 'row', maxHeight: 120, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
      
-     <View style={{borderTopLeftRadius: 55, backgroundColor:'black', width:100, height:'100%', justifyContent:'center', alignItems:'center'}}>
-     <Image source={Images.G} style={styles.manImage} resizeMode="contain" />
+    <View style={{ borderTopLeftRadius: 55, backgroundColor: 'black', width: 100, height: '100%', justifyContent: 'center', alignItems: 'center' }}>
+      <Image source={Images.G} style={styles.manImage} resizeMode="stretch" />
 
-     </View>
-     <View style={{ width: '70%', alignItems: 'center', marginTop: 10 }}>
-        <Text style={{ marginTop: 10 }} headline bold blackColor>
-          {contact.name}
+    </View>
+    <View style={{ width: '70%', alignItems: 'center', marginTop: 10 }}>
+      <View style={{width:"80%"}}>
+
+    
+      <Text style={{   marginTop: 10 }} headline bold blackColor>
+        {contact.name}
+      </Text>
+      <View style={{ width: "100%",   justifyContent: 'center', alignItems: 'flex-start', marginTop: 5 }}>
+      <Text style={{   fontSize: 14 }} blackColor>
+        Tel.: {contact.number}
         </Text>
-        <View style={{ width: "100%",   justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>
-        <Text style={{ marginLeft: 10, fontSize: 16 }} blackColor>
-          Tel.: {contact.number}
-          </Text>
-         {contact.email && <Text style={{ marginLeft: 10, fontSize: 18 }} blackColor>
-          Email.: {contact.email}
-          </Text>}
-        </View>
+       {contact.email && <Text style={{   fontSize: 14 }} blackColor>
+        Email.: {contact.email}
+        </Text>}
       </View>
+      </View>
+    </View>
 
-    </TouchableOpacity>
+  </TouchableOpacity>
 
-    // <View style={{
-    //   width: 300,
-    //   height: 50,
-    //   backgroundColor: "transparent",
-    //   borderStyle: "solid",
-    //   borderLeftWidth: 0,
-    //   borderRightWidth: 100,
-    //   borderBottomWidth: 50,
-    //   borderLeftColor: "transparent",
-    //   borderRightColor: "transparent",
-    //   borderBottomColor: "red",
-    // }}>
-
-
-    // </View>
+    
   )
 }
 const BackArrowPng = () => {

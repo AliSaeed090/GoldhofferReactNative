@@ -62,50 +62,31 @@ function renderFooter() {
       .catch(err => console.log(err));
   };
   return (
-    <TouchableOpacity
-      onPress={() => callNumber(contact.number)}
-      style={{
-        width: '95%',
-        flexDirection: 'row',
-        height: 90,
-        marginTop: 20,
-        alignSelf: 'center',
-        borderTopEndRadius: 55,
-        borderTopLeftRadius: 55,
-        backgroundColor: '#E5EAED',
-      }}>
-      <View
-        style={{
-          borderTopLeftRadius: 55,
-          backgroundColor: 'black',
-          width: 100,
-          height: '100%',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}>
-        <Image source={Images.G} style={styles.manImage} resizeMode="contain" />
-      </View>
-      <View style={{width: '50%', alignItems: 'center', marginTop: 10}}>
-        <Text style={{marginTop: 10}} headline bold blackColor>
-          {contact.name}
+    <TouchableOpacity onPress={()=>callNumber(contact.number)} style={{ width: "95%", flexDirection: 'row', maxHeight: 120, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
+     
+    <View style={{ borderTopLeftRadius: 55, backgroundColor: 'black', width: 100, height: '100%', justifyContent: 'center', alignItems: 'center' }}>
+      <Image source={Images.G} style={styles.manImage} resizeMode="stretch" />
+
+    </View>
+    <View style={{ width: '70%', alignItems: 'center', marginTop: 10 }}>
+      <View style={{width:"80%"}}>
+
+    
+      <Text style={{   marginTop: 10 }} headline bold blackColor>
+        {contact.name}
+      </Text>
+      <View style={{ width: "100%",   justifyContent: 'center', alignItems: 'flex-start', marginTop: 5 }}>
+      <Text style={{   fontSize: 14 }} blackColor>
+        Tel.: {contact.number}
         </Text>
-        <View
-          style={{
-            width: '95%',
-            flexDirection: 'row',
-            justifyContent: 'center',
-            alignItems: 'center',
-            marginTop: 5,
-          }}>
-           <Text style={{ marginLeft: 10, fontSize: 18 }} blackColor>
-          Tel.: {contact.number}
-          </Text>
-         {contact.email && <Text style={{ marginLeft: 10, fontSize: 18 }} blackColor>
-          Email.: {contact.email}
-          </Text>}
-        </View>
+       {contact.email && <Text style={{   fontSize: 14 }} blackColor>
+        Email.: {contact.email}
+        </Text>}
       </View>
-    </TouchableOpacity>
+      </View>
+    </View>
+
+  </TouchableOpacity>
   );
 }
 
@@ -331,19 +312,30 @@ export default function ProductDeatilVideoLink(props) {
       txt == 'PRODUCT BROCHURE THP/DR' ||
       txt == 'PRODUCT BROCHURE THP/CA' ||
       txt == 'PRODUCT BROCHURE THP/DC' ||
-      txt == 'PRODUCT BROCHURE THP/HL-L & THP/HL'||
-      txt=="SERVICE BROCHURE STZ-VL3"||
-      txt=="SERVICE BROCHURE STZ-P 9"||
-      txt=="SERVICE BROCHURE STZ-P 12 PLUS"||
-      txt=="SERVICE BROCHURE THP/CA"||
-      txt=="PRODUCT BROCHURE THP/DR"||
-      txt=="SERVICE BROCHURE THP/DC"||
-      txt=="SERVICE BROCHURE THP/HL-L & THP/HL"
+      txt == 'PRODUCT BROCHURE THP/HL-L & THP/HL' 
+     
     ) {
       if (isEnglish) {
         return 'https://www.goldhofer.com/fileadmin/downloads/prospekte/NA_Semitrailer_EN_imp-USletter.pdf';
       }
-    } else if (txt == 'PRODUCT BROCHURE P12 PLUS') {
+    } 
+
+    else if (
+      
+      txt=="SERVICE BROCHURE STZ-VL3" ||
+      txt=="SERVICE BROCHURE STZ-P 9" ||
+      txt=="SERVICE BROCHURE STZ-P 12 PLUS"||
+      txt=="SERVICE BROCHURE THP/CA"||
+      txt=="PRODUCT BROCHURE THP/DR" ||
+      txt=="SERVICE BROCHURE THP/DC"||
+      txt=="SERVICE BROCHURE THP/HL-L & THP/HL"
+    ) {
+      if (isEnglish) {
+        return 'https://www.goldhofer.com/fileadmin/downloads/prospekte/NA_Vehicle-Overhaul_EN_imp-USletter.pdf';
+      }
+    }  
+    
+    else if (txt == 'PRODUCT BROCHURE P12 PLUS') {
       if (isEnglish) {
         return 'https://www.goldhofer.com/fileadmin/downloads/prospekte/NA_Semitrailer_EN_imp-USletter.pdf';
       }

@@ -39,7 +39,14 @@ export default function RenderList2({item}) {
         }),
       );
     }
-    navigation.navigate('ProductDeatilInfo', {item: item.data});
+    if(item.text==="TRAILSTAR"){
+      navigation.navigate("ProductDeatilVideo", { item: item.data , text:[item.text]})
+
+    }
+    else{
+      navigation.navigate('ProductDeatilInfo', {item: item.data});
+    }
+   
   };
 
   const navigation = useNavigation();

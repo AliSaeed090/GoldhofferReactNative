@@ -142,7 +142,7 @@ export const Images = {
   banner121: require("@assets/images/banner121.png"),
   banner122: require("@assets/images/banner122.png"),
   banner123: require("@assets/images/banner123.png"),
-  
+  banner124: require("@assets/images/banner124.png"),
   video1: require("@assets/images/video1.png"),
   man: require("@assets/images/man.png"),
 };

@@ -2,26 +2,36 @@ import {Images} from '@config';
 
 export const listTransportProductGerman = [
   {
-    image: Images.banner95,
+    image: Images.banner124,
     text: 'TRAILSTAR',
     searchText: 'QUICKGUIDE  »TRAILSTAR«',
-    data: [
-      {
+    data: {
+      image: Images.banner95,
+      text: ['PRODUCT BROSCHÜRE TRAILSTAR'],
+      videoId: '9RM0QLDti1A',
+      otherData: {
         image: Images.banner95,
-        text: 'TRAILSTAR',
-        listTransport: true,
-        data: {
-          image: Images.banner95,
-          text: ["PRODUCT BROSCHÜRE TRAILSTAR"],
-          videoId: '9RM0QLDti1A',
-          otherData: {
-            image: Images.banner95,
-            text: [],
-            videoId: '9RM0QLDti1A',
-          },
-        },
+        text: [],
+        videoId: '9RM0QLDti1A',
       },
-    ],
+    },
+    // data: [
+    //   {
+    //     image: Images.banner95,
+    //     text: 'TRAILSTAR',
+    //     listTransport: true,
+    //     data: {
+    //       image: Images.banner95,
+    //       text: ["PRODUCT BROSCHÜRE TRAILSTAR"],
+    //       videoId: '9RM0QLDti1A',
+    //       otherData: {
+    //         image: Images.banner95,
+    //         text: [],
+    //         videoId: '9RM0QLDti1A',
+    //       },
+    //     },
+    //   },
+    // ],
   },
   {
     image: Images.banner1,
@@ -438,10 +448,10 @@ export const listTransportProductGerman = [
         listTransport: true,
         data: {
           image: Images.banner122,
-          text: ["PRODUKT BROSCHÜRE NACHLÄUFERKOMBINATION FÜR LANGMATERIAL"],
+          text: ['PRODUKT BROSCHÜRE NACHLÄUFERKOMBINATION FÜR LANGMATERIAL'],
           otherData: {
             image: Images.banner122,
-            text: [ ],
+            text: [],
           },
           videoId: '9RM0QLDti1A',
         },
@@ -453,10 +463,10 @@ export const listTransportProductGerman = [
         listTransport: true,
         data: {
           image: Images.banner116,
-          text: [],
+          text: ['PRODUCT BROCHURE FTV 850', 'PRODUCT BROCHURE WIND POWER'],
           otherData: {
             image: Images.banner116,
-            text: [],
+            text: ['PRODUCT BROCHURE FTV 850', 'PRODUCT BROCHURE WIND POWER'],
           },
           videoId: '9RM0QLDti1A',
         },
@@ -618,26 +628,19 @@ export const listTransportProductGerman = [
 
 export const listTransportProductEnglish = [
   {
-    image: Images.banner95,
+    image: Images.banner124,
     text: 'TRAILSTAR',
     searchText: 'QUICKGUIDE  »TRAILSTAR«',
-    data: [
-      {
+    data: {
+      image: Images.banner95,
+      text: ['PRODUCT BROCHURE TRAILSTAR'],
+      videoId: '9RM0QLDti1A',
+      otherData: {
         image: Images.banner95,
-        text: 'TRAILSTAR',
-        listTransport: true,
-        data: {
-          image: Images.banner95,
-          text: ['PRODUCT BROCHURE TRAILSTAR'],
-          videoId: '9RM0QLDti1A',
-          otherData: {
-            image: Images.banner95,
-            text: [],
-            videoId: '9RM0QLDti1A',
-          },
-        },
+        text: [],
+        videoId: '9RM0QLDti1A',
       },
-    ],
+    },
   },
   {
     image: Images.banner1,
@@ -1047,17 +1050,18 @@ export const listTransportProductEnglish = [
     searchText:
       'SPECIAL APPLICATIONS  FTV 550 PRODUCT BROCHURE WIND POWER »FAKTOR« 5 | »FAKTOR« 5.5 TECHNICAL DATA »FAKTOR« 5 | »FAKTOR« 5.5 RA 2 RA 3 RA 4 »BLADEX« »BLADES«',
     data: [
-
       {
         image: Images.banner121,
         text: 'SELF-TRACKING DOLLY COMBINATION FOR LONG LOADS',
         listTransport: true,
         data: {
           image: Images.banner122,
-          text: ["PRODUCT BROCHURE SELF-TRACKING DOLLY COMBINATION FOR LONG LOADS"],
+          text: [
+            'PRODUCT BROCHURE SELF-TRACKING DOLLY COMBINATION FOR LONG LOADS',
+          ],
           otherData: {
             image: Images.banner122,
-            text: [ ],
+            text: [],
           },
           videoId: '9RM0QLDti1A',
         },
@@ -1069,7 +1073,7 @@ export const listTransportProductEnglish = [
         listTransport: true,
         data: {
           image: Images.banner116,
-          text: [],
+          text: ['PRODUCT BROCHURE FTV 850', 'PRODUCT BROCHURE WIND POWER'],
           otherData: {
             image: Images.banner116,
             text: [],
@@ -1687,27 +1691,20 @@ export const listTransportProductEnglish = [
 ];
 export const listTransportServicesGerman = [
   {
-    image: Images.banner95,
+    image: Images.banner124,
     text: 'TRAILSTAR',
     searchText: 'QUICKGUIDE  »TRAILSTAR«',
-    data: [
-      {
+    data: {
+      image: Images.banner95,
+      text: [],
+      videoId: '9RM0QLDti1A',
+      otherData: {
         image: Images.banner95,
-        text: 'TRAILSTAR',
-        listTransport: true,
-        data: {
-          image: Images.banner95,
-          text: [],
-          videoId: '9RM0QLDti1A',
-          otherData: {
-            image: Images.banner95,
 
-            text: ["PRODUCT BROSCHÜRE TRAILSTAR"],
-            videoId: '9RM0QLDti1A',
-          },
-        },
+        text: ['PRODUCT BROSCHÜRE TRAILSTAR'],
+        videoId: '9RM0QLDti1A',
       },
-    ],
+    },
   },
   {
     image: Images.banner1,
@@ -2142,17 +2139,33 @@ export const listTransportServicesGerman = [
       'SPEZIALANWENDUNGEN  FTV 550 PRODUKT PROSPEKT FTV 550 »FAKTOR« 5 | »FAKTOR« 5.5 DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5 RA 2 RA 3 RA 4 »BLADEX« »BLADES«',
     data: [
       {
-        image: Images.banner118,
-        text: '»FT SERIES«',
+        image: Images.banner121,
+        text: 'NACHLÄUFERKOMBINATION FÜR LANGMATERIAL',
+        listTransport: true,
         data: {
-          videoId: '9RM0QLDti1A',
-          image: Images.banner119,
+          image: Images.banner122,
           text: [],
           otherData: {
-            videoId: '9RM0QLDti1A',
-            image: Images.banner119,
-            text: ['PRODUKT BROSCHÜRE »FT SERIES«', 'ZUBEHÖR-BROSCHÜRE'],
+            image: Images.banner122,
+
+            text: ['PRODUKT BROSCHÜRE NACHLÄUFERKOMBINATION FÜR LANGMATERIAL'],
           },
+          videoId: '9RM0QLDti1A',
+        },
+      },
+      {
+        image: Images.banner115,
+        text: 'FTV 850',
+
+        listTransport: true,
+        data: {
+          image: Images.banner116,
+          text: [],
+          otherData: {
+            image: Images.banner116,
+            text: ['PRODUCT BROCHURE FTV 850', 'PRODUCT BROCHURE WIND POWER'],
+          },
+          videoId: '9RM0QLDti1A',
         },
       },
       {
@@ -2161,14 +2174,10 @@ export const listTransportServicesGerman = [
         listTransport: true,
         data: {
           image: Images.banner62,
-          text: [
-            // 'QUICKGUIDE ZUM FTV 550'
-          ],
+          text: [],
           otherData: {
             image: Images.banner62,
-            text: [
-              // 'PRODUKT PROSPEKT FTV 550'
-            ],
+            text: ['PRODUKT PROSPEKT FTV 550', 'PRODUKT BROSCHÜRE WINDKRAFT'],
           },
           videoId: '9RM0QLDti1A',
         },
@@ -2178,17 +2187,14 @@ export const listTransportServicesGerman = [
         text: '»FAKTOR« 5 | »FAKTOR« 5.5',
         data: {
           image: Images.banner64,
-          text: [
-            // 'QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'
-          ],
-          videoId: 'eP_YC0cr0n0',
+       
+          text: [],
           otherData: {
             image: Images.banner64,
-            text: [
-              // 'DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'
-            ],
+            text: ['DATENBLÄTTER »FAKTOR« 5 | »FAKTOR« 5.5'],
             videoId: 'eP_YC0cr0n0',
           },
+          videoId: 'eP_YC0cr0n0',
         },
       },
       {
@@ -2197,15 +2203,13 @@ export const listTransportServicesGerman = [
         listTransport: true,
         data: {
           image: Images.banner66,
-          text: [
-            // 'QUICKGUIDE ZUM RA 2'
-          ],
           videoId: '9RM0QLDti1A',
+          text: [  ],
           otherData: {
-            mage: Images.banner66,
-            text: [
-              // 'PRODUKT BROSCHÜRE RA 2'
-            ],
+            image: Images.banner66,
+          text: ['PRODUKT BROSCHÜRE RA 2', 'PRODUKT BROSCHÜRE WINDKRAFT'],
+
+           
             videoId: '9RM0QLDti1A',
           },
         },
@@ -2216,14 +2220,14 @@ export const listTransportServicesGerman = [
         data: {
           image: Images.banner68,
           text: [
-            // 'QUICKGUIDE ZUM RA 3'
+           
           ],
           videoId: 'eP_YC0cr0n0',
           otherData: {
             image: Images.banner68,
-            text: [
-              // 'PRODUKT BROSCHÜRE RA 3'
-            ],
+          text: ['PRODUKT BROSCHÜRE RA 3', 'PRODUKT BROSCHÜRE WINDKRAFT'],
+
+          
             videoId: 'eP_YC0cr0n0',
           },
         },
@@ -2234,52 +2238,30 @@ export const listTransportServicesGerman = [
         listTransport: true,
         data: {
           image: Images.banner70,
-          text: [
-            // 'QUICKGUIDE ZUM RA 4'
-          ],
           videoId: '9RM0QLDti1A',
+          text: [   ],
           otherData: {
             image: Images.banner70,
-            text: [
-              // 'PRODUKT BROSCHÜRE RA 4'
-            ],
+          text: ['PRODUKT BROSCHÜRE RA 4', 'PRODUKT BROSCHÜRE WINDKRAFT'],
+
+         
             videoId: '9RM0QLDti1A',
           },
         },
       },
-      // {
-      //   image: Images.banner71,
-      //   text: '»BLADEX«',
-      //   data: {
-      //     image: Images.banner72,
-      //     text: [
-      //       // 'QQUICKGUIDE ZUM »BLADEX«'
-      //     ],
-      //     videoId: 'eP_YC0cr0n0',
-      //     otherData: {
-      //       image: Images.banner72,
-      //       text: [
-      //         // 'QPRODUKT PROSPEKT »BLADEX«'
-      //       ],
-      //       videoId: 'eP_YC0cr0n0',
-      //     },
-      //   },
-      //   listTransport: true,
-      // },
+     
       {
         image: Images.banner73,
         text: '»BLADES«',
         listTransport: true,
         data: {
           image: Images.banner74,
-          text: [
-            // 'QUICKGUIDE ZUM »BLADES«'
-          ],
+          text: ['PRODUKT BROSCHÜRE »BLADES«', 'PRODUKT BROSCHÜRE WINDKRAFT'],
           videoId: '9RM0QLDti1A',
           otherData: {
             image: Images.banner74,
             text: [
-              // 'PRODUKT BROSCHÜRE »BLADES«'
+              // 'QUICKGUIDE ZUM »BLADES«'
             ],
             videoId: '9RM0QLDti1A',
           },
@@ -2322,27 +2304,20 @@ export const listTransportServicesGerman = [
 
 export const listTransportServicesEnglish = [
   {
-    image: Images.banner95,
+    image: Images.banner124,
     text: 'TRAILSTAR',
     searchText: 'QUICKGUIDE  »TRAILSTAR«',
-    data: [
-      {
+    data: {
+      image: Images.banner95,
+      text: [],
+      videoId: '9RM0QLDti1A',
+      otherData: {
         image: Images.banner95,
-        text: 'TRAILSTAR',
-        listTransport: true,
-        data: {
-          image: Images.banner95,
-          text: [],
-          videoId: '9RM0QLDti1A',
-          otherData: {
-            image: Images.banner95,
 
-            text: ['PRODUCT BROCHURE TRAILSTAR'],
-            videoId: '9RM0QLDti1A',
-          },
-        },
+        text: ['PRODUCT BROSCHÜRE TRAILSTAR'],
+        videoId: '9RM0QLDti1A',
       },
-    ],
+    },
   },
   {
     image: Images.banner1,
@@ -2789,22 +2764,54 @@ export const listTransportServicesEnglish = [
     image: Images.banner3,
     text: 'SPECIAL APPLICATIONS',
     searchText:
-      'SPECIAL APPLICATIONS  FTV 550 PRODUCT BROCHURE FTV 550 »FAKTOR« 5 | »FAKTOR« 5.5 TECHNICAL DATA »FAKTOR« 5 | »FAKTOR« 5.5 RA 2 RA 3 RA 4 »BLADEX« »BLADES«',
+      'SPECIAL APPLICATIONS  FTV 550 PRODUCT BROCHURE WIND POWER »FAKTOR« 5 | »FAKTOR« 5.5 TECHNICAL DATA »FAKTOR« 5 | »FAKTOR« 5.5 RA 2 RA 3 RA 4 »BLADEX« »BLADES«',
     data: [
+      {
+        image: Images.banner121,
+        text: 'SELF-TRACKING DOLLY COMBINATION FOR LONG LOADS',
+        listTransport: true,
+        data: {
+          image: Images.banner122,
+          text: [],
+          otherData: {
+            image: Images.banner122,
+        
+            text: [
+              'PRODUCT BROCHURE SELF-TRACKING DOLLY COMBINATION FOR LONG LOADS',
+            ],
+          },
+          videoId: '9RM0QLDti1A',
+        },
+      },
+      {
+        image: Images.banner115,
+        text: 'FTV 850',
+
+        listTransport: true,
+        data: {
+          image: Images.banner116,
+          text: [],
+          otherData: {
+            image: Images.banner116,
+           
+          text: ['PRODUCT BROCHURE FTV 850', 'PRODUCT BROCHURE WIND POWER'],
+
+          },
+          videoId: '9RM0QLDti1A',
+        },
+      },
       {
         image: Images.banner61,
         text: 'FTV 550',
         listTransport: true,
         data: {
           image: Images.banner62,
-          text: [
-            // 'QUICKGUIDE ZUM FTV 550'
-          ],
+          text: [ ],
           otherData: {
             image: Images.banner62,
-            text: [
-              // 'PRODUCT BROCHURE FTV 550'
-            ],
+          text: ['PRODUCT BROCHURE FTV 550', 'PRODUCT BROCHURE WIND POWER'],
+
+          
           },
           videoId: '9RM0QLDti1A',
         },
@@ -2814,17 +2821,14 @@ export const listTransportServicesEnglish = [
         text: '»FAKTOR« 5 | »FAKTOR« 5.5',
         data: {
           image: Images.banner64,
-          text: [
-            // 'QUICKGUIDE ZUM »FAKTOR« 5 | »FAKTOR« 5.5'
-          ],
-          videoId: 'eP_YC0cr0n0',
+     
+          text: [  ],
           otherData: {
             image: Images.banner64,
-            text: [
-              // 'TECHNICAL DATA »FAKTOR« 5 | »FAKTOR« 5.5'
-            ],
+            text: ['TECHNICAL DATA »FAKTOR« 5 | »FAKTOR« 5.5'],
             videoId: 'eP_YC0cr0n0',
           },
+          videoId: 'eP_YC0cr0n0',
         },
       },
       {
@@ -2833,15 +2837,15 @@ export const listTransportServicesEnglish = [
         listTransport: true,
         data: {
           image: Images.banner66,
+          videoId: '9RM0QLDti1A',
           text: [
             // 'QUICKGUIDE ZUM RA 2'
           ],
-          videoId: '9RM0QLDti1A',
           otherData: {
-            mage: Images.banner66,
-            text: [
-              // 'PRODUCT BROCHURE RA 2'
-            ],
+            image: Images.banner66,
+          text: ['PRODUCT BROCHURE RA 2', 'PRODUCT BROCHURE WIND POWER'],
+
+          
             videoId: '9RM0QLDti1A',
           },
         },
@@ -2851,15 +2855,15 @@ export const listTransportServicesEnglish = [
         text: 'RA 3',
         data: {
           image: Images.banner68,
+          videoId: 'eP_YC0cr0n0',
           text: [
             // 'QUICKGUIDE ZUM RA 3'
           ],
-          videoId: 'eP_YC0cr0n0',
           otherData: {
             image: Images.banner68,
-            text: [
-              // 'PRODUCT BROCHURE RA 3'
-            ],
+          text: ['PRODUCT BROCHURE RA 3', 'PRODUCT BROCHURE WIND POWER'],
+
+           
             videoId: 'eP_YC0cr0n0',
           },
         },
@@ -2870,53 +2874,33 @@ export const listTransportServicesEnglish = [
         listTransport: true,
         data: {
           image: Images.banner70,
-          text: [
-            // 'QUICKGUIDE ZUM RA 4'
-          ],
           videoId: '9RM0QLDti1A',
+          text: [
+          
+          ],
           otherData: {
             image: Images.banner70,
-            text: [
-              // 'PRODUCT BROCHURE RA 4'
-            ],
+          text: ['PRODUCT BROCHURE RA 4', 'PRODUCT BROCHURE WIND POWER'],
+
+          
             videoId: '9RM0QLDti1A',
           },
         },
       },
-      // {
-      //   image: Images.banner71,
-      //   text: '»BLADEX«',
-      //   data: {
-      //     image: Images.banner72,
-      //     text: [
-      //       // 'QQUICKGUIDE ZUM »BLADEX«'
-      //     ],
-      //     videoId: 'eP_YC0cr0n0',
-      //     otherData: {
-      //       image: Images.banner72,
-      //       text: [
-      //         // 'QPRODUCT BROCHURE »BLADEX«'
-      //       ],
-      //       videoId: 'eP_YC0cr0n0',
-      //     },
-      //   },
-      //   listTransport: true,
-      // },
+ 
       {
         image: Images.banner73,
         text: '»BLADES«',
         listTransport: true,
         data: {
           image: Images.banner74,
-          text: [
-            // 'QUICKGUIDE ZUM »BLADES«'
-          ],
+          text: [  ],
           videoId: '9RM0QLDti1A',
           otherData: {
             image: Images.banner74,
-            text: [
-              // 'TECHNICAL DATA »BLADES«'
-            ],
+          text: ['PRODUCT BROCHURE »BLADES«', 'PRODUCT BROCHURE WIND POWER'],
+
+         
             videoId: '9RM0QLDti1A',
           },
         },
@@ -3276,7 +3260,7 @@ export const listTransportServicesEnglish = [
             data: {
               image: Images.banner116,
 
-              text: [],
+              text: ['PRODUCT BROCHURE FTV 850', 'PRODUCT BROCHURE WIND POWER'],
               otherData: {
                 image: Images.banner116,
                 text: [
