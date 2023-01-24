@@ -2,30 +2,30 @@ import {Images} from '@config';
 
 export const listTransportProductGerman = [
   {
-    image: Images.banner124,
+    image: Images.banner95,
     text: 'TRAILSTAR',
     searchText: 'QUICKGUIDE  »TRAILSTAR«',
     data: {
-      image: Images.banner95,
+      image: Images.banner124,
       text: ['PRODUCT BROSCHÜRE TRAILSTAR'],
       videoId: '9RM0QLDti1A',
       otherData: {
-        image: Images.banner95,
+        image: Images.banner124,
         text: [],
         videoId: '9RM0QLDti1A',
       },
     },
     // data: [
     //   {
-    //     image: Images.banner95,
+    //     image: Images.banner124,
     //     text: 'TRAILSTAR',
     //     listTransport: true,
     //     data: {
-    //       image: Images.banner95,
+    //       image: Images.banner124,
     //       text: ["PRODUCT BROSCHÜRE TRAILSTAR"],
     //       videoId: '9RM0QLDti1A',
     //       otherData: {
-    //         image: Images.banner95,
+    //         image: Images.banner124,
     //         text: [],
     //         videoId: '9RM0QLDti1A',
     //       },
@@ -628,15 +628,15 @@ export const listTransportProductGerman = [
 
 export const listTransportProductEnglish = [
   {
-    image: Images.banner124,
+    image: Images.banner95,
     text: 'TRAILSTAR',
     searchText: 'QUICKGUIDE  »TRAILSTAR«',
     data: {
-      image: Images.banner95,
+      image: Images.banner124,
       text: ['PRODUCT BROCHURE TRAILSTAR'],
       videoId: '9RM0QLDti1A',
       otherData: {
-        image: Images.banner95,
+        image: Images.banner124,
         text: [],
         videoId: '9RM0QLDti1A',
       },
@@ -1707,15 +1707,15 @@ export const listTransportProductEnglish = [
 ];
 export const listTransportServicesGerman = [
   {
-    image: Images.banner124,
+    image: Images.banner95,
     text: 'TRAILSTAR',
     searchText: 'QUICKGUIDE  »TRAILSTAR«',
     data: {
-      image: Images.banner95,
+      image: Images.banner124,
       text: [],
       videoId: '9RM0QLDti1A',
       otherData: {
-        image: Images.banner95,
+        image: Images.banner124,
 
         text: ['PRODUCT BROSCHÜRE TRAILSTAR'],
         videoId: '9RM0QLDti1A',
@@ -2320,15 +2320,15 @@ export const listTransportServicesGerman = [
 
 export const listTransportServicesEnglish = [
   {
-    image: Images.banner124,
+    image: Images.banner95,
     text: 'TRAILSTAR',
     searchText: 'QUICKGUIDE  »TRAILSTAR«',
     data: {
-      image: Images.banner95,
+      image: Images.banner124,
       text: [],
       videoId: '9RM0QLDti1A',
       otherData: {
-        image: Images.banner95,
+        image: Images.banner124,
 
         text: ['PRODUCT BROSCHÜRE TRAILSTAR'],
         videoId: '9RM0QLDti1A',
