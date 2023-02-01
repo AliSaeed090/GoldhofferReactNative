@@ -23,7 +23,7 @@ export default function RenderList2({item}) {
   const navigation = useNavigation();
   const navigate = () => {
     if (item.nested) {
-        navigation.navigate("ProductDetailNestedList", { item: item.data })
+        navigation.navigate("ProductDeatilInfo", { item: item.data })
     } else {
       navigation.navigate('ProductDeatilVideo', {
         item: item.data,

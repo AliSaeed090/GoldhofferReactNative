@@ -22,6 +22,7 @@ import ProductDeatilMoreInfo from "@screens/ProductDeatilMoreInfo";
 
 import ProductDeatilInfo from "@screens/ProductDeatilInfo"
 import News from "@screens/News";
+import ProductDetailNestedList from "@screens/ProductDetailNestedList"
 
 
 import ChangeLanguage from "@screens/ChangeLanguage";
@@ -181,8 +182,9 @@ const Main = (props) => {
       <MainStack.Screen name="ProductDeatilVideo" component={ProductDeatilVideo} />
       <MainStack.Screen name="ProductDeatilVideoLink" component={ProductDeatilVideoLink} />
       <MainStack.Screen name="SearchHistory" component={SearchHistory} />
+      <MainStack.Screen name="ProductDetailNestedList" component={ProductDetailNestedList} />
 
-
+      
 
       <MainStack.Screen name="NewsDetails" component={NewsDetails} />
 
