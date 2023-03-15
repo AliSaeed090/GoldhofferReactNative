@@ -61,31 +61,53 @@ function renderFooter() {
       .catch(err => console.log(err));
   };
   return (
-    <TouchableOpacity onPress={()=>callNumber(contact.number)} style={{ width: "95%", flexDirection: 'row', maxHeight: 120, marginTop: 20, alignSelf: "center", borderTopEndRadius: 55, borderTopLeftRadius: 55, backgroundColor: "#E5EAED" }}>
-     
-    <View style={{ borderTopLeftRadius: 55, backgroundColor: 'black', width: 100, height: '100%', justifyContent: 'center', alignItems: 'center' }}>
-      <Image source={Images.G} style={styles.manImage} resizeMode="stretch" />
-
-    </View>
-    <View style={{ width: '70%', alignItems: 'center', marginTop: 10 }}>
-      <View style={{width:"80%"}}>
-
-    
-      <Text style={{   marginTop: 10 }} headline bold blackColor>
-        {contact.name}
-      </Text>
-      <View style={{ width: "100%",   justifyContent: 'center', alignItems: 'flex-start', marginTop: 5 }}>
-      <Text style={{   fontSize: 14 }} blackColor>
-        Tel.: {contact.number}
-        </Text>
-       {contact.email && <Text style={{   fontSize: 14 }} blackColor>
-        Email.: {contact.email}
-        </Text>}
+    <TouchableOpacity
+      onPress={() => callNumber(contact.number)}
+      style={{
+        width: '95%',
+        flexDirection: 'row',
+        maxHeight: 120,
+        marginTop: 20,
+        alignSelf: 'center',
+        borderTopEndRadius: 55,
+        borderTopLeftRadius: 55,
+        backgroundColor: '#E5EAED',
+      }}>
+      <View
+        style={{
+          borderTopLeftRadius: 55,
+          backgroundColor: 'black',
+          width: 100,
+          height: '100%',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+        <Image source={Images.G} style={styles.manImage} resizeMode="stretch" />
       </View>
+      <View style={{width: '70%', alignItems: 'center', marginTop: 10}}>
+        <View style={{width: '80%'}}>
+          <Text style={{marginTop: 10}} headline bold blackColor>
+            {contact.name}
+          </Text>
+          <View
+            style={{
+              width: '100%',
+              justifyContent: 'center',
+              alignItems: 'flex-start',
+              marginTop: 5,
+            }}>
+            <Text style={{fontSize: 14}} blackColor>
+              Tel.: {contact.number}
+            </Text>
+            {contact.email && (
+              <Text style={{fontSize: 14}} blackColor>
+                Email.: {contact.email}
+              </Text>
+            )}
+          </View>
+        </View>
       </View>
-    </View>
-
-  </TouchableOpacity>
+    </TouchableOpacity>
   );
 }
 
@@ -264,47 +286,48 @@ export default function ProductDetailsList(props) {
       } else {
         return 'https://www.goldhofer.com/fileadmin//downloads/prospekte/SPZ_DE-A4.pdf';
       }
-    } else if (txt == 'ACCESSORIES BROCHURE' || txt=="ZUBEHÖR-BROSCHÜRE") {
+    } else if (txt == 'ACCESSORIES BROCHURE' || txt == 'ZUBEHÖR-BROSCHÜRE') {
       if (isEnglish) {
         return 'https://www.goldhofer.com/fileadmin/downloads/prospekte/NA_Accessories-Heavy-Duty-Modules_EN_imp-USletter.pdf';
+      } else {
+        return 'https://www.goldhofer.com/fileadmin//downloads/prospekte/Accessories-EU_DE_A4.pdf';
       }
-      else{
-        return "https://www.goldhofer.com/fileadmin//downloads/prospekte/Accessories-EU_DE_A4.pdf"
+    } else if (
+      txt == 'PRODUCT BROSCHÜRE TRAILSTAR' ||
+      txt == 'PRODUCT BROCHURE TRAILSTAR'
+    ) {
+      if (isEnglish) {
+        return 'https://www.goldhofer.com/?pdf=4002';
+      } else {
+        return 'https://www.goldhofer.com/?pdf=4002';
       }
-    } 
-    
-    
-    else if (txt == 'PRODUCT BROSCHÜRE TRAILSTAR' || txt=="PRODUCT BROCHURE TRAILSTAR") {
-        if (isEnglish) {
-          return 'https://www.goldhofer.com/?pdf=4002';
-        }
-        else{
-          return "https://www.goldhofer.com/?pdf=4002"
-        }
-      } 
-    else if (txt == 'PRODUCT BROCHURE SELF-TRACKING DOLLY COMBINATION FOR LONG LOADS' || txt=="PRODUKT BROSCHÜRE NACHLÄUFERKOMBINATION FÜR LANGMATERIAL") {
-        if (isEnglish) {
-          return 'https://www.goldhofer.com/fileadmin//downloads/prospekte/Self-tracking_Dolly_EN_A4.pdf';
-        }
-        else{
-          return 'https://www.goldhofer.com/fileadmin//downloads/prospekte/Nachlaeufer_DE_A4.pdf';
-
-        }
-      } 
-    else if (txt == 'PRODUCT BROCHURE »FT SERIES«' || txt=="PRODUKT BROSCHÜRE »FT SERIES«") {
-        if (isEnglish) {
-          return 'https://www.goldhofer.com/fileadmin//downloads/prospekte/FT_SERIES_EN-A4_2022.pdf';
-        }
-        else{
-          return 'https://www.goldhofer.com/fileadmin//downloads/prospekte/FT_SERIES_DE-A4_2022.pdf';
-
-        }
-      } 
-    else if (
+    } else if (
+      txt ==
+        'PRODUCT BROCHURE SELF-TRACKING DOLLY COMBINATION FOR LONG LOADS' ||
+      txt == 'PRODUKT BROSCHÜRE NACHLÄUFERKOMBINATION FÜR LANGMATERIAL'
+    ) {
+      if (isEnglish) {
+        return 'https://www.goldhofer.com/fileadmin//downloads/prospekte/Self-tracking_Dolly_EN_A4.pdf';
+      } else {
+        return 'https://www.goldhofer.com/fileadmin//downloads/prospekte/Nachlaeufer_DE_A4.pdf';
+      }
+    } else if (
+      txt == 'PRODUCT BROCHURE »FT SERIES«' ||
+      txt == 'PRODUKT BROSCHÜRE »FT SERIES«'
+    ) {
+      if (isEnglish) {
+        return 'https://www.goldhofer.com/fileadmin//downloads/prospekte/FT_SERIES_EN-A4_2022.pdf';
+      } else {
+        return 'https://www.goldhofer.com/fileadmin//downloads/prospekte/FT_SERIES_DE-A4_2022.pdf';
+      }
+    } else if (txt == 'PRODUCT BROCHURE THP/DC') {
+      if (isEnglish) {
+        return 'https://www.goldhofer.com/fileadmin/downloads/prospekte/NA_Modules_US_EN_imp-USletter.pdf';
+      }
+    } else if (
       txt == 'PRODUCT BROCHURE THP/DR' ||
       txt == 'PRODUCT BROCHURE THP/CA' ||
-      txt == 'PRODUCT BROCHURE THP/DC' ||
-      txt == 'PRODUCT BROCHURE THP/HL-L & THP/HL' 
+      txt == 'PRODUCT BROCHURE THP/HL-L & THP/HL'
     ) {
       if (isEnglish) {
         return 'https://www.goldhofer.com/fileadmin/downloads/prospekte/NA_Semitrailer_EN_imp-USletter.pdf';
@@ -313,16 +336,14 @@ export default function ProductDetailsList(props) {
       if (isEnglish) {
         return 'https://www.goldhofer.com/fileadmin/downloads/prospekte/NA_Semitrailer_EN_imp-USletter.pdf';
       }
-    } 
-    else if (
-      
-      txt=="SERVICE BROCHURE STZ-VL3" ||
-      txt=="SERVICE BROCHURE STZ-P 9" ||
-      txt=="SERVICE BROCHURE STZ-P 12 PLUS"||
-      txt=="SERVICE BROCHURE THP/CA"||
-      txt=="PRODUCT BROCHURE THP/DR" ||
-      txt=="SERVICE BROCHURE THP/DC"||
-      txt=="SERVICE BROCHURE THP/HL-L & THP/HL"
+    } else if (
+      txt == 'SERVICE BROCHURE STZ-VL3' ||
+      txt == 'SERVICE BROCHURE STZ-P 9' ||
+      txt == 'SERVICE BROCHURE STZ-P 12 PLUS' ||
+      txt == 'SERVICE BROCHURE THP/CA' ||
+      txt == 'PRODUCT BROCHURE THP/DR' ||
+      txt == 'SERVICE BROCHURE THP/DC' ||
+      txt == 'SERVICE BROCHURE THP/HL-L & THP/HL'
     ) {
       if (isEnglish) {
         return 'https://www.goldhofer.com/fileadmin/downloads/prospekte/NA_Vehicle-Overhaul_EN_imp-USletter.pdf';
@@ -331,11 +352,7 @@ export default function ProductDetailsList(props) {
       if (isEnglish) {
         return 'https://www.goldhofer.com/fileadmin/downloads/prospekte/NA_Semitrailer_EN_imp-USletter.pdf';
       }
-    } 
-    
-    
-    
-    else if (txt == 'PRODUCT BROCHURE STZ-P 9') {
+    } else if (txt == 'PRODUCT BROCHURE STZ-P 9') {
       if (isEnglish) {
         return 'https://www.goldhofer.com/fileadmin/downloads/prospekte/NA_Semitrailer_EN_imp-USletter.pdf';
       }
@@ -549,19 +566,16 @@ export default function ProductDetailsList(props) {
       } else {
         return 'https://www.goldhofer.com/fileadmin//downloads/prospekte/PST-ES-E_PST-SL-E_DE-A4.pdf';
       }
-    }
-    else if (
-        txt == 'PRODUKT PROSPEKT FTV 850' ||
-        txt == 'PRODUCT BROCHURE FTV 850'
-      ) {
-        if (isEnglish) {
-          return 'https://www.goldhofer.com/fileadmin//downloads/prospekte/FTV-850_EN-A4.pdf';
-        } else {
-          return 'https://www.goldhofer.com/fileadmin//downloads/prospekte/FTV-850_DE-A4.pdf';
-        }
-      } 
-    
-    else if (
+    } else if (
+      txt == 'PRODUKT PROSPEKT FTV 850' ||
+      txt == 'PRODUCT BROCHURE FTV 850'
+    ) {
+      if (isEnglish) {
+        return 'https://www.goldhofer.com/fileadmin//downloads/prospekte/FTV-850_EN-A4.pdf';
+      } else {
+        return 'https://www.goldhofer.com/fileadmin//downloads/prospekte/FTV-850_DE-A4.pdf';
+      }
+    } else if (
       txt == 'PRODUKT PROSPEKT FTV 550' ||
       txt == 'PRODUCT BROCHURE FTV 550'
     ) {
