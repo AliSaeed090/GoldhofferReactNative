@@ -13,7 +13,7 @@ import {
   Platform,
 } from 'react-native';
 import {useTranslation} from 'react-i18next';
-
+import YoutubePlayer from 'react-native-youtube-iframe';
 import YouTube from 'react-native-youtube';
 import {useDispatch} from 'react-redux';
 import {ApplicationActions} from '@actions';
@@ -1175,56 +1175,62 @@ export default function ProductDeatilVideoLink(props) {
         </View>
 
         {isRendered && videoId && (
-          <YouTube
-            // AIzaSyADirxd-_5JqMTKVqA-2ECnq1TfcxksH7I
-
-            // ref={youTubeRef}
-            // You must have an API Key for the player to load in Android
-            apiKey="AIzaSyCCuJKVuq5JX7bAzLERMJ0ctHRM_iuqFJA"
-            // Un-comment one of videoId / videoIds / playlist.
-            // You can also edit these props while Hot-Loading in development mode to see how
-            // it affects the loaded native module
+            <YoutubePlayer
+            height={400}
+            // play={playing}
             videoId={videoId}
-            // videoIds={['uMK0prafzw0', 'qzYgSecGQww', 'XXlZfc1TrD0', 'czcjU1w-c6k']}
-            // playlistId="PLfvaFAgzJJDgBIpMqcqolowsZf9y5hmId"
-            play={state.isPlaying}
-            loop={state.isLooping}
-            fullscreen={state.fullscreen}
-            controls={1}
-            style={{
-              alignSelf: 'stretch',
-              height: playerHeight,
-              backgroundColor: 'black',
-              marginVertical: 10,
-            }}
-            onReady={e => {
-              // setPlayerHeight(200)
-              // console.log({ onReady: true })
-            }}
-            // onError={e => {
-            //     setState(prvState=>({...prvState, error: e.error}));
-            // }}
-            // onReady={e => {
-            //     setState(prvState=>({...prvState, isReady: true}));
-
-            // }}
-            // onChangeState={e => {
-            //     setState(prvState=>({...prvState,status: e.state}));
-
-            // }}
-            // onChangeQuality={e => {
-            //     setState(prvState=>({...prvState,quality: e.quality }));
-
-            // }}
-            // onChangeFullscreen={e => {
-            //     setState(prvState=>({...prvState,fullscreen: e.isFullscreen }));
-
-            // }}
-            // onProgress={e => {
-            //     setState(prvState=>({...prvState,currentTime: e.currentTime }));
-
-            // }}
+            // onChangeState={onStateChange}
           />
+          // <YouTube
+          //   // AIzaSyADirxd-_5JqMTKVqA-2ECnq1TfcxksH7I
+
+          //   // ref={youTubeRef}
+          //   // You must have an API Key for the player to load in Android
+          //   apiKey="AIzaSyCCuJKVuq5JX7bAzLERMJ0ctHRM_iuqFJA"
+          //   // Un-comment one of videoId / videoIds / playlist.
+          //   // You can also edit these props while Hot-Loading in development mode to see how
+          //   // it affects the loaded native module
+          //   videoId={videoId}
+          //   // videoIds={['uMK0prafzw0', 'qzYgSecGQww', 'XXlZfc1TrD0', 'czcjU1w-c6k']}
+          //   // playlistId="PLfvaFAgzJJDgBIpMqcqolowsZf9y5hmId"
+          //   play={state.isPlaying}
+          //   loop={state.isLooping}
+          //   fullscreen={state.fullscreen}
+          //   controls={1}
+          //   style={{
+          //     alignSelf: 'stretch',
+          //     height: playerHeight,
+          //     backgroundColor: 'black',
+          //     marginVertical: 10,
+          //   }}
+          //   onReady={e => {
+          //     // setPlayerHeight(200)
+          //     // console.log({ onReady: true })
+          //   }}
+          //   // onError={e => {
+          //   //     setState(prvState=>({...prvState, error: e.error}));
+          //   // }}
+          //   // onReady={e => {
+          //   //     setState(prvState=>({...prvState, isReady: true}));
+
+          //   // }}
+          //   // onChangeState={e => {
+          //   //     setState(prvState=>({...prvState,status: e.state}));
+
+          //   // }}
+          //   // onChangeQuality={e => {
+          //   //     setState(prvState=>({...prvState,quality: e.quality }));
+
+          //   // }}
+          //   // onChangeFullscreen={e => {
+          //   //     setState(prvState=>({...prvState,fullscreen: e.isFullscreen }));
+
+          //   // }}
+          //   // onProgress={e => {
+          //   //     setState(prvState=>({...prvState,currentTime: e.currentTime }));
+
+          //   // }}
+          // />
         )}
 
         {playListArr.length > 1 && (

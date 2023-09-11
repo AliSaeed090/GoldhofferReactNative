@@ -296,7 +296,7 @@ PODS:
     - React-Core
   - react-native-tracking-transparency (0.1.1):
     - React
-  - react-native-webview (11.23.0):
+  - react-native-webview (13.6.0):
     - React-Core
   - React-perflogger (0.67.2)
   - React-RCTActionSheet (0.67.2):
@@ -659,7 +659,7 @@ SPEC CHECKSUMS:
   react-native-safe-area-context: 9e40fb181dac02619414ba1294d6c2a807056ab9
   react-native-splash-screen: 4312f786b13a81b5169ef346d76d33bc0c6dc457
   react-native-tracking-transparency: b2029ff756f1128b1f2c7c7c7f3003bc3c950f9f
-  react-native-webview: e771bc375f789ebfa02a26939a57dbc6fa897336
+  react-native-webview: 669ae162965f629a8d6a4bdd3b99a304d36ef1f2
   React-perflogger: 3c9bb7372493e49036f07a82c44c8cf65cbe88db
   React-RCTActionSheet: 052606483045a408693aa7e864410b4a052f541a
   React-RCTAnimation: 08d4cac13222bb1348c687a0158dfd3b577cdb63
