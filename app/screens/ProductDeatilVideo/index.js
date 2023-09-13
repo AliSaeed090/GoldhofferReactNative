@@ -1194,13 +1194,14 @@ export default function ProductDetailsList(props) {
         {isRendered && videoId && (
           <View
             style={{
-              overflow: 'hidden',
+              
               width: '100%',
               marginTop: 20,
-              height:350,
-              backgroundColor:"black"
+              height:Platform.OS==='android'?350: 270,
+              backgroundColor:"black",
+              
             }}>
-            <YoutubePlayer height={350} videoId={videoId} />
+            <YoutubePlayer height={Platform.OS==='android'?350: 270} videoId={videoId} />
           </View>
         )}
 
