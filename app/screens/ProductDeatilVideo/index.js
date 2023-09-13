@@ -135,7 +135,7 @@ export default function ProductDetailsList(props) {
   const [isEnglish, setIsEnglish] = useState(false);
   const [isServiceType, SetisServiceType] = useState('');
   const [txt, setText] = useState(undefined);
-  const [playerHeight, setPlayerHeight] = useState(250);
+  const [playerHeight, setPlayerHeight] = useState('100%');
   const [state, setState] = useState({
     isReady: false,
     status: null,
@@ -1192,55 +1192,16 @@ export default function ProductDetailsList(props) {
         </View>
 
         {isRendered && videoId && (
-          // <YouTube
-          //   // AIzaSyADirxd-_5JqMTKVqA-2ECnq1TfcxksH7I
-
-          //   // ref={youTubeRef}
-          //   // You must have an API Key for the player to load in Android
-          //   apiKey="AIzaSyAfOlpt6icgYuSUVVu8yXR-TJVoQ16bC3A"
-          //   // Un-comment one of videoId / videoIds / playlist.
-          //   // You can also edit these props while Hot-Loading in development mode to see how
-          //   // it affects the loaded native module
-          //   videoId={videoId}
-          //   // videoIds={['uMK0prafzw0', 'qzYgSecGQww', 'XXlZfc1TrD0', 'czcjU1w-c6k']}
-          //   // playlistId="PLfvaFAgzJJDgBIpMqcqolowsZf9y5hmId"
-          //   play={state.isPlaying}
-          //   loop={state.isLooping}
-          //   fullscreen={state.fullscreen}
-          //   controls={1}
-          //   style={{
-          //     alignSelf: 'stretch',
-          //     height: playerHeight,
-          //     backgroundColor: 'black',
-          //     marginVertical: 10,
-          //   }}
-          //   onError={e => {
-          //     // console.log({ onError: e.error })
-          //   }}
-          //   onReady={e => {
-          //     // setPlayerHeight(200)
-          //     // console.log({ onReady: isEnglish })
-          //   }}
-          //   onChangeState={e => {
-          //     // console.log({ onChangeState: e.state })
-          //   }}
-          //   onChangeQuality={e => {
-          //     // console.log({ onChangeQuality: e.quality })
-          //   }}
-          //   onChangeFullscreen={e => {
-          //     // console.log({ onChangeFullscreen: e.isFullscreen })
-          //   }}
-          //   onProgress={e => {
-          //     // console.log({ onProgress: e.currentTime })
-          //   }}
-          // />
-
-          <YoutubePlayer
-            height={400}
-            // play={playing}
-            videoId={videoId}
-            // onChangeState={onStateChange}
-          />
+          <View
+            style={{
+              overflow: 'hidden',
+              width: '100%',
+              marginTop: 20,
+              height:350,
+              backgroundColor:"black"
+            }}>
+            <YoutubePlayer height={350} videoId={videoId} />
+          </View>
         )}
 
         {playListArr.length > 1 && (
