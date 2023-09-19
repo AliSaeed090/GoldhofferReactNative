@@ -202,7 +202,7 @@ export default function ContactOverView(props) {
       return false;
     } else if (
       property.MEINANLIEGEN === '' ||
-      property.MEINANLIEGEN.length < 3
+      property.MEINANLIEGEN.length < 10
     ) {
       alert('Bitte geben Sie einen gültigen MEINANLIEGEN ein');
       return false;
