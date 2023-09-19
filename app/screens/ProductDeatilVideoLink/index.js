@@ -1172,16 +1172,17 @@ export default function ProductDeatilVideoLink(props) {
         </View>
 
         {isRendered && videoId && (
-          <View
-            style={{
-              overflow: 'hidden',
-              width: '100%',
-              marginTop: 20,
-              height:350,
-              backgroundColor:"black"
-            }}>
-            <YoutubePlayer height={350} videoId={videoId} />
-          </View>
+        <View
+        style={{
+          
+          width: '100%',
+          marginTop: 20,
+          height:Platform.OS==='android'?350: 270,
+          backgroundColor:"black",
+          
+        }}>
+        <YoutubePlayer height={Platform.OS==='android'?350: 270} videoId={videoId} />
+      </View>
         )}
 
         {playListArr.length > 1 && (
