@@ -1064,8 +1064,8 @@ export default function ProductDeatilVideoLink(props) {
         }}
       />
       <ScrollView>
-        <View style={{width: '100%', height: 350, backgroundColor: '#D2D9DE'}}>
-          <Image source={list.image} style={styles.banner} resizeMode="cover" />
+        <View style={{width: '100%', height: 350, backgroundColor: '#000'}}>
+          <Image source={list.image} style={styles.banner} resizeMode="contain" />
         </View>
         <View style={{width: '100%', marginTop: -2}}>
           {txt === '»BLADEX«' && list.text.length !== 0 && (
