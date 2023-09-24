@@ -324,8 +324,7 @@ export default function ProductDeatilVideoLink(props) {
       if (isEnglish) {
         return 'https://www.goldhofer.com/fileadmin/downloads/prospekte/NA_Modules_US_EN_imp-USletter.pdf';
       }
-    } 
-    else if (
+    } else if (
       txt == 'PRODUCT BROCHURE THP/DR' ||
       txt == 'PRODUCT BROCHURE THP/CA' ||
       txt == 'PRODUCT BROCHURE THP/HL-L & THP/HL'
@@ -821,7 +820,6 @@ export default function ProductDeatilVideoLink(props) {
     }
   };
 
-
   const openPdf = txt => {
     let PDFLink = getPdfLink(txt);
     // console.log({ PDFLink })
@@ -1064,8 +1062,12 @@ export default function ProductDeatilVideoLink(props) {
         }}
       />
       <ScrollView>
-        <View style={{width: '100%', height: 350, backgroundColor: '#000'}}>
-          <Image source={list.image} style={styles.banner} resizeMode="contain" />
+        <View style={{width: '100%', height: 420, backgroundColor: 'black'}}>
+          <Image
+            source={list.image}
+            style={styles.banner}
+            resizeMode="contain"
+          />
         </View>
         <View style={{width: '100%', marginTop: -2}}>
           {txt === '»BLADEX«' && list.text.length !== 0 && (
@@ -1172,17 +1174,18 @@ export default function ProductDeatilVideoLink(props) {
         </View>
 
         {isRendered && videoId && (
-        <View
-        style={{
-          
-          width: '100%',
-          marginTop: 20,
-          height:Platform.OS==='android'?350: 270,
-          backgroundColor:"black",
-          
-        }}>
-        <YoutubePlayer height={Platform.OS==='android'?350: 270} videoId={videoId} />
-      </View>
+          <View
+            style={{
+              width: '100%',
+              marginTop: 20,
+              height: Platform.OS === 'android' ? 350 : 270,
+              backgroundColor: 'black',
+            }}>
+            <YoutubePlayer
+              height={Platform.OS === 'android' ? 350 : 270}
+              videoId={videoId}
+            />
+          </View>
         )}
 
         {playListArr.length > 1 && (

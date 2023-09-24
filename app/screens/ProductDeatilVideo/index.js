@@ -324,8 +324,7 @@ export default function ProductDetailsList(props) {
       if (isEnglish) {
         return 'https://www.goldhofer.com/fileadmin/downloads/prospekte/NA_Modules_US_EN_imp-USletter.pdf';
       }
-    } 
-    else if (
+    } else if (
       txt == 'PRODUCT BROCHURE THP/DR' ||
       txt == 'PRODUCT BROCHURE THP/CA' ||
       txt == 'PRODUCT BROCHURE THP/HL-L & THP/HL'
@@ -1064,8 +1063,17 @@ export default function ProductDetailsList(props) {
         }}
       />
       <ScrollView>
-        <View style={{width: '100%', height: 350, backgroundColor: '#000'}}>
-          <Image source={list.image} style={styles.banner} resizeMode="contain" />
+        <View
+          style={{
+            width: '100%',
+            height: 420,
+            backgroundColor: 'black',
+          }}>
+          <Image
+            source={list.image}
+            style={styles.banner}
+            resizeMode="contain"
+          />
         </View>
         <View style={{width: '100%', marginTop: -2}}>
           {txt === '»BLADEX«' && list.text.length !== 0 && (
@@ -1177,14 +1185,15 @@ export default function ProductDetailsList(props) {
         {isRendered && videoId && (
           <View
             style={{
-              
               width: '100%',
               marginTop: 20,
-              height:Platform.OS==='android'?350: 270,
-              backgroundColor:"black",
-              
+              height: Platform.OS === 'android' ? 350 : 270,
+              backgroundColor: 'black',
             }}>
-            <YoutubePlayer height={Platform.OS==='android'?350: 270} videoId={videoId} />
+            <YoutubePlayer
+              height={Platform.OS === 'android' ? 350 : 270}
+              videoId={videoId}
+            />
           </View>
         )}
 
