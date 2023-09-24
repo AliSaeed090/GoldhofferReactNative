@@ -62,7 +62,8 @@ export default function RenderList2({item}) {
       <TouchableOpacity
         disabled={item.disabled}
         onPress={() =>
-          navigation.navigate('ProductDeatilInfo', {item: item.data})
+          navigate()
+          // navigation.navigate('ProductDeatilInfo', {item: item.data})
         }
         style={{
           width: '100%',
