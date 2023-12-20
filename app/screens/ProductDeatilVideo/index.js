@@ -625,9 +625,9 @@ export default function ProductDetailsList(props) {
       txt == 'PRODUCT BROCHURE STEPSTAR'
     ) {
       if (isEnglish) {
-        return 'https://www.goldhofer.com/?pdf=4000';
+        return 'https://www.goldhofer.com/fileadmin/STAR/05_Broschuere/Quickguide_Stepstar_DE-EN.pdf';
       } else {
-        return 'https://www.goldhofer.com/?pdf=4000';
+        return 'https://www.goldhofer.com/fileadmin/STAR/05_Broschuere/Quickguide_Stepstar_DE-EN.pdf';
       }
     } else if (
       txt == 'PRODUKT PROSPEKT »SHERPA« D' ||
